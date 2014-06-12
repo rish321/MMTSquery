@@ -1,9 +1,8 @@
 package com.qureyprocess;
 
-import java.io.*;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -12,6 +11,7 @@ import com.dialogmanager.Dialog;
 import com.hp.hpl.jena.ontology.OntModel;
 import com.qureyprocess.components.Count;
 import com.qureyprocess.components.Duration;
+import com.qureyprocess.components.Instance;
 import com.qureyprocess.components.Station;
 import com.qureyprocess.components.Time;
 
@@ -19,10 +19,10 @@ public class ManageQuery {
 
 
 	public static void postProcess(OntModel m, Dialog dm, String s,
-			HashMap<String, String> hmqtype, HashMap<String, String> hmpll, HashMap<String, String> hmind, HashMap<String, String> hmnum,
+			HashMap<String, String> directMap, HashMap<String, String> hmpll, HashMap<String, String> hmind, HashMap<String, String> hmnum,
 			HashMap<String, String> hmtrans, String folder, String source, String dest, String atStation,
 			String srcTimeInit, String srcTimeFin, String destTimeInit, String destTimeFin,
-			String set, String info) throws IOException, InterruptedException {
+			String set, String info, String nlpPath, String setu) throws Exception {
 		if(s.contains("कितने कितने देर") || s.contains("कितनी कितनी देर") || s.contains("कितने कितने बजे")) {
 			if(s.contains("कितने कितने देर") || s.contains("कितनी कितनी देर")) {
 				if(source == null)
@@ -200,33 +200,17 @@ public class ManageQuery {
 			}
 		}
 		else if(s.contains("कैसे कैसे") || s.contains("कैसे") || s.contains("क्यूँ") || s.contains("क्यूँ क्यूँ")) {
-			File file = new File("/tmp/tempin.txt");
-			FileWriter fw = new FileWriter(file.getAbsoluteFile());
-			BufferedWriter bw = new BufferedWriter(fw);
-			bw.write(s);
-			bw.close();
-			Sparql.createSparqlFile("kyu_kaise.sh tempin.txt tempout.txt");
-			String[] krelation= SSFProgram("tempout.txt");
-				
-			
+			List<String> acts = Instance.extractInstanceActionTheme(m, s, directMap, folder, nlpPath, setu);
+			String action = acts.get(0);
+			DAG dag = new DAG();
+			dag.fillDAGAction(folder, action, m);
+			ArrayList<String> topo = dag.topologicalsort();
 			if((s.contains("क्यूँ") || s.contains("क्यूँ क्यूँ")) && s.contains("नहीं")) {
-				if(s.contains("टिकट") && s.contains("खरीद")) {
-					String action = "Buy1";
-					DAG dag = new DAG();
-					dag.fillDAGAction(folder, action, m);
-					ArrayList<String> topo = dag.topologicalsort();
 					DAG.totalOrder(folder, m, dag, topo);
-				}
 			}
 			else if(s.contains("कैसे कैसे") || s.contains("कैसे")) {
-				if(s.contains("टिकट") && s.contains("खरीद")) {
-					String action = "Buy1";
-					DAG dag = new DAG();
-					dag.fillDAGAction(folder, action, m);
-					ArrayList<String> topo = dag.topologicalsort();
 					ProcessAnswer.translate(hmtrans, "Ye saare kadam uthane se ticket kharid sakte hain");
 					DAG.actionOrder(folder, m, dag, topo);
-				}
 			}
 		}
 		else if(s.contains("क्या")) {

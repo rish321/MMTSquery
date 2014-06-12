@@ -1,7 +1,6 @@
 package com.qureyprocess;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.HashMap;
 
@@ -14,19 +13,20 @@ import com.hp.hpl.jena.ontology.OntTools;
 import com.hp.hpl.jena.ontology.OntTools.PredicatesFilter;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.vocabulary.RDFS;
+import com.system.Setu;
 
 public class ProcessQuery {
-	public static void main(String args[]) throws IOException, InterruptedException
+	public static void main(String args[]) throws Exception
 	{
 		OntModel m = ModelFactory.createOntologyModel( PelletReasonerFactory.THE_SPEC );
-		String	ontology = args[1];
+		String	ontology = args[3];
 		m.read( ontology );
 		
 		
 		String folder = Domain.createDomain(args);
 		
 		Dialog dm = new Dialog();
-		HashMap <String, String> hmqtype = Domain.initHm(args[0] + "queryType");
+		HashMap <String, String> directMap = Domain.initHm(args[0] + "directmap");
 		HashMap <String, String> hmpll = Domain.initHm(args[0]+"parallel");
 		HashMap <String, String> hmind = Domain.initHm(args[0]+"individuals_parallel");
 		HashMap <String, String> hmnum = Domain.initHm(args[0]+"number");
@@ -36,6 +36,8 @@ public class ProcessQuery {
 		ProcessAnswer.translate(hmtrans, "kripya sawaal poochein");
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String s;
+		Setu S = new Setu();
+		String setu_path = S.find_setu();
 		int i = 1;
 		while((s = br.readLine()) != null)
 		{
@@ -43,7 +45,7 @@ public class ProcessQuery {
 				continue;
 			System.out.println("Started Answering question " + i++ + "...");
 			System.out.println(s);
-			ManageArguments.preProcess(m, dm, s, hmqtype, hmpll, hmind, hmnum, hmtrans, folder);
+			ManageArguments.preProcess(m, dm, s, directMap, hmpll, hmind, hmnum, hmtrans, folder, args[2], setu_path);
 			System.out.println();
 			ProcessAnswer.translate(hmtrans, "kripya sawaal poochein");
 		}

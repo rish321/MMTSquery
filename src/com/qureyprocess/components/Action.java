@@ -6,6 +6,16 @@ import com.sparql.Sparql;
 
 public class Action {
 
+	public static String getAction(String folder, String action, String theme) throws IOException, InterruptedException {
+		String file = "findAction"; 
+		String params = folder + file + ".sh ";
+		params += action + " " + theme;
+		params += ">" + folder + file + "temp";
+		//System.out.println(params);
+		Sparql.createSparqlFile(params);
+		return folder + file + "temp";
+	}
+	
 	public static String getSubaction(String folder, String string) throws IOException, InterruptedException {
 		String file = "findSubaction"; 
 		String params = folder + file + ".sh ";

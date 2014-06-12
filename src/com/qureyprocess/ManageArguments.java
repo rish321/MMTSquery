@@ -1,6 +1,5 @@
 package com.qureyprocess;
 
-import java.io.IOException;
 import java.util.HashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -13,7 +12,7 @@ import com.qureyprocess.components.Time;
 
 public class ManageArguments {
 
-	public static void preProcess(OntModel m, Dialog dm, String s, HashMap<String, String> hmqtype, HashMap<String, String> hmpll, HashMap<String, String> hmind, HashMap<String, String> hmnum, HashMap<String, String> hmtrans, String folder) throws IOException, InterruptedException
+	public static void preProcess(OntModel m, Dialog dm, String s, HashMap<String, String> directMap, HashMap<String, String> hmpll, HashMap<String, String> hmind, HashMap<String, String> hmnum, HashMap<String, String> hmtrans, String folder, String nlpPath, String setu) throws Exception
 	{
 		String source = Station.getSource(s, hmind);
 		String dest = Station.getDestination(s, hmind);
@@ -38,7 +37,7 @@ public class ManageArguments {
 			info = "arr";
 		String set = Set.getSet(s);
 	
-		ManageQuery.postProcess(m, dm, s, hmqtype, hmpll, hmind, hmnum, hmtrans, folder, source, dest, atStation, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info);
+		ManageQuery.postProcess(m, dm, s, directMap, hmpll, hmind, hmnum, hmtrans, folder, source, dest, atStation, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info, nlpPath, setu);
 	}
 
 }
