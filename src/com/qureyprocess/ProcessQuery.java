@@ -19,7 +19,7 @@ public class ProcessQuery {
 	public static void main(String args[]) throws IOException, InterruptedException
 	{
 		OntModel m = ModelFactory.createOntologyModel( PelletReasonerFactory.THE_SPEC );
-		String	ontology = args[2];
+		String	ontology = args[1];
 		m.read( ontology );
 		
 		

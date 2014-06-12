@@ -1,0 +1,11 @@
+PREFIX rdfs: <rdfsprefix>
+PREFIX rdf: <rdfprefix>
+PREFIX owl: <owlprefix>
+PREFIX xsd: <xsdprefix>
+PREFIX : <baseprefix>
+
+SELECT ?ocom
+WHERE {
+    ?act :hasOutcome ?ocom
+    FILTER ( regex ( str(?act), '(^|\\W)action(\\W|$)') ).
+}

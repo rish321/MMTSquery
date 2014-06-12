@@ -1,0 +1,2710 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2014/1/MMTS_test.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/ontologies/2014/1/MMTS_test.owl">
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="MMTS_test" IRI="http://www.semanticweb.org/ontologies/2014/1/MMTS_test.owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Declaration>
+        <Class IRI="#AbstractArtifact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AbstractEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AllDayTrain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AllPublicTrain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Areas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Artifact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coach"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Day"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Journey"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LocalStation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MatruBhoomiTrain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MmtsTrain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NationalStation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NoSundayTrain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NotStation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Order"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalArtifact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Route"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Station"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StopAtStation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Train"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#atStation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belongsTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#comprisesOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#destination"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#first"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#forRoute"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasComponent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPurpose"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTravelledBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#notBelongsTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#notComprisesOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#notRuns"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#notStops"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#notStopsAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#notTravelledBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#notTravelsThrough"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ofTrain"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#reverseRouteOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#runs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#second"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#source"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#stops"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#stopsAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#travelsThrough"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#via"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#arrivesOn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#atHour"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#atMinute"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#atSecond"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#atTimezone"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#departsOn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#stationHaltTime"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#47100"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#47101"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#47102"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#47109"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#47110"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#47126"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#47127"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#47128"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#47133"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#47134"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#47149"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#47150"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#47151"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#47153"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#47158"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#47171"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#47173"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#47179"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#47182"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#47197"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#47198"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#47199"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#47200"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#47201"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#47202"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#47206"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#47208"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#47209"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#47211"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#47213"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Abids"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Arts_College"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Begumpet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bharatnagar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Borabanda"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chandanagar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dabirpura"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Falaknuma"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Falaknuma-Hyderabad"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fatehnagar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FirstClassCoach"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Friday"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gachibowli"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GeneralCoach"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hafeezpet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hitech_City"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Huppuguda"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hyderabad"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hyderabad-Falaknuma"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hyderabad-Lingampally"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jamai_Osmania"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#James_Street"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kacheguda"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Khairatabad"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LadiesCoach"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lakdikapul"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lingampally"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lingampally-Falaknuma"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lingampally-Hyderabad"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Malakpet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Masjidbanda"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mehdipatnam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Monday"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NatureCureHospital"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Necklace_Road"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Order1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Order2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SanjeevaiahPark"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Saturday"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Secunderabad"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sitafalmandi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sunday"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Thursday"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tuesday"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VendorCoach"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vidyanagar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wednesday"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Yakutpura"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#stop1.1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#stop1.10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#stop1.11"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#stop1.12"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#stop1.13"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#stop1.14"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#stop1.15"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#stop1.16"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#stop1.17"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#stop1.18"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#stop1.19"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#stop1.2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#stop1.20"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#stop1.21"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#stop1.22"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#stop1.3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#stop1.4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#stop1.5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#stop1.6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#stop1.7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#stop1.8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#stop1.9"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:dayTimeDuration"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AbstractArtifact"/>
+        <Class IRI="#AbstractEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AbstractArtifact"/>
+        <Class IRI="#Artifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Action"/>
+        <Class IRI="#AbstractEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AllDayTrain"/>
+        <Class IRI="#MmtsTrain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AllPublicTrain"/>
+        <Class IRI="#MmtsTrain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Areas"/>
+        <Class IRI="#PhysicalArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coach"/>
+        <Class IRI="#PhysicalArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Day"/>
+        <Class IRI="#PhysicalArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Journey"/>
+        <Class IRI="#AbstractArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LocalStation"/>
+        <Class IRI="#Station"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MatruBhoomiTrain"/>
+        <Class IRI="#MmtsTrain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MmtsTrain"/>
+        <Class IRI="#Train"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NationalStation"/>
+        <Class IRI="#Station"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NoSundayTrain"/>
+        <Class IRI="#MmtsTrain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NotStation"/>
+        <Class IRI="#Areas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Order"/>
+        <Class IRI="#AbstractEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalArtifact"/>
+        <Class IRI="#Artifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalArtifact"/>
+        <Class IRI="#PhysicalEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalEntity"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Route"/>
+        <Class IRI="#PhysicalArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Station"/>
+        <Class IRI="#Areas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StopAtStation"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Train"/>
+        <Class IRI="#PhysicalArtifact"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#NotStation"/>
+        <Class IRI="#Station"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#AllDayTrain"/>
+        <NamedIndividual IRI="#47100"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllPublicTrain"/>
+        <NamedIndividual IRI="#47100"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllDayTrain"/>
+        <NamedIndividual IRI="#47101"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllPublicTrain"/>
+        <NamedIndividual IRI="#47101"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllDayTrain"/>
+        <NamedIndividual IRI="#47102"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllPublicTrain"/>
+        <NamedIndividual IRI="#47102"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllPublicTrain"/>
+        <NamedIndividual IRI="#47109"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NoSundayTrain"/>
+        <NamedIndividual IRI="#47109"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllPublicTrain"/>
+        <NamedIndividual IRI="#47110"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NoSundayTrain"/>
+        <NamedIndividual IRI="#47110"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllDayTrain"/>
+        <NamedIndividual IRI="#47126"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllPublicTrain"/>
+        <NamedIndividual IRI="#47126"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllDayTrain"/>
+        <NamedIndividual IRI="#47127"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllPublicTrain"/>
+        <NamedIndividual IRI="#47127"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllDayTrain"/>
+        <NamedIndividual IRI="#47128"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllPublicTrain"/>
+        <NamedIndividual IRI="#47128"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllPublicTrain"/>
+        <NamedIndividual IRI="#47133"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NoSundayTrain"/>
+        <NamedIndividual IRI="#47133"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllPublicTrain"/>
+        <NamedIndividual IRI="#47134"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NoSundayTrain"/>
+        <NamedIndividual IRI="#47134"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllDayTrain"/>
+        <NamedIndividual IRI="#47149"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllPublicTrain"/>
+        <NamedIndividual IRI="#47149"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllDayTrain"/>
+        <NamedIndividual IRI="#47150"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllPublicTrain"/>
+        <NamedIndividual IRI="#47150"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllDayTrain"/>
+        <NamedIndividual IRI="#47151"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllPublicTrain"/>
+        <NamedIndividual IRI="#47151"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllDayTrain"/>
+        <NamedIndividual IRI="#47153"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllPublicTrain"/>
+        <NamedIndividual IRI="#47153"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllPublicTrain"/>
+        <NamedIndividual IRI="#47158"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NoSundayTrain"/>
+        <NamedIndividual IRI="#47158"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllDayTrain"/>
+        <NamedIndividual IRI="#47171"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllPublicTrain"/>
+        <NamedIndividual IRI="#47171"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllDayTrain"/>
+        <NamedIndividual IRI="#47173"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllPublicTrain"/>
+        <NamedIndividual IRI="#47173"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllPublicTrain"/>
+        <NamedIndividual IRI="#47179"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NoSundayTrain"/>
+        <NamedIndividual IRI="#47179"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllPublicTrain"/>
+        <NamedIndividual IRI="#47182"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NoSundayTrain"/>
+        <NamedIndividual IRI="#47182"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllDayTrain"/>
+        <NamedIndividual IRI="#47197"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllPublicTrain"/>
+        <NamedIndividual IRI="#47197"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllPublicTrain"/>
+        <NamedIndividual IRI="#47198"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NoSundayTrain"/>
+        <NamedIndividual IRI="#47198"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllPublicTrain"/>
+        <NamedIndividual IRI="#47199"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NoSundayTrain"/>
+        <NamedIndividual IRI="#47199"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllDayTrain"/>
+        <NamedIndividual IRI="#47200"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllPublicTrain"/>
+        <NamedIndividual IRI="#47200"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllDayTrain"/>
+        <NamedIndividual IRI="#47201"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllPublicTrain"/>
+        <NamedIndividual IRI="#47201"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllDayTrain"/>
+        <NamedIndividual IRI="#47202"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllPublicTrain"/>
+        <NamedIndividual IRI="#47202"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllDayTrain"/>
+        <NamedIndividual IRI="#47206"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllPublicTrain"/>
+        <NamedIndividual IRI="#47206"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllPublicTrain"/>
+        <NamedIndividual IRI="#47208"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NoSundayTrain"/>
+        <NamedIndividual IRI="#47208"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllPublicTrain"/>
+        <NamedIndividual IRI="#47209"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NoSundayTrain"/>
+        <NamedIndividual IRI="#47209"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllDayTrain"/>
+        <NamedIndividual IRI="#47211"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MatruBhoomiTrain"/>
+        <NamedIndividual IRI="#47211"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllDayTrain"/>
+        <NamedIndividual IRI="#47213"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AllPublicTrain"/>
+        <NamedIndividual IRI="#47213"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NotStation"/>
+        <NamedIndividual IRI="#Abids"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LocalStation"/>
+        <NamedIndividual IRI="#Arts_College"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LocalStation"/>
+        <NamedIndividual IRI="#Begumpet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LocalStation"/>
+        <NamedIndividual IRI="#Bharatnagar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LocalStation"/>
+        <NamedIndividual IRI="#Borabanda"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LocalStation"/>
+        <NamedIndividual IRI="#Chandanagar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LocalStation"/>
+        <NamedIndividual IRI="#Dabirpura"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LocalStation"/>
+        <NamedIndividual IRI="#Falaknuma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Route"/>
+        <NamedIndividual IRI="#Falaknuma-Hyderabad"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Route"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LocalStation"/>
+        <NamedIndividual IRI="#Fatehnagar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Coach"/>
+        <NamedIndividual IRI="#FirstClassCoach"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Day"/>
+        <NamedIndividual IRI="#Friday"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NotStation"/>
+        <NamedIndividual IRI="#Gachibowli"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Coach"/>
+        <NamedIndividual IRI="#GeneralCoach"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LocalStation"/>
+        <NamedIndividual IRI="#Hafeezpet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LocalStation"/>
+        <NamedIndividual IRI="#Hitech_City"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LocalStation"/>
+        <NamedIndividual IRI="#Huppuguda"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NationalStation"/>
+        <NamedIndividual IRI="#Hyderabad"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Route"/>
+        <NamedIndividual IRI="#Hyderabad-Falaknuma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Route"/>
+        <NamedIndividual IRI="#Hyderabad-Lingampally"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LocalStation"/>
+        <NamedIndividual IRI="#Jamai_Osmania"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LocalStation"/>
+        <NamedIndividual IRI="#James_Street"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NationalStation"/>
+        <NamedIndividual IRI="#Kacheguda"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LocalStation"/>
+        <NamedIndividual IRI="#Khairatabad"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Coach"/>
+        <NamedIndividual IRI="#LadiesCoach"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LocalStation"/>
+        <NamedIndividual IRI="#Lakdikapul"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LocalStation"/>
+        <NamedIndividual IRI="#Lingampally"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Route"/>
+        <NamedIndividual IRI="#Lingampally-Falaknuma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Route"/>
+        <NamedIndividual IRI="#Lingampally-Hyderabad"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LocalStation"/>
+        <NamedIndividual IRI="#Malakpet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NotStation"/>
+        <NamedIndividual IRI="#Masjidbanda"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NotStation"/>
+        <NamedIndividual IRI="#Mehdipatnam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Day"/>
+        <NamedIndividual IRI="#Monday"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LocalStation"/>
+        <NamedIndividual IRI="#NatureCureHospital"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LocalStation"/>
+        <NamedIndividual IRI="#Necklace_Road"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Order"/>
+        <NamedIndividual IRI="#Order1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Order"/>
+        <NamedIndividual IRI="#Order2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LocalStation"/>
+        <NamedIndividual IRI="#SanjeevaiahPark"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Day"/>
+        <NamedIndividual IRI="#Saturday"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NationalStation"/>
+        <NamedIndividual IRI="#Secunderabad"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LocalStation"/>
+        <NamedIndividual IRI="#Sitafalmandi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Day"/>
+        <NamedIndividual IRI="#Sunday"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Day"/>
+        <NamedIndividual IRI="#Thursday"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Day"/>
+        <NamedIndividual IRI="#Tuesday"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Coach"/>
+        <NamedIndividual IRI="#VendorCoach"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LocalStation"/>
+        <NamedIndividual IRI="#Vidyanagar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Day"/>
+        <NamedIndividual IRI="#Wednesday"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LocalStation"/>
+        <NamedIndividual IRI="#Yakutpura"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StopAtStation"/>
+        <NamedIndividual IRI="#stop1.1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StopAtStation"/>
+        <NamedIndividual IRI="#stop1.10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StopAtStation"/>
+        <NamedIndividual IRI="#stop1.11"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StopAtStation"/>
+        <NamedIndividual IRI="#stop1.12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StopAtStation"/>
+        <NamedIndividual IRI="#stop1.13"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StopAtStation"/>
+        <NamedIndividual IRI="#stop1.14"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StopAtStation"/>
+        <NamedIndividual IRI="#stop1.15"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StopAtStation"/>
+        <NamedIndividual IRI="#stop1.16"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StopAtStation"/>
+        <NamedIndividual IRI="#stop1.17"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StopAtStation"/>
+        <NamedIndividual IRI="#stop1.18"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StopAtStation"/>
+        <NamedIndividual IRI="#stop1.19"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StopAtStation"/>
+        <NamedIndividual IRI="#stop1.2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StopAtStation"/>
+        <NamedIndividual IRI="#stop1.20"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StopAtStation"/>
+        <NamedIndividual IRI="#stop1.21"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StopAtStation"/>
+        <NamedIndividual IRI="#stop1.22"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StopAtStation"/>
+        <NamedIndividual IRI="#stop1.3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StopAtStation"/>
+        <NamedIndividual IRI="#stop1.4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StopAtStation"/>
+        <NamedIndividual IRI="#stop1.5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StopAtStation"/>
+        <NamedIndividual IRI="#stop1.6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StopAtStation"/>
+        <NamedIndividual IRI="#stop1.7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StopAtStation"/>
+        <NamedIndividual IRI="#stop1.8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StopAtStation"/>
+        <NamedIndividual IRI="#stop1.9"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Friday"/>
+        <NamedIndividual IRI="#Monday"/>
+        <NamedIndividual IRI="#Saturday"/>
+        <NamedIndividual IRI="#Sunday"/>
+        <NamedIndividual IRI="#Thursday"/>
+        <NamedIndividual IRI="#Tuesday"/>
+        <NamedIndividual IRI="#Wednesday"/>
+    </DifferentIndividuals>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Falaknuma-Hyderabad"/>
+        <NamedIndividual IRI="#James_Street"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Falaknuma-Hyderabad"/>
+        <NamedIndividual IRI="#Arts_College"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Falaknuma-Hyderabad"/>
+        <NamedIndividual IRI="#Hyderabad"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Falaknuma-Hyderabad"/>
+        <NamedIndividual IRI="#Necklace_Road"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Falaknuma-Hyderabad"/>
+        <NamedIndividual IRI="#Lakdikapul"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Falaknuma-Hyderabad"/>
+        <NamedIndividual IRI="#Huppuguda"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Falaknuma-Hyderabad"/>
+        <NamedIndividual IRI="#Yakutpura"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Falaknuma-Hyderabad"/>
+        <NamedIndividual IRI="#Khairatabad"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Falaknuma-Hyderabad"/>
+        <NamedIndividual IRI="#Jamai_Osmania"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Falaknuma-Hyderabad"/>
+        <NamedIndividual IRI="#Sitafalmandi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Falaknuma-Hyderabad"/>
+        <NamedIndividual IRI="#Secunderabad"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Falaknuma-Hyderabad"/>
+        <NamedIndividual IRI="#Vidyanagar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Falaknuma-Hyderabad"/>
+        <NamedIndividual IRI="#Falaknuma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Falaknuma-Hyderabad"/>
+        <NamedIndividual IRI="#SanjeevaiahPark"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Falaknuma-Hyderabad"/>
+        <NamedIndividual IRI="#Malakpet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Falaknuma-Hyderabad"/>
+        <NamedIndividual IRI="#Dabirpura"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Falaknuma-Hyderabad"/>
+        <NamedIndividual IRI="#Kacheguda"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTravelledBy"/>
+        <NamedIndividual IRI="#Falaknuma-Hyderabad"/>
+        <NamedIndividual IRI="#47197"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTravelledBy"/>
+        <NamedIndividual IRI="#Falaknuma-Hyderabad"/>
+        <NamedIndividual IRI="#47199"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTravelledBy"/>
+        <NamedIndividual IRI="#Falaknuma-Hyderabad"/>
+        <NamedIndividual IRI="#47200"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTravelledBy"/>
+        <NamedIndividual IRI="#Falaknuma-Hyderabad"/>
+        <NamedIndividual IRI="#47201"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTravelledBy"/>
+        <NamedIndividual IRI="#Falaknuma-Hyderabad"/>
+        <NamedIndividual IRI="#47202"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#reverseRouteOf"/>
+        <NamedIndividual IRI="#Falaknuma-Hyderabad"/>
+        <NamedIndividual IRI="#Hyderabad-Falaknuma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+        <NamedIndividual IRI="#Kacheguda"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+        <NamedIndividual IRI="#Huppuguda"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+        <NamedIndividual IRI="#Jamai_Osmania"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+        <NamedIndividual IRI="#Malakpet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+        <NamedIndividual IRI="#NatureCureHospital"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+        <NamedIndividual IRI="#Dabirpura"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+        <NamedIndividual IRI="#Sitafalmandi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+        <NamedIndividual IRI="#Bharatnagar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+        <NamedIndividual IRI="#Falaknuma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+        <NamedIndividual IRI="#James_Street"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+        <NamedIndividual IRI="#Lingampally"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+        <NamedIndividual IRI="#Hitech_City"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+        <NamedIndividual IRI="#Secunderabad"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+        <NamedIndividual IRI="#Yakutpura"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+        <NamedIndividual IRI="#SanjeevaiahPark"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+        <NamedIndividual IRI="#Borabanda"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+        <NamedIndividual IRI="#Fatehnagar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+        <NamedIndividual IRI="#Begumpet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+        <NamedIndividual IRI="#Hafeezpet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+        <NamedIndividual IRI="#Vidyanagar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+        <NamedIndividual IRI="#Arts_College"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+        <NamedIndividual IRI="#Chandanagar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTravelledBy"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+        <NamedIndividual IRI="#47211"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTravelledBy"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+        <NamedIndividual IRI="#47198"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTravelledBy"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+        <NamedIndividual IRI="#47149"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTravelledBy"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+        <NamedIndividual IRI="#47153"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTravelledBy"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+        <NamedIndividual IRI="#47151"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTravelledBy"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+        <NamedIndividual IRI="#47150"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTravelledBy"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+        <NamedIndividual IRI="#47158"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#reverseRouteOf"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+        <NamedIndividual IRI="#Lingampally-Falaknuma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTravelledBy"/>
+        <NamedIndividual IRI="#Hyderabad-Falaknuma"/>
+        <NamedIndividual IRI="#47209"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTravelledBy"/>
+        <NamedIndividual IRI="#Hyderabad-Falaknuma"/>
+        <NamedIndividual IRI="#47208"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTravelledBy"/>
+        <NamedIndividual IRI="#Hyderabad-Falaknuma"/>
+        <NamedIndividual IRI="#47206"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Hyderabad-Lingampally"/>
+        <NamedIndividual IRI="#Fatehnagar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Hyderabad-Lingampally"/>
+        <NamedIndividual IRI="#NatureCureHospital"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Hyderabad-Lingampally"/>
+        <NamedIndividual IRI="#Hafeezpet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Hyderabad-Lingampally"/>
+        <NamedIndividual IRI="#Begumpet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Hyderabad-Lingampally"/>
+        <NamedIndividual IRI="#Necklace_Road"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Hyderabad-Lingampally"/>
+        <NamedIndividual IRI="#Hitech_City"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Hyderabad-Lingampally"/>
+        <NamedIndividual IRI="#Khairatabad"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Hyderabad-Lingampally"/>
+        <NamedIndividual IRI="#Bharatnagar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Hyderabad-Lingampally"/>
+        <NamedIndividual IRI="#Chandanagar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Hyderabad-Lingampally"/>
+        <NamedIndividual IRI="#Lingampally"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Hyderabad-Lingampally"/>
+        <NamedIndividual IRI="#Borabanda"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Hyderabad-Lingampally"/>
+        <NamedIndividual IRI="#Lakdikapul"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#comprisesOf"/>
+        <NamedIndividual IRI="#Hyderabad-Lingampally"/>
+        <NamedIndividual IRI="#Hyderabad"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTravelledBy"/>
+        <NamedIndividual IRI="#Hyderabad-Lingampally"/>
+        <NamedIndividual IRI="#47110"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTravelledBy"/>
+        <NamedIndividual IRI="#Hyderabad-Lingampally"/>
+        <NamedIndividual IRI="#47102"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTravelledBy"/>
+        <NamedIndividual IRI="#Hyderabad-Lingampally"/>
+        <NamedIndividual IRI="#47100"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTravelledBy"/>
+        <NamedIndividual IRI="#Hyderabad-Lingampally"/>
+        <NamedIndividual IRI="#47101"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTravelledBy"/>
+        <NamedIndividual IRI="#Hyderabad-Lingampally"/>
+        <NamedIndividual IRI="#47109"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#reverseRouteOf"/>
+        <NamedIndividual IRI="#Hyderabad-Lingampally"/>
+        <NamedIndividual IRI="#Lingampally-Hyderabad"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTravelledBy"/>
+        <NamedIndividual IRI="#Lingampally-Falaknuma"/>
+        <NamedIndividual IRI="#47171"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTravelledBy"/>
+        <NamedIndividual IRI="#Lingampally-Falaknuma"/>
+        <NamedIndividual IRI="#47182"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTravelledBy"/>
+        <NamedIndividual IRI="#Lingampally-Falaknuma"/>
+        <NamedIndividual IRI="#47213"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTravelledBy"/>
+        <NamedIndividual IRI="#Lingampally-Falaknuma"/>
+        <NamedIndividual IRI="#47173"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTravelledBy"/>
+        <NamedIndividual IRI="#Lingampally-Falaknuma"/>
+        <NamedIndividual IRI="#47179"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTravelledBy"/>
+        <NamedIndividual IRI="#Lingampally-Hyderabad"/>
+        <NamedIndividual IRI="#47126"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTravelledBy"/>
+        <NamedIndividual IRI="#Lingampally-Hyderabad"/>
+        <NamedIndividual IRI="#47134"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTravelledBy"/>
+        <NamedIndividual IRI="#Lingampally-Hyderabad"/>
+        <NamedIndividual IRI="#47128"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTravelledBy"/>
+        <NamedIndividual IRI="#Lingampally-Hyderabad"/>
+        <NamedIndividual IRI="#47133"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTravelledBy"/>
+        <NamedIndividual IRI="#Lingampally-Hyderabad"/>
+        <NamedIndividual IRI="#47127"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#first"/>
+        <NamedIndividual IRI="#Order1"/>
+        <NamedIndividual IRI="#Falaknuma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPartOf"/>
+        <NamedIndividual IRI="#Order1"/>
+        <NamedIndividual IRI="#Falaknuma-Hyderabad"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPartOf"/>
+        <NamedIndividual IRI="#Order1"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#second"/>
+        <NamedIndividual IRI="#Order1"/>
+        <NamedIndividual IRI="#Huppuguda"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#first"/>
+        <NamedIndividual IRI="#Order2"/>
+        <NamedIndividual IRI="#Huppuguda"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPartOf"/>
+        <NamedIndividual IRI="#Order2"/>
+        <NamedIndividual IRI="#Falaknuma-Hyderabad"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPartOf"/>
+        <NamedIndividual IRI="#Order2"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#second"/>
+        <NamedIndividual IRI="#Order2"/>
+        <NamedIndividual IRI="#Yakutpura"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atStation"/>
+        <NamedIndividual IRI="#stop1.1"/>
+        <NamedIndividual IRI="#Falaknuma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#forRoute"/>
+        <NamedIndividual IRI="#stop1.1"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ofTrain"/>
+        <NamedIndividual IRI="#stop1.1"/>
+        <NamedIndividual IRI="#47149"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atStation"/>
+        <NamedIndividual IRI="#stop1.10"/>
+        <NamedIndividual IRI="#Sitafalmandi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#forRoute"/>
+        <NamedIndividual IRI="#stop1.10"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ofTrain"/>
+        <NamedIndividual IRI="#stop1.10"/>
+        <NamedIndividual IRI="#47149"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atStation"/>
+        <NamedIndividual IRI="#stop1.11"/>
+        <NamedIndividual IRI="#Secunderabad"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#forRoute"/>
+        <NamedIndividual IRI="#stop1.11"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ofTrain"/>
+        <NamedIndividual IRI="#stop1.11"/>
+        <NamedIndividual IRI="#47149"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atStation"/>
+        <NamedIndividual IRI="#stop1.12"/>
+        <NamedIndividual IRI="#James_Street"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#forRoute"/>
+        <NamedIndividual IRI="#stop1.12"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ofTrain"/>
+        <NamedIndividual IRI="#stop1.12"/>
+        <NamedIndividual IRI="#47149"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atStation"/>
+        <NamedIndividual IRI="#stop1.13"/>
+        <NamedIndividual IRI="#SanjeevaiahPark"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#forRoute"/>
+        <NamedIndividual IRI="#stop1.13"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ofTrain"/>
+        <NamedIndividual IRI="#stop1.13"/>
+        <NamedIndividual IRI="#47149"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atStation"/>
+        <NamedIndividual IRI="#stop1.14"/>
+        <NamedIndividual IRI="#Begumpet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#forRoute"/>
+        <NamedIndividual IRI="#stop1.14"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ofTrain"/>
+        <NamedIndividual IRI="#stop1.14"/>
+        <NamedIndividual IRI="#47149"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atStation"/>
+        <NamedIndividual IRI="#stop1.15"/>
+        <NamedIndividual IRI="#NatureCureHospital"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#forRoute"/>
+        <NamedIndividual IRI="#stop1.15"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ofTrain"/>
+        <NamedIndividual IRI="#stop1.15"/>
+        <NamedIndividual IRI="#47149"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atStation"/>
+        <NamedIndividual IRI="#stop1.16"/>
+        <NamedIndividual IRI="#Fatehnagar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#forRoute"/>
+        <NamedIndividual IRI="#stop1.16"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ofTrain"/>
+        <NamedIndividual IRI="#stop1.16"/>
+        <NamedIndividual IRI="#47149"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atStation"/>
+        <NamedIndividual IRI="#stop1.17"/>
+        <NamedIndividual IRI="#Bharatnagar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#forRoute"/>
+        <NamedIndividual IRI="#stop1.17"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ofTrain"/>
+        <NamedIndividual IRI="#stop1.17"/>
+        <NamedIndividual IRI="#47149"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atStation"/>
+        <NamedIndividual IRI="#stop1.18"/>
+        <NamedIndividual IRI="#Borabanda"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#forRoute"/>
+        <NamedIndividual IRI="#stop1.18"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ofTrain"/>
+        <NamedIndividual IRI="#stop1.18"/>
+        <NamedIndividual IRI="#47149"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atStation"/>
+        <NamedIndividual IRI="#stop1.19"/>
+        <NamedIndividual IRI="#Hitech_City"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#forRoute"/>
+        <NamedIndividual IRI="#stop1.19"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ofTrain"/>
+        <NamedIndividual IRI="#stop1.19"/>
+        <NamedIndividual IRI="#47149"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atStation"/>
+        <NamedIndividual IRI="#stop1.2"/>
+        <NamedIndividual IRI="#Huppuguda"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#forRoute"/>
+        <NamedIndividual IRI="#stop1.2"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ofTrain"/>
+        <NamedIndividual IRI="#stop1.2"/>
+        <NamedIndividual IRI="#47149"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atStation"/>
+        <NamedIndividual IRI="#stop1.20"/>
+        <NamedIndividual IRI="#Hafeezpet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#forRoute"/>
+        <NamedIndividual IRI="#stop1.20"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ofTrain"/>
+        <NamedIndividual IRI="#stop1.20"/>
+        <NamedIndividual IRI="#47149"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atStation"/>
+        <NamedIndividual IRI="#stop1.21"/>
+        <NamedIndividual IRI="#Chandanagar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#forRoute"/>
+        <NamedIndividual IRI="#stop1.21"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ofTrain"/>
+        <NamedIndividual IRI="#stop1.21"/>
+        <NamedIndividual IRI="#47149"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atStation"/>
+        <NamedIndividual IRI="#stop1.22"/>
+        <NamedIndividual IRI="#Lingampally"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#forRoute"/>
+        <NamedIndividual IRI="#stop1.22"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ofTrain"/>
+        <NamedIndividual IRI="#stop1.22"/>
+        <NamedIndividual IRI="#47149"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atStation"/>
+        <NamedIndividual IRI="#stop1.3"/>
+        <NamedIndividual IRI="#Yakutpura"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#forRoute"/>
+        <NamedIndividual IRI="#stop1.3"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ofTrain"/>
+        <NamedIndividual IRI="#stop1.3"/>
+        <NamedIndividual IRI="#47149"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atStation"/>
+        <NamedIndividual IRI="#stop1.4"/>
+        <NamedIndividual IRI="#Dabirpura"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#forRoute"/>
+        <NamedIndividual IRI="#stop1.4"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ofTrain"/>
+        <NamedIndividual IRI="#stop1.4"/>
+        <NamedIndividual IRI="#47149"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atStation"/>
+        <NamedIndividual IRI="#stop1.5"/>
+        <NamedIndividual IRI="#Malakpet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#forRoute"/>
+        <NamedIndividual IRI="#stop1.5"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ofTrain"/>
+        <NamedIndividual IRI="#stop1.5"/>
+        <NamedIndividual IRI="#47149"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atStation"/>
+        <NamedIndividual IRI="#stop1.6"/>
+        <NamedIndividual IRI="#Kacheguda"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#forRoute"/>
+        <NamedIndividual IRI="#stop1.6"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ofTrain"/>
+        <NamedIndividual IRI="#stop1.6"/>
+        <NamedIndividual IRI="#47149"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atStation"/>
+        <NamedIndividual IRI="#stop1.7"/>
+        <NamedIndividual IRI="#Vidyanagar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#forRoute"/>
+        <NamedIndividual IRI="#stop1.7"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ofTrain"/>
+        <NamedIndividual IRI="#stop1.7"/>
+        <NamedIndividual IRI="#47149"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atStation"/>
+        <NamedIndividual IRI="#stop1.8"/>
+        <NamedIndividual IRI="#Jamai_Osmania"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#forRoute"/>
+        <NamedIndividual IRI="#stop1.8"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ofTrain"/>
+        <NamedIndividual IRI="#stop1.8"/>
+        <NamedIndividual IRI="#47149"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atStation"/>
+        <NamedIndividual IRI="#stop1.9"/>
+        <NamedIndividual IRI="#Arts_College"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#forRoute"/>
+        <NamedIndividual IRI="#stop1.9"/>
+        <NamedIndividual IRI="#Falaknuma-Lingampally"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ofTrain"/>
+        <NamedIndividual IRI="#stop1.9"/>
+        <NamedIndividual IRI="#47149"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#departsOn"/>
+        <NamedIndividual IRI="#stop1.1"/>
+        <Literal datatypeIRI="&xsd;dateTime">2014-02-08T05:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#departsOn"/>
+        <NamedIndividual IRI="#stop1.10"/>
+        <Literal datatypeIRI="&xsd;dateTime">2014-02-08T05:25:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#departsOn"/>
+        <NamedIndividual IRI="#stop1.11"/>
+        <Literal datatypeIRI="&xsd;dateTime">2014-02-08T05:32:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#departsOn"/>
+        <NamedIndividual IRI="#stop1.12"/>
+        <Literal datatypeIRI="&xsd;dateTime">2014-02-08T05:38:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#departsOn"/>
+        <NamedIndividual IRI="#stop1.13"/>
+        <Literal datatypeIRI="&xsd;dateTime">2014-02-08T05:40:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#departsOn"/>
+        <NamedIndividual IRI="#stop1.14"/>
+        <Literal datatypeIRI="&xsd;dateTime">2014-02-08T05:43:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#departsOn"/>
+        <NamedIndividual IRI="#stop1.15"/>
+        <Literal datatypeIRI="&xsd;dateTime">2014-02-08T05:45:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#departsOn"/>
+        <NamedIndividual IRI="#stop1.16"/>
+        <Literal datatypeIRI="&xsd;dateTime">2014-02-08T05:47:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#departsOn"/>
+        <NamedIndividual IRI="#stop1.17"/>
+        <Literal datatypeIRI="&xsd;dateTime">2014-02-08T05:50:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#departsOn"/>
+        <NamedIndividual IRI="#stop1.18"/>
+        <Literal datatypeIRI="&xsd;dateTime">2014-02-08T05:52:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#departsOn"/>
+        <NamedIndividual IRI="#stop1.19"/>
+        <Literal datatypeIRI="&xsd;dateTime">2014-02-08T05:56:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#departsOn"/>
+        <NamedIndividual IRI="#stop1.2"/>
+        <Literal datatypeIRI="&xsd;dateTime">2014-02-08T05:03:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#departsOn"/>
+        <NamedIndividual IRI="#stop1.20"/>
+        <Literal datatypeIRI="&xsd;dateTime">2014-02-08T06:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#departsOn"/>
+        <NamedIndividual IRI="#stop1.21"/>
+        <Literal datatypeIRI="&xsd;dateTime">2014-02-08T06:05:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#departsOn"/>
+        <NamedIndividual IRI="#stop1.22"/>
+        <Literal datatypeIRI="&xsd;dateTime">2014-02-08T06:10:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#departsOn"/>
+        <NamedIndividual IRI="#stop1.3"/>
+        <Literal datatypeIRI="&xsd;dateTime">2014-02-08T05:07:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#departsOn"/>
+        <NamedIndividual IRI="#stop1.4"/>
+        <Literal datatypeIRI="&xsd;dateTime">2014-02-08T05:09:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#departsOn"/>
+        <NamedIndividual IRI="#stop1.5"/>
+        <Literal datatypeIRI="&xsd;dateTime">2014-02-08T05:11:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#departsOn"/>
+        <NamedIndividual IRI="#stop1.6"/>
+        <Literal datatypeIRI="&xsd;dateTime">2014-02-08T05:15:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#departsOn"/>
+        <NamedIndividual IRI="#stop1.7"/>
+        <Literal datatypeIRI="&xsd;dateTime">2014-02-08T05:19:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#departsOn"/>
+        <NamedIndividual IRI="#stop1.8"/>
+        <Literal datatypeIRI="&xsd;dateTime">2014-02-08T05:21:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#departsOn"/>
+        <NamedIndividual IRI="#stop1.9"/>
+        <Literal datatypeIRI="&xsd;dateTime">2014-02-08T05:23:00</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#destination"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isPartOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#belongsTo"/>
+        <ObjectProperty IRI="#comprisesOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isTravelledBy"/>
+        <ObjectProperty IRI="#travelsThrough"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#notBelongsTo"/>
+        <ObjectProperty IRI="#notComprisesOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#runs"/>
+        <ObjectProperty IRI="#notRuns"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#notStopsAt"/>
+        <ObjectProperty IRI="#notStops"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#notTravelledBy"/>
+        <ObjectProperty IRI="#notTravelsThrough"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#stops"/>
+        <ObjectProperty IRI="#stopsAt"/>
+    </InverseObjectProperties>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#reverseRouteOf"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#destination"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#source"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#stops"/>
+        <Class IRI="#Station"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#stopsAt"/>
+        <Class IRI="#MmtsTrain"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#stops"/>
+        <Class IRI="#MmtsTrain"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#stopsAt"/>
+        <Class IRI="#Station"/>
+    </ObjectPropertyRange>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#belongsTo"/>
+        <ObjectProperty IRI="#notBelongsTo"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#notStopsAt"/>
+        <ObjectProperty IRI="#stopsAt"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#notTravelsThrough"/>
+        <ObjectProperty IRI="#travelsThrough"/>
+    </DisjointObjectProperties>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#atHour"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#atMinute"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#atSecond"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#atTimezone"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#arrivesOn"/>
+        <Class IRI="#StopAtStation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#departsOn"/>
+        <Class IRI="#StopAtStation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#stationHaltTime"/>
+        <Class IRI="#StopAtStation"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#arrivesOn"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#departsOn"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#stationHaltTime"/>
+        <Datatype abbreviatedIRI="xsd:dayTimeDuration"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#AllDayTrain"/>
+                <Variable IRI="urn:swrl#t"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#runs"/>
+                <Variable IRI="urn:swrl#t"/>
+                <NamedIndividual IRI="#Sunday"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#AllPublicTrain"/>
+                <Variable IRI="urn:swrl#t"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasComponent"/>
+                <Variable IRI="urn:swrl#t"/>
+                <NamedIndividual IRI="#FirstClassCoach"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasComponent"/>
+                <Variable IRI="urn:swrl#t"/>
+                <NamedIndividual IRI="#GeneralCoach"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasComponent"/>
+                <Variable IRI="urn:swrl#t"/>
+                <NamedIndividual IRI="#VendorCoach"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Day"/>
+                <Variable IRI="urn:swrl#d"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#MmtsTrain"/>
+                <Variable IRI="urn:swrl#t"/>
+            </ClassAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="urn:swrl#d"/>
+                <NamedIndividual IRI="#Sunday"/>
+            </DifferentIndividualsAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#runs"/>
+                <Variable IRI="urn:swrl#t"/>
+                <Variable IRI="urn:swrl#d"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#LocalStation"/>
+                <Variable IRI="urn:swrl#s"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#StopAtStation"/>
+                <Variable IRI="urn:swrl#st"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#atStation"/>
+                <Variable IRI="urn:swrl#st"/>
+                <Variable IRI="urn:swrl#s"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#stationHaltTime"/>
+                <Variable IRI="urn:swrl#st"/>
+                <Literal datatypeIRI="&xsd;dayTimeDuration">PT1M</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#MmtsTrain"/>
+                <Variable IRI="urn:swrl#t"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasComponent"/>
+                <Variable IRI="urn:swrl#t"/>
+                <NamedIndividual IRI="#LadiesCoach"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#MmtsTrain"/>
+                <Variable IRI="urn:swrl#t"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#NotStation"/>
+                <Variable IRI="urn:swrl#s"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#notStopsAt"/>
+                <Variable IRI="urn:swrl#t"/>
+                <Variable IRI="urn:swrl#s"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#MmtsTrain"/>
+                <Variable IRI="urn:swrl#t"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Route"/>
+                <Variable IRI="urn:swrl#r"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Station"/>
+                <Variable IRI="urn:swrl#s"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#belongsTo"/>
+                <Variable IRI="urn:swrl#s"/>
+                <Variable IRI="urn:swrl#r"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#travelsThrough"/>
+                <Variable IRI="urn:swrl#t"/>
+                <Variable IRI="urn:swrl#r"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#stopsAt"/>
+                <Variable IRI="urn:swrl#t"/>
+                <Variable IRI="urn:swrl#s"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#MmtsTrain"/>
+                <Variable IRI="urn:swrl#t"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Route"/>
+                <Variable IRI="urn:swrl#r"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Station"/>
+                <Variable IRI="urn:swrl#st1"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Station"/>
+                <Variable IRI="urn:swrl#st2"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#StopAtStation"/>
+                <Variable IRI="urn:swrl#s1"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#StopAtStation"/>
+                <Variable IRI="urn:swrl#s2"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#atStation"/>
+                <Variable IRI="urn:swrl#s1"/>
+                <Variable IRI="urn:swrl#st1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#atStation"/>
+                <Variable IRI="urn:swrl#s2"/>
+                <Variable IRI="urn:swrl#st2"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#forRoute"/>
+                <Variable IRI="urn:swrl#s1"/>
+                <Variable IRI="urn:swrl#r"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#forRoute"/>
+                <Variable IRI="urn:swrl#s2"/>
+                <Variable IRI="urn:swrl#r"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#ofTrain"/>
+                <Variable IRI="urn:swrl#s1"/>
+                <Variable IRI="urn:swrl#t"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#ofTrain"/>
+                <Variable IRI="urn:swrl#s2"/>
+                <Variable IRI="urn:swrl#t"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#arrivesOn"/>
+                <Variable IRI="urn:swrl#s1"/>
+                <Variable IRI="urn:swrl#time1"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#arrivesOn"/>
+                <Variable IRI="urn:swrl#s2"/>
+                <Variable IRI="urn:swrl#time2"/>
+            </DataPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:lessThan">
+                <Variable IRI="urn:swrl#time1"/>
+                <Variable IRI="urn:swrl#time2"/>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#destination"/>
+                <Variable IRI="urn:swrl#s1"/>
+                <Variable IRI="urn:swrl#st2"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#destination"/>
+                <Variable IRI="urn:swrl#s2"/>
+                <Variable IRI="urn:swrl#st2"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#source"/>
+                <Variable IRI="urn:swrl#s1"/>
+                <Variable IRI="urn:swrl#st1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#source"/>
+                <Variable IRI="urn:swrl#s2"/>
+                <Variable IRI="urn:swrl#st1"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#MmtsTrain"/>
+                <Variable IRI="urn:swrl#t"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Route"/>
+                <Variable IRI="urn:swrl#r"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Station"/>
+                <Variable IRI="urn:swrl#st1"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Station"/>
+                <Variable IRI="urn:swrl#st2"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#StopAtStation"/>
+                <Variable IRI="urn:swrl#s1"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#StopAtStation"/>
+                <Variable IRI="urn:swrl#s2"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#atStation"/>
+                <Variable IRI="urn:swrl#s1"/>
+                <Variable IRI="urn:swrl#st1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#atStation"/>
+                <Variable IRI="urn:swrl#s2"/>
+                <Variable IRI="urn:swrl#st2"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#forRoute"/>
+                <Variable IRI="urn:swrl#s1"/>
+                <Variable IRI="urn:swrl#r"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#forRoute"/>
+                <Variable IRI="urn:swrl#s2"/>
+                <Variable IRI="urn:swrl#r"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#ofTrain"/>
+                <Variable IRI="urn:swrl#s1"/>
+                <Variable IRI="urn:swrl#t"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#ofTrain"/>
+                <Variable IRI="urn:swrl#s2"/>
+                <Variable IRI="urn:swrl#t"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#arrivesOn"/>
+                <Variable IRI="urn:swrl#s2"/>
+                <Variable IRI="urn:swrl#time2"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#departsOn"/>
+                <Variable IRI="urn:swrl#s1"/>
+                <Variable IRI="urn:swrl#time1"/>
+            </DataPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:lessThan">
+                <Variable IRI="urn:swrl#time1"/>
+                <Variable IRI="urn:swrl#time2"/>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#destination"/>
+                <Variable IRI="urn:swrl#s1"/>
+                <Variable IRI="urn:swrl#st2"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#destination"/>
+                <Variable IRI="urn:swrl#s2"/>
+                <Variable IRI="urn:swrl#st2"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#source"/>
+                <Variable IRI="urn:swrl#s1"/>
+                <Variable IRI="urn:swrl#st1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#source"/>
+                <Variable IRI="urn:swrl#s2"/>
+                <Variable IRI="urn:swrl#st1"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#MmtsTrain"/>
+                <Variable IRI="urn:swrl#t"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Route"/>
+                <Variable IRI="urn:swrl#r"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Station"/>
+                <Variable IRI="urn:swrl#st1"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Station"/>
+                <Variable IRI="urn:swrl#st2"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#StopAtStation"/>
+                <Variable IRI="urn:swrl#s1"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#StopAtStation"/>
+                <Variable IRI="urn:swrl#s2"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#atStation"/>
+                <Variable IRI="urn:swrl#s1"/>
+                <Variable IRI="urn:swrl#st1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#atStation"/>
+                <Variable IRI="urn:swrl#s2"/>
+                <Variable IRI="urn:swrl#st2"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#forRoute"/>
+                <Variable IRI="urn:swrl#s1"/>
+                <Variable IRI="urn:swrl#r"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#forRoute"/>
+                <Variable IRI="urn:swrl#s2"/>
+                <Variable IRI="urn:swrl#r"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#ofTrain"/>
+                <Variable IRI="urn:swrl#s1"/>
+                <Variable IRI="urn:swrl#t"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#ofTrain"/>
+                <Variable IRI="urn:swrl#s2"/>
+                <Variable IRI="urn:swrl#t"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#departsOn"/>
+                <Variable IRI="urn:swrl#s1"/>
+                <Variable IRI="urn:swrl#time1"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#departsOn"/>
+                <Variable IRI="urn:swrl#s2"/>
+                <Variable IRI="urn:swrl#time2"/>
+            </DataPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:lessThan">
+                <Variable IRI="urn:swrl#time1"/>
+                <Variable IRI="urn:swrl#time2"/>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#destination"/>
+                <Variable IRI="urn:swrl#s1"/>
+                <Variable IRI="urn:swrl#st2"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#destination"/>
+                <Variable IRI="urn:swrl#s2"/>
+                <Variable IRI="urn:swrl#st2"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#source"/>
+                <Variable IRI="urn:swrl#s1"/>
+                <Variable IRI="urn:swrl#st1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#source"/>
+                <Variable IRI="urn:swrl#s2"/>
+                <Variable IRI="urn:swrl#st1"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#NationalStation"/>
+                <Variable IRI="urn:swrl#s"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#StopAtStation"/>
+                <Variable IRI="urn:swrl#st"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#atStation"/>
+                <Variable IRI="urn:swrl#st"/>
+                <Variable IRI="urn:swrl#s"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#stationHaltTime"/>
+                <Variable IRI="urn:swrl#st"/>
+                <Literal datatypeIRI="&xsd;dayTimeDuration">PT2M</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#NoSundayTrain"/>
+                <Variable IRI="urn:swrl#t"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#notRuns"/>
+                <Variable IRI="urn:swrl#t"/>
+                <NamedIndividual IRI="#Sunday"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#NotStation"/>
+                <Variable IRI="urn:swrl#n"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Route"/>
+                <Variable IRI="urn:swrl#r"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#notBelongsTo"/>
+                <Variable IRI="urn:swrl#n"/>
+                <Variable IRI="urn:swrl#r"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Route"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Route"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Station"/>
+                <Variable IRI="urn:swrl#s"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#comprisesOf"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#s"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#reverseRouteOf"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#comprisesOf"/>
+                <Variable IRI="urn:swrl#y"/>
+                <Variable IRI="urn:swrl#s"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#StopAtStation"/>
+                <Variable IRI="urn:swrl#st"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#departsOn"/>
+                <Variable IRI="urn:swrl#st"/>
+                <Variable IRI="urn:swrl#de"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#stationHaltTime"/>
+                <Variable IRI="urn:swrl#st"/>
+                <Variable IRI="urn:swrl#ht"/>
+            </DataPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:subtractDayTimeDurationFromDateTime">
+                <Variable IRI="urn:swrl#ar"/>
+                <Variable IRI="urn:swrl#de"/>
+                <Variable IRI="urn:swrl#ht"/>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#arrivesOn"/>
+                <Variable IRI="urn:swrl#st"/>
+                <Variable IRI="urn:swrl#ar"/>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+
