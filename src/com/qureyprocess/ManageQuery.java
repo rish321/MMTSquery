@@ -1,5 +1,6 @@
 package com.qureyprocess;
 
+import java.io.*;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -199,6 +200,15 @@ public class ManageQuery {
 			}
 		}
 		else if(s.contains("कैसे कैसे") || s.contains("कैसे") || s.contains("क्यूँ") || s.contains("क्यूँ क्यूँ")) {
+			File file = new File("/tmp/tempin.txt");
+			FileWriter fw = new FileWriter(file.getAbsoluteFile());
+			BufferedWriter bw = new BufferedWriter(fw);
+			bw.write(s);
+			bw.close();
+			Sparql.createSparqlFile("kyu_kaise.sh tempin.txt tempout.txt");
+			String[] krelation= SSFProgram("tempout.txt");
+				
+			
 			if((s.contains("क्यूँ") || s.contains("क्यूँ क्यूँ")) && s.contains("नहीं")) {
 				if(s.contains("टिकट") && s.contains("खरीद")) {
 					String action = "Buy1";
