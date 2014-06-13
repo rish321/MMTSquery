@@ -34,7 +34,7 @@ public class Domain {
 		
 		String folder = args[0]+"domainqueries/";
 		
-		TemplatePrepare.preProcess(rdfs, rdf, owl, xsd, base, folder);
+		TemplatePrepare.preProcess(args[0], rdfs, rdf, owl, xsd, base, folder, args[0]+"unprocessed/");
 		return folder;
 	}
 

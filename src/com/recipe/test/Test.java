@@ -23,7 +23,7 @@ public class Test {
 		
 		String folder = "/home/rishabh/tools/pellet-2.3.1/recipe/";
 		
-		TemplatePrepare.preProcess(rdfs, rdf, owl, xsd, base, folder);
+		TemplatePrepare.preProcess("/home/rishabh/tools/pellet-2.3.1/", rdfs, rdf, owl, xsd, base, folder, "/home/rishabh/tools/pellet-2.3.1/unprocessed");
 		
 		OntModel m = ModelFactory.createOntologyModel( PelletReasonerFactory.THE_SPEC );
 		String	ontology = "/home/rishabh/ontologies/recipe/third.rdf";
