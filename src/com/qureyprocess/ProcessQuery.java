@@ -1,6 +1,11 @@
 package com.qureyprocess;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.HashMap;
 
@@ -14,6 +19,7 @@ import com.hp.hpl.jena.ontology.OntTools.PredicatesFilter;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.vocabulary.RDFS;
 import com.system.Setu;
+import com.sparql.Sparql;
 
 public class ProcessQuery {
 	public static void main(String args[]) throws Exception
@@ -45,6 +51,7 @@ public class ProcessQuery {
 				continue;
 			System.out.println("Started Answering question " + i++ + "...");
 			System.out.println(s);
+			s = rephraseQuery(folder, s);
 			ManageArguments.preProcess(m, dm, s, directMap, hmpll, hmind, hmnum, hmtrans, folder, args[2], setu_path);
 			System.out.println();
 			ProcessAnswer.translate(hmtrans, "kripya sawaal poochein");
@@ -144,5 +151,31 @@ public class ProcessQuery {
 	public void description()
 	{
 
+	}
+	public static String rephraseQuery(String folder, String string) throws IOException, InterruptedException {
+		String file = "rephrase"; 
+		String params = folder + file + ".sh ";
+		String filename = "folder + tempin.txt";
+		File file1 = new File(filename);
+		 
+		// if file doesnt exists, then create it
+		if (!file1.exists()) {
+			file1.createNewFile();
+		}
+
+		FileWriter fw = new FileWriter(file1.getAbsoluteFile());
+		BufferedWriter bw = new BufferedWriter(fw);
+		bw.write(string);
+		bw.close();
+		params += filename;
+		
+		params += ">" + folder + file1 + "temp";
+		Sparql.createSparqlFile(params);
+		
+		FileReader fr = new FileReader(folder + file1 + "temp"); 
+		BufferedReader br = new BufferedReader(fr);
+		String s = br.readLine();
+		br.close();
+		return s;
 	}
 }
