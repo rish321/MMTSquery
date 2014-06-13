@@ -9,6 +9,7 @@ import java.util.regex.Pattern;
 import com.dag.DAG;
 import com.dialogmanager.Dialog;
 import com.hp.hpl.jena.ontology.OntModel;
+import com.ontologicalMapping.ReplaceParallel;
 import com.qureyprocess.components.Count;
 import com.qureyprocess.components.Duration;
 import com.qureyprocess.components.Instance;
@@ -60,7 +61,7 @@ public class ManageQuery {
 					//System.out.println(found);
 					//System.out.println(s.indexOf(found) + found.length() + " " + s.indexOf(" ", s.indexOf(found)+found.length()+1));
 					found = s.substring(s.indexOf(found) + found.length(), s.indexOf(" ", s.indexOf(found)+found.length()+1));
-					found = ProcessQuery.replaceParallel(found);
+					found = ReplaceParallel.replaceParallel(found);
 					ProcessAnswer.translate(hmtrans, source + " se " + dest + " tak " + srcTimeInit + " se " + srcTimeFin + " ke beech " + "itne itne " + found + " " + info + " hain");
 					ProcessAnswer.printAnswer(hmtrans, Count.getCount(folder, source, dest, atStation, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info, found), m);
 				}
@@ -105,7 +106,7 @@ public class ManageQuery {
 					//System.out.println(s.indexOf(found) + found.length() + " " + s.indexOf(" ", s.indexOf(found)+found.length()+1));
 					found = s.substring(s.indexOf(found) + found.length(), s.indexOf(" ", s.indexOf(found)+found.length()+1));
 					//System.out.println(found);
-					found = ProcessQuery.replaceParallel(found);
+					found = ReplaceParallel.replaceParallel(found);
 					ProcessAnswer.translate(hmtrans, source + " se " + dest + " tak " + srcTimeInit + " se " + srcTimeFin + " ke beech " + "itne " + found + " " + info + " hain");
 					ProcessAnswer.printAnswer(hmtrans, Count.getCount(folder, source, dest, atStation, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info, found), m);
 				}
@@ -149,7 +150,7 @@ public class ManageQuery {
 					//System.out.println(found);
 					//System.out.println(s.indexOf(found) + found.length() + " " + s.indexOf(" ", s.indexOf(found)+found.length()+1));
 					found = s.substring(s.indexOf(found) + found.length(), s.indexOf(" ", s.indexOf(found)+found.length()+1));
-					found = ProcessQuery.replaceParallel(found);
+					found = ReplaceParallel.replaceParallel(found);
 					ProcessAnswer.translate(hmtrans, source + " se " + dest + " tak " + srcTimeInit + " se " + srcTimeFin + " ke beech " + "itne " + found + " " + info + " hain");
 					ProcessAnswer.printAnswer(hmtrans, Count.getCount(folder, source, dest, atStation, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info, found), m);
 				}
@@ -193,7 +194,7 @@ public class ManageQuery {
 					//System.out.println(found);
 					//System.out.println(s.indexOf(found) + found.length() + " " + s.indexOf(" ", s.indexOf(found)+found.length()+1));
 					found = s.substring(s.indexOf(found) + found.length(), s.indexOf(" ", s.indexOf(found)+found.length()+1));
-					found = ProcessQuery.replaceParallel(found);
+					found = ReplaceParallel.replaceParallel(found);
 					ProcessAnswer.translate(hmtrans, source + " se " + dest + " tak " + srcTimeInit + " se " + srcTimeFin + " ke beech " + "itne " + found + " " + info + " hain");
 					//ProcessAnswer.printAnswer(Count.getCount(source, dest, atStation, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info, found));
 				}
