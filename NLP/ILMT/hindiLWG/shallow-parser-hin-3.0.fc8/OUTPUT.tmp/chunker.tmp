@@ -1,0 +1,16 @@
+<Sentence id="1">
+1	((	NP	
+1.1	tiketa	NN	<fs af='tiketa,unk,,,,,,'>
+	))		
+2	((	NP	
+2.1	kEse	WQ	<fs af='kEse,adv,,,,,,'>|<fs af='kEsA,adj,m,sg,,o,,'>|<fs af='kEsA,adj,m,pl,,d,,'>|<fs af='kEsA,adj,m,pl,,o,,'>
+	))		
+3	((	VGF	
+3.1	karavAyA	VM	<fs af='karavA,v,m,sg,any,,yA,yA'>
+3.2	jA	VAUX	<fs af='jA,v,any,any,any,,0,0'>
+3.3	rahA	VAUX	<fs af='raha,v,m,sg,any,,yA,yA'>
+3.4	hE	VAUX	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+3.5	?	SYM	<fs af='?,punc,,,,,,'>
+	))		
+</Sentence>
+

@@ -1,0 +1,31 @@
+<Sentence id="1">			
+1	((	NP	<fs af='लिंगमपल्ली,unk,,,,,0_से,' poslcat="NM"  head="लिंगमपल्ली"  vpos="vib1_2">
+1.1	लिंगमपल्ली	NN	<fs af='लिंगमपल्ली,unk,,,,,,' name="लिंगमपल्ली"  poslcat="NM">
+	))		
+2	((	VGNN	<fs af='हैदराबाद,unk,any,sg,3,,0_जान+ए_वाली,' poslcat="NM"  vpos="tam1_2_3"  head="हैदराबाद">
+2.1	हैदराबाद	VM	<fs af='हैदराबाद,unk,,,,,,' name="हैदराबाद"  poslcat="NM">
+	))		
+3	((	NP	<fs af='बज,v,any,sg,2,,0_से,e' poslcat="NM"  head="बजे"  vpos="vib2_3">
+3.1	6	QC	<fs af='6,num,,,,,,'>
+3.2	बजे	NN	<fs af='बज,v,any,sg,2,,ए,e' poslcat="NM"  name="बजे">
+	))		
+4	((	NP	<fs af='9,num,,,,,,' head="9">
+4.1	9	QC	<fs af='9,num,,,,,,' name="9">
+	))		
+5	((	VGNN	<fs af='बज,v,any,sg,3,,ए_का,e' vpos="tam1_2"  head="बजे">
+5.1	बजे	VM	<fs af='बज,v,any,sg,2,,ए,e' name="बजे">
+	))		
+6	((	NP	<fs af='बीच,v,any,any,any,,0_वाली,kara' poslcat="NM"  head="बीच"  vpos="vib1_2">
+6.1	बीच	NST	<fs af='बीच,v,any,any,any,,कर,kara' poslcat="NM"  name="बीच">
+	))		
+7	((	NP	<fs af='गाड़ी,n,f,sg,3,d,0,0' head="गाड़ी">
+7.1	गाड़ी	NN	<fs af='गाड़ी,n,f,sg,3,d,0,0' name="गाड़ी">
+	))		
+8	((	NP	<fs af='कहाँ,v,f,pl,any,,0_से,yA1' head="कहाँ"  vpos="vib1_2"  poslcat="NM">
+8.1	कहाँ	WQ	<fs af='कहाँ,v,f,pl,any,,या1,yA1' name="कहाँ"  poslcat="NM">
+	))		
+9	((	VGF	<fs af='आ,pn,any,sg,1,o,का_है,kA' agr_num='pl'  agr_cas='o'  vpos="tam1_2"  head="आती"  poslcat="NM"  agr_gen='f'>
+9.1	आती	VM	<fs af='आ,pn,any,pl,3,o,का,kA' agr_num='pl'  name="आती"  agr_cas='o'  poslcat="NM"  agr_gen='f'>
+9.2	?	SYM	<fs af='?,punc,,,,,,' poslcat="NM">
+	))		
+</Sentence>			

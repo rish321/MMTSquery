@@ -1,0 +1,9 @@
+<Sentence id="1">
+1	tiketa	unk	<fs af='tiketa,unk,,,,,,'>
+2	kEse	unk	<fs af='kEse,adv,,,,,,'>|<fs af='kEsA,adj,m,sg,,o,,'>|<fs af='kEsA,adj,m,pl,,d,,'>|<fs af='kEsA,adj,m,pl,,o,,'>
+3	karavAyA	unk	<fs af='karavA,v,m,sg,any,,yA,yA'>
+4	jA	unk	<fs af='jA,v,any,any,any,,0,0'>
+5	rahA	unk	<fs af='raha,v,m,sg,any,,yA,yA'>
+6	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+7	?	unk	<fs af='?,punc,,,,,,'>
+</Sentence>

@@ -1,0 +1,38 @@
+<Sentence id="1">			
+1	((	NP	<fs af='ट्रेन,n,f,sg,3,d,0,0' head="ट्रेन">
+1.1	यह	PRP	<fs af='यह,pn,any,sg,3,d,0,0'>
+1.2	ट्रेन	NN	<fs af='ट्रेन,n,f,sg,3,d,0,0' name="ट्रेन">
+	))		
+2	((	NP	<fs af='ओर,adv,,,,,,' poslcat="NM"  head="ओर">
+2.1	किस	WQ	<fs af='किस,unk,,,,,,' poslcat="NM">
+2.2	ओर	NST	<fs af='ओर,adv,,,,,,' poslcat="NM"  name="ओर">
+	))		
+3	((	VGF	<fs af='जा,v,f,sg,2,,ता_है,wA' head="जाती"  vpos="tam1_2">
+3.1	जाती	VM	<fs af='जा,v,f,sg,any,,ता,wA' name="जाती">
+3.2	?	SYM	<fs af='?,punc,,,,,,' poslcat="NM">
+	))		
+4	((	NP	<fs af='बज,v,any,sg,2,,0_से,eM' vpos="vib2_3"  head="बजे"  poslcat="NM">
+4.1	6:00	QC	<fs af='6:00,num,,,,,,'>
+4.2	बजे	NN	<fs af='बज,v,any,sg,2,,एं,eM' poslcat="NM"  name="बजे">
+	))		
+5	((	NP	<fs af='9:00,num,,,,,,' head="9:00">
+5.1	9:00	QC	<fs af='9:00,num,,,,,,' name="9:00">
+	))		
+6	((	VGNN	<fs af='बज,v,m,sg,2,,एं_का_बीच,eM' vpos="tam1_2_3"  head="बजे">
+6.1	बजे	VM	<fs af='बज,v,any,sg,2,,एं,eM' name="बजे">
+	))		
+7	((	NP	<fs af='ट्रेने,unk,,,,,,' poslcat="NM"  head="ट्रेने">
+7.1	ट्रेने	NN	<fs af='ट्रेने,unk,,,,,,' name="ट्रेने"  poslcat="NM">
+	))		
+8	((	NP	<fs af='कितनी,adj,f,any,,any,,' poslcat="NM"  head="कितनी">
+8.1	कितनी	WQ	<fs af='कितनी,adj,f,any,,any,,' name="कितनी"  poslcat="NM">
+	))		
+9	((	NP	<fs af='देर,adv,,,,,0_में,' poslcat="NM"  head="देर"  vpos="vib2_3">
+9.1	कितनी	QF	<fs af='कितनी,adj,f,any,,any,,' poslcat="NM">
+9.2	देर	NN	<fs af='देर,adv,,,,,,' name="देर"  poslcat="NM">
+	))		
+10	((	VGF	<fs af='पहुँच,v,f,pl,1,,ता_है,wA' vpos="tam1_2"  head="पहुँचती">
+10.1	पहुँचती	VM	<fs af='पहुँच,v,f,sg,any,,ता,wA' name="पहुँचती">
+10.2	?	SYM	<fs af='?,punc,,,,,,' poslcat="NM">
+	))		
+</Sentence>			

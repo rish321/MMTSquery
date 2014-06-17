@@ -1,0 +1,1313 @@
+<af='.., id="1">
+1	yaha	unk	<fs af='yaha,pn,any,sg,3,d,0,0'>
+2	trena	unk	<fs af='trena,n,f,sg,3,d,0,0'>|<fs af='trena,n,f,sg,3,o,0,0'>
+3	kisa	unk	<fs af='kisa,unk,,,,,,'>
+4	ora	unk	<fs af='ora,adv,,,,,,'>
+5	jAwI	unk	<fs af='jA,v,f,sg,any,,wA,wA'>
+6	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+7	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	6:00	unk	<fs af='6:00,num,,,,,,'>
+2	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+3	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+4	9:00	unk	<fs af='9:00,num,,,,,,'>
+5	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+6	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+7	bIca	unk	<fs af='bIca,psp,,,,,,'>
+8	trene	unk	<fs af='trene,unk,,,,,,'>
+9	kiwanI	unk	<fs af='kiwanI,adj,f,any,,any,,'>
+10	kiwanI	unk	<fs af='kiwanI,adj,f,any,,any,,'>
+11	xera	unk	<fs af='xera,adv,,,,,,'>
+12	meM	unk	<fs af='meM,psp,,,,,,'>
+13	pahuzcawI	unk	<fs af='pahuzca,v,f,sg,any,,wA,wA'>
+14	hEM	unk	<fs af='hE,v,any,pl,1,,hE,hE'>|<fs af='hE,v,any,pl,3,,hE,hE'>
+15	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	Barawanagara	unk	<fs af='Barawanagara,unk,,,,,,'>
+2	kI	unk	<fs af='kA,psp,f,sg,,d,kA,kA'>|<fs af='kA,psp,f,sg,,o,kA,kA'>|<fs af='kA,psp,f,pl,,d,kA,kA'>|<fs af='kA,psp,f,pl,,o,kA,kA'>|<fs af='kara,v,f,sg,any,,yA,yA'>
+3	6:00	unk	<fs af='6:00,num,,,,,,'>
+4	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+5	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+6	9:00	unk	<fs af='9:00,num,,,,,,'>
+7	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+8	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+9	bIca	unk	<fs af='bIca,psp,,,,,,'>
+10	trene	unk	<fs af='trene,unk,,,,,,'>
+11	kiwanI	unk	<fs af='kiwanI,adj,f,any,,any,,'>
+12	kiwanI	unk	<fs af='kiwanI,adj,f,any,,any,,'>
+13	xera	unk	<fs af='xera,adv,,,,,,'>
+14	meM	unk	<fs af='meM,psp,,,,,,'>
+15	pahuzcawI	unk	<fs af='pahuzca,v,f,sg,any,,wA,wA'>
+16	hEM	unk	<fs af='hE,v,any,pl,1,,hE,hE'>|<fs af='hE,v,any,pl,3,,hE,hE'>
+17	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	PalakanumA	unk	<fs af='PalakanumA,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	Barawanagara	unk	<fs af='Barawanagara,unk,,,,,,'>
+4	kI	unk	<fs af='kA,psp,f,sg,,d,kA,kA'>|<fs af='kA,psp,f,sg,,o,kA,kA'>|<fs af='kA,psp,f,pl,,d,kA,kA'>|<fs af='kA,psp,f,pl,,o,kA,kA'>|<fs af='kara,v,f,sg,any,,yA,yA'>
+5	6:00	unk	<fs af='6:00,num,,,,,,'>
+6	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+7	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+8	9:00	unk	<fs af='9:00,num,,,,,,'>
+9	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+10	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+11	bIca	unk	<fs af='bIca,psp,,,,,,'>
+12	trene	unk	<fs af='trene,unk,,,,,,'>
+13	kiwanI	unk	<fs af='kiwanI,adj,f,any,,any,,'>
+14	kiwanI	unk	<fs af='kiwanI,adj,f,any,,any,,'>
+15	xera	unk	<fs af='xera,adv,,,,,,'>
+16	meM	unk	<fs af='meM,psp,,,,,,'>
+17	pahuzcawI	unk	<fs af='pahuzca,v,f,sg,any,,wA,wA'>
+18	hEM	unk	<fs af='hE,v,any,pl,1,,hE,hE'>|<fs af='hE,v,any,pl,3,,hE,hE'>
+19	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	PalakanumA	unk	<fs af='PalakanumA,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	liMgamapallI	unk	<fs af='liMgamapallI,unk,,,,,,'>
+4	kI	unk	<fs af='kA,psp,f,sg,,d,kA,kA'>|<fs af='kA,psp,f,sg,,o,kA,kA'>|<fs af='kA,psp,f,pl,,d,kA,kA'>|<fs af='kA,psp,f,pl,,o,kA,kA'>|<fs af='kara,v,f,sg,any,,yA,yA'>
+5	6:00	unk	<fs af='6:00,num,,,,,,'>
+6	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+7	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+8	9:00	unk	<fs af='9:00,num,,,,,,'>
+9	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+10	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+11	bIca	unk	<fs af='bIca,psp,,,,,,'>
+12	Barawanagara	unk	<fs af='Barawanagara,unk,,,,,,'>
+13	para	unk	<fs af='para,psp,,,,,,'>
+14	trene	unk	<fs af='trene,unk,,,,,,'>
+15	kiwanI	unk	<fs af='kiwanI,adj,f,any,,any,,'>
+16	kiwanI	unk	<fs af='kiwanI,adj,f,any,,any,,'>
+17	xera	unk	<fs af='xera,adv,,,,,,'>
+18	meM	unk	<fs af='meM,psp,,,,,,'>
+19	pahuzcawI	unk	<fs af='pahuzca,v,f,sg,any,,wA,wA'>
+20	hEM	unk	<fs af='hE,v,any,pl,1,,hE,hE'>|<fs af='hE,v,any,pl,3,,hE,hE'>
+21	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	PalakanumA	unk	<fs af='PalakanumA,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	Barawanagara	unk	<fs af='Barawanagara,unk,,,,,,'>
+4	kI	unk	<fs af='kA,psp,f,sg,,d,kA,kA'>|<fs af='kA,psp,f,sg,,o,kA,kA'>|<fs af='kA,psp,f,pl,,d,kA,kA'>|<fs af='kA,psp,f,pl,,o,kA,kA'>|<fs af='kara,v,f,sg,any,,yA,yA'>
+5	6	unk	<fs af='6,num,,,,,,'>
+6	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+7	9	unk	<fs af='9,num,,,,,,'>
+8	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+9	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+10	bIca	unk	<fs af='bIca,psp,,,,,,'>
+11	pahalI	unk	<fs af='pahalI,adj,f,any,,any,,'>
+12	trEna	unk	<fs af='trEna,unk,,,,,,'>
+13	kiwanI	unk	<fs af='kiwanI,adj,f,any,,any,,'>
+14	xera	unk	<fs af='xera,adv,,,,,,'>
+15	meM	unk	<fs af='meM,psp,,,,,,'>
+16	pahuzcawI	unk	<fs af='pahuzca,v,f,sg,any,,wA,wA'>
+17	hEM	unk	<fs af='hE,v,any,pl,1,,hE,hE'>|<fs af='hE,v,any,pl,3,,hE,hE'>
+18	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	PalakanumA	unk	<fs af='PalakanumA,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	Barawanagara	unk	<fs af='Barawanagara,unk,,,,,,'>
+4	kI	unk	<fs af='kA,psp,f,sg,,d,kA,kA'>|<fs af='kA,psp,f,sg,,o,kA,kA'>|<fs af='kA,psp,f,pl,,d,kA,kA'>|<fs af='kA,psp,f,pl,,o,kA,kA'>|<fs af='kara,v,f,sg,any,,yA,yA'>
+5	AKarI	unk	<fs af='AKarI,unk,,,,,,'>
+6	trEna	unk	<fs af='trEna,unk,,,,,,'>
+7	kiwanI	unk	<fs af='kiwanI,adj,f,any,,any,,'>
+8	xera	unk	<fs af='xera,adv,,,,,,'>
+9	meM	unk	<fs af='meM,psp,,,,,,'>
+10	pahuzcawI	unk	<fs af='pahuzca,v,f,sg,any,,wA,wA'>
+11	hEM	unk	<fs af='hE,v,any,pl,1,,hE,hE'>|<fs af='hE,v,any,pl,3,,hE,hE'>
+12	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	PalakanumA	unk	<fs af='PalakanumA,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	liMgamapallI	unk	<fs af='liMgamapallI,unk,,,,,,'>
+4	kI	unk	<fs af='kA,psp,f,sg,,d,kA,kA'>|<fs af='kA,psp,f,sg,,o,kA,kA'>|<fs af='kA,psp,f,pl,,d,kA,kA'>|<fs af='kA,psp,f,pl,,o,kA,kA'>|<fs af='kara,v,f,sg,any,,yA,yA'>
+5	6:00	unk	<fs af='6:00,num,,,,,,'>
+6	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+7	bAxa	unk	<fs af='bAxa,adv,,,,,,'>|<fs af='bAxa,avy,,,,,,'>|<fs af='bAxa,psp,,,,,,'>
+8	9:00	unk	<fs af='9:00,num,,,,,,'>
+9	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+10	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+11	bIca	unk	<fs af='bIca,psp,,,,,,'>
+12	Barawanagara	unk	<fs af='Barawanagara,unk,,,,,,'>
+13	para	unk	<fs af='para,psp,,,,,,'>
+14	trEna	unk	<fs af='trEna,unk,,,,,,'>
+15	kiwanI	unk	<fs af='kiwanI,adj,f,any,,any,,'>
+16	xera	unk	<fs af='xera,adv,,,,,,'>
+17	meM	unk	<fs af='meM,psp,,,,,,'>
+18	pahuzcawI	unk	<fs af='pahuzca,v,f,sg,any,,wA,wA'>
+19	hEM	unk	<fs af='hE,v,any,pl,1,,hE,hE'>|<fs af='hE,v,any,pl,3,,hE,hE'>
+20	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	PalakanumA	unk	<fs af='PalakanumA,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	liMgamapallI	unk	<fs af='liMgamapallI,unk,,,,,,'>
+4	kI	unk	<fs af='kA,psp,f,sg,,d,kA,kA'>|<fs af='kA,psp,f,sg,,o,kA,kA'>|<fs af='kA,psp,f,pl,,d,kA,kA'>|<fs af='kA,psp,f,pl,,o,kA,kA'>|<fs af='kara,v,f,sg,any,,yA,yA'>
+5	6:00	unk	<fs af='6:00,num,,,,,,'>
+6	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+7	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+8	9:00	unk	<fs af='9:00,num,,,,,,'>
+9	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+10	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+11	bIca	unk	<fs af='bIca,psp,,,,,,'>
+12	Barawanagara	unk	<fs af='Barawanagara,unk,,,,,,'>
+13	para	unk	<fs af='para,psp,,,,,,'>
+14	AKarI	unk	<fs af='AKarI,unk,,,,,,'>
+15	trEna	unk	<fs af='trEna,unk,,,,,,'>
+16	kiwanI	unk	<fs af='kiwanI,adj,f,any,,any,,'>
+17	xera	unk	<fs af='xera,adv,,,,,,'>
+18	meM	unk	<fs af='meM,psp,,,,,,'>
+19	pahuzcawI	unk	<fs af='pahuzca,v,f,sg,any,,wA,wA'>
+20	hEM	unk	<fs af='hE,v,any,pl,1,,hE,hE'>|<fs af='hE,v,any,pl,3,,hE,hE'>
+21	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	PalakanumA	unk	<fs af='PalakanumA,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	liMgamapallI	unk	<fs af='liMgamapallI,unk,,,,,,'>
+4	kI	unk	<fs af='kA,psp,f,sg,,d,kA,kA'>|<fs af='kA,psp,f,sg,,o,kA,kA'>|<fs af='kA,psp,f,pl,,d,kA,kA'>|<fs af='kA,psp,f,pl,,o,kA,kA'>|<fs af='kara,v,f,sg,any,,yA,yA'>
+5	6:00	unk	<fs af='6:00,num,,,,,,'>
+6	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+7	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+8	9:00	unk	<fs af='9:00,num,,,,,,'>
+9	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+10	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+11	bIca	unk	<fs af='bIca,psp,,,,,,'>
+12	AKarI	unk	<fs af='AKarI,unk,,,,,,'>
+13	trEna	unk	<fs af='trEna,unk,,,,,,'>
+14	kiwane	unk	<fs af='kiwanA,adj,m,sg,,o,,'>|<fs af='kiwanA,adj,m,pl,,d,,'>|<fs af='kiwanA,adj,m,pl,,o,,'>
+15	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+16	AwI	unk	<fs af='A,v,f,sg,any,,wA,wA'>
+17	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+18	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	PalakanumA	unk	<fs af='PalakanumA,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	liMgamapallI	unk	<fs af='liMgamapallI,unk,,,,,,'>
+4	kI	unk	<fs af='kA,psp,f,sg,,d,kA,kA'>|<fs af='kA,psp,f,sg,,o,kA,kA'>|<fs af='kA,psp,f,pl,,d,kA,kA'>|<fs af='kA,psp,f,pl,,o,kA,kA'>|<fs af='kara,v,f,sg,any,,yA,yA'>
+5	6:00	unk	<fs af='6:00,num,,,,,,'>
+6	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+7	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+8	9:00	unk	<fs af='9:00,num,,,,,,'>
+9	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+10	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+11	bIca	unk	<fs af='bIca,psp,,,,,,'>
+12	pahalI	unk	<fs af='pahalI,adj,f,any,,any,,'>
+13	trEna	unk	<fs af='trEna,unk,,,,,,'>
+14	kiwane	unk	<fs af='kiwanA,adj,m,sg,,o,,'>|<fs af='kiwanA,adj,m,pl,,d,,'>|<fs af='kiwanA,adj,m,pl,,o,,'>
+15	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+16	AwI	unk	<fs af='A,v,f,sg,any,,wA,wA'>
+17	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+18	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	PalakanumA	unk	<fs af='PalakanumA,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	liMgamapallI	unk	<fs af='liMgamapallI,unk,,,,,,'>
+4	kI	unk	<fs af='kA,psp,f,sg,,d,kA,kA'>|<fs af='kA,psp,f,sg,,o,kA,kA'>|<fs af='kA,psp,f,pl,,d,kA,kA'>|<fs af='kA,psp,f,pl,,o,kA,kA'>|<fs af='kara,v,f,sg,any,,yA,yA'>
+5	6:00	unk	<fs af='6:00,num,,,,,,'>
+6	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+7	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+8	9:00	unk	<fs af='9:00,num,,,,,,'>
+9	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+10	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+11	bIca	unk	<fs af='bIca,psp,,,,,,'>
+12	pahalI	unk	<fs af='pahalI,adj,f,any,,any,,'>
+13	trEna	unk	<fs af='trEna,unk,,,,,,'>
+14	kaba	unk	<fs af='kaba,adv,,,,,,'>
+15	jAwI	unk	<fs af='jA,v,f,sg,any,,wA,wA'>
+16	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+17	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	PalakanumA	unk	<fs af='PalakanumA,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	liMgamapallI	unk	<fs af='liMgamapallI,unk,,,,,,'>
+4	kI	unk	<fs af='kA,psp,f,sg,,d,kA,kA'>|<fs af='kA,psp,f,sg,,o,kA,kA'>|<fs af='kA,psp,f,pl,,d,kA,kA'>|<fs af='kA,psp,f,pl,,o,kA,kA'>|<fs af='kara,v,f,sg,any,,yA,yA'>
+5	6:00	unk	<fs af='6:00,num,,,,,,'>
+6	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+7	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+8	9:00	unk	<fs af='9:00,num,,,,,,'>
+9	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+10	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+11	bIca	unk	<fs af='bIca,psp,,,,,,'>
+12	AKarI	unk	<fs af='AKarI,unk,,,,,,'>
+13	trEna	unk	<fs af='trEna,unk,,,,,,'>
+14	kaba	unk	<fs af='kaba,adv,,,,,,'>
+15	jAwI	unk	<fs af='jA,v,f,sg,any,,wA,wA'>
+16	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+17	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	PalakanumA	unk	<fs af='PalakanumA,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	liMgamapallI	unk	<fs af='liMgamapallI,unk,,,,,,'>
+4	kI	unk	<fs af='kA,psp,f,sg,,d,kA,kA'>|<fs af='kA,psp,f,sg,,o,kA,kA'>|<fs af='kA,psp,f,pl,,d,kA,kA'>|<fs af='kA,psp,f,pl,,o,kA,kA'>|<fs af='kara,v,f,sg,any,,yA,yA'>
+5	6:00	unk	<fs af='6:00,num,,,,,,'>
+6	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+7	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+8	9:00	unk	<fs af='9:00,num,,,,,,'>
+9	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+10	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+11	bIca	unk	<fs af='bIca,psp,,,,,,'>
+12	kiwanI	unk	<fs af='kiwanI,adj,f,any,,any,,'>
+13	trena	unk	<fs af='trena,n,f,sg,3,d,0,0'>|<fs af='trena,n,f,sg,3,o,0,0'>
+14	jAwI	unk	<fs af='jA,v,f,sg,any,,wA,wA'>
+15	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+16	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	PalakanumA	unk	<fs af='PalakanumA,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	liMgamapallI	unk	<fs af='liMgamapallI,unk,,,,,,'>
+4	kI	unk	<fs af='kA,psp,f,sg,,d,kA,kA'>|<fs af='kA,psp,f,sg,,o,kA,kA'>|<fs af='kA,psp,f,pl,,d,kA,kA'>|<fs af='kA,psp,f,pl,,o,kA,kA'>|<fs af='kara,v,f,sg,any,,yA,yA'>
+5	6:00	unk	<fs af='6:00,num,,,,,,'>
+6	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+7	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+8	9:00	unk	<fs af='9:00,num,,,,,,'>
+9	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+10	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+11	bIca	unk	<fs af='bIca,psp,,,,,,'>
+12	trena	unk	<fs af='trena,n,f,sg,3,d,0,0'>|<fs af='trena,n,f,sg,3,o,0,0'>
+13	kaba	unk	<fs af='kaba,adv,,,,,,'>
+14	kaba	unk	<fs af='kaba,adv,,,,,,'>
+15	jAwI	unk	<fs af='jA,v,f,sg,any,,wA,wA'>
+16	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+17	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	AlU	unk	<fs af='AlU,n,m,sg,3,d,0,0'>|<fs af='AlU,n,m,pl,3,d,0,0'>|<fs af='AlU,n,m,sg,3,o,0,0'>
+2	parATA	unk	<fs af='parATA,n,m,sg,3,d,0,0'>
+3	kEse	unk	<fs af='kEse,adv,,,,,,'>|<fs af='kEsA,adj,m,sg,,o,,'>|<fs af='kEsA,adj,m,pl,,d,,'>|<fs af='kEsA,adj,m,pl,,o,,'>
+4	banAwe	unk	<fs af='banA,v,m,pl,any,,wA,wA'>
+5	hEM	unk	<fs af='hE,v,any,pl,1,,hE,hE'>|<fs af='hE,v,any,pl,3,,hE,hE'>
+6	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	em	unk	<fs af='em,unk,,,,,,'>
+2	em	unk	<fs af='em,unk,,,,,,'>
+3	tI	unk	<fs af='tI,n,f,sg,3,d,0,0'>|<fs af='tI,n,f,sg,3,o,0,0'>
+4	esa	unk	<fs af='esa,unk,,,,,,'>
+5	trena	unk	<fs af='trena,n,f,sg,3,d,0,0'>|<fs af='trena,n,f,sg,3,o,0,0'>
+6	tikata	unk	<fs af='tikata,n,m,sg,3,d,0,0'>|<fs af='tikata,n,m,pl,3,d,0,0'>|<fs af='tikata,n,m,sg,3,o,0,0'>
+7	kEse	unk	<fs af='kEse,adv,,,,,,'>|<fs af='kEsA,adj,m,sg,,o,,'>|<fs af='kEsA,adj,m,pl,,d,,'>|<fs af='kEsA,adj,m,pl,,o,,'>
+8	karavAyI	unk	<fs af='karavA,v,f,sg,any,,yA,yA'>
+9	jAwI	unk	<fs af='jA,v,f,sg,any,,wA,wA'>
+10	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+11	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	kyUz	unk	<fs af='kyUz,unk,,,,,,'>
+2	nahIM	unk	<fs af='nahIM,adv,,,,,,'>
+3	tikata	unk	<fs af='tikata,n,m,sg,3,d,0,0'>|<fs af='tikata,n,m,pl,3,d,0,0'>|<fs af='tikata,n,m,sg,3,o,0,0'>
+4	KarIxa	unk	<fs af='KarIxa,v,any,any,any,,0,0'>
+5	pA	unk	<fs af='pA,v,any,any,any,,0,0'>
+6	rahe	unk	<fs af='raha,v,any,sg,2,,eM,eM'>|<fs af='raha,v,any,sg,3,,eM,eM'>|<fs af='raha,v,m,pl,any,,yA,yA'>
+7	hEM	unk	<fs af='hE,v,any,pl,1,,hE,hE'>|<fs af='hE,v,any,pl,3,,hE,hE'>
+8	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	tikata	unk	<fs af='tikata,n,m,sg,3,d,0,0'>|<fs af='tikata,n,m,pl,3,d,0,0'>|<fs af='tikata,n,m,sg,3,o,0,0'>
+2	kEse	unk	<fs af='kEse,adv,,,,,,'>|<fs af='kEsA,adj,m,sg,,o,,'>|<fs af='kEsA,adj,m,pl,,d,,'>|<fs af='kEsA,adj,m,pl,,o,,'>
+3	KarIxawe	unk	<fs af='KarIxa,v,m,pl,any,,wA,wA'>
+4	hEM	unk	<fs af='hE,v,any,pl,1,,hE,hE'>|<fs af='hE,v,any,pl,3,,hE,hE'>
+5	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	liMgamapallI	unk	<fs af='liMgamapallI,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	hExarAbAxa	unk	<fs af='hExarAbAxa,unk,,,,,,'>
+4	jAne	unk	<fs af='jAna,v,any,sg,2,,eM,eM'>|<fs af='jAna,v,any,sg,3,,eM,eM'>|<fs af='jAna,v,m,pl,any,,yA,yA'>|<fs af='jA,v,m,pl,any,,nA,nA'>
+5	vAlI	unk	<fs af='vAlI,n,f,sg,3,d,0,0'>|<fs af='vAlI,n,f,sg,3,o,0,0'>
+6	6	unk	<fs af='6,num,,,,,,'>
+7	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+8	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+9	9	unk	<fs af='9,num,,,,,,'>
+10	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+11	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+12	bIca	unk	<fs af='bIca,psp,,,,,,'>
+13	vAlI	unk	<fs af='vAlI,n,f,sg,3,d,0,0'>|<fs af='vAlI,n,f,sg,3,o,0,0'>
+14	gAdZI	unk	<fs af='gAdZI,n,f,sg,3,d,0,0'>|<fs af='gAdZI,n,f,sg,3,o,0,0'>|<fs af='gAdZa,v,f,sg,any,,yA,yA'>
+15	kahAz	unk	<fs af='kahAz,adv,,,,,,'>
+16	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+17	AwI	unk	<fs af='A,v,f,sg,any,,wA,wA'>
+18	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+19	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	liMgamapallI	unk	<fs af='liMgamapallI,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	hExarAbAxa	unk	<fs af='hExarAbAxa,unk,,,,,,'>
+4	jAne	unk	<fs af='jAna,v,any,sg,2,,eM,eM'>|<fs af='jAna,v,any,sg,3,,eM,eM'>|<fs af='jAna,v,m,pl,any,,yA,yA'>|<fs af='jA,v,m,pl,any,,nA,nA'>
+5	vAlI	unk	<fs af='vAlI,n,f,sg,3,d,0,0'>|<fs af='vAlI,n,f,sg,3,o,0,0'>
+6	6	unk	<fs af='6,num,,,,,,'>
+7	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+8	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+9	9	unk	<fs af='9,num,,,,,,'>
+10	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+11	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+12	bIca	unk	<fs af='bIca,psp,,,,,,'>
+13	vAlI	unk	<fs af='vAlI,n,f,sg,3,d,0,0'>|<fs af='vAlI,n,f,sg,3,o,0,0'>
+14	gAdZI	unk	<fs af='gAdZI,n,f,sg,3,d,0,0'>|<fs af='gAdZI,n,f,sg,3,o,0,0'>|<fs af='gAdZa,v,f,sg,any,,yA,yA'>
+15	kahAz	unk	<fs af='kahAz,adv,,,,,,'>
+16	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+17	jAwI	unk	<fs af='jA,v,f,sg,any,,wA,wA'>
+18	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+19	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	liMgamapallI	unk	<fs af='liMgamapallI,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	hExarAbAxa	unk	<fs af='hExarAbAxa,unk,,,,,,'>
+4	jAne	unk	<fs af='jAna,v,any,sg,2,,eM,eM'>|<fs af='jAna,v,any,sg,3,,eM,eM'>|<fs af='jAna,v,m,pl,any,,yA,yA'>|<fs af='jA,v,m,pl,any,,nA,nA'>
+5	vAlI	unk	<fs af='vAlI,n,f,sg,3,d,0,0'>|<fs af='vAlI,n,f,sg,3,o,0,0'>
+6	6	unk	<fs af='6,num,,,,,,'>
+7	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+8	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+9	9	unk	<fs af='9,num,,,,,,'>
+10	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+11	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+12	bIca	unk	<fs af='bIca,psp,,,,,,'>
+13	vAlI	unk	<fs af='vAlI,n,f,sg,3,d,0,0'>|<fs af='vAlI,n,f,sg,3,o,0,0'>
+14	gAdZI	unk	<fs af='gAdZI,n,f,sg,3,d,0,0'>|<fs af='gAdZI,n,f,sg,3,o,0,0'>|<fs af='gAdZa,v,f,sg,any,,yA,yA'>
+15	kahAz	unk	<fs af='kahAz,adv,,,,,,'>
+16	waka	unk	<fs af='waka,avy,,,,,,'>|<fs af='waka,psp,,,,,,'>
+17	AwI	unk	<fs af='A,v,f,sg,any,,wA,wA'>
+18	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+19	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	liMgamapallI	unk	<fs af='liMgamapallI,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	hExarAbAxa	unk	<fs af='hExarAbAxa,unk,,,,,,'>
+4	jAne	unk	<fs af='jAna,v,any,sg,2,,eM,eM'>|<fs af='jAna,v,any,sg,3,,eM,eM'>|<fs af='jAna,v,m,pl,any,,yA,yA'>|<fs af='jA,v,m,pl,any,,nA,nA'>
+5	vAlI	unk	<fs af='vAlI,n,f,sg,3,d,0,0'>|<fs af='vAlI,n,f,sg,3,o,0,0'>
+6	6	unk	<fs af='6,num,,,,,,'>
+7	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+8	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+9	9	unk	<fs af='9,num,,,,,,'>
+10	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+11	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+12	bIca	unk	<fs af='bIca,psp,,,,,,'>
+13	vAlI	unk	<fs af='vAlI,n,f,sg,3,d,0,0'>|<fs af='vAlI,n,f,sg,3,o,0,0'>
+14	gAdZI	unk	<fs af='gAdZI,n,f,sg,3,d,0,0'>|<fs af='gAdZI,n,f,sg,3,o,0,0'>|<fs af='gAdZa,v,f,sg,any,,yA,yA'>
+15	kahAz	unk	<fs af='kahAz,adv,,,,,,'>
+16	waka	unk	<fs af='waka,avy,,,,,,'>|<fs af='waka,psp,,,,,,'>
+17	jAwI	unk	<fs af='jA,v,f,sg,any,,wA,wA'>
+18	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+19	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	liMgamapallI	unk	<fs af='liMgamapallI,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	Barawanagara	unk	<fs af='Barawanagara,unk,,,,,,'>
+4	jAne	unk	<fs af='jAna,v,any,sg,2,,eM,eM'>|<fs af='jAna,v,any,sg,3,,eM,eM'>|<fs af='jAna,v,m,pl,any,,yA,yA'>|<fs af='jA,v,m,pl,any,,nA,nA'>
+5	vAlI	unk	<fs af='vAlI,n,f,sg,3,d,0,0'>|<fs af='vAlI,n,f,sg,3,o,0,0'>
+6	6	unk	<fs af='6,num,,,,,,'>
+7	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+8	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+9	9	unk	<fs af='9,num,,,,,,'>
+10	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+11	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+12	bIca	unk	<fs af='bIca,psp,,,,,,'>
+13	vAlI	unk	<fs af='vAlI,n,f,sg,3,d,0,0'>|<fs af='vAlI,n,f,sg,3,o,0,0'>
+14	gAdZI	unk	<fs af='gAdZI,n,f,sg,3,d,0,0'>|<fs af='gAdZI,n,f,sg,3,o,0,0'>|<fs af='gAdZa,v,f,sg,any,,yA,yA'>
+15	kahAz	unk	<fs af='kahAz,adv,,,,,,'>
+16	waka	unk	<fs af='waka,avy,,,,,,'>|<fs af='waka,psp,,,,,,'>
+17	jAwI	unk	<fs af='jA,v,f,sg,any,,wA,wA'>
+18	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+19	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	Barawanagara	unk	<fs af='Barawanagara,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	hExarAbAxa	unk	<fs af='hExarAbAxa,unk,,,,,,'>
+4	jAne	unk	<fs af='jAna,v,any,sg,2,,eM,eM'>|<fs af='jAna,v,any,sg,3,,eM,eM'>|<fs af='jAna,v,m,pl,any,,yA,yA'>|<fs af='jA,v,m,pl,any,,nA,nA'>
+5	vAlI	unk	<fs af='vAlI,n,f,sg,3,d,0,0'>|<fs af='vAlI,n,f,sg,3,o,0,0'>
+6	6	unk	<fs af='6,num,,,,,,'>
+7	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+8	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+9	9	unk	<fs af='9,num,,,,,,'>
+10	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+11	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+12	bIca	unk	<fs af='bIca,psp,,,,,,'>
+13	vAlI	unk	<fs af='vAlI,n,f,sg,3,d,0,0'>|<fs af='vAlI,n,f,sg,3,o,0,0'>
+14	gAdZI	unk	<fs af='gAdZI,n,f,sg,3,d,0,0'>|<fs af='gAdZI,n,f,sg,3,o,0,0'>|<fs af='gAdZa,v,f,sg,any,,yA,yA'>
+15	kahAz	unk	<fs af='kahAz,adv,,,,,,'>
+16	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+17	AwI	unk	<fs af='A,v,f,sg,any,,wA,wA'>
+18	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+19	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	liMgamapallI	unk	<fs af='liMgamapallI,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	Barawanagara	unk	<fs af='Barawanagara,unk,,,,,,'>
+4	jAne	unk	<fs af='jAna,v,any,sg,2,,eM,eM'>|<fs af='jAna,v,any,sg,3,,eM,eM'>|<fs af='jAna,v,m,pl,any,,yA,yA'>|<fs af='jA,v,m,pl,any,,nA,nA'>
+5	vAlI	unk	<fs af='vAlI,n,f,sg,3,d,0,0'>|<fs af='vAlI,n,f,sg,3,o,0,0'>
+6	6	unk	<fs af='6,num,,,,,,'>
+7	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+8	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+9	9	unk	<fs af='9,num,,,,,,'>
+10	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+11	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+12	bIca	unk	<fs af='bIca,psp,,,,,,'>
+13	vAlI	unk	<fs af='vAlI,n,f,sg,3,d,0,0'>|<fs af='vAlI,n,f,sg,3,o,0,0'>
+14	gAdZI	unk	<fs af='gAdZI,n,f,sg,3,d,0,0'>|<fs af='gAdZI,n,f,sg,3,o,0,0'>|<fs af='gAdZa,v,f,sg,any,,yA,yA'>
+15	kahAz	unk	<fs af='kahAz,adv,,,,,,'>
+16	kahAz	unk	<fs af='kahAz,adv,,,,,,'>
+17	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+18	AwI	unk	<fs af='A,v,f,sg,any,,wA,wA'>
+19	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+20	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	liMgamapallI	unk	<fs af='liMgamapallI,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	Barawanagara	unk	<fs af='Barawanagara,unk,,,,,,'>
+4	jAne	unk	<fs af='jAna,v,any,sg,2,,eM,eM'>|<fs af='jAna,v,any,sg,3,,eM,eM'>|<fs af='jAna,v,m,pl,any,,yA,yA'>|<fs af='jA,v,m,pl,any,,nA,nA'>
+5	vAlI	unk	<fs af='vAlI,n,f,sg,3,d,0,0'>|<fs af='vAlI,n,f,sg,3,o,0,0'>
+6	6	unk	<fs af='6,num,,,,,,'>
+7	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+8	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+9	9	unk	<fs af='9,num,,,,,,'>
+10	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+11	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+12	bIca	unk	<fs af='bIca,psp,,,,,,'>
+13	vAlI	unk	<fs af='vAlI,n,f,sg,3,d,0,0'>|<fs af='vAlI,n,f,sg,3,o,0,0'>
+14	gAdZI	unk	<fs af='gAdZI,n,f,sg,3,d,0,0'>|<fs af='gAdZI,n,f,sg,3,o,0,0'>|<fs af='gAdZa,v,f,sg,any,,yA,yA'>
+15	kahAz	unk	<fs af='kahAz,adv,,,,,,'>
+16	kahAz	unk	<fs af='kahAz,adv,,,,,,'>
+17	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+18	jAwI	unk	<fs af='jA,v,f,sg,any,,wA,wA'>
+19	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+20	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	liMgamapallI	unk	<fs af='liMgamapallI,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	hExarAbAxa	unk	<fs af='hExarAbAxa,unk,,,,,,'>
+4	jAne	unk	<fs af='jAna,v,any,sg,2,,eM,eM'>|<fs af='jAna,v,any,sg,3,,eM,eM'>|<fs af='jAna,v,m,pl,any,,yA,yA'>|<fs af='jA,v,m,pl,any,,nA,nA'>
+5	vAlI	unk	<fs af='vAlI,n,f,sg,3,d,0,0'>|<fs af='vAlI,n,f,sg,3,o,0,0'>
+6	6	unk	<fs af='6,num,,,,,,'>
+7	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+8	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+9	9	unk	<fs af='9,num,,,,,,'>
+10	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+11	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+12	bIca	unk	<fs af='bIca,psp,,,,,,'>
+13	vAlI	unk	<fs af='vAlI,n,f,sg,3,d,0,0'>|<fs af='vAlI,n,f,sg,3,o,0,0'>
+14	gAdZI	unk	<fs af='gAdZI,n,f,sg,3,d,0,0'>|<fs af='gAdZI,n,f,sg,3,o,0,0'>|<fs af='gAdZa,v,f,sg,any,,yA,yA'>
+15	kahAz	unk	<fs af='kahAz,adv,,,,,,'>
+16	kahAz	unk	<fs af='kahAz,adv,,,,,,'>
+17	waka	unk	<fs af='waka,avy,,,,,,'>|<fs af='waka,psp,,,,,,'>
+18	AwI	unk	<fs af='A,v,f,sg,any,,wA,wA'>
+19	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+20	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	liMgamapallI	unk	<fs af='liMgamapallI,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	hExarAbAxa	unk	<fs af='hExarAbAxa,unk,,,,,,'>
+4	jAne	unk	<fs af='jAna,v,any,sg,2,,eM,eM'>|<fs af='jAna,v,any,sg,3,,eM,eM'>|<fs af='jAna,v,m,pl,any,,yA,yA'>|<fs af='jA,v,m,pl,any,,nA,nA'>
+5	vAlI	unk	<fs af='vAlI,n,f,sg,3,d,0,0'>|<fs af='vAlI,n,f,sg,3,o,0,0'>
+6	6	unk	<fs af='6,num,,,,,,'>
+7	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+8	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+9	9	unk	<fs af='9,num,,,,,,'>
+10	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+11	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+12	bIca	unk	<fs af='bIca,psp,,,,,,'>
+13	vAlI	unk	<fs af='vAlI,n,f,sg,3,d,0,0'>|<fs af='vAlI,n,f,sg,3,o,0,0'>
+14	gAdZI	unk	<fs af='gAdZI,n,f,sg,3,d,0,0'>|<fs af='gAdZI,n,f,sg,3,o,0,0'>|<fs af='gAdZa,v,f,sg,any,,yA,yA'>
+15	kahAz	unk	<fs af='kahAz,adv,,,,,,'>
+16	kahAz	unk	<fs af='kahAz,adv,,,,,,'>
+17	waka	unk	<fs af='waka,avy,,,,,,'>|<fs af='waka,psp,,,,,,'>
+18	jAwI	unk	<fs af='jA,v,f,sg,any,,wA,wA'>
+19	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+20	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	liMgamapallI	unk	<fs af='liMgamapallI,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	Barawanagara	unk	<fs af='Barawanagara,unk,,,,,,'>
+4	jAne	unk	<fs af='jAna,v,any,sg,2,,eM,eM'>|<fs af='jAna,v,any,sg,3,,eM,eM'>|<fs af='jAna,v,m,pl,any,,yA,yA'>|<fs af='jA,v,m,pl,any,,nA,nA'>
+5	vAlI	unk	<fs af='vAlI,n,f,sg,3,d,0,0'>|<fs af='vAlI,n,f,sg,3,o,0,0'>
+6	6	unk	<fs af='6,num,,,,,,'>
+7	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+8	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+9	9	unk	<fs af='9,num,,,,,,'>
+10	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+11	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+12	bIca	unk	<fs af='bIca,psp,,,,,,'>
+13	vAlI	unk	<fs af='vAlI,n,f,sg,3,d,0,0'>|<fs af='vAlI,n,f,sg,3,o,0,0'>
+14	gAdZI	unk	<fs af='gAdZI,n,f,sg,3,d,0,0'>|<fs af='gAdZI,n,f,sg,3,o,0,0'>|<fs af='gAdZa,v,f,sg,any,,yA,yA'>
+15	kahAz	unk	<fs af='kahAz,adv,,,,,,'>
+16	kahAz	unk	<fs af='kahAz,adv,,,,,,'>
+17	waka	unk	<fs af='waka,avy,,,,,,'>|<fs af='waka,psp,,,,,,'>
+18	jAwI	unk	<fs af='jA,v,f,sg,any,,wA,wA'>
+19	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+20	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	hExarAbAxa	unk	<fs af='hExarAbAxa,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	Barawanagara	unk	<fs af='Barawanagara,unk,,,,,,'>
+4	jAne	unk	<fs af='jAna,v,any,sg,2,,eM,eM'>|<fs af='jAna,v,any,sg,3,,eM,eM'>|<fs af='jAna,v,m,pl,any,,yA,yA'>|<fs af='jA,v,m,pl,any,,nA,nA'>
+5	vAlI	unk	<fs af='vAlI,n,f,sg,3,d,0,0'>|<fs af='vAlI,n,f,sg,3,o,0,0'>
+6	6	unk	<fs af='6,num,,,,,,'>
+7	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+8	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+9	9	unk	<fs af='9,num,,,,,,'>
+10	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+11	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+12	bIca	unk	<fs af='bIca,psp,,,,,,'>
+13	vAlI	unk	<fs af='vAlI,n,f,sg,3,d,0,0'>|<fs af='vAlI,n,f,sg,3,o,0,0'>
+14	gAdZI	unk	<fs af='gAdZI,n,f,sg,3,d,0,0'>|<fs af='gAdZI,n,f,sg,3,o,0,0'>|<fs af='gAdZa,v,f,sg,any,,yA,yA'>
+15	kahAz	unk	<fs af='kahAz,adv,,,,,,'>
+16	kahAz	unk	<fs af='kahAz,adv,,,,,,'>
+17	waka	unk	<fs af='waka,avy,,,,,,'>|<fs af='waka,psp,,,,,,'>
+18	jAwI	unk	<fs af='jA,v,f,sg,any,,wA,wA'>
+19	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+20	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	borAbaMxA	unk	<fs af='borAbaMxA,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	Barawanagara	unk	<fs af='Barawanagara,unk,,,,,,'>
+4	jAne	unk	<fs af='jAna,v,any,sg,2,,eM,eM'>|<fs af='jAna,v,any,sg,3,,eM,eM'>|<fs af='jAna,v,m,pl,any,,yA,yA'>|<fs af='jA,v,m,pl,any,,nA,nA'>
+5	vAlI	unk	<fs af='vAlI,n,f,sg,3,d,0,0'>|<fs af='vAlI,n,f,sg,3,o,0,0'>
+6	6	unk	<fs af='6,num,,,,,,'>
+7	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+8	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+9	9	unk	<fs af='9,num,,,,,,'>
+10	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+11	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+12	bIca	unk	<fs af='bIca,psp,,,,,,'>
+13	vAlI	unk	<fs af='vAlI,n,f,sg,3,d,0,0'>|<fs af='vAlI,n,f,sg,3,o,0,0'>
+14	gAdZI	unk	<fs af='gAdZI,n,f,sg,3,d,0,0'>|<fs af='gAdZI,n,f,sg,3,o,0,0'>|<fs af='gAdZa,v,f,sg,any,,yA,yA'>
+15	kahAz	unk	<fs af='kahAz,adv,,,,,,'>
+16	kahAz	unk	<fs af='kahAz,adv,,,,,,'>
+17	AegI	unk	<fs af='A,v,f,sg,2,,gA,gA'>|<fs af='A,v,f,sg,3,,gA,gA'>
+18	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	borAbaMxA	unk	<fs af='borAbaMxA,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	Barawanagara	unk	<fs af='Barawanagara,unk,,,,,,'>
+4	jAne	unk	<fs af='jAna,v,any,sg,2,,eM,eM'>|<fs af='jAna,v,any,sg,3,,eM,eM'>|<fs af='jAna,v,m,pl,any,,yA,yA'>|<fs af='jA,v,m,pl,any,,nA,nA'>
+5	vAlI	unk	<fs af='vAlI,n,f,sg,3,d,0,0'>|<fs af='vAlI,n,f,sg,3,o,0,0'>
+6	6	unk	<fs af='6,num,,,,,,'>
+7	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+8	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+9	9	unk	<fs af='9,num,,,,,,'>
+10	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+11	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+12	bIca	unk	<fs af='bIca,psp,,,,,,'>
+13	vAlI	unk	<fs af='vAlI,n,f,sg,3,d,0,0'>|<fs af='vAlI,n,f,sg,3,o,0,0'>
+14	gAdZI	unk	<fs af='gAdZI,n,f,sg,3,d,0,0'>|<fs af='gAdZI,n,f,sg,3,o,0,0'>|<fs af='gAdZa,v,f,sg,any,,yA,yA'>
+15	kahAz	unk	<fs af='kahAz,adv,,,,,,'>
+16	kahAz	unk	<fs af='kahAz,adv,,,,,,'>
+17	jAegI	unk	<fs af='jA,v,f,sg,2,,gA,gA'>|<fs af='jA,v,f,sg,3,,gA,gA'>
+18	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	hExarAbAxa	unk	<fs af='hExarAbAxa,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	Barawanagara	unk	<fs af='Barawanagara,unk,,,,,,'>
+4	jAne	unk	<fs af='jAna,v,any,sg,2,,eM,eM'>|<fs af='jAna,v,any,sg,3,,eM,eM'>|<fs af='jAna,v,m,pl,any,,yA,yA'>|<fs af='jA,v,m,pl,any,,nA,nA'>
+5	vAlI	unk	<fs af='vAlI,n,f,sg,3,d,0,0'>|<fs af='vAlI,n,f,sg,3,o,0,0'>
+6	6	unk	<fs af='6,num,,,,,,'>
+7	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+8	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+9	9	unk	<fs af='9,num,,,,,,'>
+10	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+11	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+12	bIca	unk	<fs af='bIca,psp,,,,,,'>
+13	vAlI	unk	<fs af='vAlI,n,f,sg,3,d,0,0'>|<fs af='vAlI,n,f,sg,3,o,0,0'>
+14	gAdZI	unk	<fs af='gAdZI,n,f,sg,3,d,0,0'>|<fs af='gAdZI,n,f,sg,3,o,0,0'>|<fs af='gAdZa,v,f,sg,any,,yA,yA'>
+15	kOna	unk	<fs af='kOna,avy,,,,,,'>|<fs af='kOna,pn,any,sg,3,d,0,0'>|<fs af='kOna,pn,any,pl,3,d,0,0'>
+16	kOna	unk	<fs af='kOna,avy,,,,,,'>|<fs af='kOna,pn,any,sg,3,d,0,0'>|<fs af='kOna,pn,any,pl,3,d,0,0'>
+17	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+18	xina	unk	<fs af='xina,n,m,sg,3,d,0,0'>|<fs af='xina,n,m,pl,3,d,0,0'>|<fs af='xina,n,m,sg,3,o,0,0'>
+19	howI	unk	<fs af='ho,v,f,sg,any,,wA,wA'>
+20	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+21	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	ema	unk	<fs af='ema,n,m,sg,3,d,0,0'>|<fs af='ema,n,m,pl,3,d,0,0'>|<fs af='ema,n,m,sg,3,o,0,0'>
+2	.	unk	<fs af='.,punc,,,,,,'>
+3	ema	unk	<fs af='ema,n,m,sg,3,d,0,0'>|<fs af='ema,n,m,pl,3,d,0,0'>|<fs af='ema,n,m,sg,3,o,0,0'>
+4	.	unk	<fs af='.,punc,,,,,,'>
+5	tI	unk	<fs af='tI,n,f,sg,3,d,0,0'>|<fs af='tI,n,f,sg,3,o,0,0'>
+6	.	unk	<fs af='.,punc,,,,,,'>
+7	esa	unk	<fs af='esa,unk,,,,,,'>
+8	.	unk	<fs af='.,punc,,,,,,'>
+9	trena	unk	<fs af='trena,n,f,sg,3,d,0,0'>|<fs af='trena,n,f,sg,3,o,0,0'>
+10	kyA	unk	<fs af='kyA,avy,,,,,,'>
+11	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+12	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	ema	unk	<fs af='ema,n,m,sg,3,d,0,0'>|<fs af='ema,n,m,pl,3,d,0,0'>|<fs af='ema,n,m,sg,3,o,0,0'>
+2	.	unk	<fs af='.,punc,,,,,,'>
+3	ema	unk	<fs af='ema,n,m,sg,3,d,0,0'>|<fs af='ema,n,m,pl,3,d,0,0'>|<fs af='ema,n,m,sg,3,o,0,0'>
+4	.	unk	<fs af='.,punc,,,,,,'>
+5	tI	unk	<fs af='tI,n,f,sg,3,d,0,0'>|<fs af='tI,n,f,sg,3,o,0,0'>
+6	.	unk	<fs af='.,punc,,,,,,'>
+7	esa	unk	<fs af='esa,unk,,,,,,'>
+8	.	unk	<fs af='.,punc,,,,,,'>
+9	trena	unk	<fs af='trena,n,f,sg,3,d,0,0'>|<fs af='trena,n,f,sg,3,o,0,0'>
+10	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+11	kyA	unk	<fs af='kyA,avy,,,,,,'>
+12	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	kyA	unk	<fs af='kyA,avy,,,,,,'>
+2	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+3	ema	unk	<fs af='ema,n,m,sg,3,d,0,0'>|<fs af='ema,n,m,pl,3,d,0,0'>|<fs af='ema,n,m,sg,3,o,0,0'>
+4	.	unk	<fs af='.,punc,,,,,,'>
+5	ema	unk	<fs af='ema,n,m,sg,3,d,0,0'>|<fs af='ema,n,m,pl,3,d,0,0'>|<fs af='ema,n,m,sg,3,o,0,0'>
+6	.	unk	<fs af='.,punc,,,,,,'>
+7	tI	unk	<fs af='tI,n,f,sg,3,d,0,0'>|<fs af='tI,n,f,sg,3,o,0,0'>
+8	.	unk	<fs af='.,punc,,,,,,'>
+9	esa	unk	<fs af='esa,unk,,,,,,'>
+10	.	unk	<fs af='.,punc,,,,,,'>
+11	trena	unk	<fs af='trena,n,f,sg,3,d,0,0'>|<fs af='trena,n,f,sg,3,o,0,0'>
+12	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	kyA	unk	<fs af='kyA,avy,,,,,,'>
+2	ema	unk	<fs af='ema,n,m,sg,3,d,0,0'>|<fs af='ema,n,m,pl,3,d,0,0'>|<fs af='ema,n,m,sg,3,o,0,0'>
+3	.	unk	<fs af='.,punc,,,,,,'>
+4	ema	unk	<fs af='ema,n,m,sg,3,d,0,0'>|<fs af='ema,n,m,pl,3,d,0,0'>|<fs af='ema,n,m,sg,3,o,0,0'>
+5	.	unk	<fs af='.,punc,,,,,,'>
+6	tI	unk	<fs af='tI,n,f,sg,3,d,0,0'>|<fs af='tI,n,f,sg,3,o,0,0'>
+7	.	unk	<fs af='.,punc,,,,,,'>
+8	esa	unk	<fs af='esa,unk,,,,,,'>
+9	.	unk	<fs af='.,punc,,,,,,'>
+10	trena	unk	<fs af='trena,n,f,sg,3,d,0,0'>|<fs af='trena,n,f,sg,3,o,0,0'>
+11	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+12	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	liMgamapallI	unk	<fs af='liMgamapallI,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	Barawanagara	unk	<fs af='Barawanagara,unk,,,,,,'>
+4	ko	unk	<fs af='ko,psp,,,,,,'>
+5	jAne	unk	<fs af='jAna,v,any,sg,2,,eM,eM'>|<fs af='jAna,v,any,sg,3,,eM,eM'>|<fs af='jAna,v,m,pl,any,,yA,yA'>|<fs af='jA,v,m,pl,any,,nA,nA'>
+6	me	unk	<fs af='mA,n,m,pl,3,d,0,0'>|<fs af='mA,n,m,sg,3,o,0,0'>
+7	kiwanA	unk	<fs af='kiwanA,adv,,,,,,'>|<fs af='kiwanA,adj,m,sg,,d,,'>
+8	samaya	unk	<fs af='samaya,n,m,sg,3,d,0,0'>|<fs af='samaya,n,m,pl,3,d,0,0'>|<fs af='samaya,n,m,sg,3,o,0,0'>|<fs af='samaya,n,m,pl,3,o,0,0'>
+9	lagawA	unk	<fs af='laga,v,m,sg,any,,wA,wA'>
+10	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+11	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	liMgamapallI	unk	<fs af='liMgamapallI,unk,,,,,,'>
+2	Barawanagara	unk	<fs af='Barawanagara,unk,,,,,,'>
+3	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+4	kiwanI	unk	<fs af='kiwanI,adj,f,any,,any,,'>
+5	xUra	unk	<fs af='xUra,adv,,,,,,'>|<fs af='xUra,psp,,,,,,'>
+6	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+7	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	kyA	unk	<fs af='kyA,avy,,,,,,'>
+2	tiketa	unk	<fs af='tiketa,unk,,,,,,'>
+3	KarIxanA	unk	<fs af='KarIxa,v,m,sg,any,,nA,nA'>
+4	jZarUrI	unk	<fs af='jarUrI,adj,f,any,,any,,'>
+5	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+6	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	Barawanagara	unk	<fs af='Barawanagara,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	hExarAbAxa	unk	<fs af='hExarAbAxa,unk,,,,,,'>
+4	koI	unk	<fs af='koI,pn,any,sg,3,d,0,0'>|<fs af='koI,pn,any,pl,3,d,0,0'>
+5	nayI	unk	<fs af='nayI,adj,f,any,,any,,'>
+6	trena	unk	<fs af='trena,n,f,sg,3,d,0,0'>|<fs af='trena,n,f,sg,3,o,0,0'>
+7	stArta	unk	<fs af='stArta,unk,,,,,,'>
+8	huI	unk	<fs af='ho,v,f,sg,any,,yA,yA'>
+9	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+10	kyA	unk	<fs af='kyA,avy,,,,,,'>
+11	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	ema	unk	<fs af='ema,n,m,sg,3,d,0,0'>|<fs af='ema,n,m,pl,3,d,0,0'>|<fs af='ema,n,m,sg,3,o,0,0'>
+2	ema	unk	<fs af='ema,n,m,sg,3,d,0,0'>|<fs af='ema,n,m,pl,3,d,0,0'>|<fs af='ema,n,m,sg,3,o,0,0'>
+3	tI	unk	<fs af='tI,n,f,sg,3,d,0,0'>|<fs af='tI,n,f,sg,3,o,0,0'>
+4	esa	unk	<fs af='esa,unk,,,,,,'>
+5	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+6	kula	unk	<fs af='kula,n,m,sg,3,d,0,0'>|<fs af='kula,n,m,pl,3,d,0,0'>|<fs af='kula,n,m,sg,3,o,0,0'>|<fs af='kula,adj,any,any,,any,,'>
+7	kiwane	unk	<fs af='kiwanA,adj,m,sg,,o,,'>|<fs af='kiwanA,adj,m,pl,,d,,'>|<fs af='kiwanA,adj,m,pl,,o,,'>
+8	steSana	unk	<fs af='steSana,n,m,sg,3,d,0,0'>|<fs af='steSana,n,m,pl,3,d,0,0'>|<fs af='steSana,n,m,sg,3,o,0,0'>
+9	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+10	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	Barawanagara	unk	<fs af='Barawanagara,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	hExarAbAxa	unk	<fs af='hExarAbAxa,unk,,,,,,'>
+4	kiwanA	unk	<fs af='kiwanA,adv,,,,,,'>|<fs af='kiwanA,adj,m,sg,,d,,'>
+5	xUra	unk	<fs af='xUra,adv,,,,,,'>|<fs af='xUra,psp,,,,,,'>
+6	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+7	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	Barawanagara	unk	<fs af='Barawanagara,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	hExarAbAxa	unk	<fs af='hExarAbAxa,unk,,,,,,'>
+4	kiwane	unk	<fs af='kiwanA,adj,m,sg,,o,,'>|<fs af='kiwanA,adj,m,pl,,d,,'>|<fs af='kiwanA,adj,m,pl,,o,,'>
+5	kAilAmItara	unk	<fs af='kAilAmItara,unk,,,,,,'>
+6	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+7	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	Barawanagara	unk	<fs af='Barawanagara,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	hExarAbAxa	unk	<fs af='hExarAbAxa,unk,,,,,,'>
+4	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+5	lie	unk	<fs af='le,v,m,pl,any,,yA,yA'>
+6	kula	unk	<fs af='kula,n,m,sg,3,d,0,0'>|<fs af='kula,n,m,pl,3,d,0,0'>|<fs af='kula,n,m,sg,3,o,0,0'>|<fs af='kula,adj,any,any,,any,,'>
+7	kiwanI	unk	<fs af='kiwanI,adj,f,any,,any,,'>
+8	gAdZI	unk	<fs af='gAdZI,n,f,sg,3,d,0,0'>|<fs af='gAdZI,n,f,sg,3,o,0,0'>|<fs af='gAdZa,v,f,sg,any,,yA,yA'>
+9	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+10	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	Barawanagara	unk	<fs af='Barawanagara,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	hExarAbAxa	unk	<fs af='hExarAbAxa,unk,,,,,,'>
+4	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+5	lie	unk	<fs af='le,v,m,pl,any,,yA,yA'>
+6	kula	unk	<fs af='kula,n,m,sg,3,d,0,0'>|<fs af='kula,n,m,pl,3,d,0,0'>|<fs af='kula,n,m,sg,3,o,0,0'>|<fs af='kula,adj,any,any,,any,,'>
+7	kiwanI	unk	<fs af='kiwanI,adj,f,any,,any,,'>
+8	trena	unk	<fs af='trena,n,f,sg,3,d,0,0'>|<fs af='trena,n,f,sg,3,o,0,0'>
+9	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+10	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	kyA	unk	<fs af='kyA,avy,,,,,,'>
+2	hama	unk	<fs af='hama,unk,,,,,,'>
+3	trena	unk	<fs af='trena,n,f,sg,3,d,0,0'>|<fs af='trena,n,f,sg,3,o,0,0'>
+4	SedyUla	unk	<fs af='SedyUla,unk,,,,,,'>
+5	OYnalAina	unk	<fs af='OYnalAina,unk,,,,,,'>
+6	xeKa	unk	<fs af='xeKa,v,any,any,any,,0,0'>
+7	sakawe	unk	<fs af='saka,v,m,pl,any,,wA,wA'>
+8	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+9	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	trena	unk	<fs af='trena,n,f,sg,3,d,0,0'>|<fs af='trena,n,f,sg,3,o,0,0'>
+2	SedyUla	unk	<fs af='SedyUla,unk,,,,,,'>
+3	xeKane	unk	<fs af='xeKa,v,m,pl,any,,nA,nA'>
+4	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+5	lie	unk	<fs af='le,v,m,pl,any,,yA,yA'>
+6	konAsI	unk	<fs af='konAsI,unk,,,,,,'>
+7	vebasAita	unk	<fs af='vebasAita,unk,,,,,,'>
+8	pe	unk	<fs af='pe,unk,,,,,,'>
+9	jAnA	unk	<fs af='jAna,v,m,sg,any,,yA,yA'>|<fs af='jA,v,m,sg,any,,nA,nA'>
+10	padZegA	unk	<fs af='padZa,v,m,sg,2,,gA,gA'>|<fs af='padZa,v,m,sg,3,,gA,gA'>
+11	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	hExarAbAxa	unk	<fs af='hExarAbAxa,unk,,,,,,'>
+2	steSana	unk	<fs af='steSana,n,m,sg,3,d,0,0'>|<fs af='steSana,n,m,pl,3,d,0,0'>|<fs af='steSana,n,m,sg,3,o,0,0'>
+3	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+4	agale	unk	<fs af='agalA,adj,m,sg,,o,,'>|<fs af='agalA,adj,m,pl,,d,,'>|<fs af='agalA,adj,m,pl,,o,,'>
+5	eka	unk	<fs af='eka,adj,any,any,,any,,'>|<fs af='eka,n,m,sg,3,d,0,0'>|<fs af='eka,n,m,pl,3,d,0,0'>|<fs af='eka,n,m,sg,3,o,0,0'>|<fs af='eka,n,m,pl,3,o,0,0'>
+6	GaMte	unk	<fs af='GaMtA,n,m,pl,3,d,0,0'>|<fs af='GaMtA,n,m,sg,3,o,0,0'>
+7	meM	unk	<fs af='meM,psp,,,,,,'>
+8	kiwanI	unk	<fs af='kiwanI,adj,f,any,,any,,'>
+9	gAdZiyA	unk	<fs af='gAdZiyA,unk,,,,,,'>
+10	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+11	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	hExarAbAxa	unk	<fs af='hExarAbAxa,unk,,,,,,'>
+2	steSana	unk	<fs af='steSana,n,m,sg,3,d,0,0'>|<fs af='steSana,n,m,pl,3,d,0,0'>|<fs af='steSana,n,m,sg,3,o,0,0'>
+3	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+4	agale	unk	<fs af='agalA,adj,m,sg,,o,,'>|<fs af='agalA,adj,m,pl,,d,,'>|<fs af='agalA,adj,m,pl,,o,,'>
+5	eka	unk	<fs af='eka,adj,any,any,,any,,'>|<fs af='eka,n,m,sg,3,d,0,0'>|<fs af='eka,n,m,pl,3,d,0,0'>|<fs af='eka,n,m,sg,3,o,0,0'>|<fs af='eka,n,m,pl,3,o,0,0'>
+6	GaMte	unk	<fs af='GaMtA,n,m,pl,3,d,0,0'>|<fs af='GaMtA,n,m,sg,3,o,0,0'>
+7	meM	unk	<fs af='meM,psp,,,,,,'>
+8	kiwanI	unk	<fs af='kiwanI,adj,f,any,,any,,'>
+9	trena	unk	<fs af='trena,n,f,sg,3,d,0,0'>|<fs af='trena,n,f,sg,3,o,0,0'>
+10	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+11	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	hExarAbAxa	unk	<fs af='hExarAbAxa,unk,,,,,,'>
+2	steSana	unk	<fs af='steSana,n,m,sg,3,d,0,0'>|<fs af='steSana,n,m,pl,3,d,0,0'>|<fs af='steSana,n,m,sg,3,o,0,0'>
+3	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+4	agale	unk	<fs af='agalA,adj,m,sg,,o,,'>|<fs af='agalA,adj,m,pl,,d,,'>|<fs af='agalA,adj,m,pl,,o,,'>
+5	eka	unk	<fs af='eka,adj,any,any,,any,,'>|<fs af='eka,n,m,sg,3,d,0,0'>|<fs af='eka,n,m,pl,3,d,0,0'>|<fs af='eka,n,m,sg,3,o,0,0'>|<fs af='eka,n,m,pl,3,o,0,0'>
+6	GaMte	unk	<fs af='GaMtA,n,m,pl,3,d,0,0'>|<fs af='GaMtA,n,m,sg,3,o,0,0'>
+7	meM	unk	<fs af='meM,psp,,,,,,'>
+8	kiwanI	unk	<fs af='kiwanI,adj,f,any,,any,,'>
+9	gAdZiyA	unk	<fs af='gAdZiyA,unk,,,,,,'>
+10	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+11	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	kyA	unk	<fs af='kyA,avy,,,,,,'>
+2	hama	unk	<fs af='hama,unk,,,,,,'>
+3	trena	unk	<fs af='trena,n,f,sg,3,d,0,0'>|<fs af='trena,n,f,sg,3,o,0,0'>
+4	SedyUla	unk	<fs af='SedyUla,unk,,,,,,'>
+5	OYnalAina	unk	<fs af='OYnalAina,unk,,,,,,'>
+6	xeKa	unk	<fs af='xeKa,v,any,any,any,,0,0'>
+7	sakawe	unk	<fs af='saka,v,m,pl,any,,wA,wA'>
+8	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+9	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	Barawanagara	unk	<fs af='Barawanagara,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	hExarAbAxa	unk	<fs af='hExarAbAxa,unk,,,,,,'>
+4	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+5	lie	unk	<fs af='le,v,m,pl,any,,yA,yA'>
+6	kula	unk	<fs af='kula,n,m,sg,3,d,0,0'>|<fs af='kula,n,m,pl,3,d,0,0'>|<fs af='kula,n,m,sg,3,o,0,0'>|<fs af='kula,adj,any,any,,any,,'>
+7	kiwanI	unk	<fs af='kiwanI,adj,f,any,,any,,'>
+8	trena	unk	<fs af='trena,n,f,sg,3,d,0,0'>|<fs af='trena,n,f,sg,3,o,0,0'>
+9	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+10	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	hExarAbAxa	unk	<fs af='hExarAbAxa,unk,,,,,,'>
+2	para	unk	<fs af='para,psp,,,,,,'>
+3	kiwanI	unk	<fs af='kiwanI,adj,f,any,,any,,'>
+4	xera	unk	<fs af='xera,adv,,,,,,'>
+5	rukegI	unk	<fs af='ruka,v,f,sg,2,,gA,gA'>|<fs af='ruka,v,f,sg,3,,gA,gA'>
+6	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	PalakanumA	unk	<fs af='PalakanumA,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	liMgamapallI	unk	<fs af='liMgamapallI,unk,,,,,,'>
+4	kI	unk	<fs af='kA,psp,f,sg,,d,kA,kA'>|<fs af='kA,psp,f,sg,,o,kA,kA'>|<fs af='kA,psp,f,pl,,d,kA,kA'>|<fs af='kA,psp,f,pl,,o,kA,kA'>|<fs af='kara,v,f,sg,any,,yA,yA'>
+5	6:00	unk	<fs af='6:00,num,,,,,,'>
+6	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+7	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+8	9:00	unk	<fs af='9:00,num,,,,,,'>
+9	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+10	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+11	bIca	unk	<fs af='bIca,psp,,,,,,'>
+12	trene	unk	<fs af='trene,unk,,,,,,'>
+13	kiwanI	unk	<fs af='kiwanI,adj,f,any,,any,,'>
+14	kiwanI	unk	<fs af='kiwanI,adj,f,any,,any,,'>
+15	xera	unk	<fs af='xera,adv,,,,,,'>
+16	meM	unk	<fs af='meM,psp,,,,,,'>
+17	pahuzcawI	unk	<fs af='pahuzca,v,f,sg,any,,wA,wA'>
+18	hEM	unk	<fs af='hE,v,any,pl,1,,hE,hE'>|<fs af='hE,v,any,pl,3,,hE,hE'>
+19	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	PalakanumA	unk	<fs af='PalakanumA,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	liMgamapallI	unk	<fs af='liMgamapallI,unk,,,,,,'>
+4	kI	unk	<fs af='kA,psp,f,sg,,d,kA,kA'>|<fs af='kA,psp,f,sg,,o,kA,kA'>|<fs af='kA,psp,f,pl,,d,kA,kA'>|<fs af='kA,psp,f,pl,,o,kA,kA'>|<fs af='kara,v,f,sg,any,,yA,yA'>
+5	6:00	unk	<fs af='6:00,num,,,,,,'>
+6	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+7	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+8	9:00	unk	<fs af='9:00,num,,,,,,'>
+9	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+10	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+11	bIca	unk	<fs af='bIca,psp,,,,,,'>
+12	Barawanagara	unk	<fs af='Barawanagara,unk,,,,,,'>
+13	para	unk	<fs af='para,psp,,,,,,'>
+14	trene	unk	<fs af='trene,unk,,,,,,'>
+15	kiwanI	unk	<fs af='kiwanI,adj,f,any,,any,,'>
+16	kiwanI	unk	<fs af='kiwanI,adj,f,any,,any,,'>
+17	xera	unk	<fs af='xera,adv,,,,,,'>
+18	meM	unk	<fs af='meM,psp,,,,,,'>
+19	pahuzcawI	unk	<fs af='pahuzca,v,f,sg,any,,wA,wA'>
+20	hEM	unk	<fs af='hE,v,any,pl,1,,hE,hE'>|<fs af='hE,v,any,pl,3,,hE,hE'>
+21	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	PalakanumA	unk	<fs af='PalakanumA,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	liMgamapallI	unk	<fs af='liMgamapallI,unk,,,,,,'>
+4	kI	unk	<fs af='kA,psp,f,sg,,d,kA,kA'>|<fs af='kA,psp,f,sg,,o,kA,kA'>|<fs af='kA,psp,f,pl,,d,kA,kA'>|<fs af='kA,psp,f,pl,,o,kA,kA'>|<fs af='kara,v,f,sg,any,,yA,yA'>
+5	kiwanI	unk	<fs af='kiwanI,adj,f,any,,any,,'>
+6	trena	unk	<fs af='trena,n,f,sg,3,d,0,0'>|<fs af='trena,n,f,sg,3,o,0,0'>
+7	jAwI	unk	<fs af='jA,v,f,sg,any,,wA,wA'>
+8	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+9	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	liMgamapallI	unk	<fs af='liMgamapallI,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	hExarAbAxa	unk	<fs af='hExarAbAxa,unk,,,,,,'>
+4	jAne	unk	<fs af='jAna,v,any,sg,2,,eM,eM'>|<fs af='jAna,v,any,sg,3,,eM,eM'>|<fs af='jAna,v,m,pl,any,,yA,yA'>|<fs af='jA,v,m,pl,any,,nA,nA'>
+5	vAlI	unk	<fs af='vAlI,n,f,sg,3,d,0,0'>|<fs af='vAlI,n,f,sg,3,o,0,0'>
+6	sArI	unk	<fs af='sArI,n,f,sg,3,d,0,0'>|<fs af='sArI,n,f,sg,3,o,0,0'>
+7	treno	unk	<fs af='treno,unk,,,,,,'>
+8	kA	unk	<fs af='kA,psp,m,sg,,d,kA,kA'>
+9	samaya	unk	<fs af='samaya,n,m,sg,3,d,0,0'>|<fs af='samaya,n,m,pl,3,d,0,0'>|<fs af='samaya,n,m,sg,3,o,0,0'>|<fs af='samaya,n,m,pl,3,o,0,0'>
+10	bawAo	unk	<fs af='bawA,v,any,pl,2,,eM,eM'>
+11	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	liMgamapallI	unk	<fs af='liMgamapallI,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	hExarAbAxa	unk	<fs af='hExarAbAxa,unk,,,,,,'>
+4	jAne	unk	<fs af='jAna,v,any,sg,2,,eM,eM'>|<fs af='jAna,v,any,sg,3,,eM,eM'>|<fs af='jAna,v,m,pl,any,,yA,yA'>|<fs af='jA,v,m,pl,any,,nA,nA'>
+5	vAlI	unk	<fs af='vAlI,n,f,sg,3,d,0,0'>|<fs af='vAlI,n,f,sg,3,o,0,0'>
+6	sArI	unk	<fs af='sArI,n,f,sg,3,d,0,0'>|<fs af='sArI,n,f,sg,3,o,0,0'>
+7	treno	unk	<fs af='treno,unk,,,,,,'>
+8	kA	unk	<fs af='kA,psp,m,sg,,d,kA,kA'>
+9	samaya	unk	<fs af='samaya,n,m,sg,3,d,0,0'>|<fs af='samaya,n,m,pl,3,d,0,0'>|<fs af='samaya,n,m,sg,3,o,0,0'>|<fs af='samaya,n,m,pl,3,o,0,0'>
+10	kyA	unk	<fs af='kyA,avy,,,,,,'>
+11	hEM	unk	<fs af='hE,v,any,pl,1,,hE,hE'>|<fs af='hE,v,any,pl,3,,hE,hE'>
+12	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	PalakanumA	unk	<fs af='PalakanumA,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	liMgamapallI	unk	<fs af='liMgamapallI,unk,,,,,,'>
+4	agalI	unk	<fs af='agalI,unk,,,,,,'>
+5	kyA	unk	<fs af='kyA,avy,,,,,,'>
+6	koI	unk	<fs af='koI,pn,any,sg,3,d,0,0'>|<fs af='koI,pn,any,pl,3,d,0,0'>
+7	trEna	unk	<fs af='trEna,unk,,,,,,'>
+8	jAegI	unk	<fs af='jA,v,f,sg,2,,gA,gA'>|<fs af='jA,v,f,sg,3,,gA,gA'>
+9	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	PalakanumA	unk	<fs af='PalakanumA,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	liMgamapallI	unk	<fs af='liMgamapallI,unk,,,,,,'>
+4	kI	unk	<fs af='kA,psp,f,sg,,d,kA,kA'>|<fs af='kA,psp,f,sg,,o,kA,kA'>|<fs af='kA,psp,f,pl,,d,kA,kA'>|<fs af='kA,psp,f,pl,,o,kA,kA'>|<fs af='kara,v,f,sg,any,,yA,yA'>
+5	6	unk	<fs af='6,num,,,,,,'>
+6	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+7	9	unk	<fs af='9,num,,,,,,'>
+8	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+9	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+10	bIca	unk	<fs af='bIca,psp,,,,,,'>
+11	pahalI	unk	<fs af='pahalI,adj,f,any,,any,,'>
+12	trEna	unk	<fs af='trEna,unk,,,,,,'>
+13	ko	unk	<fs af='ko,psp,,,,,,'>
+14	pahucane	unk	<fs af='pahucane,unk,,,,,,'>
+15	meM	unk	<fs af='meM,psp,,,,,,'>
+16	kiwanA	unk	<fs af='kiwanA,adv,,,,,,'>|<fs af='kiwanA,adj,m,sg,,d,,'>
+17	samaya	unk	<fs af='samaya,n,m,sg,3,d,0,0'>|<fs af='samaya,n,m,pl,3,d,0,0'>|<fs af='samaya,n,m,sg,3,o,0,0'>|<fs af='samaya,n,m,pl,3,o,0,0'>
+18	lagawA	unk	<fs af='laga,v,m,sg,any,,wA,wA'>
+19	hEM	unk	<fs af='hE,v,any,pl,1,,hE,hE'>|<fs af='hE,v,any,pl,3,,hE,hE'>
+20	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	PalakanumA	unk	<fs af='PalakanumA,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	liMgamapallI	unk	<fs af='liMgamapallI,unk,,,,,,'>
+4	jAne	unk	<fs af='jAna,v,any,sg,2,,eM,eM'>|<fs af='jAna,v,any,sg,3,,eM,eM'>|<fs af='jAna,v,m,pl,any,,yA,yA'>|<fs af='jA,v,m,pl,any,,nA,nA'>
+5	vAlI	unk	<fs af='vAlI,n,f,sg,3,d,0,0'>|<fs af='vAlI,n,f,sg,3,o,0,0'>
+6	trEna	unk	<fs af='trEna,unk,,,,,,'>
+7	hExarAbAxa	unk	<fs af='hExarAbAxa,unk,,,,,,'>
+8	para	unk	<fs af='para,psp,,,,,,'>
+9	kaba	unk	<fs af='kaba,adv,,,,,,'>
+10	pahuzcawI	unk	<fs af='pahuzca,v,f,sg,any,,wA,wA'>
+11	hEM	unk	<fs af='hE,v,any,pl,1,,hE,hE'>|<fs af='hE,v,any,pl,3,,hE,hE'>
+12	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	PalakanumA	unk	<fs af='PalakanumA,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	liMgamapallI	unk	<fs af='liMgamapallI,unk,,,,,,'>
+4	kI	unk	<fs af='kA,psp,f,sg,,d,kA,kA'>|<fs af='kA,psp,f,sg,,o,kA,kA'>|<fs af='kA,psp,f,pl,,d,kA,kA'>|<fs af='kA,psp,f,pl,,o,kA,kA'>|<fs af='kara,v,f,sg,any,,yA,yA'>
+5	6:00	unk	<fs af='6:00,num,,,,,,'>
+6	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+7	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+8	9:00	unk	<fs af='9:00,num,,,,,,'>
+9	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+10	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+11	bIca	unk	<fs af='bIca,psp,,,,,,'>
+12	xUsarI	unk	<fs af='xUsarI,unk,,,,,,'>
+13	trEna	unk	<fs af='trEna,unk,,,,,,'>
+14	kaba	unk	<fs af='kaba,adv,,,,,,'>
+15	jAwI	unk	<fs af='jA,v,f,sg,any,,wA,wA'>
+16	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+17	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	PalakanumA	unk	<fs af='PalakanumA,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	liMgamapallI	unk	<fs af='liMgamapallI,unk,,,,,,'>
+4	kI	unk	<fs af='kA,psp,f,sg,,d,kA,kA'>|<fs af='kA,psp,f,sg,,o,kA,kA'>|<fs af='kA,psp,f,pl,,d,kA,kA'>|<fs af='kA,psp,f,pl,,o,kA,kA'>|<fs af='kara,v,f,sg,any,,yA,yA'>
+5	6:00	unk	<fs af='6:00,num,,,,,,'>
+6	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+7	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+8	9:00	unk	<fs af='9:00,num,,,,,,'>
+9	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+10	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+11	bIca	unk	<fs af='bIca,psp,,,,,,'>
+12	wIsarI	unk	<fs af='wIsarI,unk,,,,,,'>
+13	trEna	unk	<fs af='trEna,unk,,,,,,'>
+14	kaba	unk	<fs af='kaba,adv,,,,,,'>
+15	jAwI	unk	<fs af='jA,v,f,sg,any,,wA,wA'>
+16	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+17	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	PalakanumA	unk	<fs af='PalakanumA,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	liMgamapallI	unk	<fs af='liMgamapallI,unk,,,,,,'>
+4	kI	unk	<fs af='kA,psp,f,sg,,d,kA,kA'>|<fs af='kA,psp,f,sg,,o,kA,kA'>|<fs af='kA,psp,f,pl,,d,kA,kA'>|<fs af='kA,psp,f,pl,,o,kA,kA'>|<fs af='kara,v,f,sg,any,,yA,yA'>
+5	6:00	unk	<fs af='6:00,num,,,,,,'>
+6	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+7	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+8	9:00	unk	<fs af='9:00,num,,,,,,'>
+9	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+10	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+11	bIca	unk	<fs af='bIca,psp,,,,,,'>
+12	trene	unk	<fs af='trene,unk,,,,,,'>
+13	kiwane	unk	<fs af='kiwanA,adj,m,sg,,o,,'>|<fs af='kiwanA,adj,m,pl,,d,,'>|<fs af='kiwanA,adj,m,pl,,o,,'>
+14	kiwane	unk	<fs af='kiwanA,adj,m,sg,,o,,'>|<fs af='kiwanA,adj,m,pl,,d,,'>|<fs af='kiwanA,adj,m,pl,,o,,'>
+15	samaya	unk	<fs af='samaya,n,m,sg,3,d,0,0'>|<fs af='samaya,n,m,pl,3,d,0,0'>|<fs af='samaya,n,m,sg,3,o,0,0'>|<fs af='samaya,n,m,pl,3,o,0,0'>
+16	meM	unk	<fs af='meM,psp,,,,,,'>
+17	pahuzcawI	unk	<fs af='pahuzca,v,f,sg,any,,wA,wA'>
+18	hEM	unk	<fs af='hE,v,any,pl,1,,hE,hE'>|<fs af='hE,v,any,pl,3,,hE,hE'>
+19	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	PalakanumA	unk	<fs af='PalakanumA,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	liMgamapallI	unk	<fs af='liMgamapallI,unk,,,,,,'>
+4	kI	unk	<fs af='kA,psp,f,sg,,d,kA,kA'>|<fs af='kA,psp,f,sg,,o,kA,kA'>|<fs af='kA,psp,f,pl,,d,kA,kA'>|<fs af='kA,psp,f,pl,,o,kA,kA'>|<fs af='kara,v,f,sg,any,,yA,yA'>
+5	6:00	unk	<fs af='6:00,num,,,,,,'>
+6	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+7	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+8	9:00	unk	<fs af='9:00,num,,,,,,'>
+9	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+10	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+11	bIca	unk	<fs af='bIca,psp,,,,,,'>
+12	trena	unk	<fs af='trena,n,f,sg,3,d,0,0'>|<fs af='trena,n,f,sg,3,o,0,0'>
+13	kiwane	unk	<fs af='kiwanA,adj,m,sg,,o,,'>|<fs af='kiwanA,adj,m,pl,,d,,'>|<fs af='kiwanA,adj,m,pl,,o,,'>
+14	samaya	unk	<fs af='samaya,n,m,sg,3,d,0,0'>|<fs af='samaya,n,m,pl,3,d,0,0'>|<fs af='samaya,n,m,sg,3,o,0,0'>|<fs af='samaya,n,m,pl,3,o,0,0'>
+15	meM	unk	<fs af='meM,psp,,,,,,'>
+16	pahuzcawI	unk	<fs af='pahuzca,v,f,sg,any,,wA,wA'>
+17	hEM	unk	<fs af='hE,v,any,pl,1,,hE,hE'>|<fs af='hE,v,any,pl,3,,hE,hE'>
+18	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	hExarAbAxa	unk	<fs af='hExarAbAxa,unk,,,,,,'>
+2	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+3	Barawanagara	unk	<fs af='Barawanagara,unk,,,,,,'>
+4	jAne	unk	<fs af='jAna,v,any,sg,2,,eM,eM'>|<fs af='jAna,v,any,sg,3,,eM,eM'>|<fs af='jAna,v,m,pl,any,,yA,yA'>|<fs af='jA,v,m,pl,any,,nA,nA'>
+5	vAlI	unk	<fs af='vAlI,n,f,sg,3,d,0,0'>|<fs af='vAlI,n,f,sg,3,o,0,0'>
+6	6	unk	<fs af='6,num,,,,,,'>
+7	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+8	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+9	9	unk	<fs af='9,num,,,,,,'>
+10	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+11	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+12	bIca	unk	<fs af='bIca,psp,,,,,,'>
+13	vAlI	unk	<fs af='vAlI,n,f,sg,3,d,0,0'>|<fs af='vAlI,n,f,sg,3,o,0,0'>
+14	gAdZI	unk	<fs af='gAdZI,n,f,sg,3,d,0,0'>|<fs af='gAdZI,n,f,sg,3,o,0,0'>|<fs af='gAdZa,v,f,sg,any,,yA,yA'>
+15	kisa	unk	<fs af='kisa,unk,,,,,,'>
+16	kisa	unk	<fs af='kisa,unk,,,,,,'>
+17	xina	unk	<fs af='xina,n,m,sg,3,d,0,0'>|<fs af='xina,n,m,pl,3,d,0,0'>|<fs af='xina,n,m,sg,3,o,0,0'>
+18	howI	unk	<fs af='ho,v,f,sg,any,,wA,wA'>
+19	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+20	?	unk	<fs af='?,punc,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	jAne	unk	<fs af='jAna,v,any,sg,2,,eM,eM'>|<fs af='jAna,v,any,sg,3,,eM,eM'>|<fs af='jAna,v,m,pl,any,,yA,yA'>|<fs af='jA,v,m,pl,any,,nA,nA'>
+2	vAlI	unk	<fs af='vAlI,n,f,sg,3,d,0,0'>|<fs af='vAlI,n,f,sg,3,o,0,0'>
+</af='..,>
+<af='.., id="1">
+1	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+2	lie	unk	<fs af='le,v,m,pl,any,,yA,yA'>
+</af='..,>
+<af='.., id="1">
+1	kI	unk	<fs af='kA,psp,f,sg,,d,kA,kA'>|<fs af='kA,psp,f,sg,,o,kA,kA'>|<fs af='kA,psp,f,pl,,d,kA,kA'>|<fs af='kA,psp,f,pl,,o,kA,kA'>|<fs af='kara,v,f,sg,any,,yA,yA'>
+</af='..,>
+<af='.., id="1">
+1	ko	unk	<fs af='ko,psp,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	waka	unk	<fs af='waka,avy,,,,,,'>|<fs af='waka,psp,,,,,,'>
+</af='..,>
+<af='.., id="1">
+</af='..,>
+<af='.., id="1">
+1	para	unk	<fs af='para,psp,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	meM	unk	<fs af='meM,psp,,,,,,'>
+</af='..,>
+<af='.., id="1">
+</af='..,>
+<af='.., id="1">
+1	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+</af='..,>
+<af='.., id="1">
+1	se	unk	<fs af='se,v,any,any,any,,0,0'>|<fs af='se,psp,,,,,,'>|<fs af='sA,psp,m,sg,,o,kA,kA'>|<fs af='sA,psp,m,pl,,d,kA,kA'>|<fs af='sA,psp,m,pl,,o,kA,kA'>
+</af='..,>
+<af='.., id="1">
+1	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+2	bAxa	unk	<fs af='bAxa,adv,,,,,,'>|<fs af='bAxa,avy,,,,,,'>|<fs af='bAxa,psp,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+2	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+3	bAxa	unk	<fs af='bAxa,adv,,,,,,'>|<fs af='bAxa,avy,,,,,,'>|<fs af='bAxa,psp,,,,,,'>
+</af='..,>
+<af='.., id="1">
+</af='..,>
+<af='.., id="1">
+1	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+2	waka	unk	<fs af='waka,avy,,,,,,'>|<fs af='waka,psp,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+2	ke	unk	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+3	bIca	unk	<fs af='bIca,psp,,,,,,'>
+</af='..,>
+<af='.., id="1">
+</af='..,>
+<af='.., id="1">
+1	jAegI	unk	<fs af='jA,v,f,sg,2,,gA,gA'>|<fs af='jA,v,f,sg,3,,gA,gA'>
+</af='..,>
+<af='.., id="1">
+1	jAwI	unk	<fs af='jA,v,f,sg,any,,wA,wA'>
+</af='..,>
+<af='.., id="1">
+1	jAnI	unk	<fs af='jAnI,adj,f,any,,any,,'>|<fs af='jAna,v,f,sg,any,,yA,yA'>|<fs af='jA,v,f,sg,any,,nA,nA'>
+</af='..,>
+<af='.., id="1">
+1	jA	unk	<fs af='jA,v,any,any,any,,0,0'>
+2	rahI	unk	<fs af='raha,v,f,sg,any,,yA,yA'>
+</af='..,>
+<af='.., id="1">
+1	jAne	unk	<fs af='jAna,v,any,sg,2,,eM,eM'>|<fs af='jAna,v,any,sg,3,,eM,eM'>|<fs af='jAna,v,m,pl,any,,yA,yA'>|<fs af='jA,v,m,pl,any,,nA,nA'>
+2	vAlI	unk	<fs af='vAlI,n,f,sg,3,d,0,0'>|<fs af='vAlI,n,f,sg,3,o,0,0'>
+</af='..,>
+<af='.., id="1">
+1	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+</af='..,>
+<af='.., id="1">
+1	WI	unk	<fs af='WA,v,f,sg,any,,WA,WA'>
+</af='..,>
+<af='.., id="1">
+1	jAnA	unk	<fs af='jAna,v,m,sg,any,,yA,yA'>|<fs af='jA,v,m,sg,any,,nA,nA'>
+</af='..,>
+<af='.., id="1">
+1	WA	unk	<fs af='WA,v,m,sg,any,,WA,WA'>
+</af='..,>
+<af='.., id="1">
+1	howI	unk	<fs af='ho,v,f,sg,any,,wA,wA'>
+2	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+</af='..,>
+<af='.., id="1">
+</af='..,>
+<af='.., id="1">
+1	AegI	unk	<fs af='A,v,f,sg,2,,gA,gA'>|<fs af='A,v,f,sg,3,,gA,gA'>
+</af='..,>
+<af='.., id="1">
+1	AwI	unk	<fs af='A,v,f,sg,any,,wA,wA'>
+</af='..,>
+<af='.., id="1">
+1	AnI	unk	<fs af='A,v,f,sg,any,,nA,nA'>
+</af='..,>
+<af='.., id="1">
+1	A	unk	<fs af='A,v,any,any,any,,0,0'>
+2	rahI	unk	<fs af='raha,v,f,sg,any,,yA,yA'>
+</af='..,>
+<af='.., id="1">
+1	Ane	unk	<fs af='AnA,n,m,pl,3,d,0,0'>|<fs af='AnA,n,m,sg,3,o,0,0'>|<fs af='A,v,m,pl,any,,nA,nA'>
+2	vAlI	unk	<fs af='vAlI,n,f,sg,3,d,0,0'>|<fs af='vAlI,n,f,sg,3,o,0,0'>
+</af='..,>
+<af='.., id="1">
+1	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+</af='..,>
+<af='.., id="1">
+1	WI	unk	<fs af='WA,v,f,sg,any,,WA,WA'>
+</af='..,>
+<af='.., id="1">
+1	AnA	unk	<fs af='AnA,n,m,sg,3,d,0,0'>|<fs af='A,v,m,sg,any,,nA,nA'>
+</af='..,>
+<af='.., id="1">
+1	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+</af='..,>
+<af='.., id="1">
+1	WA	unk	<fs af='WA,v,m,sg,any,,WA,WA'>
+</af='..,>
+<af='.., id="1">
+1	howI	unk	<fs af='ho,v,f,sg,any,,wA,wA'>
+2	hE	unk	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+</af='..,>
+<af='.., id="1">
+</af='..,>
+<af='.., id="1">
+1	kiwane	unk	<fs af='kiwanA,adj,m,sg,,o,,'>|<fs af='kiwanA,adj,m,pl,,d,,'>|<fs af='kiwanA,adj,m,pl,,o,,'>
+2	kiwane	unk	<fs af='kiwanA,adj,m,sg,,o,,'>|<fs af='kiwanA,adj,m,pl,,d,,'>|<fs af='kiwanA,adj,m,pl,,o,,'>
+3	xera	unk	<fs af='xera,adv,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	kiwanI	unk	<fs af='kiwanI,adj,f,any,,any,,'>
+2	kiwanI	unk	<fs af='kiwanI,adj,f,any,,any,,'>
+3	xera	unk	<fs af='xera,adv,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	kiwane	unk	<fs af='kiwanA,adj,m,sg,,o,,'>|<fs af='kiwanA,adj,m,pl,,d,,'>|<fs af='kiwanA,adj,m,pl,,o,,'>
+2	kiwane	unk	<fs af='kiwanA,adj,m,sg,,o,,'>|<fs af='kiwanA,adj,m,pl,,d,,'>|<fs af='kiwanA,adj,m,pl,,o,,'>
+3	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+</af='..,>
+<af='.., id="1">
+</af='..,>
+<af='.., id="1">
+1	kiwane	unk	<fs af='kiwanA,adj,m,sg,,o,,'>|<fs af='kiwanA,adj,m,pl,,d,,'>|<fs af='kiwanA,adj,m,pl,,o,,'>
+2	kiwane	unk	<fs af='kiwanA,adj,m,sg,,o,,'>|<fs af='kiwanA,adj,m,pl,,d,,'>|<fs af='kiwanA,adj,m,pl,,o,,'>
+</af='..,>
+<af='.., id="1">
+1	kiwanI	unk	<fs af='kiwanI,adj,f,any,,any,,'>
+2	kiwanI	unk	<fs af='kiwanI,adj,f,any,,any,,'>
+</af='..,>
+<af='.., id="1">
+1	kiwanA	unk	<fs af='kiwanA,adv,,,,,,'>|<fs af='kiwanA,adj,m,sg,,d,,'>
+2	kiwanA	unk	<fs af='kiwanA,adv,,,,,,'>|<fs af='kiwanA,adj,m,sg,,d,,'>
+</af='..,>
+<af='.., id="1">
+1	kahAz	unk	<fs af='kahAz,adv,,,,,,'>
+2	kahAz	unk	<fs af='kahAz,adv,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	kaba	unk	<fs af='kaba,adv,,,,,,'>
+2	kaba	unk	<fs af='kaba,adv,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	kOna	unk	<fs af='kOna,avy,,,,,,'>|<fs af='kOna,pn,any,sg,3,d,0,0'>|<fs af='kOna,pn,any,pl,3,d,0,0'>
+2	kOna	unk	<fs af='kOna,avy,,,,,,'>|<fs af='kOna,pn,any,sg,3,d,0,0'>|<fs af='kOna,pn,any,pl,3,d,0,0'>
+</af='..,>
+<af='.., id="1">
+</af='..,>
+<af='.., id="1">
+1	kiwane	unk	<fs af='kiwanA,adj,m,sg,,o,,'>|<fs af='kiwanA,adj,m,pl,,d,,'>|<fs af='kiwanA,adj,m,pl,,o,,'>
+2	xera	unk	<fs af='xera,adv,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	kiwanI	unk	<fs af='kiwanI,adj,f,any,,any,,'>
+2	xera	unk	<fs af='xera,adv,,,,,,'>
+</af='..,>
+<af='.., id="1">
+1	kiwanA	unk	<fs af='kiwanA,adv,,,,,,'>|<fs af='kiwanA,adj,m,sg,,d,,'>
+2	samaya	unk	<fs af='samaya,n,m,sg,3,d,0,0'>|<fs af='samaya,n,m,pl,3,d,0,0'>|<fs af='samaya,n,m,sg,3,o,0,0'>|<fs af='samaya,n,m,pl,3,o,0,0'>
+</af='..,>
+<af='.., id="1">
+1	kiwane	unk	<fs af='kiwanA,adj,m,sg,,o,,'>|<fs af='kiwanA,adj,m,pl,,d,,'>|<fs af='kiwanA,adj,m,pl,,o,,'>
+2	samaya	unk	<fs af='samaya,n,m,sg,3,d,0,0'>|<fs af='samaya,n,m,pl,3,d,0,0'>|<fs af='samaya,n,m,sg,3,o,0,0'>|<fs af='samaya,n,m,pl,3,o,0,0'>
+</af='..,>
+<af='.., id="1">
+1	kiwane	unk	<fs af='kiwanA,adj,m,sg,,o,,'>|<fs af='kiwanA,adj,m,pl,,d,,'>|<fs af='kiwanA,adj,m,pl,,o,,'>
+2	baje	unk	<fs af='baja,v,any,sg,2,,eM,eM'>|<fs af='baja,v,any,sg,3,,eM,eM'>|<fs af='baja,v,m,pl,any,,yA,yA'>
+</af='..,>
+<Sentence id="1">
+1	karavAyI	unk	<fs af='karavA,v,f,sg,any,,yA,yA'>
+</Sentence>

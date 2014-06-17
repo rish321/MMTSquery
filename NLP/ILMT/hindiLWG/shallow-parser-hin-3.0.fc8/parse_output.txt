@@ -1,0 +1,13 @@
+<Sentence id="1">
+1	((	NP	<fs af='टिकेट,unk,,,,,,' head="टिकेट"  poslcat="NM" name="NP" drel="k1:VGF">
+1.1	टिकेट	NN	<fs af='टिकेट,unk,,,,,,' name="टिकेट"  poslcat="NM">
+	))
+2	((	NP	<fs af='कैसे,adv,,,,,,' head="कैसे"  poslcat="NM" name="NP2" drel="adv:VGF">
+2.1	कैसे	WQ	<fs af='कैसे,adv,,,,,,' poslcat="NM"  name="कैसे">
+	))
+3	((	VGF	<fs af='करवा,v,m,sg,2,,या_जा_रह+या_है,yA' vpos="tam1_2_3_4"  head="करवाया" name="VGF">
+3.1	करवाया	VM	<fs af='करवा,v,m,sg,any,,या,yA' name="करवाया">
+3.2	?	SYM	<fs af='?,punc,,,,,,' poslcat="NM" name="?">
+	))
+</Sentence>
+

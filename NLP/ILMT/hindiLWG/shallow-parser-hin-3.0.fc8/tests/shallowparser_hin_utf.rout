@@ -1,0 +1,13 @@
+<Sentence id="1">			
+1	((	NP	<fs af='बच्चा,n,m,pl,3,d,0,0' head="बच्चे">
+1.1	सभी	QF	<fs af='सभी,n,m,sg,3,d,0,0' poslcat="NM">
+1.2	बच्चे	NN	<fs af='बच्चा,n,m,pl,3,d,0,0' name="बच्चे">
+	))		
+2	((	NP	<fs af='किताब,n,f,sg,3,d,0,0' head="किताब">
+2.1	किताब	NN	<fs af='किताब,n,f,sg,3,d,0,0' name="किताब">
+	))		
+3	((	VGF	<fs af='पढ़,v,m,pl,1,,ता_है,wA' vpos="tam1_2"  head="पढ़ते">
+3.1	पढ़ते	VM	<fs af='पढ़,v,m,pl,any,,ता,wA' name="पढ़ते">
+3.2	।	SYM	<fs af='.,punc,,,,,,' poslcat="NM">
+	))		
+</Sentence>			
