@@ -1,0 +1,7 @@
+prefix
+
+SELECT ?pcond
+WHERE {
+    ?act :precondition ?pcond
+    FILTER ( regex ( str(?act), "action") ).
+}

@@ -471,36 +471,6 @@
     <!-- http://www.semanticweb.org/ontologies/2014/1/MMTS_test.owl#BuyMmtsTrainTicket -->
 
     <Class rdf:about="&MMTS_test;BuyMmtsTrainTicket">
-        <equivalentClass>
-            <Restriction>
-                <onProperty rdf:resource="&MMTS_test;hasTheme"/>
-                <someValuesFrom rdf:resource="&MMTS_test;MmtsTrainTicket"/>
-            </Restriction>
-        </equivalentClass>
-        <equivalentClass>
-            <Restriction>
-                <onProperty rdf:resource="&MMTS_test;hasOutcome"/>
-                <someValuesFrom rdf:resource="&MMTS_test;haveTicket"/>
-            </Restriction>
-        </equivalentClass>
-        <equivalentClass>
-            <Restriction>
-                <onProperty rdf:resource="&MMTS_test;destination"/>
-                <someValuesFrom rdf:resource="&MMTS_test;Station"/>
-            </Restriction>
-        </equivalentClass>
-        <equivalentClass>
-            <Restriction>
-                <onProperty rdf:resource="&MMTS_test;source"/>
-                <someValuesFrom rdf:resource="&MMTS_test;Station"/>
-            </Restriction>
-        </equivalentClass>
-        <equivalentClass>
-            <Restriction>
-                <onProperty rdf:resource="&MMTS_test;atPlace"/>
-                <hasValue rdf:resource="&MMTS_test;GeneralTicketBookingCounter"/>
-            </Restriction>
-        </equivalentClass>
         <rdfs:subClassOf rdf:resource="&MMTS_test;Buy"/>
     </Class>
     
@@ -525,12 +495,6 @@
     <!-- http://www.semanticweb.org/ontologies/2014/1/MMTS_test.owl#Journey -->
 
     <Class rdf:about="&MMTS_test;Journey">
-        <equivalentClass>
-            <Restriction>
-                <onProperty rdf:resource="&MMTS_test;hasPurpose"/>
-                <allValuesFrom rdf:resource="&MMTS_test;toTravel"/>
-            </Restriction>
-        </equivalentClass>
         <rdfs:subClassOf rdf:resource="&MMTS_test;AbstractArtifact"/>
     </Class>
     
@@ -726,12 +690,6 @@
     <!-- http://www.semanticweb.org/ontologies/2014/1/MMTS_test.owl#toTravel -->
 
     <Class rdf:about="&MMTS_test;toTravel">
-        <equivalentClass>
-            <Restriction>
-                <onProperty rdf:resource="&MMTS_test;precondition"/>
-                <allValuesFrom rdf:resource="&MMTS_test;haveTicket"/>
-            </Restriction>
-        </equivalentClass>
         <rdfs:subClassOf rdf:resource="&MMTS_test;Action"/>
     </Class>
     
@@ -8490,6 +8448,8 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <swrl:Variable rdf:about="urn:swrl#s"/>
+    <swrl:Variable rdf:about="urn:swrl#st"/>
     <swrl:Variable rdf:about="urn:swrl#st1"/>
     <swrl:Variable rdf:about="urn:swrl#st2"/>
     <swrl:Variable rdf:about="urn:swrl#trav"/>
@@ -8497,8 +8457,6 @@
     <swrl:Variable rdf:about="urn:swrl#s2"/>
     <swrl:Variable rdf:about="urn:swrl#t1"/>
     <swrl:Variable rdf:about="urn:swrl#t2"/>
-    <swrl:Variable rdf:about="urn:swrl#s"/>
-    <swrl:Variable rdf:about="urn:swrl#st"/>
     <swrl:Variable rdf:about="urn:swrl#t"/>
     <swrl:Variable rdf:about="urn:swrl#r"/>
     <swrl:Variable rdf:about="urn:swrl#time1"/>
@@ -8510,11 +8468,53 @@
     <swrl:Imp>
         <swrl:body>
             <swrl:AtomList>
-                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:rest>
+                            <swrl:AtomList>
+                                <rdf:rest>
+                                    <swrl:AtomList>
+                                        <rdf:rest>
+                                            <swrl:AtomList>
+                                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                                <rdf:first>
+                                                    <swrl:IndividualPropertyAtom>
+                                                        <swrl:propertyPredicate rdf:resource="&MMTS_test;reverseRouteOf"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                                                    </swrl:IndividualPropertyAtom>
+                                                </rdf:first>
+                                            </swrl:AtomList>
+                                        </rdf:rest>
+                                        <rdf:first>
+                                            <swrl:IndividualPropertyAtom>
+                                                <swrl:propertyPredicate rdf:resource="&MMTS_test;comprisesOf"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#s"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                            </swrl:IndividualPropertyAtom>
+                                        </rdf:first>
+                                    </swrl:AtomList>
+                                </rdf:rest>
+                                <rdf:first>
+                                    <swrl:ClassAtom>
+                                        <swrl:classPredicate rdf:resource="&MMTS_test;Station"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#s"/>
+                                    </swrl:ClassAtom>
+                                </rdf:first>
+                            </swrl:AtomList>
+                        </rdf:rest>
+                        <rdf:first>
+                            <swrl:ClassAtom>
+                                <swrl:classPredicate rdf:resource="&MMTS_test;Route"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                            </swrl:ClassAtom>
+                        </rdf:first>
+                    </swrl:AtomList>
+                </rdf:rest>
                 <rdf:first>
                     <swrl:ClassAtom>
-                        <swrl:classPredicate rdf:resource="&MMTS_test;MmtsTrain"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#t"/>
+                        <swrl:classPredicate rdf:resource="&MMTS_test;Route"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
                     </swrl:ClassAtom>
                 </rdf:first>
             </swrl:AtomList>
@@ -8524,177 +8524,15 @@
                 <rdf:rest rdf:resource="&rdf;nil"/>
                 <rdf:first>
                     <swrl:IndividualPropertyAtom>
-                        <swrl:argument2 rdf:resource="&MMTS_test;LadiesCoach"/>
-                        <swrl:propertyPredicate rdf:resource="&MMTS_test;hasComponent"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#t"/>
+                        <swrl:propertyPredicate rdf:resource="&MMTS_test;comprisesOf"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#s"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#y"/>
                     </swrl:IndividualPropertyAtom>
                 </rdf:first>
             </swrl:AtomList>
         </swrl:head>
     </swrl:Imp>
     <swrl:Imp>
-        <swrl:body>
-            <swrl:AtomList>
-                <rdf:rest>
-                    <swrl:AtomList>
-                        <rdf:first>
-                            <swrl:ClassAtom>
-                                <swrl:classPredicate rdf:resource="&MMTS_test;Route"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#r"/>
-                            </swrl:ClassAtom>
-                        </rdf:first>
-                        <rdf:rest>
-                            <swrl:AtomList>
-                                <rdf:rest>
-                                    <swrl:AtomList>
-                                        <rdf:rest>
-                                            <swrl:AtomList>
-                                                <rdf:rest>
-                                                    <swrl:AtomList>
-                                                        <rdf:first>
-                                                            <swrl:ClassAtom>
-                                                                <swrl:classPredicate rdf:resource="&MMTS_test;StopAtStation"/>
-                                                                <swrl:argument1 rdf:resource="urn:swrl#s2"/>
-                                                            </swrl:ClassAtom>
-                                                        </rdf:first>
-                                                        <rdf:rest>
-                                                            <swrl:AtomList>
-                                                                <rdf:rest>
-                                                                    <swrl:AtomList>
-                                                                        <rdf:rest>
-                                                                            <swrl:AtomList>
-                                                                                <rdf:first>
-                                                                                    <swrl:IndividualPropertyAtom>
-                                                                                        <swrl:propertyPredicate rdf:resource="&MMTS_test;forRoute"/>
-                                                                                        <swrl:argument2 rdf:resource="urn:swrl#r"/>
-                                                                                        <swrl:argument1 rdf:resource="urn:swrl#s1"/>
-                                                                                    </swrl:IndividualPropertyAtom>
-                                                                                </rdf:first>
-                                                                                <rdf:rest>
-                                                                                    <swrl:AtomList>
-                                                                                        <rdf:rest>
-                                                                                            <swrl:AtomList>
-                                                                                                <rdf:rest>
-                                                                                                    <swrl:AtomList>
-                                                                                                        <rdf:rest>
-                                                                                                            <swrl:AtomList>
-                                                                                                                <rdf:first>
-                                                                                                                    <swrl:DatavaluedPropertyAtom>
-                                                                                                                        <swrl:propertyPredicate rdf:resource="&MMTS_test;departsOn"/>
-                                                                                                                        <swrl:argument1 rdf:resource="urn:swrl#s1"/>
-                                                                                                                        <swrl:argument2 rdf:resource="urn:swrl#time1"/>
-                                                                                                                    </swrl:DatavaluedPropertyAtom>
-                                                                                                                </rdf:first>
-                                                                                                                <rdf:rest>
-                                                                                                                    <swrl:AtomList>
-                                                                                                                        <rdf:first>
-                                                                                                                            <swrl:DatavaluedPropertyAtom>
-                                                                                                                                <swrl:propertyPredicate rdf:resource="&MMTS_test;departsOn"/>
-                                                                                                                                <swrl:argument1 rdf:resource="urn:swrl#s2"/>
-                                                                                                                                <swrl:argument2 rdf:resource="urn:swrl#time2"/>
-                                                                                                                            </swrl:DatavaluedPropertyAtom>
-                                                                                                                        </rdf:first>
-                                                                                                                        <rdf:rest>
-                                                                                                                            <swrl:AtomList>
-                                                                                                                                <rdf:rest rdf:resource="&rdf;nil"/>
-                                                                                                                                <rdf:first>
-                                                                                                                                    <swrl:BuiltinAtom>
-                                                                                                                                        <swrl:builtin rdf:resource="&swrlb;lessThan"/>
-                                                                                                                                        <swrl:arguments rdf:parseType="Collection">
-                                                                                                                                            <rdf:Description rdf:about="urn:swrl#time1"/>
-                                                                                                                                            <rdf:Description rdf:about="urn:swrl#time2"/>
-                                                                                                                                        </swrl:arguments>
-                                                                                                                                    </swrl:BuiltinAtom>
-                                                                                                                                </rdf:first>
-                                                                                                                            </swrl:AtomList>
-                                                                                                                        </rdf:rest>
-                                                                                                                    </swrl:AtomList>
-                                                                                                                </rdf:rest>
-                                                                                                            </swrl:AtomList>
-                                                                                                        </rdf:rest>
-                                                                                                        <rdf:first>
-                                                                                                            <swrl:IndividualPropertyAtom>
-                                                                                                                <swrl:propertyPredicate rdf:resource="&MMTS_test;ofTrain"/>
-                                                                                                                <swrl:argument1 rdf:resource="urn:swrl#s2"/>
-                                                                                                                <swrl:argument2 rdf:resource="urn:swrl#t"/>
-                                                                                                            </swrl:IndividualPropertyAtom>
-                                                                                                        </rdf:first>
-                                                                                                    </swrl:AtomList>
-                                                                                                </rdf:rest>
-                                                                                                <rdf:first>
-                                                                                                    <swrl:IndividualPropertyAtom>
-                                                                                                        <swrl:propertyPredicate rdf:resource="&MMTS_test;ofTrain"/>
-                                                                                                        <swrl:argument1 rdf:resource="urn:swrl#s1"/>
-                                                                                                        <swrl:argument2 rdf:resource="urn:swrl#t"/>
-                                                                                                    </swrl:IndividualPropertyAtom>
-                                                                                                </rdf:first>
-                                                                                            </swrl:AtomList>
-                                                                                        </rdf:rest>
-                                                                                        <rdf:first>
-                                                                                            <swrl:IndividualPropertyAtom>
-                                                                                                <swrl:propertyPredicate rdf:resource="&MMTS_test;forRoute"/>
-                                                                                                <swrl:argument2 rdf:resource="urn:swrl#r"/>
-                                                                                                <swrl:argument1 rdf:resource="urn:swrl#s2"/>
-                                                                                            </swrl:IndividualPropertyAtom>
-                                                                                        </rdf:first>
-                                                                                    </swrl:AtomList>
-                                                                                </rdf:rest>
-                                                                            </swrl:AtomList>
-                                                                        </rdf:rest>
-                                                                        <rdf:first>
-                                                                            <swrl:IndividualPropertyAtom>
-                                                                                <swrl:propertyPredicate rdf:resource="&MMTS_test;atStation"/>
-                                                                                <swrl:argument1 rdf:resource="urn:swrl#s2"/>
-                                                                                <swrl:argument2 rdf:resource="urn:swrl#st2"/>
-                                                                            </swrl:IndividualPropertyAtom>
-                                                                        </rdf:first>
-                                                                    </swrl:AtomList>
-                                                                </rdf:rest>
-                                                                <rdf:first>
-                                                                    <swrl:IndividualPropertyAtom>
-                                                                        <swrl:propertyPredicate rdf:resource="&MMTS_test;atStation"/>
-                                                                        <swrl:argument1 rdf:resource="urn:swrl#s1"/>
-                                                                        <swrl:argument2 rdf:resource="urn:swrl#st1"/>
-                                                                    </swrl:IndividualPropertyAtom>
-                                                                </rdf:first>
-                                                            </swrl:AtomList>
-                                                        </rdf:rest>
-                                                    </swrl:AtomList>
-                                                </rdf:rest>
-                                                <rdf:first>
-                                                    <swrl:ClassAtom>
-                                                        <swrl:classPredicate rdf:resource="&MMTS_test;StopAtStation"/>
-                                                        <swrl:argument1 rdf:resource="urn:swrl#s1"/>
-                                                    </swrl:ClassAtom>
-                                                </rdf:first>
-                                            </swrl:AtomList>
-                                        </rdf:rest>
-                                        <rdf:first>
-                                            <swrl:ClassAtom>
-                                                <swrl:classPredicate rdf:resource="&MMTS_test;Station"/>
-                                                <swrl:argument1 rdf:resource="urn:swrl#st2"/>
-                                            </swrl:ClassAtom>
-                                        </rdf:first>
-                                    </swrl:AtomList>
-                                </rdf:rest>
-                                <rdf:first>
-                                    <swrl:ClassAtom>
-                                        <swrl:classPredicate rdf:resource="&MMTS_test;Station"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl#st1"/>
-                                    </swrl:ClassAtom>
-                                </rdf:first>
-                            </swrl:AtomList>
-                        </rdf:rest>
-                    </swrl:AtomList>
-                </rdf:rest>
-                <rdf:first>
-                    <swrl:ClassAtom>
-                        <swrl:classPredicate rdf:resource="&MMTS_test;MmtsTrain"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#t"/>
-                    </swrl:ClassAtom>
-                </rdf:first>
-            </swrl:AtomList>
-        </swrl:body>
         <swrl:head>
             <swrl:AtomList>
                 <rdf:first>
@@ -8706,13 +8544,6 @@
                 </rdf:first>
                 <rdf:rest>
                     <swrl:AtomList>
-                        <rdf:first>
-                            <swrl:IndividualPropertyAtom>
-                                <swrl:propertyPredicate rdf:resource="&MMTS_test;destination"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#s2"/>
-                                <swrl:argument2 rdf:resource="urn:swrl#st2"/>
-                            </swrl:IndividualPropertyAtom>
-                        </rdf:first>
                         <rdf:rest>
                             <swrl:AtomList>
                                 <rdf:rest>
@@ -8736,125 +8567,137 @@
                                 </rdf:first>
                             </swrl:AtomList>
                         </rdf:rest>
-                    </swrl:AtomList>
-                </rdf:rest>
-            </swrl:AtomList>
-        </swrl:head>
-    </swrl:Imp>
-    <swrl:Imp>
-        <swrl:head>
-            <swrl:AtomList>
-                <rdf:rest>
-                    <swrl:AtomList>
                         <rdf:first>
                             <swrl:IndividualPropertyAtom>
-                                <swrl:argument2 rdf:resource="&MMTS_test;GeneralCoach"/>
-                                <swrl:propertyPredicate rdf:resource="&MMTS_test;hasComponent"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#t"/>
+                                <swrl:propertyPredicate rdf:resource="&MMTS_test;destination"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#s2"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#st2"/>
                             </swrl:IndividualPropertyAtom>
                         </rdf:first>
-                        <rdf:rest>
-                            <swrl:AtomList>
-                                <rdf:rest rdf:resource="&rdf;nil"/>
-                                <rdf:first>
-                                    <swrl:IndividualPropertyAtom>
-                                        <swrl:argument2 rdf:resource="&MMTS_test;VendorCoach"/>
-                                        <swrl:propertyPredicate rdf:resource="&MMTS_test;hasComponent"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl#t"/>
-                                    </swrl:IndividualPropertyAtom>
-                                </rdf:first>
-                            </swrl:AtomList>
-                        </rdf:rest>
                     </swrl:AtomList>
                 </rdf:rest>
-                <rdf:first>
-                    <swrl:IndividualPropertyAtom>
-                        <swrl:argument2 rdf:resource="&MMTS_test;FirstClassCoach"/>
-                        <swrl:propertyPredicate rdf:resource="&MMTS_test;hasComponent"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#t"/>
-                    </swrl:IndividualPropertyAtom>
-                </rdf:first>
             </swrl:AtomList>
         </swrl:head>
         <swrl:body>
             <swrl:AtomList>
-                <rdf:rest rdf:resource="&rdf;nil"/>
                 <rdf:first>
                     <swrl:ClassAtom>
-                        <swrl:classPredicate rdf:resource="&MMTS_test;AllPublicTrain"/>
+                        <swrl:classPredicate rdf:resource="&MMTS_test;MmtsTrain"/>
                         <swrl:argument1 rdf:resource="urn:swrl#t"/>
                     </swrl:ClassAtom>
                 </rdf:first>
-            </swrl:AtomList>
-        </swrl:body>
-    </swrl:Imp>
-    <swrl:Imp>
-        <swrl:body>
-            <swrl:AtomList>
                 <rdf:rest>
                     <swrl:AtomList>
-                        <rdf:first>
-                            <swrl:ClassAtom>
-                                <swrl:classPredicate rdf:resource="&MMTS_test;StopAtStation"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#st2"/>
-                            </swrl:ClassAtom>
-                        </rdf:first>
                         <rdf:rest>
                             <swrl:AtomList>
                                 <rdf:first>
                                     <swrl:ClassAtom>
-                                        <swrl:classPredicate rdf:resource="&MMTS_test;Travel"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl#trav"/>
+                                        <swrl:classPredicate rdf:resource="&MMTS_test;Station"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#st1"/>
                                     </swrl:ClassAtom>
                                 </rdf:first>
                                 <rdf:rest>
                                     <swrl:AtomList>
-                                        <rdf:first>
-                                            <swrl:IndividualPropertyAtom>
-                                                <swrl:propertyPredicate rdf:resource="&MMTS_test;atStation"/>
-                                                <swrl:argument2 rdf:resource="urn:swrl#s1"/>
-                                                <swrl:argument1 rdf:resource="urn:swrl#st1"/>
-                                            </swrl:IndividualPropertyAtom>
-                                        </rdf:first>
                                         <rdf:rest>
                                             <swrl:AtomList>
-                                                <rdf:first>
-                                                    <swrl:IndividualPropertyAtom>
-                                                        <swrl:propertyPredicate rdf:resource="&MMTS_test;atStation"/>
-                                                        <swrl:argument2 rdf:resource="urn:swrl#s2"/>
-                                                        <swrl:argument1 rdf:resource="urn:swrl#st2"/>
-                                                    </swrl:IndividualPropertyAtom>
-                                                </rdf:first>
                                                 <rdf:rest>
                                                     <swrl:AtomList>
                                                         <rdf:rest>
                                                             <swrl:AtomList>
                                                                 <rdf:first>
                                                                     <swrl:IndividualPropertyAtom>
-                                                                        <swrl:propertyPredicate rdf:resource="&MMTS_test;precondition"/>
+                                                                        <swrl:propertyPredicate rdf:resource="&MMTS_test;atStation"/>
+                                                                        <swrl:argument1 rdf:resource="urn:swrl#s1"/>
                                                                         <swrl:argument2 rdf:resource="urn:swrl#st1"/>
-                                                                        <swrl:argument1 rdf:resource="urn:swrl#trav"/>
                                                                     </swrl:IndividualPropertyAtom>
                                                                 </rdf:first>
                                                                 <rdf:rest>
                                                                     <swrl:AtomList>
                                                                         <rdf:first>
-                                                                            <swrl:DatavaluedPropertyAtom>
-                                                                                <swrl:propertyPredicate rdf:resource="&MMTS_test;departsOn"/>
-                                                                                <swrl:argument1 rdf:resource="urn:swrl#st1"/>
-                                                                                <swrl:argument2 rdf:resource="urn:swrl#t1"/>
-                                                                            </swrl:DatavaluedPropertyAtom>
+                                                                            <swrl:IndividualPropertyAtom>
+                                                                                <swrl:propertyPredicate rdf:resource="&MMTS_test;atStation"/>
+                                                                                <swrl:argument1 rdf:resource="urn:swrl#s2"/>
+                                                                                <swrl:argument2 rdf:resource="urn:swrl#st2"/>
+                                                                            </swrl:IndividualPropertyAtom>
                                                                         </rdf:first>
                                                                         <rdf:rest>
                                                                             <swrl:AtomList>
-                                                                                <rdf:rest rdf:resource="&rdf;nil"/>
                                                                                 <rdf:first>
-                                                                                    <swrl:DatavaluedPropertyAtom>
-                                                                                        <swrl:propertyPredicate rdf:resource="&MMTS_test;departsOn"/>
-                                                                                        <swrl:argument1 rdf:resource="urn:swrl#st2"/>
-                                                                                        <swrl:argument2 rdf:resource="urn:swrl#t2"/>
-                                                                                    </swrl:DatavaluedPropertyAtom>
+                                                                                    <swrl:IndividualPropertyAtom>
+                                                                                        <swrl:propertyPredicate rdf:resource="&MMTS_test;forRoute"/>
+                                                                                        <swrl:argument2 rdf:resource="urn:swrl#r"/>
+                                                                                        <swrl:argument1 rdf:resource="urn:swrl#s1"/>
+                                                                                    </swrl:IndividualPropertyAtom>
                                                                                 </rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <swrl:AtomList>
+                                                                                        <rdf:rest>
+                                                                                            <swrl:AtomList>
+                                                                                                <rdf:first>
+                                                                                                    <swrl:IndividualPropertyAtom>
+                                                                                                        <swrl:propertyPredicate rdf:resource="&MMTS_test;ofTrain"/>
+                                                                                                        <swrl:argument1 rdf:resource="urn:swrl#s1"/>
+                                                                                                        <swrl:argument2 rdf:resource="urn:swrl#t"/>
+                                                                                                    </swrl:IndividualPropertyAtom>
+                                                                                                </rdf:first>
+                                                                                                <rdf:rest>
+                                                                                                    <swrl:AtomList>
+                                                                                                        <rdf:first>
+                                                                                                            <swrl:IndividualPropertyAtom>
+                                                                                                                <swrl:propertyPredicate rdf:resource="&MMTS_test;ofTrain"/>
+                                                                                                                <swrl:argument1 rdf:resource="urn:swrl#s2"/>
+                                                                                                                <swrl:argument2 rdf:resource="urn:swrl#t"/>
+                                                                                                            </swrl:IndividualPropertyAtom>
+                                                                                                        </rdf:first>
+                                                                                                        <rdf:rest>
+                                                                                                            <swrl:AtomList>
+                                                                                                                <rdf:rest>
+                                                                                                                    <swrl:AtomList>
+                                                                                                                        <rdf:rest>
+                                                                                                                            <swrl:AtomList>
+                                                                                                                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                                                                                                                <rdf:first>
+                                                                                                                                    <swrl:BuiltinAtom>
+                                                                                                                                        <swrl:builtin rdf:resource="&swrlb;lessThan"/>
+                                                                                                                                        <swrl:arguments rdf:parseType="Collection">
+                                                                                                                                            <rdf:Description rdf:about="urn:swrl#time1"/>
+                                                                                                                                            <rdf:Description rdf:about="urn:swrl#time2"/>
+                                                                                                                                        </swrl:arguments>
+                                                                                                                                    </swrl:BuiltinAtom>
+                                                                                                                                </rdf:first>
+                                                                                                                            </swrl:AtomList>
+                                                                                                                        </rdf:rest>
+                                                                                                                        <rdf:first>
+                                                                                                                            <swrl:DatavaluedPropertyAtom>
+                                                                                                                                <swrl:propertyPredicate rdf:resource="&MMTS_test;departsOn"/>
+                                                                                                                                <swrl:argument1 rdf:resource="urn:swrl#s2"/>
+                                                                                                                                <swrl:argument2 rdf:resource="urn:swrl#time2"/>
+                                                                                                                            </swrl:DatavaluedPropertyAtom>
+                                                                                                                        </rdf:first>
+                                                                                                                    </swrl:AtomList>
+                                                                                                                </rdf:rest>
+                                                                                                                <rdf:first>
+                                                                                                                    <swrl:DatavaluedPropertyAtom>
+                                                                                                                        <swrl:propertyPredicate rdf:resource="&MMTS_test;departsOn"/>
+                                                                                                                        <swrl:argument1 rdf:resource="urn:swrl#s1"/>
+                                                                                                                        <swrl:argument2 rdf:resource="urn:swrl#time1"/>
+                                                                                                                    </swrl:DatavaluedPropertyAtom>
+                                                                                                                </rdf:first>
+                                                                                                            </swrl:AtomList>
+                                                                                                        </rdf:rest>
+                                                                                                    </swrl:AtomList>
+                                                                                                </rdf:rest>
+                                                                                            </swrl:AtomList>
+                                                                                        </rdf:rest>
+                                                                                        <rdf:first>
+                                                                                            <swrl:IndividualPropertyAtom>
+                                                                                                <swrl:propertyPredicate rdf:resource="&MMTS_test;forRoute"/>
+                                                                                                <swrl:argument2 rdf:resource="urn:swrl#r"/>
+                                                                                                <swrl:argument1 rdf:resource="urn:swrl#s2"/>
+                                                                                            </swrl:IndividualPropertyAtom>
+                                                                                        </rdf:first>
+                                                                                    </swrl:AtomList>
+                                                                                </rdf:rest>
                                                                             </swrl:AtomList>
                                                                         </rdf:rest>
                                                                     </swrl:AtomList>
@@ -8862,251 +8705,43 @@
                                                             </swrl:AtomList>
                                                         </rdf:rest>
                                                         <rdf:first>
-                                                            <swrl:IndividualPropertyAtom>
-                                                                <swrl:propertyPredicate rdf:resource="&MMTS_test;hasOutcome"/>
-                                                                <swrl:argument2 rdf:resource="urn:swrl#st2"/>
-                                                                <swrl:argument1 rdf:resource="urn:swrl#trav"/>
-                                                            </swrl:IndividualPropertyAtom>
+                                                            <swrl:ClassAtom>
+                                                                <swrl:classPredicate rdf:resource="&MMTS_test;StopAtStation"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl#s2"/>
+                                                            </swrl:ClassAtom>
                                                         </rdf:first>
                                                     </swrl:AtomList>
                                                 </rdf:rest>
-                                            </swrl:AtomList>
-                                        </rdf:rest>
-                                    </swrl:AtomList>
-                                </rdf:rest>
-                            </swrl:AtomList>
-                        </rdf:rest>
-                    </swrl:AtomList>
-                </rdf:rest>
-                <rdf:first>
-                    <swrl:ClassAtom>
-                        <swrl:classPredicate rdf:resource="&MMTS_test;StopAtStation"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#st1"/>
-                    </swrl:ClassAtom>
-                </rdf:first>
-            </swrl:AtomList>
-        </swrl:body>
-        <swrl:head>
-            <swrl:AtomList>
-                <rdf:first>
-                    <swrl:IndividualPropertyAtom>
-                        <swrl:propertyPredicate rdf:resource="&MMTS_test;destination"/>
-                        <swrl:argument2 rdf:resource="urn:swrl#s2"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#trav"/>
-                    </swrl:IndividualPropertyAtom>
-                </rdf:first>
-                <rdf:rest>
-                    <swrl:AtomList>
-                        <rdf:first>
-                            <swrl:IndividualPropertyAtom>
-                                <swrl:propertyPredicate rdf:resource="&MMTS_test;source"/>
-                                <swrl:argument2 rdf:resource="urn:swrl#s1"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#trav"/>
-                            </swrl:IndividualPropertyAtom>
-                        </rdf:first>
-                        <rdf:rest>
-                            <swrl:AtomList>
-                                <rdf:first>
-                                    <swrl:DatavaluedPropertyAtom>
-                                        <swrl:propertyPredicate rdf:resource="&MMTS_test;destinationTime"/>
-                                        <swrl:argument2 rdf:resource="urn:swrl#t2"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl#trav"/>
-                                    </swrl:DatavaluedPropertyAtom>
-                                </rdf:first>
-                                <rdf:rest>
-                                    <swrl:AtomList>
-                                        <rdf:rest rdf:resource="&rdf;nil"/>
-                                        <rdf:first>
-                                            <swrl:DatavaluedPropertyAtom>
-                                                <swrl:propertyPredicate rdf:resource="&MMTS_test;sourceTime"/>
-                                                <swrl:argument2 rdf:resource="urn:swrl#t1"/>
-                                                <swrl:argument1 rdf:resource="urn:swrl#trav"/>
-                                            </swrl:DatavaluedPropertyAtom>
-                                        </rdf:first>
-                                    </swrl:AtomList>
-                                </rdf:rest>
-                            </swrl:AtomList>
-                        </rdf:rest>
-                    </swrl:AtomList>
-                </rdf:rest>
-            </swrl:AtomList>
-        </swrl:head>
-    </swrl:Imp>
-    <swrl:Imp>
-        <swrl:body>
-            <swrl:AtomList>
-                <rdf:first>
-                    <swrl:ClassAtom>
-                        <swrl:classPredicate rdf:resource="&MMTS_test;NotStation"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#n"/>
-                    </swrl:ClassAtom>
-                </rdf:first>
-                <rdf:rest>
-                    <swrl:AtomList>
-                        <rdf:rest rdf:resource="&rdf;nil"/>
-                        <rdf:first>
-                            <swrl:ClassAtom>
-                                <swrl:classPredicate rdf:resource="&MMTS_test;Route"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#r"/>
-                            </swrl:ClassAtom>
-                        </rdf:first>
-                    </swrl:AtomList>
-                </rdf:rest>
-            </swrl:AtomList>
-        </swrl:body>
-        <swrl:head>
-            <swrl:AtomList>
-                <rdf:rest rdf:resource="&rdf;nil"/>
-                <rdf:first>
-                    <swrl:IndividualPropertyAtom>
-                        <swrl:propertyPredicate rdf:resource="&MMTS_test;notBelongsTo"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#n"/>
-                        <swrl:argument2 rdf:resource="urn:swrl#r"/>
-                    </swrl:IndividualPropertyAtom>
-                </rdf:first>
-            </swrl:AtomList>
-        </swrl:head>
-    </swrl:Imp>
-    <swrl:Imp>
-        <swrl:head>
-            <swrl:AtomList>
-                <rdf:rest rdf:resource="&rdf;nil"/>
-                <rdf:first>
-                    <swrl:IndividualPropertyAtom>
-                        <swrl:argument2 rdf:resource="&MMTS_test;GeneralTicketBookingCounter"/>
-                        <swrl:propertyPredicate rdf:resource="&MMTS_test;hasComponent"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#s"/>
-                    </swrl:IndividualPropertyAtom>
-                </rdf:first>
-            </swrl:AtomList>
-        </swrl:head>
-        <swrl:body>
-            <swrl:AtomList>
-                <rdf:rest rdf:resource="&rdf;nil"/>
-                <rdf:first>
-                    <swrl:ClassAtom>
-                        <swrl:classPredicate rdf:resource="&MMTS_test;Station"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#s"/>
-                    </swrl:ClassAtom>
-                </rdf:first>
-            </swrl:AtomList>
-        </swrl:body>
-    </swrl:Imp>
-    <swrl:Imp>
-        <swrl:head>
-            <swrl:AtomList>
-                <rdf:rest rdf:resource="&rdf;nil"/>
-                <rdf:first>
-                    <swrl:IndividualPropertyAtom>
-                        <swrl:propertyPredicate rdf:resource="&MMTS_test;notStopsAt"/>
-                        <swrl:argument2 rdf:resource="urn:swrl#s"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#t"/>
-                    </swrl:IndividualPropertyAtom>
-                </rdf:first>
-            </swrl:AtomList>
-        </swrl:head>
-        <swrl:body>
-            <swrl:AtomList>
-                <rdf:rest>
-                    <swrl:AtomList>
-                        <rdf:rest rdf:resource="&rdf;nil"/>
-                        <rdf:first>
-                            <swrl:ClassAtom>
-                                <swrl:classPredicate rdf:resource="&MMTS_test;NotStation"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#s"/>
-                            </swrl:ClassAtom>
-                        </rdf:first>
-                    </swrl:AtomList>
-                </rdf:rest>
-                <rdf:first>
-                    <swrl:ClassAtom>
-                        <swrl:classPredicate rdf:resource="&MMTS_test;MmtsTrain"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#t"/>
-                    </swrl:ClassAtom>
-                </rdf:first>
-            </swrl:AtomList>
-        </swrl:body>
-    </swrl:Imp>
-    <swrl:Imp>
-        <swrl:body>
-            <swrl:AtomList>
-                <rdf:first>
-                    <swrl:ClassAtom>
-                        <swrl:classPredicate rdf:resource="&MMTS_test;MmtsTrain"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#t"/>
-                    </swrl:ClassAtom>
-                </rdf:first>
-                <rdf:rest>
-                    <swrl:AtomList>
-                        <rdf:first>
-                            <swrl:ClassAtom>
-                                <swrl:classPredicate rdf:resource="&MMTS_test;Route"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#r"/>
-                            </swrl:ClassAtom>
-                        </rdf:first>
-                        <rdf:rest>
-                            <swrl:AtomList>
-                                <rdf:first>
-                                    <swrl:ClassAtom>
-                                        <swrl:classPredicate rdf:resource="&MMTS_test;Station"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl#s"/>
-                                    </swrl:ClassAtom>
-                                </rdf:first>
-                                <rdf:rest>
-                                    <swrl:AtomList>
-                                        <rdf:rest>
-                                            <swrl:AtomList>
-                                                <rdf:rest rdf:resource="&rdf;nil"/>
                                                 <rdf:first>
-                                                    <swrl:IndividualPropertyAtom>
-                                                        <swrl:propertyPredicate rdf:resource="&MMTS_test;travelsThrough"/>
-                                                        <swrl:argument2 rdf:resource="urn:swrl#r"/>
-                                                        <swrl:argument1 rdf:resource="urn:swrl#t"/>
-                                                    </swrl:IndividualPropertyAtom>
+                                                    <swrl:ClassAtom>
+                                                        <swrl:classPredicate rdf:resource="&MMTS_test;StopAtStation"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#s1"/>
+                                                    </swrl:ClassAtom>
                                                 </rdf:first>
                                             </swrl:AtomList>
                                         </rdf:rest>
                                         <rdf:first>
-                                            <swrl:IndividualPropertyAtom>
-                                                <swrl:propertyPredicate rdf:resource="&MMTS_test;belongsTo"/>
-                                                <swrl:argument2 rdf:resource="urn:swrl#r"/>
-                                                <swrl:argument1 rdf:resource="urn:swrl#s"/>
-                                            </swrl:IndividualPropertyAtom>
+                                            <swrl:ClassAtom>
+                                                <swrl:classPredicate rdf:resource="&MMTS_test;Station"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#st2"/>
+                                            </swrl:ClassAtom>
                                         </rdf:first>
                                     </swrl:AtomList>
                                 </rdf:rest>
                             </swrl:AtomList>
                         </rdf:rest>
+                        <rdf:first>
+                            <swrl:ClassAtom>
+                                <swrl:classPredicate rdf:resource="&MMTS_test;Route"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#r"/>
+                            </swrl:ClassAtom>
+                        </rdf:first>
                     </swrl:AtomList>
                 </rdf:rest>
             </swrl:AtomList>
         </swrl:body>
-        <swrl:head>
-            <swrl:AtomList>
-                <rdf:rest rdf:resource="&rdf;nil"/>
-                <rdf:first>
-                    <swrl:IndividualPropertyAtom>
-                        <swrl:propertyPredicate rdf:resource="&MMTS_test;stopsAt"/>
-                        <swrl:argument2 rdf:resource="urn:swrl#s"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#t"/>
-                    </swrl:IndividualPropertyAtom>
-                </rdf:first>
-            </swrl:AtomList>
-        </swrl:head>
     </swrl:Imp>
     <swrl:Imp>
-        <swrl:head>
-            <swrl:AtomList>
-                <rdf:rest rdf:resource="&rdf;nil"/>
-                <rdf:first>
-                    <swrl:DatavaluedPropertyAtom>
-                        <swrl:argument2 rdf:datatype="&xsd;dayTimeDuration">PT2M</swrl:argument2>
-                        <swrl:propertyPredicate rdf:resource="&MMTS_test;stationHaltTime"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#st"/>
-                    </swrl:DatavaluedPropertyAtom>
-                </rdf:first>
-            </swrl:AtomList>
-        </swrl:head>
         <swrl:body>
             <swrl:AtomList>
                 <rdf:rest>
@@ -9137,6 +8772,125 @@
                         <swrl:argument1 rdf:resource="urn:swrl#s"/>
                     </swrl:ClassAtom>
                 </rdf:first>
+            </swrl:AtomList>
+        </swrl:body>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:DatavaluedPropertyAtom>
+                        <swrl:argument2 rdf:datatype="&xsd;dayTimeDuration">PT2M</swrl:argument2>
+                        <swrl:propertyPredicate rdf:resource="&MMTS_test;stationHaltTime"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#st"/>
+                    </swrl:DatavaluedPropertyAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+    </swrl:Imp>
+    <swrl:Imp>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:first>
+                    <swrl:IndividualPropertyAtom>
+                        <swrl:argument2 rdf:resource="&MMTS_test;FirstClassCoach"/>
+                        <swrl:propertyPredicate rdf:resource="&MMTS_test;hasComponent"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#t"/>
+                    </swrl:IndividualPropertyAtom>
+                </rdf:first>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:rest>
+                            <swrl:AtomList>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                <rdf:first>
+                                    <swrl:IndividualPropertyAtom>
+                                        <swrl:argument2 rdf:resource="&MMTS_test;VendorCoach"/>
+                                        <swrl:propertyPredicate rdf:resource="&MMTS_test;hasComponent"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#t"/>
+                                    </swrl:IndividualPropertyAtom>
+                                </rdf:first>
+                            </swrl:AtomList>
+                        </rdf:rest>
+                        <rdf:first>
+                            <swrl:IndividualPropertyAtom>
+                                <swrl:argument2 rdf:resource="&MMTS_test;GeneralCoach"/>
+                                <swrl:propertyPredicate rdf:resource="&MMTS_test;hasComponent"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#t"/>
+                            </swrl:IndividualPropertyAtom>
+                        </rdf:first>
+                    </swrl:AtomList>
+                </rdf:rest>
+            </swrl:AtomList>
+        </swrl:head>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="&MMTS_test;AllPublicTrain"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#t"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:body>
+    </swrl:Imp>
+    <swrl:Imp>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:IndividualPropertyAtom>
+                        <swrl:argument2 rdf:resource="&MMTS_test;LadiesCoach"/>
+                        <swrl:propertyPredicate rdf:resource="&MMTS_test;hasComponent"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#t"/>
+                    </swrl:IndividualPropertyAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="&MMTS_test;MmtsTrain"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#t"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:body>
+    </swrl:Imp>
+    <swrl:Imp>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:IndividualPropertyAtom>
+                        <swrl:propertyPredicate rdf:resource="&MMTS_test;notBelongsTo"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#n"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#r"/>
+                    </swrl:IndividualPropertyAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="&MMTS_test;NotStation"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#n"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:rest rdf:resource="&rdf;nil"/>
+                        <rdf:first>
+                            <swrl:ClassAtom>
+                                <swrl:classPredicate rdf:resource="&MMTS_test;Route"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#r"/>
+                            </swrl:ClassAtom>
+                        </rdf:first>
+                    </swrl:AtomList>
+                </rdf:rest>
             </swrl:AtomList>
         </swrl:body>
     </swrl:Imp>
@@ -9186,98 +8940,6 @@
         </swrl:body>
     </swrl:Imp>
     <swrl:Imp>
-        <swrl:body>
-            <swrl:AtomList>
-                <rdf:first>
-                    <swrl:ClassAtom>
-                        <swrl:classPredicate rdf:resource="&MMTS_test;Route"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
-                    </swrl:ClassAtom>
-                </rdf:first>
-                <rdf:rest>
-                    <swrl:AtomList>
-                        <rdf:first>
-                            <swrl:ClassAtom>
-                                <swrl:classPredicate rdf:resource="&MMTS_test;Route"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#y"/>
-                            </swrl:ClassAtom>
-                        </rdf:first>
-                        <rdf:rest>
-                            <swrl:AtomList>
-                                <rdf:rest>
-                                    <swrl:AtomList>
-                                        <rdf:rest>
-                                            <swrl:AtomList>
-                                                <rdf:rest rdf:resource="&rdf;nil"/>
-                                                <rdf:first>
-                                                    <swrl:IndividualPropertyAtom>
-                                                        <swrl:propertyPredicate rdf:resource="&MMTS_test;reverseRouteOf"/>
-                                                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
-                                                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
-                                                    </swrl:IndividualPropertyAtom>
-                                                </rdf:first>
-                                            </swrl:AtomList>
-                                        </rdf:rest>
-                                        <rdf:first>
-                                            <swrl:IndividualPropertyAtom>
-                                                <swrl:propertyPredicate rdf:resource="&MMTS_test;comprisesOf"/>
-                                                <swrl:argument2 rdf:resource="urn:swrl#s"/>
-                                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
-                                            </swrl:IndividualPropertyAtom>
-                                        </rdf:first>
-                                    </swrl:AtomList>
-                                </rdf:rest>
-                                <rdf:first>
-                                    <swrl:ClassAtom>
-                                        <swrl:classPredicate rdf:resource="&MMTS_test;Station"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl#s"/>
-                                    </swrl:ClassAtom>
-                                </rdf:first>
-                            </swrl:AtomList>
-                        </rdf:rest>
-                    </swrl:AtomList>
-                </rdf:rest>
-            </swrl:AtomList>
-        </swrl:body>
-        <swrl:head>
-            <swrl:AtomList>
-                <rdf:rest rdf:resource="&rdf;nil"/>
-                <rdf:first>
-                    <swrl:IndividualPropertyAtom>
-                        <swrl:propertyPredicate rdf:resource="&MMTS_test;comprisesOf"/>
-                        <swrl:argument2 rdf:resource="urn:swrl#s"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#y"/>
-                    </swrl:IndividualPropertyAtom>
-                </rdf:first>
-            </swrl:AtomList>
-        </swrl:head>
-    </swrl:Imp>
-    <swrl:Imp>
-        <swrl:head>
-            <swrl:AtomList>
-                <rdf:rest rdf:resource="&rdf;nil"/>
-                <rdf:first>
-                    <swrl:IndividualPropertyAtom>
-                        <swrl:argument2 rdf:resource="&MMTS_test;Sunday"/>
-                        <swrl:propertyPredicate rdf:resource="&MMTS_test;runs"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#t"/>
-                    </swrl:IndividualPropertyAtom>
-                </rdf:first>
-            </swrl:AtomList>
-        </swrl:head>
-        <swrl:body>
-            <swrl:AtomList>
-                <rdf:rest rdf:resource="&rdf;nil"/>
-                <rdf:first>
-                    <swrl:ClassAtom>
-                        <swrl:classPredicate rdf:resource="&MMTS_test;AllDayTrain"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#t"/>
-                    </swrl:ClassAtom>
-                </rdf:first>
-            </swrl:AtomList>
-        </swrl:body>
-    </swrl:Imp>
-    <swrl:Imp>
         <swrl:head>
             <swrl:AtomList>
                 <rdf:rest rdf:resource="&rdf;nil"/>
@@ -9303,6 +8965,41 @@
         </swrl:body>
     </swrl:Imp>
     <swrl:Imp>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:rest rdf:resource="&rdf;nil"/>
+                        <rdf:first>
+                            <swrl:ClassAtom>
+                                <swrl:classPredicate rdf:resource="&MMTS_test;NotStation"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#s"/>
+                            </swrl:ClassAtom>
+                        </rdf:first>
+                    </swrl:AtomList>
+                </rdf:rest>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="&MMTS_test;MmtsTrain"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#t"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:body>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:IndividualPropertyAtom>
+                        <swrl:propertyPredicate rdf:resource="&MMTS_test;notStopsAt"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#s"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#t"/>
+                    </swrl:IndividualPropertyAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+    </swrl:Imp>
+    <swrl:Imp>
         <swrl:head>
             <swrl:AtomList>
                 <rdf:rest rdf:resource="&rdf;nil"/>
@@ -9317,12 +9014,6 @@
         </swrl:head>
         <swrl:body>
             <swrl:AtomList>
-                <rdf:first>
-                    <swrl:ClassAtom>
-                        <swrl:classPredicate rdf:resource="&MMTS_test;LocalStation"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#s"/>
-                    </swrl:ClassAtom>
-                </rdf:first>
                 <rdf:rest>
                     <swrl:AtomList>
                         <rdf:rest>
@@ -9345,6 +9036,273 @@
                         </rdf:first>
                     </swrl:AtomList>
                 </rdf:rest>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="&MMTS_test;LocalStation"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#s"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:body>
+    </swrl:Imp>
+    <swrl:Imp>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="&MMTS_test;Station"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#s"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:body>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:IndividualPropertyAtom>
+                        <swrl:argument2 rdf:resource="&MMTS_test;GeneralTicketBookingCounter"/>
+                        <swrl:propertyPredicate rdf:resource="&MMTS_test;hasComponent"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#s"/>
+                    </swrl:IndividualPropertyAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+    </swrl:Imp>
+    <swrl:Imp>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:first>
+                            <swrl:ClassAtom>
+                                <swrl:classPredicate rdf:resource="&MMTS_test;Route"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#r"/>
+                            </swrl:ClassAtom>
+                        </rdf:first>
+                        <rdf:rest>
+                            <swrl:AtomList>
+                                <rdf:first>
+                                    <swrl:ClassAtom>
+                                        <swrl:classPredicate rdf:resource="&MMTS_test;Station"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#s"/>
+                                    </swrl:ClassAtom>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <swrl:AtomList>
+                                        <rdf:first>
+                                            <swrl:IndividualPropertyAtom>
+                                                <swrl:propertyPredicate rdf:resource="&MMTS_test;belongsTo"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#r"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#s"/>
+                                            </swrl:IndividualPropertyAtom>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <swrl:AtomList>
+                                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                                <rdf:first>
+                                                    <swrl:IndividualPropertyAtom>
+                                                        <swrl:propertyPredicate rdf:resource="&MMTS_test;travelsThrough"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#r"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#t"/>
+                                                    </swrl:IndividualPropertyAtom>
+                                                </rdf:first>
+                                            </swrl:AtomList>
+                                        </rdf:rest>
+                                    </swrl:AtomList>
+                                </rdf:rest>
+                            </swrl:AtomList>
+                        </rdf:rest>
+                    </swrl:AtomList>
+                </rdf:rest>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="&MMTS_test;MmtsTrain"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#t"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:body>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:IndividualPropertyAtom>
+                        <swrl:propertyPredicate rdf:resource="&MMTS_test;stopsAt"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#s"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#t"/>
+                    </swrl:IndividualPropertyAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+    </swrl:Imp>
+    <swrl:Imp>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="&MMTS_test;StopAtStation"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#st1"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:first>
+                            <swrl:ClassAtom>
+                                <swrl:classPredicate rdf:resource="&MMTS_test;StopAtStation"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#st2"/>
+                            </swrl:ClassAtom>
+                        </rdf:first>
+                        <rdf:rest>
+                            <swrl:AtomList>
+                                <rdf:rest>
+                                    <swrl:AtomList>
+                                        <rdf:first>
+                                            <swrl:IndividualPropertyAtom>
+                                                <swrl:propertyPredicate rdf:resource="&MMTS_test;atStation"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#s1"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#st1"/>
+                                            </swrl:IndividualPropertyAtom>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <swrl:AtomList>
+                                                <rdf:rest>
+                                                    <swrl:AtomList>
+                                                        <rdf:rest>
+                                                            <swrl:AtomList>
+                                                                <rdf:rest>
+                                                                    <swrl:AtomList>
+                                                                        <rdf:rest>
+                                                                            <swrl:AtomList>
+                                                                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                                                                <rdf:first>
+                                                                                    <swrl:DatavaluedPropertyAtom>
+                                                                                        <swrl:propertyPredicate rdf:resource="&MMTS_test;departsOn"/>
+                                                                                        <swrl:argument1 rdf:resource="urn:swrl#st2"/>
+                                                                                        <swrl:argument2 rdf:resource="urn:swrl#t2"/>
+                                                                                    </swrl:DatavaluedPropertyAtom>
+                                                                                </rdf:first>
+                                                                            </swrl:AtomList>
+                                                                        </rdf:rest>
+                                                                        <rdf:first>
+                                                                            <swrl:DatavaluedPropertyAtom>
+                                                                                <swrl:propertyPredicate rdf:resource="&MMTS_test;departsOn"/>
+                                                                                <swrl:argument1 rdf:resource="urn:swrl#st1"/>
+                                                                                <swrl:argument2 rdf:resource="urn:swrl#t1"/>
+                                                                            </swrl:DatavaluedPropertyAtom>
+                                                                        </rdf:first>
+                                                                    </swrl:AtomList>
+                                                                </rdf:rest>
+                                                                <rdf:first>
+                                                                    <swrl:IndividualPropertyAtom>
+                                                                        <swrl:propertyPredicate rdf:resource="&MMTS_test;precondition"/>
+                                                                        <swrl:argument2 rdf:resource="urn:swrl#st1"/>
+                                                                        <swrl:argument1 rdf:resource="urn:swrl#trav"/>
+                                                                    </swrl:IndividualPropertyAtom>
+                                                                </rdf:first>
+                                                            </swrl:AtomList>
+                                                        </rdf:rest>
+                                                        <rdf:first>
+                                                            <swrl:IndividualPropertyAtom>
+                                                                <swrl:propertyPredicate rdf:resource="&MMTS_test;hasOutcome"/>
+                                                                <swrl:argument2 rdf:resource="urn:swrl#st2"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl#trav"/>
+                                                            </swrl:IndividualPropertyAtom>
+                                                        </rdf:first>
+                                                    </swrl:AtomList>
+                                                </rdf:rest>
+                                                <rdf:first>
+                                                    <swrl:IndividualPropertyAtom>
+                                                        <swrl:propertyPredicate rdf:resource="&MMTS_test;atStation"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#s2"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#st2"/>
+                                                    </swrl:IndividualPropertyAtom>
+                                                </rdf:first>
+                                            </swrl:AtomList>
+                                        </rdf:rest>
+                                    </swrl:AtomList>
+                                </rdf:rest>
+                                <rdf:first>
+                                    <swrl:ClassAtom>
+                                        <swrl:classPredicate rdf:resource="&MMTS_test;Travel"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#trav"/>
+                                    </swrl:ClassAtom>
+                                </rdf:first>
+                            </swrl:AtomList>
+                        </rdf:rest>
+                    </swrl:AtomList>
+                </rdf:rest>
+            </swrl:AtomList>
+        </swrl:body>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:first>
+                    <swrl:IndividualPropertyAtom>
+                        <swrl:propertyPredicate rdf:resource="&MMTS_test;destination"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#s2"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#trav"/>
+                    </swrl:IndividualPropertyAtom>
+                </rdf:first>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:rest>
+                            <swrl:AtomList>
+                                <rdf:first>
+                                    <swrl:DatavaluedPropertyAtom>
+                                        <swrl:propertyPredicate rdf:resource="&MMTS_test;destinationTime"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#t2"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#trav"/>
+                                    </swrl:DatavaluedPropertyAtom>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <swrl:AtomList>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                        <rdf:first>
+                                            <swrl:DatavaluedPropertyAtom>
+                                                <swrl:propertyPredicate rdf:resource="&MMTS_test;sourceTime"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#t1"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#trav"/>
+                                            </swrl:DatavaluedPropertyAtom>
+                                        </rdf:first>
+                                    </swrl:AtomList>
+                                </rdf:rest>
+                            </swrl:AtomList>
+                        </rdf:rest>
+                        <rdf:first>
+                            <swrl:IndividualPropertyAtom>
+                                <swrl:propertyPredicate rdf:resource="&MMTS_test;source"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#s1"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#trav"/>
+                            </swrl:IndividualPropertyAtom>
+                        </rdf:first>
+                    </swrl:AtomList>
+                </rdf:rest>
+            </swrl:AtomList>
+        </swrl:head>
+    </swrl:Imp>
+    <swrl:Imp>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:IndividualPropertyAtom>
+                        <swrl:argument2 rdf:resource="&MMTS_test;Sunday"/>
+                        <swrl:propertyPredicate rdf:resource="&MMTS_test;runs"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#t"/>
+                    </swrl:IndividualPropertyAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="&MMTS_test;AllDayTrain"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#t"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
             </swrl:AtomList>
         </swrl:body>
     </swrl:Imp>

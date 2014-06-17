@@ -1,0 +1,35 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX : <http://www.semanticweb.org/ontologies/2014/1/MMTS_test.owl#>
+SELECT ?t
+WHERE {
+    {
+    SELECT ?t WHERE {
+            ?t :hasStopNo ?s.
+            ?s :departsOn ?arrtime.
+            FILTER ( ?arrtime >= "$2:$3:00"^^xsd:time ).
+            FILTER ( ?arrtime <= "$4:$5:00"^^xsd:time ).
+            ?s :atStation ?st.
+            FILTER ( regex ( str(?st), "$1") ).
+        }
+    }
+    .
+    {
+    SELECT ?t WHERE {
+            ?t :hasStopNo ?s.
+            ?s :departsOn ?deptime.
+            FILTER ( ?deptime > "$7:$8:00"^^xsd:time ).
+            FILTER ( ?deptime < "$9:$10:00"^^xsd:time ).
+            ?s :atStation ?st.
+            FILTER ( regex ( str(?st), "$6") ).
+        }
+    }
+    .
+    ?t :runs ?day.
+    FILTER ( regex ( str(?day), "$11") ).
+    ?t :hasComponent ?c.
+    FILTER ( regex ( str(?c), "$12") ).
+}
+

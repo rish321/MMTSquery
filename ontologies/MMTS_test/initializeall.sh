@@ -1,6 +1,6 @@
 #!/bin/bash
 
-folder="/home/rishabh/tools/pellet-2.3.1/unprocessed"
+folder=$7
 mkdir $6
 
 for file in `ls $folder`

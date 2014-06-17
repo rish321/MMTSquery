@@ -1,0 +1,40 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX : <http://www.semanticweb.org/ontologies/2014/1/MMTS_test.owl#>
+
+SELECT ((xsd:time((?time1))-xsd:time(?time2)) AS ?durationTime)
+#SELECT ?time1 ?time2 ?t1 ?t2
+WHERE {
+	    {SELECT ?time2 ?t2
+	    WHERE{
+		    ?s2 :departsOn ?time2.
+#		    FILTER ( ?time2 > "00:00:00"^^xsd:time ).
+#		    FILTER ( ?time2 < "23:59:00"^^xsd:time ).
+		    ?s2 :ofTrain ?t2.
+		    ?s2 :atStation ?st2.
+		    FILTER ( regex ( str(?st2), "Falaknuma") ).
+	    }}
+	    .
+	    {SELECT ((?time) AS ?time1)
+	    WHERE {
+		    ?s1 :departsOn ?time.
+		    FILTER ( ?time > "06:00:00"^^xsd:time ).
+		    FILTER ( ?time < "09:00:00"^^xsd:time ).
+		    ?s1 :ofTrain ?t1.
+		    ?s1 :atStation ?st1.
+		    FILTER ( regex ( str(?st1), "Bharatnagar") ).
+		}
+#	    GROUP BY ?st1
+	    }
+	    .
+	    ?s1 :ofTrain ?t1.
+	    ?s1 :departsOn ?time1.
+	    ?s1 :atStation ?st1.
+	    ?s1 :source ?src.
+	    FILTER ( regex ( str(?src), "Falaknuma") ).
+	    FILTER ( regex ( str(?st1), "Bharatnagar") ).
+	    FILTER ( ?t1 = ?t2).
+	    FILTER ( ?time1 > ?time2 ).
+}

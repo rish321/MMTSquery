@@ -1,0 +1,256 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX : <http://www.semanticweb.org/ontologies/2014/1/MMTS_test.owl#>
+
+#SELECT ?s
+#WHERE {
+#  ?s a (:MmtsTrain and :travelsThrough value :FalakNuma-Lingampally );
+#}
+
+#SELECT ?s
+#WHERE {
+#   ?s a (:MmtsTrain and :stopsAt value :Falaknuma)
+#}
+
+#SELECT ?s
+#WHERE {
+#    ?s a (:hasStopNo some (:atStation value :Huppuguda and :departsOn some xsd:time[>="06:00:00"^^xsd:time]) and :AllDayTrain)
+#}
+
+#SELECT ?s ?p
+#WHERE {
+#    ?s owl:equivalentClass ?p
+#}
+
+#select ?age where { 
+#  bind( "1799-12-14"^^<http://www.w3.org/2001/XMLSchema#date> as ?death )
+#  bind( "1732-02-22"^^<http://www.w3.org/2001/XMLSchema#date> as ?birth )
+#  bind( year(?death)-year(?birth) as ?age )
+#}
+
+#select ?age where {
+#  bind( "08:33:00"^^<http://www.w3.org/2001/XMLSchema#time> as ?death )
+#  bind( "09:50:00"^^<http://www.w3.org/2001/XMLSchema#time> as ?birth )
+#  bind( ?birth-?death as ?age )
+#}
+
+
+#select ?age where {
+#  bind( "PT1H17M0.000S"^^<http://www.w3.org/2001/XMLSchema#duration> as ?death )
+#  bind( "09:50:00"^^<http://www.w3.org/2001/XMLSchema#time> as ?birth )
+#  bind( ?birth-?death as ?age )
+#}
+
+#SELECT ?time
+#WHERE {
+#	SELECT ?time
+#	WHERE {
+#	    ?t :hasStopNo ?s.
+#	    FILTER ( regex ( str(?t), "47211") ).
+#	    ?s :departsOn ?time.
+#	    ?s :atStation ?st.
+#	    FILTER ( regex ( str(?st), "Lingampally") ).
+#	}
+#	#SELECT ?st
+#	#WHERE {
+#	#    ?t :hasStopNo ?s.
+#        #    FILTER ( regex ( str(?t), "47211") ).
+#	#    ?st 
+#	#    ?s :departsOn ?time.   
+#	#}
+#}
+
+#SELECT DISTINCT ?st
+#WHERE {
+#	?s :source ?st1
+#	FILTER ( regex ( str(?st1), "Huppuguda") ).
+#	?s :destination ?st2.
+#	FILTER ( regex ( str(?st2), "Lingampally") ).
+#	?s :atStation ?st
+#}
+
+
+#SELECT ?s ?time ?st
+#WHERE {
+#	?s :stationHaltTime ?time.
+#	?s :atStation ?st.
+#	FILTER ( regex ( str(?st), "Lingampally") ).
+#}
+
+#SELECT ?t ?srcTime
+#WHERE {
+#    ?t :hasStopNo ?s.
+#    FILTER ( regex ( str(?t), "47211") ).
+#    ?s :departsOn ?srcTime.
+#    ?s :atStation ?st.
+#    FILTER ( regex ( str(?st), "Huppuguda") ).
+#}
+
+#SELECT ?t ?tgtTime
+#WHERE {
+#    ?t :hasStopNo ?s.
+#    FILTER ( regex ( str(?t), "47211") ).
+#    ?s :departsOn ?tgtTime.
+#    ?s :atStation ?st.
+#    FILTER ( regex ( str(?st), "Lingampally") ).
+#}
+
+
+#SELECT ?t
+#WHERE {
+#    {
+#    SELECT ?t WHERE {
+#	    ?t :hasStopNo ?s.
+#	    ?s :departsOn ?arrtime.
+#	    FILTER ( ?arrtime > "07:00:00"^^xsd:time ).
+#	    FILTER ( ?arrtime < "09:00:00"^^xsd:time ).
+#	    ?s :atStation ?st.
+#	    FILTER ( regex ( str(?st), "Huppuguda") ).
+#    	}
+#    }
+#    .
+#    {
+#    SELECT ?t WHERE {
+#	    ?t :hasStopNo ?s.
+#	    ?s :departsOn ?deptime.
+#	    FILTER ( ?deptime > "08:00:00"^^xsd:time ).
+#	    FILTER ( ?deptime < "10:00:00"^^xsd:time ).
+#	    ?s :atStation ?st.
+#	    FILTER ( regex ( str(?st), "Lingampally") ).
+#	}
+#    }
+#}
+
+
+#SELECT ?t ?mtime
+#WHERE {
+#    ?s :departsOn ?mtime
+#    .
+#	{
+#		SELECT (MAX(?time) AS ?mtime)
+#		WHERE {
+#		    ?s :departsOn ?time.
+#		    FILTER ( ?time > "07:00:00"^^xsd:time ).
+#		    FILTER ( ?time < "09:00:00"^^xsd:time ).
+#		    ?s :ofTrain ?t.
+#		    ?t :travelsThrough ?r.
+#		    ?s :atStation ?st.
+#		    FILTER ( regex ( str(?st), "Huppuguda") ).
+#		    #?t :arrivesOn ?s.
+#		}
+#		GROUP BY ?r
+#        }
+#    .
+#    ?t :hasStopNo ?s.
+#}
+
+
+SELECT ((xsd:time((?time1))-xsd:time(?time2)) AS ?durationTime)
+#SELECT ?time1 ?time2 ?t1 ?t2
+WHERE {
+	    {SELECT ?time2 ?t2
+	    WHERE{
+		    ?s2 :departsOn ?time2.
+#		    FILTER ( ?time2 > "07:00:00"^^xsd:time ).
+#		    FILTER ( ?time2 < "13:00:00"^^xsd:time ).
+		    ?s2 :ofTrain ?t2.
+		    ?s2 :atStation ?st2.
+		    FILTER ( regex ( str(?st2), "Falaknuma") ).
+	    }}
+	    .
+	    {SELECT ((?time) AS ?time1)
+	    WHERE {
+		    ?s1 :departsOn ?time.
+		    FILTER ( ?time > "07:00:00"^^xsd:time ).
+		    FILTER ( ?time < "13:00:00"^^xsd:time ).
+		    ?s1 :ofTrain ?t1.
+		    ?s1 :atStation ?st1.
+		    FILTER ( regex ( str(?st1), "Bharatnagar") ).
+		}
+#	    GROUP BY ?st1
+	    }
+	    .
+	    ?s1 :ofTrain ?t1.
+	    ?s1 :departsOn ?time1.
+	    ?s1 :atStation ?st1.
+	    ?s1 :source ?src.
+	    FILTER ( regex ( str(?src), "Falaknuma") ).
+	    FILTER ( regex ( str(?st1), "Bharatnagar") ).
+	    FILTER ( ?t1 = ?t2).
+	    FILTER ( ?time1 > ?time2 ).
+}
+
+#SELECT (xsd:time(?time)-xsd:time("07:00:00"^^xsd:time) AS ?reachTime)
+##SELECT ?time
+#WHERE {
+#    ?s :departsOn ?time.
+#    FILTER ( ?time > "07:00:00"^^xsd:time ).
+#    FILTER ( ?time < "11:00:00"^^xsd:time ).
+#    #?s :ofTrain ?t.
+#    ?s :source ?src.
+#    FILTER ( regex ( str(?src), "Falaknuma") ).
+#    ?s :destination ?dest.
+#    FILTER ( regex ( str(?dest), "Lingampally") ).
+#    ?s :atStation ?st.
+#    FILTER ( regex ( str(?st), "Bharatnagar") ).
+#    #?t :arrivesOn ?s.   
+#}
+##GROUP BY ?st
+#ORDER BY ?time
+
+#SELECT *
+#WHERE {
+#	?x rdf:type ?y.
+#	FILTER ( regex ( str(?y), "AllPublicTrain") ).
+#}
+
+#SELECT ?description
+#WHERE {
+#    ?x rdfs:comment ?description.
+#    FILTER ( regex ( str(?x), "Thing") ).
+#}
+
+#SELECT DISTINCT ?n ?s ?st ?time
+#WHERE {
+#   ?n :notRuns ?da. 
+#   ?n :hasStopNo ?s.
+#   FILTER ( regex ( str(?da), "Sunday") ).
+#   ?n :hasComponent ?c.
+#   FILTER (! regex ( str(?c), "GeneralCoach") ).
+#   ?s :atStation ?st.
+#   FILTER ( regex ( str(?st), "Huppuguda") ).
+#   ?s :departsOn ?time.
+#   FILTER ( ?time > "07:00:00"^^xsd:time )
+#}
+
+#SELECT ?s ?pl
+#WHERE {
+#    ?s :equivalentClass ?pl
+#    #?s :atPlace ?pl.
+#    #FILTER ( regex ( str(?s), "BuyMmtsTrainTicket") ).
+#}
+
+
+
+#SELECT ?n ?s ?st ?time
+#WHERE { 
+#   ?n :hasStopNo ?s.
+#   ?s :atStation "Huppuguda".
+#   ?s :departsOn ?time.
+#   FILTER ( ?time > "07:00:00"^^xsd:time )
+#}
+
+#SELECT ?t 
+#WHERE { 
+#     ?t a [
+#       owl:intersectionOf (
+#         :MmtsTrain
+#         [
+#             owl:onProperty :travelsThrough;
+#             owl:Route "FalakNuma-Lingampally";
+#         ]
+#       )
+#     ] .
+#}
