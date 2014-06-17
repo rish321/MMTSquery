@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VAANEE_DIR=/home/hduser/sampark
+VAANEE_DIR=$3/ILMT/
 
 
 while read line
