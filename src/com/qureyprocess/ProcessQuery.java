@@ -57,6 +57,7 @@ public class ProcessQuery {
 			ProcessAnswer.translate(hmtrans, "kripya sawaal poochein");
 		}
 		br.close();
+		
 	}
 	public static boolean hasSubClassTransitive( OntClass parent, OntClass child ) {
 		return OntTools.findShortestPath( child.getOntModel(), child, parent, new PredicatesFilter( RDFS.subClassOf ) ) != null;
