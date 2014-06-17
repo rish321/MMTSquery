@@ -1,9 +1,0 @@
-<Sentence id="1">
-1	tiketa	NN	<fs af='tiketa,unk,,,,,,'>
-2	kEse	WQ	<fs af='kEse,adv,,,,,,'>|<fs af='kEsA,adj,m,sg,,o,,'>|<fs af='kEsA,adj,m,pl,,d,,'>|<fs af='kEsA,adj,m,pl,,o,,'>
-3	karavAyA	VM	<fs af='karavA,v,m,sg,any,,yA,yA'>
-4	jA	VAUX	<fs af='jA,v,any,any,any,,0,0'>
-5	rahA	VAUX	<fs af='raha,v,m,sg,any,,yA,yA'>
-6	hE	VAUX	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
-7	?	SYM	<fs af='?,punc,,,,,,'>
-</Sentence>

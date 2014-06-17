@@ -50,7 +50,7 @@ public class ProcessQuery {
 				continue;
 			System.out.println("Started Answering question " + i++ + "...");
 			System.out.println(s);
-			s = rephraseQuery(folder, s);
+			s = rephraseQuery(folder, s, args[2]);
 			//System.out.println(s);
 			ManageArguments.preProcess(m, dm, s, directMap, hmpll, hmind, hmnum, hmtrans, folder, args[2], setu_path);
 			System.out.println();
@@ -61,14 +61,14 @@ public class ProcessQuery {
 	public static boolean hasSubClassTransitive( OntClass parent, OntClass child ) {
 		return OntTools.findShortestPath( child.getOntModel(), child, parent, new PredicatesFilter( RDFS.subClassOf ) ) != null;
 	}
-	public static String rephraseQuery(String folder, String string) throws IOException, InterruptedException { 
+	public static String rephraseQuery(String folder, String string, String NLPfolder) throws IOException, InterruptedException { 
 		String params = folder + "rephrase.sh ";
 		String filename = folder + "tempin.txt";
 		File file1 = new File(filename);
 		FileWriter fw = new FileWriter(file1);
 		fw.write(string);
 		fw.close();
-		params += " " + filename;
+		params += (" " + filename + " " + NLPfolder);
 		params += ">" + filename + "temp";
 		Sparql.createSparqlFile(params);
 		//System.out.println(filename + "temp");
