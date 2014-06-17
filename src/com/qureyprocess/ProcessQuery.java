@@ -63,16 +63,16 @@ public class ProcessQuery {
 	}
 	public static String rephraseQuery(String folder, String string) throws IOException, InterruptedException { 
 		String params = folder + "rephrase.sh ";
-		String filename = folder + "tempin.txt";
+		String filename = folder + "rephrase.in";
 		File file1 = new File(filename);	 
 		FileWriter fw = new FileWriter(file1.getAbsoluteFile(), true);
 		BufferedWriter bw = new BufferedWriter(fw);
 		bw.write(string);
 		bw.close();
 		params += filename;
-		params += ">" + folder + file1 + "temp";
+		params += ">" + folder + "rephrase.tmp";
 		Sparql.createSparqlFile(params);
-		FileReader fr = new FileReader(folder + file1 + "temp"); 
+		FileReader fr = new FileReader(folder + "rephrase.tmp"); 
 		BufferedReader br = new BufferedReader(fr);
 		String s = br.readLine();
 		br.close();
