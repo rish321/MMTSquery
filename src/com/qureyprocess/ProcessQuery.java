@@ -64,11 +64,12 @@ public class ProcessQuery {
 	public static String rephraseQuery(String folder, String string, String NLPfolder) throws IOException, InterruptedException { 
 		String params = folder + "rephrase.sh ";
 		String filename = folder + "tempin.txt";
+		String dir = System.getProperty("user.dir");
 		File file1 = new File(filename);
 		FileWriter fw = new FileWriter(file1);
 		fw.write(string);
 		fw.close();
-		params += (" " + filename + " " + NLPfolder);
+		params += (" " + filename + " " + NLPfolder + " " + dir);
 		params += ">" + filename + "temp";
 		Sparql.createSparqlFile(params);
 		//System.out.println(filename + "temp");
