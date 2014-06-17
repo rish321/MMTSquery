@@ -2,6 +2,7 @@
 
 VAANEE_DIR=/home/hduser/sampark
 
+
 while read line
 do
 	

@@ -69,6 +69,7 @@ public class ProcessQuery {
 		FileWriter fw = new FileWriter(file1);
 		fw.write(string);
 		fw.close();
+		
 		params += (" " + filename + " " + NLPfolder + " " + dir);
 		params += ">" + filename + "temp";
 		Sparql.createSparqlFile(params);
