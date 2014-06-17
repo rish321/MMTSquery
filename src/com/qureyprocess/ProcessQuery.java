@@ -1,7 +1,6 @@
 package com.qureyprocess;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -18,8 +17,8 @@ import com.hp.hpl.jena.ontology.OntTools;
 import com.hp.hpl.jena.ontology.OntTools.PredicatesFilter;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.vocabulary.RDFS;
-import com.system.Setu;
 import com.sparql.Sparql;
+import com.system.Setu;
 
 public class ProcessQuery {
 	public static void main(String args[]) throws Exception
@@ -52,6 +51,7 @@ public class ProcessQuery {
 			System.out.println("Started Answering question " + i++ + "...");
 			System.out.println(s);
 			s = rephraseQuery(folder, s);
+			//System.out.println(s);
 			ManageArguments.preProcess(m, dm, s, directMap, hmpll, hmind, hmnum, hmtrans, folder, args[2], setu_path);
 			System.out.println();
 			ProcessAnswer.translate(hmtrans, "kripya sawaal poochein");
@@ -63,17 +63,16 @@ public class ProcessQuery {
 	}
 	public static String rephraseQuery(String folder, String string) throws IOException, InterruptedException { 
 		String params = folder + "rephrase.sh ";
-		String filename = folder + "rephrase.in";
-		File file1 = new File(filename);	 
-		FileWriter fw = new FileWriter(file1.getAbsoluteFile(), true);
-		BufferedWriter bw = new BufferedWriter(fw);
-		bw.write(string);
-		bw.close();
-		params += filename;
-		params += ">" + folder + "rephrase.tmp";
+		String filename = folder + "tempin.txt";
+		File file1 = new File(filename);
+		FileWriter fw = new FileWriter(file1);
+		fw.write(string);
+		fw.close();
+		params += " " + filename;
+		params += ">" + filename + "temp";
 		Sparql.createSparqlFile(params);
-		FileReader fr = new FileReader(folder + "rephrase.tmp"); 
-		BufferedReader br = new BufferedReader(fr);
+		//System.out.println(filename + "temp");
+		BufferedReader br = new BufferedReader(new FileReader(new File(filename + "temp")));
 		String s = br.readLine();
 		br.close();
 		return s;

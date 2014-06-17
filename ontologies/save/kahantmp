@@ -1,0 +1,40 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX : <http://www.semanticweb.org/ontologies/2014/1/MMTS_test.owl#>
+
+
+#SELECT (xsd:time(?deptime)-xsd:duration(?hlt) AS ?arrTime)
+#SELECT ?deptime
+SELECT ?r
+WHERE {
+    {SELECT (MIN(?time1) AS ?deptime)
+    WHERE {
+	    ?s1 :departsOn ?time1.
+	    FILTER ( ?time1 > "06:00:00"^^xsd:time ).
+	    FILTER ( ?time1 < "09:00:00"^^xsd:time ).
+#	    ?s1 :ofTrain ?t1.
+#	    ?s1 :atStation ?st1.
+#	    FILTER ( regex ( str(?st1), "atstation") ).
+	    ?s1 :source ?src.
+	    FILTER ( regex ( str(?src), "Lingampally") ).
+	    ?s1 :destination ?dest.
+	    FILTER ( regex ( str(?dest), "Hyderabad") ).
+	}
+    GROUP BY ?src }
+    .
+#    ?s :ofTrain ?t.
+    ?s :departsOn ?deptime.
+    ?s :source ?src.
+    FILTER ( regex ( str(?src), "Lingampally") ).
+    ?s :destination ?dest.
+    FILTER ( regex ( str(?dest), "Hyderabad") ).
+#   ?s :atStation ?st.
+#    FILTER ( regex ( str(?st), "atstation") ).
+#    ?s :stationHaltTime ?hlt.
+    ?s :forRoute ?r.
+    #?t :arrivesOn ?s.   
+}
+#GROUP BY ?st
+#ORDER BY ?time

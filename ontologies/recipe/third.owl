@@ -1,0 +1,3534 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/luffy/ontologies/2014/2/PurposeNetFoodRecipeOntology"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/luffy/ontologies/2014/2/PurposeNetFoodRecipeOntology">
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="PurposeNetFoodRecipeOntology" IRI="http://www.semanticweb.org/luffy/ontologies/2014/2/PurposeNetFoodRecipeOntology#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Declaration>
+        <Class IRI="#AbstractThing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ActionName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Add"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aloo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AlooParatha"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Amchur"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Apply"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Boil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BoiledFoodArtifact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Butter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chilli"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChoppedFoodArtifact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Color"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CorianderLeaf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeepBowl"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DescriptiveProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DoughFoodArtifact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DustedBoard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fold"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FoodArtifact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ghee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Griddle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IntermediateArtifact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KitchenArtifact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Laddle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Make"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mash"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MashedFoodArtifact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MicrowaveOven"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mix"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MixingBowl"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Onion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Peel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalArtifact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalThing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Place"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PowderFoodArtifact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Prepare"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PreparedFoodArtifact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Press"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PressureCooker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProcessedFoodArtifact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RawFoodArtifact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Roll"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RollingPin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RotiBasket"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Salt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spatula"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#State"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tawa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WetGrinder"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAccessory"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasActionFeature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasActionType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasActor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAgent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBeneficiary"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBirth"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasColor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasComponent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCondition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasConstitution"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCoreComponent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDescriptorFeature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDestination"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFeature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFirstTimeSetup"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFluidity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGeneralMaintenance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasHeaviness"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasInertness"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasInstrument"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMaintenance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMobility"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasNaccessory"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasNonPurposeServingAccessory"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOiliness"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOutcome"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPatient"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPosition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPrimaryAction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProduct"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPurpose"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPurposeServingAccessory"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRelation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRepairMaintenance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasResult"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasResultOnDestruction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSecondaryAction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSemanticRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSetup"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasShape"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSideEffect"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSize"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSliminess"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSmell"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSmoothness"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSoftness"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSound"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStability"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasState"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSubaction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSubsequentSetup"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSubtleness"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTaste"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTemperature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTheme"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTransparency"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWearAndTear"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAccessoryOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isActionFeatureOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isActionTypeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isActorOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAgentOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBeneficiaryOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBirthOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isColorOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isComponentOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isConditionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isConstitutonOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCoreComponentOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDescriptorFeature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDestinationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFeatureOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFirstTimeSetupOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFluidityOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isGeneralMaintenanceOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isHeavinessOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInertnessOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInstrumentOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLocationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMaintenanceOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMobilityOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isNaccessoryOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isNonPurposeServingAccessoryOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isOilinessOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isOutcomeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPatientOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPositionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPreconditionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPrimaryActionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isProductOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPurposeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPurposeServingAccessoryOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRelationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRepairMaintenanceOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isResultOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isResultOnDestructionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSecondaryActionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSemanticRoleOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSetupOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isShapeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSideEffectOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSizeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSliminessOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSmellOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSmoothnessOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSoftnessOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSoundOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSourceOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isStabilityOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isStateOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSubactionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSubsequentSetupOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSubtlenessOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTasteOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTemperatureOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isThemeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTransparencyOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isWearAndTearOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#precondition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAmount"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDiameter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDuration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasKilogram"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMagnitude"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMass"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMaxDiameter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMinDiameter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMinuteDuration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTablespoon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Potato"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#add1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aloo_paratha"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#amchur"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#apply1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#black"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#blue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#boil1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#boiled1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#butter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#chilli"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#chilli_powder"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#chop1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#chopped1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#coriander_leaf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#deep_bowl"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dough"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#doughBalls"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dusted_board"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fold1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fry1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#garam_masala_powder"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ghee"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#green"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#griddle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#intermediate10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#intermediate11"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#intermediate13"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#intermediate14"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#intermediate15"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#intermediate2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#intermediate4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#intermediate5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#intermediate6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#intermediate7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#intermediate8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#intermediate9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#laddle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#make1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#maroon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mash1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mashedPotato"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#microwave_oven"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mix1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mixing_bowl"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#onion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#peel1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#place1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#prepare1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#press1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pressure_cooker"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#red"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#roll1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#roll2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rolledDough"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rolling_pin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#roti_basket"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#salt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#spatula"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#state1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#state10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#state11"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#state12"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#state13"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#state14"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#state15"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#state16"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#state2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#state3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#state4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#state5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#state6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#state7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#state8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#state9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tawa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#violet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#wet_grinder"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#white"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#yellow"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#ActionName"/>
+        <Class IRI="#AbstractThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Add"/>
+        <Class IRI="#ActionName"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aloo"/>
+        <Class IRI="#RawFoodArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AlooParatha"/>
+        <Class IRI="#Dish"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AlooParatha"/>
+        <Class IRI="#DoughFoodArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Amchur"/>
+        <Class IRI="#ProcessedFoodArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Apply"/>
+        <Class IRI="#ActionName"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Boil"/>
+        <Class IRI="#ActionName"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BoiledFoodArtifact"/>
+        <Class IRI="#PreparedFoodArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Butter"/>
+        <Class IRI="#ProcessedFoodArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Butter"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasColor"/>
+            <NamedIndividual IRI="#yellow"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chilli"/>
+        <Class IRI="#RawFoodArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chilli"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasColor"/>
+            <NamedIndividual IRI="#green"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chop"/>
+        <Class IRI="#ActionName"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChoppedFoodArtifact"/>
+        <Class IRI="#PreparedFoodArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Color"/>
+        <Class IRI="#DescriptiveProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CorianderLeaf"/>
+        <Class IRI="#RawFoodArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CorianderLeaf"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasColor"/>
+            <NamedIndividual IRI="#green"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeepBowl"/>
+        <Class IRI="#KitchenArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DescriptiveProperty"/>
+        <Class IRI="#AbstractThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dish"/>
+        <Class IRI="#PreparedFoodArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DoughFoodArtifact"/>
+        <Class IRI="#PreparedFoodArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DustedBoard"/>
+        <Class IRI="#KitchenArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fold"/>
+        <Class IRI="#ActionName"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FoodArtifact"/>
+        <Class IRI="#PhysicalArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fry"/>
+        <Class IRI="#ActionName"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ghee"/>
+        <Class IRI="#ProcessedFoodArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Griddle"/>
+        <Class IRI="#KitchenArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IntermediateArtifact"/>
+        <Class IRI="#PhysicalArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KitchenArtifact"/>
+        <Class IRI="#PhysicalArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laddle"/>
+        <Class IRI="#KitchenArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Make"/>
+        <Class IRI="#ActionName"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mash"/>
+        <Class IRI="#ActionName"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MashedFoodArtifact"/>
+        <Class IRI="#PreparedFoodArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MicrowaveOven"/>
+        <Class IRI="#KitchenArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mix"/>
+        <Class IRI="#ActionName"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MixingBowl"/>
+        <Class IRI="#KitchenArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Onion"/>
+        <Class IRI="#RawFoodArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pan"/>
+        <Class IRI="#KitchenArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Peel"/>
+        <Class IRI="#ActionName"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalArtifact"/>
+        <Class IRI="#PhysicalThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Place"/>
+        <Class IRI="#ActionName"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PowderFoodArtifact"/>
+        <Class IRI="#ProcessedFoodArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prepare"/>
+        <Class IRI="#ActionName"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PreparedFoodArtifact"/>
+        <Class IRI="#FoodArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Press"/>
+        <Class IRI="#ActionName"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PressureCooker"/>
+        <Class IRI="#KitchenArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProcessedFoodArtifact"/>
+        <Class IRI="#FoodArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RawFoodArtifact"/>
+        <Class IRI="#FoodArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Roll"/>
+        <Class IRI="#ActionName"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RollingPin"/>
+        <Class IRI="#KitchenArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RotiBasket"/>
+        <Class IRI="#KitchenArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Salt"/>
+        <Class IRI="#PowderFoodArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Salt"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasColor"/>
+            <NamedIndividual IRI="#white"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shape"/>
+        <Class IRI="#DescriptiveProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spatula"/>
+        <Class IRI="#KitchenArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#State"/>
+        <Class IRI="#AbstractThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tawa"/>
+        <Class IRI="#KitchenArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WetGrinder"/>
+        <Class IRI="#KitchenArtifact"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Aloo"/>
+        <NamedIndividual IRI="#Potato"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Add"/>
+        <NamedIndividual IRI="#add1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AlooParatha"/>
+        <NamedIndividual IRI="#aloo_paratha"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Amchur"/>
+        <NamedIndividual IRI="#amchur"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Apply"/>
+        <NamedIndividual IRI="#apply1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Color"/>
+        <NamedIndividual IRI="#black"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Color"/>
+        <NamedIndividual IRI="#blue"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Boil"/>
+        <NamedIndividual IRI="#boil1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BoiledFoodArtifact"/>
+        <NamedIndividual IRI="#boiled1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Butter"/>
+        <NamedIndividual IRI="#butter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chilli"/>
+        <NamedIndividual IRI="#chilli"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PowderFoodArtifact"/>
+        <NamedIndividual IRI="#chilli_powder"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chop"/>
+        <NamedIndividual IRI="#chop1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChoppedFoodArtifact"/>
+        <NamedIndividual IRI="#chopped1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CorianderLeaf"/>
+        <NamedIndividual IRI="#coriander_leaf"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DeepBowl"/>
+        <NamedIndividual IRI="#deep_bowl"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DoughFoodArtifact"/>
+        <NamedIndividual IRI="#dough"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DoughFoodArtifact"/>
+        <NamedIndividual IRI="#doughBalls"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DustedBoard"/>
+        <NamedIndividual IRI="#dusted_board"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fold"/>
+        <NamedIndividual IRI="#fold1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fry"/>
+        <NamedIndividual IRI="#fry1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PowderFoodArtifact"/>
+        <NamedIndividual IRI="#garam_masala_powder"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ghee"/>
+        <NamedIndividual IRI="#ghee"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Color"/>
+        <NamedIndividual IRI="#green"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Griddle"/>
+        <NamedIndividual IRI="#griddle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IntermediateArtifact"/>
+        <NamedIndividual IRI="#intermediate10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IntermediateArtifact"/>
+        <NamedIndividual IRI="#intermediate11"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IntermediateArtifact"/>
+        <NamedIndividual IRI="#intermediate13"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IntermediateArtifact"/>
+        <NamedIndividual IRI="#intermediate14"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IntermediateArtifact"/>
+        <NamedIndividual IRI="#intermediate15"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IntermediateArtifact"/>
+        <NamedIndividual IRI="#intermediate2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IntermediateArtifact"/>
+        <NamedIndividual IRI="#intermediate4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IntermediateArtifact"/>
+        <NamedIndividual IRI="#intermediate5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IntermediateArtifact"/>
+        <NamedIndividual IRI="#intermediate6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IntermediateArtifact"/>
+        <NamedIndividual IRI="#intermediate7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IntermediateArtifact"/>
+        <NamedIndividual IRI="#intermediate8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IntermediateArtifact"/>
+        <NamedIndividual IRI="#intermediate9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Laddle"/>
+        <NamedIndividual IRI="#laddle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Make"/>
+        <NamedIndividual IRI="#make1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Color"/>
+        <NamedIndividual IRI="#maroon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mash"/>
+        <NamedIndividual IRI="#mash1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MashedFoodArtifact"/>
+        <NamedIndividual IRI="#mashedPotato"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MicrowaveOven"/>
+        <NamedIndividual IRI="#microwave_oven"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mix"/>
+        <NamedIndividual IRI="#mix1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MixingBowl"/>
+        <NamedIndividual IRI="#mixing_bowl"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Onion"/>
+        <NamedIndividual IRI="#onion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pan"/>
+        <NamedIndividual IRI="#pan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Peel"/>
+        <NamedIndividual IRI="#peel1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Place"/>
+        <NamedIndividual IRI="#place1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Prepare"/>
+        <NamedIndividual IRI="#prepare1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Press"/>
+        <NamedIndividual IRI="#press1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PressureCooker"/>
+        <NamedIndividual IRI="#pressure_cooker"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Color"/>
+        <NamedIndividual IRI="#red"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Roll"/>
+        <NamedIndividual IRI="#roll1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Roll"/>
+        <NamedIndividual IRI="#roll2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DoughFoodArtifact"/>
+        <NamedIndividual IRI="#rolledDough"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RollingPin"/>
+        <NamedIndividual IRI="#rolling_pin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RotiBasket"/>
+        <NamedIndividual IRI="#roti_basket"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Salt"/>
+        <NamedIndividual IRI="#salt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Spatula"/>
+        <NamedIndividual IRI="#spatula"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#State"/>
+        <NamedIndividual IRI="#state1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#State"/>
+        <NamedIndividual IRI="#state10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#State"/>
+        <NamedIndividual IRI="#state11"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#State"/>
+        <NamedIndividual IRI="#state12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#State"/>
+        <NamedIndividual IRI="#state13"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#State"/>
+        <NamedIndividual IRI="#state14"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#State"/>
+        <NamedIndividual IRI="#state15"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#State"/>
+        <NamedIndividual IRI="#state16"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#State"/>
+        <NamedIndividual IRI="#state2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#State"/>
+        <NamedIndividual IRI="#state3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#State"/>
+        <NamedIndividual IRI="#state4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#State"/>
+        <NamedIndividual IRI="#state5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#State"/>
+        <NamedIndividual IRI="#state6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#State"/>
+        <NamedIndividual IRI="#state7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#State"/>
+        <NamedIndividual IRI="#state8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#State"/>
+        <NamedIndividual IRI="#state9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tawa"/>
+        <NamedIndividual IRI="#tawa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Color"/>
+        <NamedIndividual IRI="#violet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WetGrinder"/>
+        <NamedIndividual IRI="#wet_grinder"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Color"/>
+        <NamedIndividual IRI="#white"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Color"/>
+        <NamedIndividual IRI="#yellow"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResult"/>
+        <NamedIndividual IRI="#add1"/>
+        <NamedIndividual IRI="#intermediate4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#add1"/>
+        <NamedIndividual IRI="#chilli_powder"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#add1"/>
+        <NamedIndividual IRI="#salt"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#add1"/>
+        <NamedIndividual IRI="#garam_masala_powder"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#add1"/>
+        <NamedIndividual IRI="#chopped1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#add1"/>
+        <NamedIndividual IRI="#chopped1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBirth"/>
+        <NamedIndividual IRI="#aloo_paratha"/>
+        <NamedIndividual IRI="#prepare1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasComponent"/>
+        <NamedIndividual IRI="#aloo_paratha"/>
+        <NamedIndividual IRI="#onion"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasComponent"/>
+        <NamedIndividual IRI="#aloo_paratha"/>
+        <NamedIndividual IRI="#coriander_leaf"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasComponent"/>
+        <NamedIndividual IRI="#aloo_paratha"/>
+        <NamedIndividual IRI="#chilli_powder"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasComponent"/>
+        <NamedIndividual IRI="#aloo_paratha"/>
+        <NamedIndividual IRI="#chilli"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasComponent"/>
+        <NamedIndividual IRI="#aloo_paratha"/>
+        <NamedIndividual IRI="#salt"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasComponent"/>
+        <NamedIndividual IRI="#aloo_paratha"/>
+        <NamedIndividual IRI="#garam_masala_powder"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasComponent"/>
+        <NamedIndividual IRI="#aloo_paratha"/>
+        <NamedIndividual IRI="#ghee"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasComponent"/>
+        <NamedIndividual IRI="#aloo_paratha"/>
+        <NamedIndividual IRI="#Potato"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasComponent"/>
+        <NamedIndividual IRI="#aloo_paratha"/>
+        <NamedIndividual IRI="#butter"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasComponent"/>
+        <NamedIndividual IRI="#aloo_paratha"/>
+        <NamedIndividual IRI="#amchur"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasComponent"/>
+        <NamedIndividual IRI="#aloo_paratha"/>
+        <NamedIndividual IRI="#dough"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResult"/>
+        <NamedIndividual IRI="#apply1"/>
+        <NamedIndividual IRI="#state11"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#apply1"/>
+        <NamedIndividual IRI="#intermediate8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#apply1"/>
+        <NamedIndividual IRI="#state10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#boil1"/>
+        <NamedIndividual IRI="#pressure_cooker"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResult"/>
+        <NamedIndividual IRI="#boil1"/>
+        <NamedIndividual IRI="#boiled1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#boil1"/>
+        <NamedIndividual IRI="#Potato"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#boiled1"/>
+        <NamedIndividual IRI="#Potato"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResult"/>
+        <NamedIndividual IRI="#chop1"/>
+        <NamedIndividual IRI="#chopped1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#chop1"/>
+        <NamedIndividual IRI="#intermediate2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#chop1"/>
+        <NamedIndividual IRI="#intermediate2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#chopped1"/>
+        <NamedIndividual IRI="#boiled1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#doughBalls"/>
+        <NamedIndividual IRI="#dough"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPatient"/>
+        <NamedIndividual IRI="#fold1"/>
+        <NamedIndividual IRI="#intermediate11"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResult"/>
+        <NamedIndividual IRI="#fold1"/>
+        <NamedIndividual IRI="#state14"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#fold1"/>
+        <NamedIndividual IRI="#state13"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#fry1"/>
+        <NamedIndividual IRI="#spatula"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLocation"/>
+        <NamedIndividual IRI="#fry1"/>
+        <NamedIndividual IRI="#tawa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResult"/>
+        <NamedIndividual IRI="#fry1"/>
+        <NamedIndividual IRI="#state16"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#fry1"/>
+        <NamedIndividual IRI="#intermediate13"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#fry1"/>
+        <NamedIndividual IRI="#state15"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#intermediate2"/>
+        <NamedIndividual IRI="#boiled1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#intermediate4"/>
+        <NamedIndividual IRI="#chilli_powder"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#intermediate4"/>
+        <NamedIndividual IRI="#garam_masala_powder"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#intermediate4"/>
+        <NamedIndividual IRI="#chopped1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#intermediate4"/>
+        <NamedIndividual IRI="#salt"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#intermediate6"/>
+        <NamedIndividual IRI="#mashedPotato"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#intermediate7"/>
+        <NamedIndividual IRI="#doughBalls"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResult"/>
+        <NamedIndividual IRI="#make1"/>
+        <NamedIndividual IRI="#doughBalls"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#make1"/>
+        <NamedIndividual IRI="#dough"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#make1"/>
+        <NamedIndividual IRI="#dough"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResult"/>
+        <NamedIndividual IRI="#mash1"/>
+        <NamedIndividual IRI="#intermediate6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#mash1"/>
+        <NamedIndividual IRI="#intermediate4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#mash1"/>
+        <NamedIndividual IRI="#intermediate4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLocation"/>
+        <NamedIndividual IRI="#mix1"/>
+        <NamedIndividual IRI="#mixing_bowl"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResult"/>
+        <NamedIndividual IRI="#mix1"/>
+        <NamedIndividual IRI="#state6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#mix1"/>
+        <NamedIndividual IRI="#Potato"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#mix1"/>
+        <NamedIndividual IRI="#intermediate4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#mix1"/>
+        <NamedIndividual IRI="#state5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResult"/>
+        <NamedIndividual IRI="#peel1"/>
+        <NamedIndividual IRI="#intermediate2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#peel1"/>
+        <NamedIndividual IRI="#boiled1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#peel1"/>
+        <NamedIndividual IRI="#boiled1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLocation"/>
+        <NamedIndividual IRI="#place1"/>
+        <NamedIndividual IRI="#intermediate10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResult"/>
+        <NamedIndividual IRI="#place1"/>
+        <NamedIndividual IRI="#state13"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#place1"/>
+        <NamedIndividual IRI="#intermediate6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#place1"/>
+        <NamedIndividual IRI="#state12"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#place1"/>
+        <NamedIndividual IRI="#state7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubaction"/>
+        <NamedIndividual IRI="#prepare1"/>
+        <NamedIndividual IRI="#peel1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubaction"/>
+        <NamedIndividual IRI="#prepare1"/>
+        <NamedIndividual IRI="#chop1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubaction"/>
+        <NamedIndividual IRI="#prepare1"/>
+        <NamedIndividual IRI="#make1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubaction"/>
+        <NamedIndividual IRI="#prepare1"/>
+        <NamedIndividual IRI="#place1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubaction"/>
+        <NamedIndividual IRI="#prepare1"/>
+        <NamedIndividual IRI="#apply1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubaction"/>
+        <NamedIndividual IRI="#prepare1"/>
+        <NamedIndividual IRI="#press1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubaction"/>
+        <NamedIndividual IRI="#prepare1"/>
+        <NamedIndividual IRI="#mash1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubaction"/>
+        <NamedIndividual IRI="#prepare1"/>
+        <NamedIndividual IRI="#boil1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubaction"/>
+        <NamedIndividual IRI="#prepare1"/>
+        <NamedIndividual IRI="#add1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubaction"/>
+        <NamedIndividual IRI="#prepare1"/>
+        <NamedIndividual IRI="#mix1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubaction"/>
+        <NamedIndividual IRI="#prepare1"/>
+        <NamedIndividual IRI="#fry1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubaction"/>
+        <NamedIndividual IRI="#prepare1"/>
+        <NamedIndividual IRI="#fold1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubaction"/>
+        <NamedIndividual IRI="#prepare1"/>
+        <NamedIndividual IRI="#roll1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubaction"/>
+        <NamedIndividual IRI="#prepare1"/>
+        <NamedIndividual IRI="#roll2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#prepare1"/>
+        <NamedIndividual IRI="#aloo_paratha"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResult"/>
+        <NamedIndividual IRI="#press1"/>
+        <NamedIndividual IRI="#intermediate8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#press1"/>
+        <NamedIndividual IRI="#intermediate7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#press1"/>
+        <NamedIndividual IRI="#dough"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#press1"/>
+        <NamedIndividual IRI="#intermediate7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#roll1"/>
+        <NamedIndividual IRI="#rolling_pin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLocation"/>
+        <NamedIndividual IRI="#roll1"/>
+        <NamedIndividual IRI="#dusted_board"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResult"/>
+        <NamedIndividual IRI="#roll1"/>
+        <NamedIndividual IRI="#rolledDough"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#roll1"/>
+        <NamedIndividual IRI="#doughBalls"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#roll1"/>
+        <NamedIndividual IRI="#doughBalls"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#roll2"/>
+        <NamedIndividual IRI="#rolling_pin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLocation"/>
+        <NamedIndividual IRI="#roll2"/>
+        <NamedIndividual IRI="#dusted_board"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPatient"/>
+        <NamedIndividual IRI="#roll2"/>
+        <NamedIndividual IRI="#rolledDough"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResult"/>
+        <NamedIndividual IRI="#roll2"/>
+        <NamedIndividual IRI="#intermediate13"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#roll2"/>
+        <NamedIndividual IRI="#rolledDough"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#rolledDough"/>
+        <NamedIndividual IRI="#doughBalls"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#state1"/>
+        <NamedIndividual IRI="#Potato"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#state10"/>
+        <NamedIndividual IRI="#intermediate8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#state11"/>
+        <NamedIndividual IRI="#intermediate9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#state12"/>
+        <NamedIndividual IRI="#intermediate10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#state13"/>
+        <NamedIndividual IRI="#intermediate11"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#state14"/>
+        <NamedIndividual IRI="#rolledDough"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#state15"/>
+        <NamedIndividual IRI="#intermediate13"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLocation"/>
+        <NamedIndividual IRI="#state16"/>
+        <NamedIndividual IRI="#roti_basket"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#state16"/>
+        <NamedIndividual IRI="#aloo_paratha"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#state2"/>
+        <NamedIndividual IRI="#boiled1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#state3"/>
+        <NamedIndividual IRI="#intermediate2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#state4"/>
+        <NamedIndividual IRI="#chopped1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#state5"/>
+        <NamedIndividual IRI="#intermediate4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#state6"/>
+        <NamedIndividual IRI="#intermediate5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#state7"/>
+        <NamedIndividual IRI="#intermediate6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#state8"/>
+        <NamedIndividual IRI="#dough"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTheme"/>
+        <NamedIndividual IRI="#state9"/>
+        <NamedIndividual IRI="#intermediate7"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNumber"/>
+        <NamedIndividual IRI="#Potato"/>
+        <Literal datatypeIRI="&xsd;float">3.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTablespoon"/>
+        <NamedIndividual IRI="#amchur"/>
+        <Literal datatypeIRI="&xsd;float">1.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNumber"/>
+        <NamedIndividual IRI="#butter"/>
+        <Literal datatypeIRI="&xsd;float">5.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNumber"/>
+        <NamedIndividual IRI="#chilli"/>
+        <Literal datatypeIRI="&xsd;float">3.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTablespoon"/>
+        <NamedIndividual IRI="#chilli_powder"/>
+        <Literal datatypeIRI="&xsd;float">0.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNumber"/>
+        <NamedIndividual IRI="#coriander_leaf"/>
+        <Literal datatypeIRI="&xsd;float">7.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTablespoon"/>
+        <NamedIndividual IRI="#garam_masala_powder"/>
+        <Literal datatypeIRI="&xsd;float">0.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNumber"/>
+        <NamedIndividual IRI="#make1"/>
+        <Literal datatypeIRI="&xsd;int">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNumber"/>
+        <NamedIndividual IRI="#onion"/>
+        <Literal datatypeIRI="&xsd;float">3.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMaxDiameter"/>
+        <NamedIndividual IRI="#rolledDough"/>
+        <Literal datatypeIRI="&xsd;float">3.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMinDiameter"/>
+        <NamedIndividual IRI="#rolledDough"/>
+        <Literal datatypeIRI="&xsd;float">3</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAccessory"/>
+        <ObjectProperty IRI="#hasComponent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasActionFeature"/>
+        <ObjectProperty IRI="#hasFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasActionType"/>
+        <ObjectProperty IRI="#hasFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasActor"/>
+        <ObjectProperty IRI="#hasSemanticRole"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAgent"/>
+        <ObjectProperty IRI="#hasSemanticRole"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBeneficiary"/>
+        <ObjectProperty IRI="#hasSemanticRole"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBirth"/>
+        <ObjectProperty IRI="#hasPrimaryAction"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasColor"/>
+        <ObjectProperty IRI="#hasDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasComponent"/>
+        <ObjectProperty IRI="#hasRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCondition"/>
+        <ObjectProperty IRI="#hasDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasConstitution"/>
+        <ObjectProperty IRI="#hasDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCoreComponent"/>
+        <ObjectProperty IRI="#hasComponent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasDescriptorFeature"/>
+        <ObjectProperty IRI="#hasFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasDestination"/>
+        <ObjectProperty IRI="#hasSemanticRole"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasFirstTimeSetup"/>
+        <ObjectProperty IRI="#hasSetup"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasFluidity"/>
+        <ObjectProperty IRI="#hasDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasGeneralMaintenance"/>
+        <ObjectProperty IRI="#hasMaintenance"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasHeaviness"/>
+        <ObjectProperty IRI="#hasDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasInertness"/>
+        <ObjectProperty IRI="#hasDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <ObjectProperty IRI="#hasSemanticRole"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasLocation"/>
+        <ObjectProperty IRI="#hasSemanticRole"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasMaintenance"/>
+        <ObjectProperty IRI="#hasSecondaryAction"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasMobility"/>
+        <ObjectProperty IRI="#hasDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasNaccessory"/>
+        <ObjectProperty IRI="#hasRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasNonPurposeServingAccessory"/>
+        <ObjectProperty IRI="#hasAccessory"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasOiliness"/>
+        <ObjectProperty IRI="#hasDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <ObjectProperty IRI="#hasActionFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPatient"/>
+        <ObjectProperty IRI="#hasTheme"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPosition"/>
+        <ObjectProperty IRI="#hasDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPrimaryAction"/>
+        <ObjectProperty IRI="#hasActionType"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasProduct"/>
+        <ObjectProperty IRI="#hasSemanticRole"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPurpose"/>
+        <ObjectProperty IRI="#hasPrimaryAction"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPurposeServingAccessory"/>
+        <ObjectProperty IRI="#hasAccessory"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasRelation"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasRepairMaintenance"/>
+        <ObjectProperty IRI="#hasMaintenance"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasResult"/>
+        <ObjectProperty IRI="#hasOutcome"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasResultOnDestruction"/>
+        <ObjectProperty IRI="#hasPrimaryAction"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSecondaryAction"/>
+        <ObjectProperty IRI="#hasActionType"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSemanticRole"/>
+        <ObjectProperty IRI="#hasActionFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSetup"/>
+        <ObjectProperty IRI="#hasSecondaryAction"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasShape"/>
+        <ObjectProperty IRI="#hasDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSideEffect"/>
+        <ObjectProperty IRI="#hasOutcome"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSize"/>
+        <ObjectProperty IRI="#hasDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSliminess"/>
+        <ObjectProperty IRI="#hasDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSmell"/>
+        <ObjectProperty IRI="#hasDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSmoothness"/>
+        <ObjectProperty IRI="#hasDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSoftness"/>
+        <ObjectProperty IRI="#hasDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSound"/>
+        <ObjectProperty IRI="#hasDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSource"/>
+        <ObjectProperty IRI="#hasSemanticRole"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasStability"/>
+        <ObjectProperty IRI="#hasDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasState"/>
+        <ObjectProperty IRI="#hasDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSubaction"/>
+        <ObjectProperty IRI="#hasActionFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSubsequentSetup"/>
+        <ObjectProperty IRI="#hasSetup"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSubtleness"/>
+        <ObjectProperty IRI="#hasDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasTaste"/>
+        <ObjectProperty IRI="#hasDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasTemperature"/>
+        <ObjectProperty IRI="#hasDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasTheme"/>
+        <ObjectProperty IRI="#hasSemanticRole"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasTransparency"/>
+        <ObjectProperty IRI="#hasDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasWearAndTear"/>
+        <ObjectProperty IRI="#hasOutcome"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAccessoryOf"/>
+        <ObjectProperty IRI="#isComponentOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isActionFeatureOf"/>
+        <ObjectProperty IRI="#isFeatureOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isActionTypeOf"/>
+        <ObjectProperty IRI="#isFeatureOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isActorOf"/>
+        <ObjectProperty IRI="#isSemanticRoleOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAgentOf"/>
+        <ObjectProperty IRI="#isSemanticRoleOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isBeneficiaryOf"/>
+        <ObjectProperty IRI="#isSemanticRoleOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isBirthOf"/>
+        <ObjectProperty IRI="#isPrimaryActionOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isColorOf"/>
+        <ObjectProperty IRI="#isDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isComponentOf"/>
+        <ObjectProperty IRI="#isRelationOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isConditionOf"/>
+        <ObjectProperty IRI="#isDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isConstitutonOf"/>
+        <ObjectProperty IRI="#isDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isCoreComponentOf"/>
+        <ObjectProperty IRI="#isComponentOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isDescriptorFeature"/>
+        <ObjectProperty IRI="#isFeatureOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isDestinationOf"/>
+        <ObjectProperty IRI="#isSemanticRoleOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isFeatureOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isFirstTimeSetupOf"/>
+        <ObjectProperty IRI="#isSetupOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isFluidityOf"/>
+        <ObjectProperty IRI="#isDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isGeneralMaintenanceOf"/>
+        <ObjectProperty IRI="#isMaintenanceOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isHeavinessOf"/>
+        <ObjectProperty IRI="#isDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isInertnessOf"/>
+        <ObjectProperty IRI="#isDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isInstrumentOf"/>
+        <ObjectProperty IRI="#isSemanticRoleOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isLocationOf"/>
+        <ObjectProperty IRI="#isSemanticRoleOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isMaintenanceOf"/>
+        <ObjectProperty IRI="#isSecondaryActionOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isMobilityOf"/>
+        <ObjectProperty IRI="#isDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isNaccessoryOf"/>
+        <ObjectProperty IRI="#isRelationOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isNonPurposeServingAccessoryOf"/>
+        <ObjectProperty IRI="#isAccessoryOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isOilinessOf"/>
+        <ObjectProperty IRI="#isDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isOutcomeOf"/>
+        <ObjectProperty IRI="#isActionFeatureOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isPatientOf"/>
+        <ObjectProperty IRI="#isSemanticRoleOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isPositionOf"/>
+        <ObjectProperty IRI="#isDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isPreconditionOf"/>
+        <ObjectProperty IRI="#isActionFeatureOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isPrimaryActionOf"/>
+        <ObjectProperty IRI="#isActionTypeOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isProductOf"/>
+        <ObjectProperty IRI="#isSemanticRoleOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isPurposeOf"/>
+        <ObjectProperty IRI="#isPrimaryActionOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isPurposeServingAccessoryOf"/>
+        <ObjectProperty IRI="#isAccessoryOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isRepairMaintenanceOf"/>
+        <ObjectProperty IRI="#isMaintenanceOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isResultOf"/>
+        <ObjectProperty IRI="#isOutcomeOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isResultOnDestructionOf"/>
+        <ObjectProperty IRI="#isPrimaryActionOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSecondaryActionOf"/>
+        <ObjectProperty IRI="#isActionTypeOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSemanticRoleOf"/>
+        <ObjectProperty IRI="#isActionFeatureOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSetupOf"/>
+        <ObjectProperty IRI="#isSecondaryActionOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isShapeOf"/>
+        <ObjectProperty IRI="#isDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSideEffectOf"/>
+        <ObjectProperty IRI="#isOutcomeOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSizeOf"/>
+        <ObjectProperty IRI="#isDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSliminessOf"/>
+        <ObjectProperty IRI="#isDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSmellOf"/>
+        <ObjectProperty IRI="#isDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSmoothnessOf"/>
+        <ObjectProperty IRI="#isDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSoftnessOf"/>
+        <ObjectProperty IRI="#isDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSoundOf"/>
+        <ObjectProperty IRI="#isDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSourceOf"/>
+        <ObjectProperty IRI="#isSemanticRoleOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isStabilityOf"/>
+        <ObjectProperty IRI="#isDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isStateOf"/>
+        <ObjectProperty IRI="#isDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSubactionOf"/>
+        <ObjectProperty IRI="#isActionFeatureOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSubsequentSetupOf"/>
+        <ObjectProperty IRI="#isSetupOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSubtlenessOf"/>
+        <ObjectProperty IRI="#isDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isTasteOf"/>
+        <ObjectProperty IRI="#isDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isTemperatureOf"/>
+        <ObjectProperty IRI="#isDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isThemeOf"/>
+        <ObjectProperty IRI="#isSemanticRoleOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isTransparencyOf"/>
+        <ObjectProperty IRI="#isDescriptorFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isWearAndTearOf"/>
+        <ObjectProperty IRI="#isOutcomeOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#precondition"/>
+        <ObjectProperty IRI="#hasActionFeature"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasAccessory"/>
+        <ObjectProperty IRI="#isAccessoryOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isActionFeatureOf"/>
+        <ObjectProperty IRI="#hasActionFeature"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasActionType"/>
+        <ObjectProperty IRI="#isActionTypeOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isActorOf"/>
+        <ObjectProperty IRI="#hasActor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasAgent"/>
+        <ObjectProperty IRI="#isAgentOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isBeneficiaryOf"/>
+        <ObjectProperty IRI="#hasBeneficiary"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isBirthOf"/>
+        <ObjectProperty IRI="#hasBirth"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasColor"/>
+        <ObjectProperty IRI="#isColorOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasComponent"/>
+        <ObjectProperty IRI="#isComponentOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isConditionOf"/>
+        <ObjectProperty IRI="#hasCondition"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasConstitution"/>
+        <ObjectProperty IRI="#isConstitutonOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasCoreComponent"/>
+        <ObjectProperty IRI="#isCoreComponentOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isDescriptorFeature"/>
+        <ObjectProperty IRI="#hasDescriptorFeature"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasDestination"/>
+        <ObjectProperty IRI="#isDestinationOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isFeatureOf"/>
+        <ObjectProperty IRI="#hasFeature"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasFirstTimeSetup"/>
+        <ObjectProperty IRI="#isFirstTimeSetupOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasFluidity"/>
+        <ObjectProperty IRI="#isFluidityOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isGeneralMaintenanceOf"/>
+        <ObjectProperty IRI="#hasGeneralMaintenance"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasHeaviness"/>
+        <ObjectProperty IRI="#isHeavinessOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasInertness"/>
+        <ObjectProperty IRI="#isInertnessOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isInstrumentOf"/>
+        <ObjectProperty IRI="#hasInstrument"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasLocation"/>
+        <ObjectProperty IRI="#isLocationOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isMaintenanceOf"/>
+        <ObjectProperty IRI="#hasMaintenance"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isMobilityOf"/>
+        <ObjectProperty IRI="#hasMobility"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasNaccessory"/>
+        <ObjectProperty IRI="#isNaccessoryOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasNonPurposeServingAccessory"/>
+        <ObjectProperty IRI="#isNonPurposeServingAccessoryOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasOiliness"/>
+        <ObjectProperty IRI="#isOilinessOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <ObjectProperty IRI="#isOutcomeOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPatient"/>
+        <ObjectProperty IRI="#isPatientOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isPositionOf"/>
+        <ObjectProperty IRI="#hasPosition"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isPrimaryActionOf"/>
+        <ObjectProperty IRI="#hasPrimaryAction"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isProductOf"/>
+        <ObjectProperty IRI="#hasProduct"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isPurposeOf"/>
+        <ObjectProperty IRI="#hasPurpose"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isPurposeServingAccessoryOf"/>
+        <ObjectProperty IRI="#hasPurposeServingAccessory"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isRelationOf"/>
+        <ObjectProperty IRI="#hasRelation"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasRepairMaintenance"/>
+        <ObjectProperty IRI="#isRepairMaintenanceOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isResultOf"/>
+        <ObjectProperty IRI="#hasResult"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasResultOnDestruction"/>
+        <ObjectProperty IRI="#isResultOnDestructionOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasSecondaryAction"/>
+        <ObjectProperty IRI="#isSecondaryActionOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasSemanticRole"/>
+        <ObjectProperty IRI="#isSemanticRoleOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasSetup"/>
+        <ObjectProperty IRI="#isSetupOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasShape"/>
+        <ObjectProperty IRI="#isShapeOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasSideEffect"/>
+        <ObjectProperty IRI="#isSideEffectOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasSize"/>
+        <ObjectProperty IRI="#isSizeOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasSliminess"/>
+        <ObjectProperty IRI="#isSliminessOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isSmellOf"/>
+        <ObjectProperty IRI="#hasSmell"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasSmoothness"/>
+        <ObjectProperty IRI="#isSmoothnessOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasSoftness"/>
+        <ObjectProperty IRI="#isSoftnessOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isSoundOf"/>
+        <ObjectProperty IRI="#hasSound"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isSourceOf"/>
+        <ObjectProperty IRI="#hasSource"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isStabilityOf"/>
+        <ObjectProperty IRI="#hasStability"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isStateOf"/>
+        <ObjectProperty IRI="#hasState"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isSubactionOf"/>
+        <ObjectProperty IRI="#hasSubaction"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasSubsequentSetup"/>
+        <ObjectProperty IRI="#isSubsequentSetupOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isSubtlenessOf"/>
+        <ObjectProperty IRI="#hasSubtleness"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isTasteOf"/>
+        <ObjectProperty IRI="#hasTaste"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isTemperatureOf"/>
+        <ObjectProperty IRI="#hasTemperature"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasTheme"/>
+        <ObjectProperty IRI="#isThemeOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasTransparency"/>
+        <ObjectProperty IRI="#isTransparencyOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasWearAndTear"/>
+        <ObjectProperty IRI="#isWearAndTearOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#precondition"/>
+        <ObjectProperty IRI="#isPreconditionOf"/>
+    </InverseObjectProperties>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasAccessory"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasActionFeature"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasActionType"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasActor"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasAgent"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasBeneficiary"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasBirth"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasColor"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasComponent"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasCondition"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasConstitution"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasCoreComponent"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasDescriptorFeature"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasDestination"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasFeature"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasFirstTimeSetup"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasFluidity"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasGeneralMaintenance"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasHeaviness"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasInertness"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasInstrument"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasLocation"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasMaintenance"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasMobility"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasNaccessory"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasNonPurposeServingAccessory"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasOiliness"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasOutcome"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasPatient"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasPosition"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasPrimaryAction"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasProduct"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasPurpose"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasPurposeServingAccessory"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasRelation"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasRepairMaintenance"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasResult"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasResultOnDestruction"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasSecondaryAction"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasSemanticRole"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasSetup"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasShape"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasSideEffect"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasSize"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasSliminess"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasSmell"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasSmoothness"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasSoftness"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasSound"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasSource"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasStability"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasState"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasSubaction"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasSubsequentSetup"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasSubtleness"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasTaste"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasTemperature"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasTheme"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasTransparency"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasWearAndTear"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isAccessoryOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isActionFeatureOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isActionTypeOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isActorOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isAgentOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isBeneficiaryOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isBirthOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isColorOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isComponentOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isConditionOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isConstitutonOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isCoreComponentOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isDescriptorFeature"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isDestinationOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isFeatureOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isFirstTimeSetupOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isFluidityOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isGeneralMaintenanceOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isHeavinessOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isInertnessOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isInstrumentOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isLocationOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isMaintenanceOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isMobilityOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isNaccessoryOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isNonPurposeServingAccessoryOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isOilinessOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isOutcomeOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isPatientOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isPositionOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isPreconditionOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isPrimaryActionOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isProductOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isPurposeOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isPurposeServingAccessoryOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isRelationOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isRepairMaintenanceOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isResultOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isResultOnDestructionOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isSecondaryActionOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isSemanticRoleOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isSetupOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isShapeOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isSideEffectOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isSizeOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isSliminessOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isSmellOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isSmoothnessOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isSoftnessOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isSoundOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isSourceOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isStabilityOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isStateOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isSubactionOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isSubsequentSetupOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isSubtlenessOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isTasteOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isTemperatureOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isThemeOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isTransparencyOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isWearAndTearOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#precondition"/>
+    </AsymmetricObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasAccessory"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasActionFeature"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasActionType"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasActor"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasAgent"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasBeneficiary"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasBirth"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasColor"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasComponent"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasCondition"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasConstitution"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasCoreComponent"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasDescriptorFeature"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasDestination"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasFeature"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasFirstTimeSetup"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasFluidity"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasGeneralMaintenance"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasHeaviness"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasInertness"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasInstrument"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasLocation"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasMaintenance"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasMobility"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasNaccessory"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasNonPurposeServingAccessory"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasOiliness"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasOutcome"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasPatient"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasPosition"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasPrimaryAction"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasProduct"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasPurpose"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasPurposeServingAccessory"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasRelation"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasRepairMaintenance"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasResult"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasResultOnDestruction"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasSecondaryAction"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasSemanticRole"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasSetup"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasShape"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasSideEffect"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasSize"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasSliminess"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasSmell"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasSmoothness"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasSoftness"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasSound"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasSource"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasStability"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasState"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasSubaction"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasSubsequentSetup"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasSubtleness"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasTaste"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasTemperature"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasTheme"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasTransparency"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasWearAndTear"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isAccessoryOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isActionFeatureOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isActionTypeOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isActorOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isAgentOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isBeneficiaryOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isBirthOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isColorOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isComponentOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isConditionOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isConstitutonOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isCoreComponentOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isDescriptorFeature"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isDestinationOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isFeatureOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isFirstTimeSetupOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isFluidityOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isGeneralMaintenanceOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isHeavinessOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isInertnessOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isInstrumentOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isLocationOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isMaintenanceOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isMobilityOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isNaccessoryOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isNonPurposeServingAccessoryOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isOilinessOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isOutcomeOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isPatientOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isPositionOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isPreconditionOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isPrimaryActionOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isProductOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isPurposeOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isPurposeServingAccessoryOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isRelationOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isRepairMaintenanceOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isResultOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isResultOnDestructionOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isSecondaryActionOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isSemanticRoleOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isSetupOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isShapeOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isSideEffectOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isSizeOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isSliminessOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isSmellOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isSmoothnessOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isSoftnessOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isSoundOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isSourceOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isStabilityOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isStateOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isSubactionOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isSubsequentSetupOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isSubtlenessOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isTasteOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isTemperatureOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isThemeOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isTransparencyOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isWearAndTearOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#precondition"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasComponent"/>
+        <Class IRI="#PhysicalArtifact"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasComponent"/>
+        <Class IRI="#PhysicalArtifact"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasAmount"/>
+        <DataProperty IRI="#hasMagnitude"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasDiameter"/>
+        <DataProperty IRI="#hasAmount"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasKilogram"/>
+        <DataProperty IRI="#hasMass"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasMass"/>
+        <DataProperty IRI="#hasMagnitude"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasMaxDiameter"/>
+        <DataProperty IRI="#hasAmount"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasMinDiameter"/>
+        <DataProperty IRI="#hasAmount"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasMinuteDuration"/>
+        <DataProperty IRI="#hasDuration"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasNumber"/>
+        <DataProperty IRI="#hasAmount"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasTablespoon"/>
+        <DataProperty IRI="#hasMass"/>
+    </SubDataPropertyOf>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasKilogram"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasMinuteDuration"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTablespoon"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+
