@@ -51,7 +51,7 @@ public class ProcessQuery {
 			System.out.println("Started Answering question " + i++ + "...");
 			System.out.println(s);
 			s = rephraseQuery(folder, s);
-			System.out.println(s);
+			//System.out.println(s);
 			ManageArguments.preProcess(m, dm, s, directMap, hmpll, hmind, hmnum, hmtrans, folder, args[2], setu_path);
 			System.out.println();
 			ProcessAnswer.translate(hmtrans, "kripya sawaal poochein");
@@ -71,7 +71,7 @@ public class ProcessQuery {
 		params += " " + filename;
 		params += ">" + filename + "temp";
 		Sparql.createSparqlFile(params);
-		System.out.println(filename + "temp");
+		//System.out.println(filename + "temp");
 		BufferedReader br = new BufferedReader(new FileReader(new File(filename + "temp")));
 		String s = br.readLine();
 		br.close();
