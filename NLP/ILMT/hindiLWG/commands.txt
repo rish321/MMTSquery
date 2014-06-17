@@ -1,0 +1,7 @@
+cat pramesh_output.txt > test
+sed 's/^$/::/g' test
+tr '\n' ' ' test > test2
+sed -i 's/ :: :: /\n/g' test2
+sed -i 's/PREP//g' test2
+sed -i 's/AUX:VM_//g' test2
+sed -i 's/AUX:VM//g' test2

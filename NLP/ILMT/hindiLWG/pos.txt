@@ -1,0 +1,74 @@
+<Sentence id="1">
+1	sitI	NNP	<fs af='sitI,n,f,sg,3,d,0,0'>|<fs af='sitI,n,f,pl,3,d,0,0'>|<fs af='sitI,n,f,sg,3,o,0,0'>|<fs af='sitI,n,f,pl,3,o,0,0'>
+2	pElesa	NNP	<fs af='pElesa,n,m,sg,3,d,0,0'>|<fs af='pElesa,n,m,pl,3,d,0,0'>|<fs af='pElesa,n,m,sg,3,o,0,0'>
+3	viSAla	JJ	<fs af='viSAla,adj,any,any,,any,,'>
+4	saMracanA	NN	<fs af='saMracanA,n,f,sg,3,d,0,0'>|<fs af='saMracanA,n,f,sg,3,o,0,0'>
+5	hEM	VM	<fs af='hE,v,any,pl,1,,hE,hE'>|<fs af='hE,v,any,pl,3,,hE,hE'>
+6	,	SYM	<fs af=',,punc,,,,,'>
+7	mahala	NNP	<fs af='mahala,n,m,sg,3,d,0,0'>|<fs af='mahala,n,m,pl,3,d,0,0'>|<fs af='mahala,n,m,sg,3,o,0,0'>
+8	jayapura	NNP	<fs af='jayapura,n,m,sg,3,d,0,0'>|<fs af='jayapura,n,m,pl,3,d,0,0'>|<fs af='jayapura,n,m,sg,3,o,0,0'>
+9	Sahara	NN	<fs af='Sahara,n,m,sg,3,d,0,0'>|<fs af='Sahara,n,m,pl,3,d,0,0'>|<fs af='Sahara,n,m,sg,3,o,0,0'>
+10	kI	PSP	<fs af='kA,psp,f,sg,,d,kA,kA'>|<fs af='kA,psp,f,sg,,o,kA,kA'>|<fs af='kA,psp,f,pl,,d,kA,kA'>|<fs af='kA,psp,f,pl,,o,kA,kA'>|<fs af='kara,v,f,sg,any,,yA,yA'>
+11	eka	QC	<fs af='eka,adj,any,any,,any,,'>|<fs af='eka,n,m,sg,3,d,0,0'>|<fs af='eka,n,m,pl,3,d,0,0'>|<fs af='eka,n,m,sg,3,o,0,0'>|<fs af='eka,n,m,pl,3,o,0,0'>
+12	battA	NN	<fs af='battA,n,m,sg,3,d,0,0'>
+13	sAwa	QC	<fs af='sAwa,n,m,sg,3,d,0,0'>|<fs af='sAwa,n,m,pl,3,d,0,0'>|<fs af='sAwa,n,m,sg,3,o,0,0'>
+14	xIvAra	NN	<fs af='xIvAra,n,f,sg,3,d,0,0'>|<fs af='xIvAra,n,f,sg,3,o,0,0'>
+15	ko	PSP	<fs af='ko,psp,,,,,,'>
+16	GerawA	VM	<fs af='Gera,v,m,sg,any,,wA,wA'>
+17	hE	VAUX	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+18	Ora	CC	<fs af='Ora,adv,,,,,,'>|<fs af='Ora,adv,,,,,,'>|<fs af='Ora,avy,,,,,,'>
+19	mugala	NN	<fs af='mugala,n,m,sg,3,d,0,0'>|<fs af='mugala,n,m,pl,3,d,0,0'>|<fs af='mugala,n,m,sg,3,o,0,0'>
+20	waWA	CC	<fs af='waWA,adv,,,,,,'>|<fs af='waWA,avy,,,,,,'>
+21	rAjapUwa	JJ	<fs af='rAjapUwa,adj,any,any,,any,,'>
+22	sWApawya	NN	<fs af='sWApawya,n,m,sg,3,d,0,0'>|<fs af='sWApawya,n,m,pl,3,d,0,0'>|<fs af='sWApawya,n,m,sg,3,o,0,0'>
+23	kalA	NN	<fs af='kalA,n,f,sg,3,d,0,0'>|<fs af='kalA,n,f,sg,3,o,0,0'>
+24	kA	PSP	<fs af='kA,psp,m,sg,,d,kA,kA'>
+25	ArScajanaka	JJ	<fs af='ArScajanaka,unk,,,,,,'>
+26	milana	NN	<fs af='milana,n,m,sg,3,d,0,0'>|<fs af='milana,n,m,pl,3,d,0,0'>|<fs af='milana,n,m,sg,3,o,0,0'>|<fs af='milana,n,m,pl,3,o,0,0'>
+27	hEM	VM	<fs af='hE,v,any,pl,1,,hE,hE'>|<fs af='hE,v,any,pl,3,,hE,hE'>
+28	.	SYM	<fs af='.,punc,,,,,,'>
+</Sentence>
+<Sentence id="2">
+1	jIpa	NN	<fs af='jIpa,n,f,sg,3,d,0,0'>|<fs af='jIpa,n,f,sg,3,o,0,0'>
+2	saPArI	NN	<fs af='saPArI,n,f,sg,3,d,0,0'>|<fs af='saPArI,n,f,pl,3,d,0,0'>|<fs af='saPArI,n,f,sg,3,o,0,0'>|<fs af='saPArI,n,f,pl,3,o,0,0'>
+3	sirPa	RB	<fs af='sirPa,adj,any,any,,any,,'>
+4	sajIva	JJ	<fs af='sajIva,adj,any,any,,any,,'>
+5	evaM	CC	<fs af='evaM,avy,,,,,,'>
+6	punarjIviwa	JJ	<fs af='punarjIviwa,unk,,,,,,'>
+7	hI	RP	<fs af='hI,adv,,,,,,'>|<fs af='hI,adv,,,,,,'>|<fs af='hI,psp,,,,,,'>
+8	nahIM	NEG	<fs af='nahIM,adv,,,,,,'>
+9	karawI	VM	<fs af='kara,v,f,sg,any,,wA,wA'>
+10	paraMwu	CC	<fs af='paraMwu,avy,,,,,,'>
+11	vaha	PRP	<fs af='vaha,pn,any,sg,3,d,0,0'>
+12	SAMwa	JJ	<fs af='SAMwa,adj,any,any,,any,,'>
+13	evaM	CC	<fs af='evaM,avy,,,,,,'>
+14	KUbasUrawa	JJ	<fs af='KUbasUrawa,adj,any,any,,any,,'>|<fs af='KUbasUrawa,adj,any,any,,any,,'>
+15	grAmINa	JJ	<fs af='grAmINa,n,m,sg,3,d,0,0'>|<fs af='grAmINa,n,m,pl,3,d,0,0'>|<fs af='grAmINa,n,m,sg,3,o,0,0'>|<fs af='grAmINa,adj,any,any,,any,,'>
+16	kRewra	NN	<fs af='kRewra,n,m,sg,3,d,0,0'>|<fs af='kRewra,n,m,pl,3,d,0,0'>|<fs af='kRewra,n,m,sg,3,o,0,0'>
+17	ke	PSP	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+18	bIca	NST	<fs af='bIca,psp,,,,,,'>
+19	vAhana	NN	<fs af='vAhana,n,m,sg,3,d,0,0'>|<fs af='vAhana,n,m,pl,3,d,0,0'>|<fs af='vAhana,n,m,sg,3,o,0,0'>
+20	calAwA	VM	<fs af='calA,v,m,sg,any,,wA,wA'>
+21	huA	VAUX	<fs af='ho,v,m,sg,any,,yA,yA'>
+22	prakriwi	NN	<fs af='prakriwi,unk,,,,,,'>
+23	ke	PSP	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+24	samIpa	NST	<fs af='samIpa,adv,,,,,,'>|<fs af='samIpa,psp,,,,,,'>
+25	mahasUsa	JJ	<fs af='mahasUsa,n,m,sg,3,d,0,0'>|<fs af='mahasUsa,n,m,pl,3,d,0,0'>|<fs af='mahasUsa,n,m,sg,3,o,0,0'>|<fs af='mahasUsa,n,m,pl,3,o,0,0'>
+26	karawA	VM	<fs af='kara,v,m,sg,any,,wA,wA'>
+27	hE	VAUX	<fs af='hE,v,any,sg,2,,hE,hE'>|<fs af='hE,v,any,sg,3,,hE,hE'>
+28	.	SYM	<fs af='.,punc,,,,,,'>
+</Sentence>
+<Sentence id="3">
+1	bopEresa	NNP	<fs af='bopEresa,unk,,,,,,'>
+2	saMgaTana	NNP	<fs af='saMgaTana,n,m,sg,3,d,0,0'>|<fs af='saMgaTana,n,m,pl,3,d,0,0'>|<fs af='saMgaTana,n,m,sg,3,o,0,0'>
+3	,	SYM	<fs af=',,punc,,,,,'>
+4	solAna	NNP	<fs af='solAna,unk,,,,,,'>
+5	jile	NNP	<fs af='jilA,n,m,pl,3,d,0,0'>|<fs af='jilA,n,m,sg,3,o,0,0'>
+6	ke	PSP	<fs af='kA,psp,m,sg,,o,kA,kA'>|<fs af='kA,psp,m,pl,,d,kA,kA'>|<fs af='kA,psp,m,pl,,o,kA,kA'>
+7	bAroga	NN	<fs af='bAroga,unk,,,,,,'>
+8	meM	PSP	<fs af='meM,psp,,,,,,'>
+9	Sivira	NN	<fs af='Sivira,n,m,sg,3,d,0,0'>|<fs af='Sivira,n,m,pl,3,d,0,0'>|<fs af='Sivira,n,m,sg,3,o,0,0'>
+10	calAwe	VM	<fs af='calA,v,m,pl,any,,wA,wA'>
+11	hEM	VAUX	<fs af='hE,v,any,pl,1,,hE,hE'>|<fs af='hE,v,any,pl,3,,hE,hE'>
+12	.	SYM	<fs af='.,punc,,,,,,'>
+</Sentence>
