@@ -24,8 +24,10 @@ public class ManageQuery {
 			HashMap<String, String> hmtrans, String folder, String source, String dest, String atStation,
 			String srcTimeInit, String srcTimeFin, String destTimeInit, String destTimeFin,
 			String set, String info, String nlpPath, String setu) throws Exception {
-		if(s.contains("कितने कितने देर") || s.contains("कितनी कितनी देर") || s.contains("कितने कितने बजे")) {
-			if(s.contains("कितने कितने देर") || s.contains("कितनी कितनी देर")) {
+		if(s.contains("कितना कितना देर") || s.contains("कितनी कितनी देर") || s.contains("कितना कितना बज")
+				|| s.contains("कितना कितना समय") || s.contains("कितना कितना समय")) {
+			if(s.contains("कितना कितना देर") || s.contains("कितनी कितनी देर")
+					|| s.contains("कितना कितना समय") || s.contains("कितना कितना समय")) {
 				if(source == null)
 					source = hmind.get(dm.requestResponse(hmtrans, "Incomplete arguments: Please specify source station"));
 				if(dest == null)
@@ -39,7 +41,7 @@ public class ManageQuery {
 					ProcessAnswer.printAnswer(hmtrans, Duration.getDurationList(folder, source, dest, atStation, srcTimeInit, srcTimeFin), m);
 				}
 			}
-			else if(s.contains("कितने कितने बजे")) {
+			else if(s.contains("कितना कितना बज")) {
 				if(source == null)
 					source = dm.requestResponse(hmtrans, "Incomplete arguments: Please specify source station");
 				if(dest == null)
@@ -47,14 +49,14 @@ public class ManageQuery {
 				ProcessAnswer.printAnswer(hmtrans, Time.getTimeList(folder, source, dest, atStation, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info), m);
 			}
 		}
-		else if(s.contains("कितने कितने") || s.contains("कितनी कितनी") || s.contains("कितना कितना")
+		else if(s.contains("कितनी कितनी") || s.contains("कितना कितना")
 				|| s.contains("कहाँ कहाँ") || s.contains("कब कब") ||  s.contains("कौन कौन")) {
 			if(source == null)
 				source = dm.requestResponse(hmtrans, "Incomplete arguments: Please specify source station");
 			if(dest == null)
 				dest = dm.requestResponse(hmtrans, "Incomplete arguments: Please specify destination station");
-			if(s.contains("कितने कितने") || s.contains("कितनी कितनी") || s.contains("कितना कितना")) {
-				Pattern pattern = Pattern.compile("(कितने कितने|कितनी कितनी|कितना कितना) ");
+			if(s.contains("कितनी कितनी") || s.contains("कितना कितना")) {
+				Pattern pattern = Pattern.compile("(कितनी कितनी|कितना कितना) ");
 				Matcher matcher = pattern.matcher(s);
 				if(matcher.find()) {
 					String found = matcher.group();
@@ -112,12 +114,13 @@ public class ManageQuery {
 				}
 			}
 		}
-		else if(s.contains("कितने देर") || s.contains("कितनी देर") || s.contains("कितने बजे")) {
+		else if(s.contains("कितना देर") || s.contains("कितनी देर") || s.contains("कितना बज")
+				|| s.contains("कितना समय") || s.contains("कितना समय")) {
 			if(source == null)
 				source = dm.requestResponse(hmtrans, "Incomplete arguments: Please specify source station");
 			if(dest == null)
 				dest = dm.requestResponse(hmtrans, "Incomplete arguments: Please specify destination station");
-			if(s.contains("कितने देर") || s.contains("कितनी देर")) {
+			if(s.contains("कितना देर") || s.contains("कितनी देर")) {
 				if(source == null)
 					ProcessAnswer.translate(hmtrans, "Incomplete arguments: Please specify source station");
 				if(dest == null)
@@ -131,19 +134,19 @@ public class ManageQuery {
 					ProcessAnswer.printAnswer(hmtrans, Duration.getDuration(folder, source, dest, atStation, srcTimeInit, srcTimeFin, set), m);
 				}
 			}
-			else if(s.contains("कितने बजे")) {
+			else if(s.contains("कितना बज")) {
 				ProcessAnswer.translate(hmtrans, source + " se " + dest + " tak " + srcTimeInit + " se " + srcTimeFin + " ke beech " + set + " gaadi itne baje " + info + " hai");
 				ProcessAnswer.printAnswer(hmtrans, Time.getTime(folder, source, dest, atStation, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info), m);
 			}
 		}
-		else if(s.contains("कितने") || s.contains("कितनी") || s.contains("कितना")
+		else if(s.contains("कितनी") || s.contains("कितना")
 				|| s.contains("कब") || s.contains("कहाँ") || s.contains("कौन")) {
 			if(source == null)
 				source = dm.requestResponse(hmtrans, "Incomplete arguments: Please specify source station");
 			if(dest == null)
 				dest = dm.requestResponse(hmtrans, "Incomplete arguments: Please specify destination station");
-			if(s.contains("कितने") || s.contains("कितनी") || s.contains("कितना")) {
-				Pattern pattern = Pattern.compile("(कितने|कितनी|कितना) ");
+			if(s.contains("कितनी") || s.contains("कितना")) {
+				Pattern pattern = Pattern.compile("(कितनी|कितना) ");
 				Matcher matcher = pattern.matcher(s);
 				if(matcher.find()) {
 					String found = matcher.group();

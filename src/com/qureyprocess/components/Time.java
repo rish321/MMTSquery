@@ -29,17 +29,17 @@ public class Time {
 			s = s.replaceAll((String)pairs.getKey(), (String)pairs.getValue());
 			it.remove();
 		}
-		Pattern pattern = Pattern.compile("\\d(\\d*)(|:(\\d*))(| बजे) (तक|के बीच)");
+		Pattern pattern = Pattern.compile("\\d(\\d*)(|:(\\d*))(| बज) (तक|के बीच)");
 		Matcher matcher = pattern.matcher(s);
 		if(matcher.find())
 		{
 			String found = matcher.group();
-			if(found.contains("बजे"))
+			if(found.contains("बज"))
 			{
 				if(found.contains("तक"))
-					found = found.substring(0, found.indexOf(" बजे तक"));
+					found = found.substring(0, found.indexOf(" बज तक"));
 				else
-					found = found.substring(0, found.indexOf(" बजे के बीच"));
+					found = found.substring(0, found.indexOf(" बज के बीच"));
 			}
 			else
 			{
@@ -65,17 +65,17 @@ public class Time {
 			s = s.replaceAll((String)pairs.getKey(), (String)pairs.getValue());
 			it.remove();
 		}
-		Pattern pattern = Pattern.compile("\\d(\\d*)(|:(\\d*))(| बजे) (से|के बाद)");
+		Pattern pattern = Pattern.compile("\\d(\\d*)(|:(\\d*))(| बज) (से|के बाद)");
 		Matcher matcher = pattern.matcher(s);
 		if(matcher.find())
 		{
 			String found = matcher.group();
-			if(found.contains("बजे"))
+			if(found.contains("बज"))
 			{
 				if(found.contains("से"))
-					found = found.substring(0, found.indexOf(" बजे से"));
+					found = found.substring(0, found.indexOf(" बज से"));
 				else
-					found = found.substring(0, found.indexOf(" बजे के बाद"));
+					found = found.substring(0, found.indexOf(" बज के बाद"));
 			}
 			else
 			{

@@ -37,9 +37,10 @@ public class ProcessQuery {
 		HashMap <String, String> hmnum = Domain.initHm(args[0]+"number");
 		HashMap <String, String> hmtrans = Domain.initHm(args[0]+"enghin");
 		
-		//BufferedReader br = new BufferedReader(new FileReader(new File(args[2])));
+		
 		ProcessAnswer.translate(hmtrans, "kripya sawaal poochein");
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		//BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedReader br = new BufferedReader(new FileReader(new File("/home/pramesh/Desktop/IIIT-H/query.out")));
 		String s;
 		Setu S = new Setu();
 		String setu_path = S.find_setu();
@@ -50,7 +51,7 @@ public class ProcessQuery {
 				continue;
 			System.out.println("Started Answering question " + i++ + "...");
 			System.out.println(s);
-			s = rephraseQuery(folder, s, args[2]);
+			//s = rephraseQuery(folder, s, args[2]);
 			//System.out.println(s);
 			ManageArguments.preProcess(m, dm, s, directMap, hmpll, hmind, hmnum, hmtrans, folder, args[2], setu_path);
 			System.out.println();
