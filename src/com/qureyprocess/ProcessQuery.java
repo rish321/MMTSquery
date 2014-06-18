@@ -37,9 +37,10 @@ public class ProcessQuery {
 		HashMap <String, String> hmnum = Domain.initHm(args[0]+"number");
 		HashMap <String, String> hmtrans = Domain.initHm(args[0]+"enghin");
 		
-		//BufferedReader br = new BufferedReader(new FileReader(new File(args[2])));
+		
 		ProcessAnswer.translate(hmtrans, "kripya sawaal poochein");
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		//BufferedReader br = new BufferedReader(new FileReader(new File("/home/pramesh/Desktop/IIIT-H/query.out")));
 		String s;
 		Setu S = new Setu();
 		String setu_path = S.find_setu();
@@ -50,7 +51,7 @@ public class ProcessQuery {
 				continue;
 			System.out.println("Started Answering question " + i++ + "...");
 			System.out.println(s);
-			s = rephraseQuery(folder, s, args[2]);
+			s = rephraseQuery(folder, s, args[2], setu_path);
 			//System.out.println(s);
 			ManageArguments.preProcess(m, dm, s, directMap, hmpll, hmind, hmnum, hmtrans, folder, args[2], setu_path);
 			System.out.println();
@@ -61,7 +62,7 @@ public class ProcessQuery {
 	public static boolean hasSubClassTransitive( OntClass parent, OntClass child ) {
 		return OntTools.findShortestPath( child.getOntModel(), child, parent, new PredicatesFilter( RDFS.subClassOf ) ) != null;
 	}
-	public static String rephraseQuery(String folder, String string, String NLPfolder) throws IOException, InterruptedException { 
+	public static String rephraseQuery(String folder, String string, String NLPfolder, String setu_path) throws IOException, InterruptedException { 
 		String params = folder + "rephrase.sh ";
 		String filename = folder + "tempin.txt";
 		String dir = System.getProperty("user.dir");
@@ -70,11 +71,9 @@ public class ProcessQuery {
 		fw.write(string);
 		fw.close();
 		
-		params += (" " + filename + " " + NLPfolder + " " + dir);
+		params += (" " + filename + " " + NLPfolder + " " + dir + " " + setu_path);
 		params += ">" + filename + "temp";
-		//System.out.println(params);
 		Sparql.createSparqlFile(params);
-		//System.out.println(filename + "temp");
 		BufferedReader br = new BufferedReader(new FileReader(new File(filename + "temp")));
 		String s = br.readLine();
 		br.close();

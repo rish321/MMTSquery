@@ -1,9 +1,10 @@
 #!/bin/bash
 
 VAANEE_DIR=$3/ILMT/
+export SHALLOW_PARSER_HIN=$4/shallow_parser_hin
 	
-echo "$line" > $2/.tmp/tempin.txt
-shallow_parser_hin $1 $2/.tmp/tempout.txt
+#echo $1 > $2/.tmp/tempin.txt
+$4/shallow_parser_hin/bin/sys/hin/shallow_parser_hin $1 $2/.tmp/tempout.txt
 cat $PWD/OUTPUT.tmp/postagger.tmp > $2/.tmp/corpus.train.pos.hn
 perl $VAANEE_DIR/hindiLWG/ssf2lwg.pl < $2/.tmp/corpus.train.pos.hn > $2/.tmp/corpus.train.lwgI.hn
 perl $VAANEE_DIR/hindiLWG/hnd_lwg.pl  $2/.tmp/corpus.train.lwgI.hn > $2/.tmp/corpus.train.lwgI.tmp.hn

@@ -14,7 +14,7 @@ public class Station {
 		Iterator it = hmind.entrySet().iterator();
 		while (it.hasNext()) {
 			Map.Entry pairs = (Map.Entry)it.next();
-			if(s.contains(pairs.getKey() + " जाने वाली") || s.contains(pairs.getKey() + " के लिए")
+			if(s.contains(pairs.getKey() + " जाने वाली") || s.contains(pairs.getKey() + " के_लिए")
 					|| s.contains(pairs.getKey() + " की") || s.contains(pairs.getKey() + " को")
 					|| s.contains(pairs.getKey() + " तक"))
 				return (String) pairs.getValue();

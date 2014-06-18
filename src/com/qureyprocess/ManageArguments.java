@@ -27,8 +27,8 @@ public class ManageArguments {
 		destTimeFin =  destTimeFin == null?"23:59":destTimeFin;
 	
 		String info = "";
-		Pattern pattern1 = Pattern.compile("(जाएगी|(जाती|जानी|जा रही|जाने वाली) (है|थी)|जाना (है|था)|होती है)");
-		Pattern pattern2 = Pattern.compile("(आएगी|(आती|आनी|आ रही|आने वाली) (है|थी)|आना (है|था)|होती है)");
+		Pattern pattern1 = Pattern.compile("(जाएगी|जा|पहुँच|(जा|जानी|जा रही|जाने वाली) (है|थी)|जाना (है|था)|हो है)");
+		Pattern pattern2 = Pattern.compile("(आएगी|आ|(आ|आनी|आ रही|आने वाली) (है|थी)|आना (है|था)|हो है)");
 		Matcher matcher1 = pattern1.matcher(s);
 		Matcher matcher2 = pattern2.matcher(s);
 		if(matcher1.find())
