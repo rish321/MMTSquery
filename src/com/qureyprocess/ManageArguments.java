@@ -15,8 +15,10 @@ public class ManageArguments {
 	public static void preProcess(OntModel m, Dialog dm, String s, HashMap<String, String> directMap, HashMap<String, String> hmpll, HashMap<String, String> hmind, HashMap<String, String> hmnum, HashMap<String, String> hmtrans, String folder, String nlpPath, String setu) throws Exception
 	{
 		String source = Station.getSource(s, hmind);
-		String dest = Station.getDestination(s, hmind);
-		String atStation = Station.getAtStation(s, hmind);
+		String dest = Station.getDestination(s, hmind,source);
+		System.out.println("dest is " + dest);
+		String atStation = Station.getAtStation(s, hmind,source,dest);
+		System.out.println("AtStation is " + atStation);
 		String srcTimeInit = Time.getSrcTimeInit(s, hmnum);
 		srcTimeInit =  srcTimeInit == null?"00:00":srcTimeInit;
 		String srcTimeFin = Time.getSrcTimeFin(s, hmnum);
@@ -26,9 +28,9 @@ public class ManageArguments {
 		String destTimeFin = Time.getDestTimeFin(s);
 		destTimeFin =  destTimeFin == null?"23:59":destTimeFin;
 	
-		String info = "";
-		Pattern pattern1 = Pattern.compile("(जाएगी|जा|पहुँच|(जा|जानी|जा रही|जाने वाली) (है|थी)|जाना (है|था)|हो है)");
-		Pattern pattern2 = Pattern.compile("(आएगी|आ|(आ|आनी|आ रही|आने वाली) (है|थी)|आना (है|था)|हो है)");
+		String info = "dep";
+		Pattern pattern1 = Pattern.compile("(जाएगी|(जाती|जानी|जा रही|जाने वाली) (है|थी)|जाना (है|था)|होती है)");
+		Pattern pattern2 = Pattern.compile("(आएगी|(आती|आनी|आ रही|आने वाली) (है|थी)|आना (है|था)|होती है)");
 		Matcher matcher1 = pattern1.matcher(s);
 		Matcher matcher2 = pattern2.matcher(s);
 		if(matcher1.find())

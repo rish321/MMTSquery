@@ -10,6 +10,7 @@ import com.dag.DAG;
 import com.dialogmanager.Dialog;
 import com.hp.hpl.jena.ontology.OntModel;
 import com.ontologicalMapping.ReplaceParallel;
+import com.qureyprocess.components.Coach;
 import com.qureyprocess.components.Count;
 import com.qureyprocess.components.Duration;
 import com.qureyprocess.components.Instance;
@@ -24,10 +25,8 @@ public class ManageQuery {
 			HashMap<String, String> hmtrans, String folder, String source, String dest, String atStation,
 			String srcTimeInit, String srcTimeFin, String destTimeInit, String destTimeFin,
 			String set, String info, String nlpPath, String setu) throws Exception {
-		if(s.contains("कितना कितना देर") || s.contains("कितनी कितनी देर") || s.contains("कितना कितना बज")
-				|| s.contains("कितना कितना समय") || s.contains("कितना कितना समय")) {
-			if(s.contains("कितना कितना देर") || s.contains("कितनी कितनी देर")
-					|| s.contains("कितना कितना समय") || s.contains("कितना कितना समय")) {
+		if(s.contains("कितने कितने देर") || s.contains("कितनी कितनी देर") || s.contains("कितने कितने बजे")) {
+			if(s.contains("कितने कितने देर") || s.contains("कितनी कितनी देर")) {
 				if(source == null)
 					source = hmind.get(dm.requestResponse(hmtrans, "Incomplete arguments: Please specify source station"));
 				if(dest == null)
@@ -41,7 +40,7 @@ public class ManageQuery {
 					ProcessAnswer.printAnswer(hmtrans, Duration.getDurationList(folder, source, dest, atStation, srcTimeInit, srcTimeFin), m);
 				}
 			}
-			else if(s.contains("कितना कितना बज")) {
+			else if(s.contains("कितने कितने बजे")) {
 				if(source == null)
 					source = dm.requestResponse(hmtrans, "Incomplete arguments: Please specify source station");
 				if(dest == null)
@@ -49,14 +48,14 @@ public class ManageQuery {
 				ProcessAnswer.printAnswer(hmtrans, Time.getTimeList(folder, source, dest, atStation, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info), m);
 			}
 		}
-		else if(s.contains("कितनी कितनी") || s.contains("कितना कितना")
+		else if(s.contains("कितने कितने") || s.contains("कितनी कितनी") || s.contains("कितना कितना")
 				|| s.contains("कहाँ कहाँ") || s.contains("कब कब") ||  s.contains("कौन कौन")) {
 			if(source == null)
 				source = dm.requestResponse(hmtrans, "Incomplete arguments: Please specify source station");
 			if(dest == null)
 				dest = dm.requestResponse(hmtrans, "Incomplete arguments: Please specify destination station");
-			if(s.contains("कितनी कितनी") || s.contains("कितना कितना")) {
-				Pattern pattern = Pattern.compile("(कितनी कितनी|कितना कितना) ");
+			if(s.contains("कितने कितने") || s.contains("कितनी कितनी") || s.contains("कितना कितना")) {
+				Pattern pattern = Pattern.compile("(कितने कितने|कितनी कितनी|कितना कितना) ");
 				Matcher matcher = pattern.matcher(s);
 				if(matcher.find()) {
 					String found = matcher.group();
@@ -114,13 +113,12 @@ public class ManageQuery {
 				}
 			}
 		}
-		else if(s.contains("कितना देर") || s.contains("कितनी देर") || s.contains("कितना बज")
-				|| s.contains("कितना समय") || s.contains("कितना समय")) {
+		else if(s.contains("कितने देर") || s.contains("कितनी देर") || s.contains("कितने बजे")) {
 			if(source == null)
 				source = dm.requestResponse(hmtrans, "Incomplete arguments: Please specify source station");
 			if(dest == null)
 				dest = dm.requestResponse(hmtrans, "Incomplete arguments: Please specify destination station");
-			if(s.contains("कितना देर") || s.contains("कितनी देर")) {
+			if(s.contains("कितने देर") || s.contains("कितनी देर")) {
 				if(source == null)
 					ProcessAnswer.translate(hmtrans, "Incomplete arguments: Please specify source station");
 				if(dest == null)
@@ -134,19 +132,19 @@ public class ManageQuery {
 					ProcessAnswer.printAnswer(hmtrans, Duration.getDuration(folder, source, dest, atStation, srcTimeInit, srcTimeFin, set), m);
 				}
 			}
-			else if(s.contains("कितना बज")) {
+			else if(s.contains("कितने बजे")) {
 				ProcessAnswer.translate(hmtrans, source + " se " + dest + " tak " + srcTimeInit + " se " + srcTimeFin + " ke beech " + set + " gaadi itne baje " + info + " hai");
 				ProcessAnswer.printAnswer(hmtrans, Time.getTime(folder, source, dest, atStation, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info), m);
 			}
 		}
-		else if(s.contains("कितनी") || s.contains("कितना")
+		else if(s.contains("कितने") || s.contains("कितनी") || s.contains("कितना")
 				|| s.contains("कब") || s.contains("कहाँ") || s.contains("कौन")) {
 			if(source == null)
 				source = dm.requestResponse(hmtrans, "Incomplete arguments: Please specify source station");
 			if(dest == null)
 				dest = dm.requestResponse(hmtrans, "Incomplete arguments: Please specify destination station");
-			if(s.contains("कितनी") || s.contains("कितना")) {
-				Pattern pattern = Pattern.compile("(कितनी|कितना) ");
+			if(s.contains("कितने") || s.contains("कितनी") || s.contains("कितना")) {
+				Pattern pattern = Pattern.compile("(कितने|कितनी|कितना) ");
 				Matcher matcher = pattern.matcher(s);
 				if(matcher.find()) {
 					String found = matcher.group();
@@ -210,25 +208,49 @@ public class ManageQuery {
 			dag.fillDAGAction(folder, action, m);
 			ArrayList<String> topo = dag.topologicalsort();
 			if((s.contains("क्यूँ") || s.contains("क्यूँ क्यूँ")) && s.contains("नहीं")) {
-					DAG.totalOrder(folder, m, dag, topo);
+				DAG.totalOrder(folder, m, dag, topo);
 			}
 			else if(s.contains("कैसे कैसे") || s.contains("कैसे")) {
-					ProcessAnswer.translate(hmtrans, "Ye saare kadam uthane se ticket kharid sakte hain");
-					DAG.actionOrder(folder, m, dag, topo);
+				ProcessAnswer.translate(hmtrans, "Ye saare kadam uthane se ticket kharid sakte hain");
+				DAG.actionOrder(folder, m, dag, topo);
 			}
 		}
 		else if(s.contains("क्या")) {
 			String in = dm.requestResponse(hmtrans, "Intention unclear (multiple senses): Boolean answer(1)/Other answer(2)");
 			if(in.equals("1")) {
-
+				//फलकनुमा से लिंगमपल्ली की 6:00 बजे से 9:00 बजे के बीच पहली ट्रैन में महिला कोच है क्या?
+				if(s.contains("कोच") || s.contains("डब्बा") ||s.contains("बोगी") ){
+					String coachType = Coach.extractCoachType(s, directMap);
+					if(ProcessAnswer.getAnswer(Coach.getCoach(folder, source, dest, atStation, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info, coachType), m).contains(coachType))
+						dm.informUser(hmtrans, "yes");
+					else 
+						dm.informUser(hmtrans, "no");
+				}
+				//Q1. लिंगमपल्ली से भरतनगर के बीच क्या कोई ट्रेन है?
+				//लिंगमपल्ली से भरतनगर की अगली ट्रेन क्या हैदराबाद पर रुकती है?
+				else
+				{
+					ArrayList<String> arr = ProcessAnswer.getAnswer(Time.getTime(folder, source, dest, atStation, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info), m);
+					if(arr.size()==0)
+						dm.informUser(hmtrans, "no");
+					else 
+						dm.informUser(hmtrans, "yes");
+				}
 			}
 			else if(in.equals("2")) {
-
+				//Q1. लिंगमपल्ली से भरतनगर के बीच क्या कोई ट्रेन है?
+				//लिंगमपल्ली से भरतनगर की अगली ट्रेन क्या हैदराबाद पर रुकती है?
+				{
+					ProcessAnswer.translate(hmtrans, source + " se " + dest + " tak " + srcTimeInit + " se " + srcTimeFin + " ke beech " + set + " gaadi itne baje " + info + " hai");
+					ProcessAnswer.printAnswer(hmtrans, Time.getTime(folder, source, dest, atStation, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info), m);
+				}
+				//क्या लिंगमपल्ली से भरतनगर को जाने वाली अगली ट्रेन से हम 10 बजे तक फलकनुमा पहुच पाएँगे?
+				//how to fetch detTime?
 			}
 		}
-		else {
+		else{
 			dm.informUser(hmtrans, "Not understandable: Question word and type unclear.");
 		}
 	}
-
 }
+

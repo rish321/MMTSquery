@@ -22,6 +22,7 @@ public class ProcessAnswer {
 
 	public static ArrayList<String> getAnswer(String file, OntModel m)
 	{
+		System.out.println(file);
 		ResultSet rs = getResultSet(file, m);
 		ArrayList<String> arr = new ArrayList<String>();
 		String str[] = ResultSetFormatter.asXMLString(rs).split("\n");

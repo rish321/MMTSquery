@@ -1,6 +1,9 @@
 package com.qureyprocess.components;
 
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -90,6 +93,18 @@ public class Time {
 				found = "0" + found;
 			return found;
 		}
+		if(s.contains("अगली") || s.contains("पिछली")){
+			
+
+			   DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+//			   Date date = new Date();
+			   Calendar cal = Calendar.getInstance();
+			   String st=dateFormat.format(cal.getTime()).toString();
+			   String st1= st.substring(11,16);
+			  // System.out.println(st1);
+			return st1;
+		}
+		
 		return null;
 	}
 
