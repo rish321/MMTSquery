@@ -32,7 +32,10 @@ public class Coach {
 		String coachType="";
 		for(int i = 0; i < words.length; i++)
 			if(words[i].equals("डब्बा ") || words[i].equals("बोगी ") || words[i].equals("कोच"))
-				coachType=directMap.get(words[i-1]);
+			{
+				System.out.println(words[i-1]+ " कोच");
+				coachType=directMap.get(words[i-1]+ " कोच");
+			}
 		return coachType;
 	}
 }
