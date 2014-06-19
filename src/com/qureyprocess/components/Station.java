@@ -10,30 +10,58 @@ import com.sparql.Sparql;
 public class Station {
 
 	@SuppressWarnings("rawtypes")
-	public static String getDestination(String s, HashMap<String, String> hmind) {
+	public static String getDestination(String s, HashMap<String, String> hmind, String source) {
+		
 		Iterator it = hmind.entrySet().iterator();
 		while (it.hasNext()) {
 			Map.Entry pairs = (Map.Entry)it.next();
 			if(s.contains(pairs.getKey() + " जाने वाली") || s.contains(pairs.getKey() + " के लिए")
 					|| s.contains(pairs.getKey() + " की") || s.contains(pairs.getKey() + " को")
-					|| s.contains(pairs.getKey() + " तक"))
-				return (String) pairs.getValue();
+					|| s.contains(pairs.getKey() + " तक" )){
+					return (String) pairs.getValue();
+			
+			}
 			//it.remove(); // avoids a ConcurrentModificationException
-		}
+		}	
+		Iterator it1 = hmind.entrySet().iterator();
+		while (it1.hasNext()) {
+		Map.Entry pairs1 = (Map.Entry)it1.next();
+		if(s.contains(pairs1.getKey() + " ")){
+			
+			String dest=(String) pairs1.getValue();
+			System.out.println(dest);
+			
+			if(!dest.equals(source)){
+			return dest;
+			}
+			}
+			}
+			
+		
 		return null;
+	
 	}
-
 	@SuppressWarnings("rawtypes")
-	public static String getAtStation(String s, HashMap<String, String> hmind) {
+	public static String getAtStation(String s, HashMap<String, String> hmind, String source, String dest) {
 		Iterator it = hmind.entrySet().iterator();
 		while (it.hasNext()) {
 			Map.Entry pairs = (Map.Entry)it.next();
 			if(s.contains(pairs.getKey() + " पर") || s.contains(pairs.getKey() + " में"))
 				return (String) pairs.getValue();
-			//it.remove(); // avoids a ConcurrentModificationException
 		}
+			//it.remove(); // avoids a ConcurrentModificationException
+				Iterator it1 = hmind.entrySet().iterator();
+				while (it1.hasNext()) {
+				Map.Entry pairs1 = (Map.Entry)it1.next();
+				if(s.contains(pairs1.getKey() + " ")){
+					String atstat=(String) pairs1.getValue();
+					if(!atstat.equals(source) && !atstat.equals(dest))
+					return atstat;
+								}
+			}
 		return null;
 	}
+
 
 	@SuppressWarnings("rawtypes")
 	public static String getSource(String s, HashMap<String, String> hmind) {

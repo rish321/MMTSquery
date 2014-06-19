@@ -42,4 +42,10 @@ public class Count {
 			return folder + file + "temp";
 		}
 	}
+
+
+
+
+
+
 }

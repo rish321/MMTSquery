@@ -8,6 +8,7 @@ import java.io.InputStreamReader;
 public class Sparql {
 
 	public static void createSparqlFile(String params) throws IOException, InterruptedException {
+		//System.out.println(params);
 		Process proc = Runtime.getRuntime().exec(new String[]
 				{
 				"/bin/sh", "-c", params

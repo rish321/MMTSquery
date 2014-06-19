@@ -1,0 +1,1360 @@
+    <Declaration>
+        <NamedIndividual IRI="#travel1.1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel1.2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel1.3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel1.4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel1.5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel1.6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel1.7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel1.8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel1.9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel1.10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel1.11"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel1.12"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel1.13"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel1.14"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel1.15"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel1.16"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel2.1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel2.2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel2.3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel2.4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel2.5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel2.6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel2.7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel2.8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel2.9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel2.10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel2.11"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel2.12"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel2.13"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel2.14"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel2.15"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel2.16"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel3.1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel3.2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel3.3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel3.4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel3.5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel3.6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel3.7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel3.8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel3.9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel3.10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel3.11"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel3.12"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel3.13"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel3.14"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel3.15"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel3.16"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel4.1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel4.2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel4.3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel4.4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel4.5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel4.6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel4.7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel4.8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel4.9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel4.10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel4.11"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel4.12"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel4.13"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel4.14"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel4.15"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel4.16"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel5.1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel5.2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel5.3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel5.4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel5.5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel5.6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel5.7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel5.8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel5.9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel5.10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel5.11"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel5.12"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel5.13"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel5.14"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel5.15"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#travel5.16"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel1.1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel1.2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel1.3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel1.4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel1.5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel1.6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel1.7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel1.8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel1.9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel1.10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel1.11"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel1.12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel1.13"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel1.14"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel1.15"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel1.16"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel2.1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel2.2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel2.3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel2.4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel2.5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel2.6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel2.7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel2.8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel2.9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel2.10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel2.11"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel2.12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel2.13"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel2.14"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel2.15"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel2.16"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel3.1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel3.2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel3.3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel3.4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel3.5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel3.6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel3.7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel3.8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel3.9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel3.10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel3.11"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel3.12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel3.13"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel3.14"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel3.15"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel3.16"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel4.1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel4.2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel4.3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel4.4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel4.5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel4.6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel4.7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel4.8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel4.9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel4.10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel4.11"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel4.12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel4.13"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel4.14"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel4.15"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel4.16"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel5.1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel5.2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel5.3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel5.4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel5.5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel5.6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel5.7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel5.8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel5.9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel5.10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel5.11"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel5.12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel5.13"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel5.14"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel5.15"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Travel"/>
+        <NamedIndividual IRI="#travel5.16"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel1.1"/>
+        <NamedIndividual IRI="#stop1.1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel1.1"/>
+        <NamedIndividual IRI="#stop1.2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel1.2"/>
+        <NamedIndividual IRI="#stop1.2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel1.2"/>
+        <NamedIndividual IRI="#stop1.3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel1.3"/>
+        <NamedIndividual IRI="#stop1.3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel1.3"/>
+        <NamedIndividual IRI="#stop1.4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel1.4"/>
+        <NamedIndividual IRI="#stop1.4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel1.4"/>
+        <NamedIndividual IRI="#stop1.5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel1.5"/>
+        <NamedIndividual IRI="#stop1.5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel1.5"/>
+        <NamedIndividual IRI="#stop1.6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel1.6"/>
+        <NamedIndividual IRI="#stop1.6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel1.6"/>
+        <NamedIndividual IRI="#stop1.7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel1.7"/>
+        <NamedIndividual IRI="#stop1.7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel1.7"/>
+        <NamedIndividual IRI="#stop1.8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel1.8"/>
+        <NamedIndividual IRI="#stop1.8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel1.8"/>
+        <NamedIndividual IRI="#stop1.9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel1.9"/>
+        <NamedIndividual IRI="#stop1.9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel1.9"/>
+        <NamedIndividual IRI="#stop1.10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel1.10"/>
+        <NamedIndividual IRI="#stop1.10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel1.10"/>
+        <NamedIndividual IRI="#stop1.11"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel1.11"/>
+        <NamedIndividual IRI="#stop1.11"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel1.11"/>
+        <NamedIndividual IRI="#stop1.12"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel1.12"/>
+        <NamedIndividual IRI="#stop1.12"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel1.12"/>
+        <NamedIndividual IRI="#stop1.13"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel1.13"/>
+        <NamedIndividual IRI="#stop1.13"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel1.13"/>
+        <NamedIndividual IRI="#stop1.14"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel1.14"/>
+        <NamedIndividual IRI="#stop1.14"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel1.14"/>
+        <NamedIndividual IRI="#stop1.15"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel1.15"/>
+        <NamedIndividual IRI="#stop1.15"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel1.15"/>
+        <NamedIndividual IRI="#stop1.16"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel1.16"/>
+        <NamedIndividual IRI="#stop1.16"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel1.16"/>
+        <NamedIndividual IRI="#stop1.17"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel2.1"/>
+        <NamedIndividual IRI="#stop2.1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel2.1"/>
+        <NamedIndividual IRI="#stop2.2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel2.2"/>
+        <NamedIndividual IRI="#stop2.2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel2.2"/>
+        <NamedIndividual IRI="#stop2.3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel2.3"/>
+        <NamedIndividual IRI="#stop2.3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel2.3"/>
+        <NamedIndividual IRI="#stop2.4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel2.4"/>
+        <NamedIndividual IRI="#stop2.4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel2.4"/>
+        <NamedIndividual IRI="#stop2.5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel2.5"/>
+        <NamedIndividual IRI="#stop2.5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel2.5"/>
+        <NamedIndividual IRI="#stop2.6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel2.6"/>
+        <NamedIndividual IRI="#stop2.6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel2.6"/>
+        <NamedIndividual IRI="#stop2.7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel2.7"/>
+        <NamedIndividual IRI="#stop2.7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel2.7"/>
+        <NamedIndividual IRI="#stop2.8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel2.8"/>
+        <NamedIndividual IRI="#stop2.8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel2.8"/>
+        <NamedIndividual IRI="#stop2.9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel2.9"/>
+        <NamedIndividual IRI="#stop2.9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel2.9"/>
+        <NamedIndividual IRI="#stop2.10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel2.10"/>
+        <NamedIndividual IRI="#stop2.10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel2.10"/>
+        <NamedIndividual IRI="#stop2.11"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel2.11"/>
+        <NamedIndividual IRI="#stop2.11"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel2.11"/>
+        <NamedIndividual IRI="#stop2.12"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel2.12"/>
+        <NamedIndividual IRI="#stop2.12"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel2.12"/>
+        <NamedIndividual IRI="#stop2.13"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel2.13"/>
+        <NamedIndividual IRI="#stop2.13"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel2.13"/>
+        <NamedIndividual IRI="#stop2.14"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel2.14"/>
+        <NamedIndividual IRI="#stop2.14"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel2.14"/>
+        <NamedIndividual IRI="#stop2.15"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel2.15"/>
+        <NamedIndividual IRI="#stop2.15"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel2.15"/>
+        <NamedIndividual IRI="#stop2.16"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel2.16"/>
+        <NamedIndividual IRI="#stop2.16"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel2.16"/>
+        <NamedIndividual IRI="#stop2.17"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel3.1"/>
+        <NamedIndividual IRI="#stop3.1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel3.1"/>
+        <NamedIndividual IRI="#stop3.2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel3.2"/>
+        <NamedIndividual IRI="#stop3.2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel3.2"/>
+        <NamedIndividual IRI="#stop3.3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel3.3"/>
+        <NamedIndividual IRI="#stop3.3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel3.3"/>
+        <NamedIndividual IRI="#stop3.4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel3.4"/>
+        <NamedIndividual IRI="#stop3.4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel3.4"/>
+        <NamedIndividual IRI="#stop3.5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel3.5"/>
+        <NamedIndividual IRI="#stop3.5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel3.5"/>
+        <NamedIndividual IRI="#stop3.6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel3.6"/>
+        <NamedIndividual IRI="#stop3.6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel3.6"/>
+        <NamedIndividual IRI="#stop3.7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel3.7"/>
+        <NamedIndividual IRI="#stop3.7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel3.7"/>
+        <NamedIndividual IRI="#stop3.8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel3.8"/>
+        <NamedIndividual IRI="#stop3.8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel3.8"/>
+        <NamedIndividual IRI="#stop3.9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel3.9"/>
+        <NamedIndividual IRI="#stop3.9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel3.9"/>
+        <NamedIndividual IRI="#stop3.10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel3.10"/>
+        <NamedIndividual IRI="#stop3.10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel3.10"/>
+        <NamedIndividual IRI="#stop3.11"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel3.11"/>
+        <NamedIndividual IRI="#stop3.11"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel3.11"/>
+        <NamedIndividual IRI="#stop3.12"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel3.12"/>
+        <NamedIndividual IRI="#stop3.12"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel3.12"/>
+        <NamedIndividual IRI="#stop3.13"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel3.13"/>
+        <NamedIndividual IRI="#stop3.13"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel3.13"/>
+        <NamedIndividual IRI="#stop3.14"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel3.14"/>
+        <NamedIndividual IRI="#stop3.14"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel3.14"/>
+        <NamedIndividual IRI="#stop3.15"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel3.15"/>
+        <NamedIndividual IRI="#stop3.15"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel3.15"/>
+        <NamedIndividual IRI="#stop3.16"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel3.16"/>
+        <NamedIndividual IRI="#stop3.16"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel3.16"/>
+        <NamedIndividual IRI="#stop3.17"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel4.1"/>
+        <NamedIndividual IRI="#stop4.1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel4.1"/>
+        <NamedIndividual IRI="#stop4.2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel4.2"/>
+        <NamedIndividual IRI="#stop4.2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel4.2"/>
+        <NamedIndividual IRI="#stop4.3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel4.3"/>
+        <NamedIndividual IRI="#stop4.3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel4.3"/>
+        <NamedIndividual IRI="#stop4.4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel4.4"/>
+        <NamedIndividual IRI="#stop4.4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel4.4"/>
+        <NamedIndividual IRI="#stop4.5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel4.5"/>
+        <NamedIndividual IRI="#stop4.5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel4.5"/>
+        <NamedIndividual IRI="#stop4.6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel4.6"/>
+        <NamedIndividual IRI="#stop4.6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel4.6"/>
+        <NamedIndividual IRI="#stop4.7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel4.7"/>
+        <NamedIndividual IRI="#stop4.7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel4.7"/>
+        <NamedIndividual IRI="#stop4.8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel4.8"/>
+        <NamedIndividual IRI="#stop4.8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel4.8"/>
+        <NamedIndividual IRI="#stop4.9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel4.9"/>
+        <NamedIndividual IRI="#stop4.9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel4.9"/>
+        <NamedIndividual IRI="#stop4.10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel4.10"/>
+        <NamedIndividual IRI="#stop4.10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel4.10"/>
+        <NamedIndividual IRI="#stop4.11"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel4.11"/>
+        <NamedIndividual IRI="#stop4.11"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel4.11"/>
+        <NamedIndividual IRI="#stop4.12"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel4.12"/>
+        <NamedIndividual IRI="#stop4.12"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel4.12"/>
+        <NamedIndividual IRI="#stop4.13"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel4.13"/>
+        <NamedIndividual IRI="#stop4.13"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel4.13"/>
+        <NamedIndividual IRI="#stop4.14"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel4.14"/>
+        <NamedIndividual IRI="#stop4.14"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel4.14"/>
+        <NamedIndividual IRI="#stop4.15"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel4.15"/>
+        <NamedIndividual IRI="#stop4.15"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel4.15"/>
+        <NamedIndividual IRI="#stop4.16"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel4.16"/>
+        <NamedIndividual IRI="#stop4.16"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel4.16"/>
+        <NamedIndividual IRI="#stop4.17"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel5.1"/>
+        <NamedIndividual IRI="#stop5.1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel5.1"/>
+        <NamedIndividual IRI="#stop5.2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel5.2"/>
+        <NamedIndividual IRI="#stop5.2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel5.2"/>
+        <NamedIndividual IRI="#stop5.3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel5.3"/>
+        <NamedIndividual IRI="#stop5.3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel5.3"/>
+        <NamedIndividual IRI="#stop5.4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel5.4"/>
+        <NamedIndividual IRI="#stop5.4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel5.4"/>
+        <NamedIndividual IRI="#stop5.5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel5.5"/>
+        <NamedIndividual IRI="#stop5.5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel5.5"/>
+        <NamedIndividual IRI="#stop5.6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel5.6"/>
+        <NamedIndividual IRI="#stop5.6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel5.6"/>
+        <NamedIndividual IRI="#stop5.7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel5.7"/>
+        <NamedIndividual IRI="#stop5.7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel5.7"/>
+        <NamedIndividual IRI="#stop5.8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel5.8"/>
+        <NamedIndividual IRI="#stop5.8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel5.8"/>
+        <NamedIndividual IRI="#stop5.9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel5.9"/>
+        <NamedIndividual IRI="#stop5.9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel5.9"/>
+        <NamedIndividual IRI="#stop5.10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel5.10"/>
+        <NamedIndividual IRI="#stop5.10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel5.10"/>
+        <NamedIndividual IRI="#stop5.11"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel5.11"/>
+        <NamedIndividual IRI="#stop5.11"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel5.11"/>
+        <NamedIndividual IRI="#stop5.12"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel5.12"/>
+        <NamedIndividual IRI="#stop5.12"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel5.12"/>
+        <NamedIndividual IRI="#stop5.13"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel5.13"/>
+        <NamedIndividual IRI="#stop5.13"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel5.13"/>
+        <NamedIndividual IRI="#stop5.14"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel5.14"/>
+        <NamedIndividual IRI="#stop5.14"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel5.14"/>
+        <NamedIndividual IRI="#stop5.15"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel5.15"/>
+        <NamedIndividual IRI="#stop5.15"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel5.15"/>
+        <NamedIndividual IRI="#stop5.16"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#precondition"/>
+        <NamedIndividual IRI="#travel5.16"/>
+        <NamedIndividual IRI="#stop5.16"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#travel5.16"/>
+        <NamedIndividual IRI="#stop5.17"/>
+    </ObjectPropertyAssertion>

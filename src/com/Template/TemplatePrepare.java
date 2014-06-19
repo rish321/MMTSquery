@@ -6,8 +6,8 @@ import com.sparql.Sparql;
 
 public class TemplatePrepare {
 
-	public static void preProcess(String rdfs, String rdf, String owl, String xsd, String base, String folder) throws IOException, InterruptedException
+	public static void preProcess(String init_folder, String rdfs, String rdf, String owl, String xsd, String base, String folder, String curr) throws IOException, InterruptedException
 	{
-		Sparql.createSparqlFile("/home/rishabh/tools/pellet-2.3.1/initializeall.sh " +  rdfs + " " + rdf + " " + owl + " " + xsd + " " + base + " " + folder);
+		Sparql.createSparqlFile(init_folder+"initializeall.sh " +  rdfs + " " + rdf + " " + owl + " " + xsd + " " + base + " " + folder + " " + curr);
 	}
 }

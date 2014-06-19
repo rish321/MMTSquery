@@ -49,4 +49,6 @@ public class Duration {
 		return folder + file + "temp";
 	}
 
+	
+
 }

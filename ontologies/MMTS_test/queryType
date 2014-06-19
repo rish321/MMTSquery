@@ -1,0 +1,20 @@
+क्या	Yes_No
+क्या क्या	list
+कितने-कितने बजे	list_time
+कितने-कितने देर	list_duration
+कितनी-कितनी देर	list_duration
+कहाँ-कहाँ	list_station
+कैसे-कैसे	list_process
+कब-कब	list_time/list_day
+कितने-कितने	list_count
+कितनी-कितनी	list_count
+कितना-कितना	list_count
+कितने देर	duration
+कितनी देर	duration
+कितने बजे	time
+कितने	count
+कितनी	count
+कितना	count
+कब	time/day
+कहाँ	station
+कैसे	list_process
