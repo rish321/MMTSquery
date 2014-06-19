@@ -1,0 +1,36 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX : <http://www.semanticweb.org/ontologies/2014/1/MMTS_test.owl#>
+
+SELECT (xsd:time(?time)-xsd:time("15:25:00"^^xsd:time) AS ?reachTime)
+#SELECT ?time
+WHERE {
+    {SELECT (MIN(?time1) AS ?time)
+    WHERE {
+	    ?s1 :departsOn ?time1.
+	    FILTER ( ?time1 > "15:25:00"^^xsd:time ).
+	    FILTER ( ?time1 < "23:59:00"^^xsd:time ).
+	    ?s1 :ofTrain ?t1.
+	    ?s1 :atStation ?st1.
+	    FILTER ( regex ( str(?st1), "Hyderabad") ).
+	    ?s1 :source ?src.
+	    FILTER ( regex ( str(?src), "Lingampally") ).
+	    ?s1 :destination ?dest.
+	    FILTER ( regex ( str(?dest), "Bharatnagar") ).
+	}
+    GROUP BY ?st1 }
+    .
+    ?s :ofTrain ?t.
+    ?s :departsOn ?time.
+    ?s :source ?src.
+    FILTER ( regex ( str(?src), "Lingampally") ).
+    ?s :destination ?dest.
+    FILTER ( regex ( str(?dest), "Bharatnagar") ).
+    ?s :atStation ?st.
+    FILTER ( regex ( str(?st), "Hyderabad") ).
+    #?t :arrivesOn ?s.   
+}
+#GROUP BY ?st
+#ORDER BY ?time
