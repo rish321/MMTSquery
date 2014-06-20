@@ -3,11 +3,9 @@ package com.qureyprocess.components;
 import java.io.IOException;
 import java.util.HashMap;
 
-import com.sparql.Sparql;
-
 public class Coach {
 
-	public static String getCoach(String folder, String source, String dest, String atStation,
+	public static String getCoach(String folder, String foldertmp, String source, String dest, String atStation,
 			String srcTimeInit, String srcTimeFin, String destTimeInit,
 			String destTimeFin, String set, String info) throws IOException, InterruptedException {
 			if(atStation == null)
@@ -20,9 +18,7 @@ public class Coach {
 			String file = "kya_coach"; 
 			String params = folder + file + ".sh ";
 			params += srcTimeInit + " " + srcTimeFin + " " + source + " " + dest + " " + atStation + " " + set + " " + info;
-			params += ">" + folder + file + "temp";
-			Sparql.createSparqlFile(params);
-			return folder + file + "temp";
+			return Query.makeQuery(foldertmp, file, params);
 
 	}
 

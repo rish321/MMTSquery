@@ -1,11 +1,10 @@
-package com.qureyprocess;
+package com.queryprocess;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
 import com.dag.DAG;
 import com.dialogmanager.Dialog;
 import com.hp.hpl.jena.ontology.OntModel;
@@ -18,11 +17,9 @@ import com.qureyprocess.components.Station;
 import com.qureyprocess.components.Time;
 
 public class ManageQuery {
-
-
 	public static void postProcess(OntModel m, Dialog dm, String s,
 			HashMap<String, String> directMap, HashMap<String, String> hmpll, HashMap<String, String> hmind, HashMap<String, String> hmnum,
-			HashMap<String, String> hmtrans, String folder, String source, String dest, String atStation,
+			HashMap<String, String> hmtrans, String folder, String foldertmp, String source, String dest, String atStation,
 			String srcTimeInit, String srcTimeFin, String destTimeInit, String destTimeFin,
 			String set, String info, String nlpPath, String setu) throws Exception {
 		if(s.contains("कितना कितना देर") || s.contains("कितनी कितनी देर") || s.contains("कितना कितना बज")
@@ -39,7 +36,7 @@ public class ManageQuery {
 				}
 				else {
 					ProcessAnswer.translate(hmtrans, source + " se " + dest + " tak " + atStation + " par " + srcTimeInit + " se " + srcTimeFin + " ke beech " + "gaadiyan itni-itni der mein pahunchti hain");
-					ProcessAnswer.printAnswer(hmtrans, Duration.getDurationList(folder, source, dest, atStation, srcTimeInit, srcTimeFin), m);
+					ProcessAnswer.printAnswer(hmtrans, Duration.getDurationList(folder, foldertmp, source, dest, atStation, srcTimeInit, srcTimeFin), m);
 				}
 			}
 			else if(s.contains("कितना कितना बज")) {
@@ -47,7 +44,7 @@ public class ManageQuery {
 					source = dm.requestResponse(hmtrans, "Incomplete arguments: Please specify source station");
 				if(dest == null)
 					dest = dm.requestResponse(hmtrans, "Incomplete arguments: Please specify destination station");
-				ProcessAnswer.printAnswer(hmtrans, Time.getTimeList(folder, source, dest, atStation, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info), m);
+				ProcessAnswer.printAnswer(hmtrans, Time.getTimeList(folder, foldertmp, source, dest, atStation, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info), m);
 			}
 		}
 		else if(s.contains("कितनी कितनी") || s.contains("कितना कितना")
@@ -66,38 +63,38 @@ public class ManageQuery {
 					found = s.substring(s.indexOf(found) + found.length(), s.indexOf(" ", s.indexOf(found)+found.length()+1));
 					found = ReplaceParallel.replaceParallel(found);
 					ProcessAnswer.translate(hmtrans, source + " se " + dest + " tak " + srcTimeInit + " se " + srcTimeFin + " ke beech " + "itne itne " + found + " " + info + " hain");
-					ProcessAnswer.printAnswer(hmtrans, Count.getCount(folder, source, dest, atStation, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info, found), m);
+					ProcessAnswer.printAnswer(hmtrans, Count.getCount(folder, foldertmp, source, dest, atStation, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info, found), m);
 				}
 			}
 			else if(s.contains("कब कब")) {
 				ProcessAnswer.translate(hmtrans, source + " se " + dest + " tak " + srcTimeInit + " se " + srcTimeFin + " ke beech " + "gaadi itne-itne baje " + info + " hai");
-				ProcessAnswer.printAnswer(hmtrans, Time.getTimeList(folder, source, dest, atStation, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info), m);
+				ProcessAnswer.printAnswer(hmtrans, Time.getTimeList(folder, foldertmp, source, dest, atStation, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info), m);
 			}
 			else if(s.contains("कहाँ कहाँ")) {
 				if(s.contains("कहाँ कहाँ से"))
-					ProcessAnswer.printAnswer(hmtrans, Station.getIntermediateStation(folder, source, dest, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info), m);
+					ProcessAnswer.printAnswer(hmtrans, Station.getIntermediateStation(folder, foldertmp, source, dest, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info), m);
 				else if(s.contains("कहाँ कहाँ तक")) {
 					ProcessAnswer.translate(hmtrans, source + " se " + dest + " tak " + srcTimeInit + " se " + srcTimeFin + " ke beech " + set + " gaadi yahan se " + info + " hai");
 					if(info.equals("arr"))
 						ProcessAnswer.translate(hmtrans, dest);
 					else {
-						ArrayList<String> arr = ProcessAnswer.getAnswer(Station.getStation(folder, source, dest, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info), m);
+						ArrayList<String> arr = ProcessAnswer.getAnswer(Station.getStation(folder, foldertmp, source, dest, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info), m);
 						for(int i = 0; i < arr.size(); i++)
 							ProcessAnswer.translate(hmtrans, arr.get(i).split("-")[1]);
 					}
 				}
 				else {
 					if(info.equals("arr")) {
-						ArrayList<String> arr = ProcessAnswer.getAnswer(Station.getStation(folder, source, dest, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info), m);
+						ArrayList<String> arr = ProcessAnswer.getAnswer(Station.getStation(folder, foldertmp, source, dest, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info), m);
 						for(int i = 0; i < arr.size(); i++)
 							source = arr.get(i).split("-")[0];
 					}
 					else {
-						ArrayList<String> arr = ProcessAnswer.getAnswer(Station.getStation(folder, source, dest, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info), m);
+						ArrayList<String> arr = ProcessAnswer.getAnswer(Station.getStation(folder, foldertmp, source, dest, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info), m);
 						for(int i = 0; i < arr.size(); i++)
 							dest = arr.get(i).split("-")[1];
 					}
-					ProcessAnswer.printAnswer(hmtrans, Station.getIntermediateStation(folder, source, dest, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info), m);
+					ProcessAnswer.printAnswer(hmtrans, Station.getIntermediateStation(folder, foldertmp, source, dest, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info), m);
 				}
 			}
 			else if(s.contains("कौन कौन")) {
@@ -111,7 +108,7 @@ public class ManageQuery {
 					//System.out.println(found);
 					found = ReplaceParallel.replaceParallel(found);
 					ProcessAnswer.translate(hmtrans, source + " se " + dest + " tak " + srcTimeInit + " se " + srcTimeFin + " ke beech " + "itne " + found + " " + info + " hain");
-					ProcessAnswer.printAnswer(hmtrans, Count.getCount(folder, source, dest, atStation, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info, found), m);
+					ProcessAnswer.printAnswer(hmtrans, Count.getCount(folder, foldertmp, source, dest, atStation, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info, found), m);
 				}
 			}
 		}
@@ -132,12 +129,12 @@ public class ManageQuery {
 				}
 				else {
 					ProcessAnswer.translate(hmtrans, source + " se " + dest + " tak " + atStation + " par " + srcTimeInit + " se " + srcTimeFin + " ke beech " + set+ " gaadiyan itni der mein pahunchti hai");
-					ProcessAnswer.printAnswer(hmtrans, Duration.getDuration(folder, source, dest, atStation, srcTimeInit, srcTimeFin, set), m);
+					ProcessAnswer.printAnswer(hmtrans, Duration.getDuration(folder, foldertmp, source, dest, atStation, srcTimeInit, srcTimeFin, set), m);
 				}
 			}
 			else if(s.contains("कितना बज")) {
 				ProcessAnswer.translate(hmtrans, source + " se " + dest + " tak " + srcTimeInit + " se " + srcTimeFin + " ke beech " + set + " gaadi itne baje " + info + " hai");
-				ProcessAnswer.printAnswer(hmtrans, Time.getTime(folder, source, dest, atStation, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info), m);
+				ProcessAnswer.printAnswer(hmtrans, Time.getTime(folder, foldertmp, source, dest, atStation, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info), m);
 			}
 		}
 		else if(s.contains("कितनी") || s.contains("कितना")
@@ -156,12 +153,12 @@ public class ManageQuery {
 					found = s.substring(s.indexOf(found) + found.length(), s.indexOf(" ", s.indexOf(found)+found.length()+1));
 					found = ReplaceParallel.replaceParallel(found);
 					ProcessAnswer.translate(hmtrans, source + " se " + dest + " tak " + srcTimeInit + " se " + srcTimeFin + " ke beech " + "itne " + found + " " + info + " hain");
-					ProcessAnswer.printAnswer(hmtrans, Count.getCount(folder, source, dest, atStation, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info, found), m);
+					ProcessAnswer.printAnswer(hmtrans, Count.getCount(folder, foldertmp, source, dest, atStation, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info, found), m);
 				}
 			}
 			else if(s.contains("कब")) {
 				ProcessAnswer.translate(hmtrans, source + " se " + dest + " tak " + srcTimeInit + " se " + srcTimeFin + " ke beech " + set + " gaadi itne baje " + info + " hai");
-				ProcessAnswer.printAnswer(hmtrans, Time.getTime(folder, source, dest, atStation, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info), m);
+				ProcessAnswer.printAnswer(hmtrans, Time.getTime(folder, foldertmp, source, dest, atStation, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info), m);
 			}
 			else if(s.contains("कहाँ")) {
 				if(s.contains("कहाँ से")) {
@@ -169,7 +166,7 @@ public class ManageQuery {
 					if(info.equals("dep"))
 						ProcessAnswer.translate(hmtrans, source);
 					else {
-						ArrayList<String> arr = ProcessAnswer.getAnswer(Station.getStation(folder, source, dest, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info), m);
+						ArrayList<String> arr = ProcessAnswer.getAnswer(Station.getStation(folder, foldertmp, source, dest, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info), m);
 						for(int i = 0; i < arr.size(); i++)
 							ProcessAnswer.translate(hmtrans, arr.get(i).split("-")[0]);
 					}
@@ -179,7 +176,7 @@ public class ManageQuery {
 					if(info.equals("arr"))
 						ProcessAnswer.translate(hmtrans, dest);
 					else {
-						ArrayList<String> arr = ProcessAnswer.getAnswer(Station.getStation(folder, source, dest, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info), m);
+						ArrayList<String> arr = ProcessAnswer.getAnswer(Station.getStation(folder, foldertmp, source, dest, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info), m);
 						for(int i = 0; i < arr.size(); i++)
 							ProcessAnswer.translate(hmtrans, arr.get(i).split("-")[1]);
 					}
@@ -205,17 +202,17 @@ public class ManageQuery {
 			}
 		}
 		else if(s.contains("कैसे कैसे") || s.contains("कैसे") || s.contains("क्यूँ") || s.contains("क्यूँ क्यूँ")) {
-			List<String> acts = Instance.extractInstanceActionTheme(m, s, directMap, folder, nlpPath, setu);
+			List<String> acts = Instance.extractInstanceActionTheme(m, s, directMap, folder, foldertmp, nlpPath, setu);
 			String action = acts.get(0);
 			DAG dag = new DAG();
-			dag.fillDAGAction(folder, action, m);
+			dag.fillDAGAction(folder, foldertmp, action, m);
 			ArrayList<String> topo = dag.topologicalsort();
 			if((s.contains("क्यूँ") || s.contains("क्यूँ क्यूँ")) && s.contains("नहीं")) {
-				DAG.totalOrder(folder, m, dag, topo);
+				DAG.totalOrder(folder, foldertmp, m, dag, topo);
 			}
 			else if(s.contains("कैसे कैसे") || s.contains("कैसे")) {
 				ProcessAnswer.translate(hmtrans, "Ye saare kadam uthane se ticket kharid sakte hain");
-				DAG.actionOrder(folder, m, dag, topo);
+				DAG.actionOrder(folder, foldertmp, m, dag, topo);
 			}
 		}
 		else if(s.contains("क्या")) {
@@ -225,7 +222,7 @@ public class ManageQuery {
 				//फलकनुमा से लिंगमपल्ली की 6:00 बजे से 9:00 बजे के बीच पहली ट्रैन में महिला कोच है क्या?
 				if(s.contains("कोच") || s.contains("डब्बा") ||s.contains("बोगी") ){
 					String coachType = Coach.extractCoachType(s, directMap);
-					if(ProcessAnswer.getAnswer(Coach.getCoach(folder, source, dest, atStation, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info), m).contains(coachType))
+					if(ProcessAnswer.getAnswer(Coach.getCoach(folder, foldertmp, source, dest, atStation, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info), m).contains(coachType))
 						dm.informUser(hmtrans, "yes");
 					else 
 						dm.informUser(hmtrans, "no");
@@ -234,7 +231,7 @@ public class ManageQuery {
 				//लिंगमपल्ली से भरतनगर की अगली ट्रेन क्या हैदराबाद पर रुकती है?
 				else
 				{
-					ArrayList<String> arr = ProcessAnswer.getAnswer(Time.getTime(folder, source, dest, atStation, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info), m);
+					ArrayList<String> arr = ProcessAnswer.getAnswer(Time.getTime(folder, foldertmp, source, dest, atStation, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info), m);
 					if(arr.size()==0)
 						dm.informUser(hmtrans, "no");
 					else 
@@ -246,7 +243,7 @@ public class ManageQuery {
 				//लिंगमपल्ली से भरतनगर की अगली ट्रेन क्या हैदराबाद पर रुकती है?
 				{
 					ProcessAnswer.translate(hmtrans, source + " se " + dest + " tak " + srcTimeInit + " se " + srcTimeFin + " ke beech " + set + " gaadi itne baje " + info + " hai");
-					ProcessAnswer.printAnswer(hmtrans, Time.getTime(folder, source, dest, atStation, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info), m);
+					ProcessAnswer.printAnswer(hmtrans, Time.getTime(folder, foldertmp, source, dest, atStation, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info), m);
 				}
 				//क्या लिंगमपल्ली से भरतनगर को जाने वाली अगली ट्रेन से हम 10 बजे तक फलकनुमा पहुच पाएँगे?
 				//how to fetch detTime?
@@ -257,4 +254,3 @@ public class ManageQuery {
 		}
 	}
 }
-

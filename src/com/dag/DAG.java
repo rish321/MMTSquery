@@ -9,7 +9,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 import com.hp.hpl.jena.ontology.OntModel;
-import com.qureyprocess.ProcessAnswer;
+import com.queryprocess.ProcessAnswer;
 import com.qureyprocess.components.Action;
 import com.qureyprocess.components.Condition;
 import com.qureyprocess.components.action.semanticroles.Theme;
@@ -38,7 +38,7 @@ public class DAG
 	    }
 	    //System.out.println();
 	}
-	public void fillDAGAction(String folder, String action, OntModel m) throws IOException, InterruptedException
+	public void fillDAGAction(String folder, String foldertmp, String action, OntModel m) throws IOException, InterruptedException
 	{
 		if(DAG.explored(action))
 			return;
@@ -46,7 +46,7 @@ public class DAG
 		DAG.addNode(action);
 		DAG.addClass(action, "action");
 		//get precondition
-		List<String> lspcond = ProcessAnswer.getAnswer(Condition.getPrecondition(folder, action), m);
+		List<String> lspcond = ProcessAnswer.getAnswer(Condition.getPrecondition(folder, foldertmp, action), m);
 		Iterator<String> iterpcond = lspcond.iterator();
 		//System.out.println("here");
 		while(iterpcond.hasNext())
@@ -57,11 +57,11 @@ public class DAG
 			DAG.addNode(str);
 			DAG.addLink(str, action);
 			System.out.println(str + " ispreconditionof " + action);
-			fillDAGPreCondition(folder, str, m);
+			fillDAGPreCondition(folder, foldertmp, str, m);
 		}
 
 		//get subaction
-		List<String> lssubact = ProcessAnswer.getAnswer(Action.getSubaction(folder, action), m);
+		List<String> lssubact = ProcessAnswer.getAnswer(Action.getSubaction(folder, foldertmp, action), m);
 		Iterator<String> itersubact = lssubact.iterator();
 		while(itersubact.hasNext())
 		{
@@ -71,11 +71,11 @@ public class DAG
 			DAG.addNode(str);
 			DAG.addLink(str, action);
 			System.out.println(str + " issubactionof " + action);
-			fillDAGAction(folder, str, m);
+			fillDAGAction(folder, foldertmp, str, m);
 		}
 
 		//get outcome
-		List<String> lsocom = ProcessAnswer.getAnswer(Condition.getOutcome(folder, action), m);
+		List<String> lsocom = ProcessAnswer.getAnswer(Condition.getOutcome(folder, foldertmp, action), m);
 		Iterator<String> iterocom = lsocom.iterator();
 		while(iterocom.hasNext())
 		{
@@ -85,19 +85,19 @@ public class DAG
 			DAG.addNode(str);
 			DAG.addLink(action, str);
 			System.out.println(str + " isoutcomeof " + action);
-			fillDAGOutcome(folder, str, m);
+			fillDAGOutcome(folder, foldertmp, str, m);
 		}
 	}
 	
 	
-	private void fillDAGPreCondition(String folder, String condition, OntModel m) throws IOException, InterruptedException
+	private void fillDAGPreCondition(String folder, String foldertmp, String condition, OntModel m) throws IOException, InterruptedException
 	{
 		if(DAG.explored(condition))
 			return;
 		//System.out.println(condition);
 		DAG.addNode(condition);
 		DAG.addClass(condition, "precondition");
-		List<String> lsoutcome = ProcessAnswer.getAnswer(Action.getoutAction(folder, condition), m);
+		List<String> lsoutcome = ProcessAnswer.getAnswer(Action.getoutAction(folder, foldertmp, condition), m);
 		Iterator<String> iterocome = lsoutcome.iterator();
 		while(iterocome.hasNext())
 		{
@@ -106,18 +106,18 @@ public class DAG
 			DAG.addNode(str);
 			DAG.addLink(str, condition);
 			System.out.println(str + " hasprecondition " + condition);
-			fillDAGAction(folder, str, m);
+			fillDAGAction(folder, foldertmp, str, m);
 		}
 	}
 	
-	private void fillDAGOutcome(String folder, String condition, OntModel m) throws IOException, InterruptedException
+	private void fillDAGOutcome(String folder, String foldertmp, String condition, OntModel m) throws IOException, InterruptedException
 	{
 		if(DAG.explored(condition))
 			return;
 		//System.out.println(condition);
 		DAG.addNode(condition);
 		DAG.addClass(condition, "outcome");
-		List<String> lsprecome = ProcessAnswer.getAnswer(Action.getpreAction(folder, condition), m);
+		List<String> lsprecome = ProcessAnswer.getAnswer(Action.getpreAction(folder, foldertmp, condition), m);
 		Iterator<String> iterpcond = lsprecome.iterator();
 		while(iterpcond.hasNext())
 		{
@@ -126,7 +126,7 @@ public class DAG
 			DAG.addNode(str);
 			DAG.addLink(condition, str);
 			System.out.println(condition + " isoutcomeof  " + str);
-			fillDAGAction(folder, str, m);
+			fillDAGAction(folder, foldertmp, str, m);
 		}
 	}
 	
@@ -163,16 +163,16 @@ public class DAG
         DAG.graph.get(node).fTime = time;
         topo.add(0, node);
 	}
-	public static void actionOrder(String folder, OntModel m, DAG dag, ArrayList<String> topo) throws IOException, InterruptedException {
+	public static void actionOrder(String folder, String foldertmp, OntModel m, DAG dag, ArrayList<String> topo) throws IOException, InterruptedException {
 		for(int i = 0; i < topo.size(); i++)
 			if(dag.DAG.getClass(topo.get(i)).equals("action"))
 			{
 				System.out.print(topo.get(i).replaceAll("\\d", ""));
-				findTheme(folder, m, topo.get(i));
+				findTheme(folder, foldertmp, m, topo.get(i));
 				System.out.println();
 			}
 	}
-	public static void totalOrder(String folder, OntModel m, DAG dag, ArrayList<String> topo) throws IOException, InterruptedException {
+	public static void totalOrder(String folder, String foldertmp, OntModel m, DAG dag, ArrayList<String> topo) throws IOException, InterruptedException {
 		for(int i = 0; i < topo.size(); i++)
 		{
 			if(dag.DAG.getClass(topo.get(i)).equals("action"))
@@ -181,7 +181,7 @@ public class DAG
 			{
 				System.out.print("Have you got ... ");
 				System.out.print(topo.get(i).replaceAll("\\d", ""));
-				findTheme(folder, m, topo.get(i));
+				findTheme(folder, foldertmp, m, topo.get(i));
 				System.out.println();
 			}
 		}
@@ -191,32 +191,32 @@ public class DAG
 		for(int i = 0; i < topo.size(); i++)
 			System.out.println(topo.get(i));
 	}
-	public static void artifactorder(String folder, OntModel m, DAG dag, ArrayList<String> topo) throws IOException, InterruptedException {
+	public static void artifactorder(String folder, String foldertmp, OntModel m, DAG dag, ArrayList<String> topo) throws IOException, InterruptedException {
 		for(int i = 0; i < topo.size(); i++)
 			if(!dag.DAG.getClass(topo.get(i)).equals("action"))
 			{
 				System.out.print(topo.get(i).replaceAll("\\d", ""));
-				findTheme(folder, m, topo.get(i));
+				findTheme(folder, foldertmp, m, topo.get(i));
 				System.out.println();
 			}
 	}
-	public static void findTheme(String folder, OntModel m, String str) throws IOException,
+	public static void findTheme(String folder, String foldertmp, OntModel m, String str) throws IOException,
 			InterruptedException {
-		ArrayList<String> arr = (ProcessAnswer.getAnswer(Theme.getTheme(folder, str), m));
+		ArrayList<String> arr = (ProcessAnswer.getAnswer(Theme.getTheme(folder, foldertmp, str), m));
 		//System.out.println(arr);
 		System.out.print("[");
-		recurTheme(folder, m, arr);
+		recurTheme(folder, foldertmp, m, arr);
 		System.out.print("]");
 	}
-	public static void recurTheme(String folder, OntModel m, ArrayList<String> arr) throws IOException, InterruptedException {
+	public static void recurTheme(String folder, String foldertmp, OntModel m, ArrayList<String> arr) throws IOException, InterruptedException {
 		for(int j = 0; j < arr.size(); j++)
 		{
 			System.out.print("[");
 			System.out.print(arr.get(j).replaceAll("\\d", ""));
 			if(arr.get(j).matches("^.+?\\d$"))
 			{
-				ArrayList<String> arrtemp = (ProcessAnswer.getAnswer(Theme.getTheme(folder, arr.get(j)), m));
-				recurTheme(folder, m, arrtemp);
+				ArrayList<String> arrtemp = (ProcessAnswer.getAnswer(Theme.getTheme(folder, foldertmp, arr.get(j)), m));
+				recurTheme(folder, foldertmp, m, arrtemp);
 			}
 			System.out.print("]");
 			if(j != arr.size()-1)

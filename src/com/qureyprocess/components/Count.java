@@ -2,11 +2,9 @@ package com.qureyprocess.components;
 
 import java.io.IOException;
 
-import com.sparql.Sparql;
-
 public class Count {
 
-	public static String getCount(String folder, String source, String dest, String atStation,
+	public static String getCount(String folder, String foldertmp, String source, String dest, String atStation,
 			String srcTimeInit, String srcTimeFin, String destTimeInit,
 			String destTimeFin, String set, String info, String found) throws IOException, InterruptedException {
 		if(!found.equals("runs"))
@@ -21,9 +19,7 @@ public class Count {
 			String file = "kitne"; 
 			String params = folder + file + ".sh ";
 			params += srcTimeInit + " " + srcTimeFin + " " + source + " " + dest + " " + atStation + " " + set + " " + info + " " + found;
-			params += ">" + folder + file + "temp";
-			Sparql.createSparqlFile(params);
-			return folder + file + "temp";
+			return Query.makeQuery(foldertmp, file, params);
 		}
 		else
 		{
@@ -37,9 +33,7 @@ public class Count {
 			String file = "kitnedin"; 
 			String params = folder + file + ".sh ";
 			params += srcTimeInit + " " + srcTimeFin + " " + source + " " + dest + " " + atStation + " " + set + " " + info + " " + found;
-			params += ">" + folder + file + "temp";
-			Sparql.createSparqlFile(params);
-			return folder + file + "temp";
+			return Query.makeQuery(foldertmp, file, params);
 		}
 	}
 }

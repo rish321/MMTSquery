@@ -5,8 +5,6 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-import com.sparql.Sparql;
-
 public class Station {
 
 	@SuppressWarnings("rawtypes")
@@ -68,24 +66,20 @@ public class Station {
 		}
 		return null;
 	}
-	public static String getStation(String folder, String source, String dest,
+	public static String getStation(String folder, String foldertmp, String source, String dest,
 			String srcTimeInit, String srcTimeFin, String destTimeInit, String destTimeFin,
 			String set, String info) throws IOException, InterruptedException {
 		String file = "kahan"; 
 		String params = folder + file + ".sh ";
 		params += srcTimeInit + " " + srcTimeFin + " " + source + " " + dest + " " + set + " " + info;
-		params += ">" + folder + file + "temp";
-		Sparql.createSparqlFile(params);
-		return folder + file + "temp";
+		return Query.makeQuery(foldertmp, file, params);
 	}
-	public static String getIntermediateStation(String folder, String source, String dest,
+	public static String getIntermediateStation(String folder, String foldertmp, String source, String dest,
 			String srcTimeInit, String srcTimeFin, String destTimeInit, String destTimeFin,
 			String set, String info) throws IOException, InterruptedException {
 		String file = "kahankahan"; 
 		String params = folder + file + ".sh ";
 		params += srcTimeInit + " " + srcTimeFin + " " + source + " " + dest + " " + set + " " + info;
-		params += ">" + folder + file + "temp";
-		Sparql.createSparqlFile(params);
-		return folder + file + "temp";
+		return Query.makeQuery(foldertmp, file, params);
 	}
 }

@@ -22,6 +22,7 @@ public class Test {
 		String base = "http://www.semanticweb.org/luffy/ontologies/2014/2/PurposeNetFoodRecipeOntology#";
 		
 		String folder = "/home/rishabh/tools/pellet-2.3.1/recipe/";
+		String foldertmp = ".tmp";
 		
 		TemplatePrepare.preProcess("/home/rishabh/tools/pellet-2.3.1/", rdfs, rdf, owl, xsd, base, folder, "/home/rishabh/tools/pellet-2.3.1/unprocessed");
 		
@@ -34,7 +35,7 @@ public class Test {
 		
 		for(int i = 0; i < actions.length; i++)
 		{
-			arraylists.add(topo(folder, m, actions[i]));
+			arraylists.add(topo(folder, foldertmp, m, actions[i]));
 		}
 		
 		/*HashMap<String, Integer> hm = new HashMap<String, Integer>();
@@ -115,21 +116,21 @@ public class Test {
     }
 	
 	
-	public static ArrayList<String> topo(String folder, OntModel m, String action)
+	public static ArrayList<String> topo(String folder, String foldertmp, OntModel m, String action)
 			throws IOException, InterruptedException {
 		DAG dag;
 		dag = new DAG();
-		ArrayList<String> topo = createDag(folder, m, action, dag);
+		ArrayList<String> topo = createDag(folder, foldertmp, m, action, dag);
 		//DAG.order(folder, m, dag, topo);
 		//DAG.totalOrder(folder, m, dag, topo);
-		DAG.artifactorder(folder, m, dag, topo);
+		DAG.artifactorder(folder, foldertmp, m, dag, topo);
 		System.out.println();
 		return topo;
 	}
 
-	public static ArrayList<String> createDag(String folder, OntModel m,
+	public static ArrayList<String> createDag(String folder, String foldertmp, OntModel m,
 			String action, DAG dag) throws IOException, InterruptedException {
-		dag.fillDAGAction(folder, action, m);
+		dag.fillDAGAction(folder, foldertmp, action, m);
 		ArrayList<String> topo = dag.topologicalsort();
 		return topo;
 	}

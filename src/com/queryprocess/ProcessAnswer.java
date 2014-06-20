@@ -1,4 +1,4 @@
-package com.qureyprocess;
+package com.queryprocess;
 
 import java.util.ArrayList;
 import java.util.HashMap;

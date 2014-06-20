@@ -10,8 +10,6 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import com.sparql.Sparql;
-
 public class Time {
 
 	public static String getDestTimeFin(String s) {
@@ -108,7 +106,7 @@ public class Time {
 		return null;
 	}
 
-	public static String getTime(String folder, String source, String dest, String atStation,
+	public static String getTime(String folder, String foldertmp, String source, String dest, String atStation,
 			String srcTimeInit, String srcTimeFin, String destTimeInit,
 			String destTimeFin, String set, String info) throws IOException, InterruptedException {
 		if(atStation == null)
@@ -121,12 +119,10 @@ public class Time {
 		String file = "kab"; 
 		String params = folder + file + ".sh ";
 		params += srcTimeInit + " " + srcTimeFin + " " + source + " " + dest + " " + atStation + " " + set + " " + info;
-		params += ">" + folder + file + "temp";
-		Sparql.createSparqlFile(params);
-		return folder + file + "temp";
+		return Query.makeQuery(foldertmp, file, params);
 	}
 
-	public static String getTimeList(String folder, String source, String dest, 
+	public static String getTimeList(String folder, String foldertmp, String source, String dest, 
 			String atStation, String srcTimeInit, String srcTimeFin,
 			String destTimeInit, String destTimeFin, String set, String info) throws InterruptedException, IOException {
 		if(atStation == null)
@@ -139,8 +135,6 @@ public class Time {
 		String file = "kabkab"; 
 		String params = folder + file + ".sh ";
 		params += srcTimeInit + " " + srcTimeFin + " " + source + " " + dest + " " + atStation + " " + set + " " + info;
-		params += ">" + folder + file + "temp";
-		Sparql.createSparqlFile(params);
-		return folder + file + "temp";
+		return Query.makeQuery(foldertmp, file, params);
 	}
 }

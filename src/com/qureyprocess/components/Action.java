@@ -2,45 +2,34 @@ package com.qureyprocess.components;
 
 import java.io.IOException;
 
-import com.sparql.Sparql;
-
 public class Action {
 
-	public static String getAction(String folder, String action, String theme) throws IOException, InterruptedException {
+	public static String getAction(String folder, String foldertmp, String action, String theme) throws IOException, InterruptedException {
 		String file = "findAction"; 
 		String params = folder + file + ".sh ";
 		params += action + " " + theme;
-		params += ">" + folder + file + "temp";
-		//System.out.println(params);
-		Sparql.createSparqlFile(params);
-		return folder + file + "temp";
+		return Query.makeQuery(foldertmp, file, params);
 	}
-	
-	public static String getSubaction(String folder, String string) throws IOException, InterruptedException {
+
+	public static String getSubaction(String folder, String foldertmp, String string) throws IOException, InterruptedException {
 		String file = "findSubaction"; 
 		String params = folder + file + ".sh ";
 		params += string;
-		params += ">" + folder + file + "temp";
-		Sparql.createSparqlFile(params);
-		return folder + file + "temp";
+		return Query.makeQuery(foldertmp, file, params);
 	}
 
-	public static String getoutAction(String folder, String string) throws IOException, InterruptedException {
+	public static String getoutAction(String folder, String foldertmp, String string) throws IOException, InterruptedException {
 		String file = "findOutAction"; 
 		String params = folder + file + ".sh ";
 		params += string;
-		params += ">" + folder + file + "temp";
-		Sparql.createSparqlFile(params);
-		return folder + file + "temp";
+		return Query.makeQuery(foldertmp, file, params);
 	}
 
-	public static String getpreAction(String folder, String string) throws IOException, InterruptedException {
+	public static String getpreAction(String folder, String foldertmp, String string) throws IOException, InterruptedException {
 		String file = "findPreAction"; 
 		String params = folder + file + ".sh ";
 		params += string;
-		params += ">" + folder + file + "temp";
-		Sparql.createSparqlFile(params);
-		return folder + file + "temp";
+		return Query.makeQuery(foldertmp, file, params);
 	}
 	
 }

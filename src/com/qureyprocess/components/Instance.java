@@ -10,13 +10,13 @@ import java.util.List;
 
 import com.SSFHandler.SSFProgram;
 import com.hp.hpl.jena.ontology.OntModel;
-import com.qureyprocess.ProcessAnswer;
+import com.queryprocess.ProcessAnswer;
 import com.sparql.Sparql;
 
 public class Instance {
 
 	public static List<String> extractInstanceActionTheme(OntModel m, String s,
-			HashMap<String, String> directMap, String folder, String nlpPath,
+			HashMap<String, String> directMap, String folder, String foldertmp, String nlpPath,
 			String setu) throws IOException, InterruptedException,
 			FileNotFoundException, Exception {
 		File file = new File("/tmp/tempin.txt");
@@ -26,7 +26,7 @@ public class Instance {
 		bw.close();
 		Sparql.createSparqlFile(folder + "kyu_kaise.sh /tmp/tempin.txt " + setu + " " + nlpPath+"ILMT/" + " /tmp/tempout.txt");
 		String[] krelation= SSFProgram.call(nlpPath, "/tmp/tempout.txt");
-		List<String> acts = ProcessAnswer.getAnswer(Action.getAction(folder, directMap.get(krelation[2]), directMap.get(krelation[1])), m);
+		List<String> acts = ProcessAnswer.getAnswer(Action.getAction(folder, foldertmp, directMap.get(krelation[2]), directMap.get(krelation[1])), m);
 		return acts;
 	}
 

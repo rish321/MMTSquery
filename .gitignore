@@ -20,4 +20,6 @@ pellet-*/doc/
 pellet-*/examples/
 .tmp/
 domainqueries/
-
+recipe/
+pellet-*/unprocessed/
+OUTPUT.tmp

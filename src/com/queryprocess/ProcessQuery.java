@@ -1,4 +1,4 @@
-package com.qureyprocess;
+package com.queryprocess;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -23,21 +23,18 @@ import com.system.Setu;
 public class ProcessQuery {
 	public static void main(String args[]) throws Exception
 	{
+		String foldertmp = ".tmp/";
+		new File(foldertmp).mkdir();
 		OntModel m = ModelFactory.createOntologyModel( PelletReasonerFactory.THE_SPEC );
 		String	ontology = args[3];
 		m.read( ontology );
-		
-		
 		String folder = Domain.createDomain(args);
-		
 		Dialog dm = new Dialog();
 		HashMap <String, String> directMap = Domain.initHm(args[0] + "directmap");
 		HashMap <String, String> hmpll = Domain.initHm(args[0]+"parallel");
 		HashMap <String, String> hmind = Domain.initHm(args[0]+"individuals_parallel");
 		HashMap <String, String> hmnum = Domain.initHm(args[0]+"number");
 		HashMap <String, String> hmtrans = Domain.initHm(args[0]+"enghin");
-		
-		
 		ProcessAnswer.translate(hmtrans, "kripya sawaal poochein");
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		//BufferedReader br = new BufferedReader(new FileReader(new File("/home/pramesh/Desktop/IIIT-H/query.out")));
@@ -50,10 +47,8 @@ public class ProcessQuery {
 			if(s.startsWith("#"))
 				continue;
 			System.out.println("Started Answering question " + i++ + "...");
-			//System.out.println(s);
 			s = rephraseQuery(folder, s, args[2], setu_path);
-			//System.out.println(s);
-			ManageArguments.preProcess(m, dm, s, directMap, hmpll, hmind, hmnum, hmtrans, folder, args[2], setu_path);
+			ManageArguments.preProcess(m, dm, s, directMap, hmpll, hmind, hmnum, hmtrans, folder, foldertmp, args[2], setu_path);
 			System.out.println();
 			ProcessAnswer.translate(hmtrans, "kripya sawaal poochein");
 		}
@@ -70,7 +65,6 @@ public class ProcessQuery {
 		FileWriter fw = new FileWriter(file1);
 		fw.write(string);
 		fw.close();
-		
 		params += (" " + filename + " " + NLPfolder + " " + dir + " " + setu_path);
 		params += ">" + filename + "temp";
 		Sparql.createSparqlFile(params);
