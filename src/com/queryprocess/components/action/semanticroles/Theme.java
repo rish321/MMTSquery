@@ -1,4 +1,4 @@
-package com.qureyprocess.components.action.semanticroles;
+package com.queryprocess.components.action.semanticroles;
 
 import java.io.IOException;
 

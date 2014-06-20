@@ -12,7 +12,7 @@ import com.hp.hpl.jena.ontology.OntModel;
 import com.queryprocess.ProcessAnswer;
 import com.queryprocess.components.Action;
 import com.queryprocess.components.Condition;
-import com.qureyprocess.components.action.semanticroles.Theme;
+import com.queryprocess.components.action.semanticroles.Theme;
 
 public class DAG
 {
