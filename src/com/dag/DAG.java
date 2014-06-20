@@ -10,8 +10,8 @@ import java.util.Map.Entry;
 
 import com.hp.hpl.jena.ontology.OntModel;
 import com.queryprocess.ProcessAnswer;
-import com.qureyprocess.components.Action;
-import com.qureyprocess.components.Condition;
+import com.queryprocess.components.Action;
+import com.queryprocess.components.Condition;
 import com.qureyprocess.components.action.semanticroles.Theme;
 
 public class DAG

@@ -5,16 +5,17 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
 import com.dag.DAG;
 import com.dialogmanager.Dialog;
 import com.hp.hpl.jena.ontology.OntModel;
 import com.ontologicalMapping.ReplaceParallel;
-import com.qureyprocess.components.Coach;
-import com.qureyprocess.components.Count;
-import com.qureyprocess.components.Duration;
-import com.qureyprocess.components.Instance;
-import com.qureyprocess.components.Station;
-import com.qureyprocess.components.Time;
+import com.queryprocess.components.Coach;
+import com.queryprocess.components.Count;
+import com.queryprocess.components.Duration;
+import com.queryprocess.components.Instance;
+import com.queryprocess.components.Station;
+import com.queryprocess.components.Time;
 
 public class ManageQuery {
 	public static void postProcess(OntModel m, Dialog dm, String s,

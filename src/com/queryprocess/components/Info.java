@@ -1,4 +1,4 @@
-package com.qureyprocess.components;
+package com.queryprocess.components;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

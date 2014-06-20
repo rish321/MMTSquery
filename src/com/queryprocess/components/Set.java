@@ -1,4 +1,4 @@
-package com.qureyprocess.components;
+package com.queryprocess.components;
 
 public class Set {
 

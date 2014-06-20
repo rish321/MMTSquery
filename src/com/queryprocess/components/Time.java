@@ -1,4 +1,4 @@
-package com.qureyprocess.components;
+package com.queryprocess.components;
 
 import java.io.IOException;
 import java.text.DateFormat;

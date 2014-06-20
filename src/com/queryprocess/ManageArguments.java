@@ -4,10 +4,10 @@ import java.util.HashMap;
 
 import com.dialogmanager.Dialog;
 import com.hp.hpl.jena.ontology.OntModel;
-import com.qureyprocess.components.Info;
-import com.qureyprocess.components.Set;
-import com.qureyprocess.components.Station;
-import com.qureyprocess.components.Time;
+import com.queryprocess.components.Info;
+import com.queryprocess.components.Set;
+import com.queryprocess.components.Station;
+import com.queryprocess.components.Time;
 
 public class ManageArguments {
 

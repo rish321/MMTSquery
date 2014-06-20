@@ -2,7 +2,7 @@ package com.qureyprocess.components.action.semanticroles;
 
 import java.io.IOException;
 
-import com.qureyprocess.components.Query;
+import com.queryprocess.components.Query;
 
 public class Theme {
 	public static String getTheme(String folder, String foldertmp, String string) throws IOException, InterruptedException {
