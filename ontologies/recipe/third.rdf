@@ -2223,6 +2223,7 @@
     <NamedIndividual rdf:about="&PurposeNetFoodRecipeOntology;aloo_gobhi_paratha">
         <rdf:type rdf:resource="&PurposeNetFoodRecipeOntology;DoughFoodArtifact"/>
         <rdf:type rdf:resource="&PurposeNetFoodRecipeOntology;Paratha"/>
+        <PurposeNetFoodRecipeOntology:hasBirth rdf:resource="&PurposeNetFoodRecipeOntology;prepare10"/>
     </NamedIndividual>
     
 
@@ -4730,81 +4731,20 @@
     <swrl:Variable rdf:about="urn:swrl#th"/>
     <swrl:Variable rdf:about="urn:swrl#c"/>
     <swrl:Imp>
-        <swrl:body>
-            <swrl:AtomList>
-                <rdf:first>
-                    <swrl:ClassAtom>
-                        <swrl:classPredicate rdf:resource="&PurposeNetFoodRecipeOntology;Action"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#a"/>
-                    </swrl:ClassAtom>
-                </rdf:first>
-                <rdf:rest>
-                    <swrl:AtomList>
-                        <rdf:rest>
-                            <swrl:AtomList>
-                                <rdf:rest>
-                                    <swrl:AtomList>
-                                        <rdf:rest>
-                                            <swrl:AtomList>
-                                                <rdf:rest rdf:resource="&rdf;nil"/>
-                                                <rdf:first>
-                                                    <swrl:IndividualPropertyAtom>
-                                                        <swrl:propertyPredicate rdf:resource="&PurposeNetFoodRecipeOntology;precondition"/>
-                                                        <swrl:argument1 rdf:resource="urn:swrl#a"/>
-                                                        <swrl:argument2 rdf:resource="urn:swrl#p"/>
-                                                    </swrl:IndividualPropertyAtom>
-                                                </rdf:first>
-                                            </swrl:AtomList>
-                                        </rdf:rest>
-                                        <rdf:first>
-                                            <swrl:IndividualPropertyAtom>
-                                                <swrl:propertyPredicate rdf:resource="&PurposeNetFoodRecipeOntology;hasBirth"/>
-                                                <swrl:argument2 rdf:resource="urn:swrl#b"/>
-                                                <swrl:argument1 rdf:resource="urn:swrl#p"/>
-                                            </swrl:IndividualPropertyAtom>
-                                        </rdf:first>
-                                    </swrl:AtomList>
-                                </rdf:rest>
-                                <rdf:first>
-                                    <swrl:ClassAtom>
-                                        <swrl:classPredicate rdf:resource="&PurposeNetFoodRecipeOntology;PhysicalThing"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl#p"/>
-                                    </swrl:ClassAtom>
-                                </rdf:first>
-                            </swrl:AtomList>
-                        </rdf:rest>
-                        <rdf:first>
-                            <swrl:ClassAtom>
-                                <swrl:classPredicate rdf:resource="&PurposeNetFoodRecipeOntology;Action"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#b"/>
-                            </swrl:ClassAtom>
-                        </rdf:first>
-                    </swrl:AtomList>
-                </rdf:rest>
-            </swrl:AtomList>
-        </swrl:body>
         <swrl:head>
             <swrl:AtomList>
                 <rdf:rest rdf:resource="&rdf;nil"/>
                 <rdf:first>
                     <swrl:IndividualPropertyAtom>
-                        <swrl:propertyPredicate rdf:resource="&PurposeNetFoodRecipeOntology;hasSubaction"/>
+                        <swrl:propertyPredicate rdf:resource="&PurposeNetFoodRecipeOntology;hasComponent"/>
                         <swrl:argument1 rdf:resource="urn:swrl#a"/>
                         <swrl:argument2 rdf:resource="urn:swrl#b"/>
                     </swrl:IndividualPropertyAtom>
                 </rdf:first>
             </swrl:AtomList>
         </swrl:head>
-    </swrl:Imp>
-    <swrl:Imp>
         <swrl:body>
             <swrl:AtomList>
-                <rdf:first>
-                    <swrl:ClassAtom>
-                        <swrl:classPredicate rdf:resource="&PurposeNetFoodRecipeOntology;NaturalThing"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#b"/>
-                    </swrl:ClassAtom>
-                </rdf:first>
                 <rdf:rest>
                     <swrl:AtomList>
                         <rdf:first>
@@ -4827,20 +4767,96 @@
                         </rdf:rest>
                     </swrl:AtomList>
                 </rdf:rest>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="&PurposeNetFoodRecipeOntology;NaturalThing"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#b"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
             </swrl:AtomList>
         </swrl:body>
+    </swrl:Imp>
+    <swrl:Imp>
         <swrl:head>
             <swrl:AtomList>
                 <rdf:rest rdf:resource="&rdf;nil"/>
                 <rdf:first>
                     <swrl:IndividualPropertyAtom>
-                        <swrl:propertyPredicate rdf:resource="&PurposeNetFoodRecipeOntology;hasComponent"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#a"/>
-                        <swrl:argument2 rdf:resource="urn:swrl#b"/>
+                        <swrl:propertyPredicate rdf:resource="&PurposeNetFoodRecipeOntology;hasBirth"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#t1"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#t2"/>
                     </swrl:IndividualPropertyAtom>
                 </rdf:first>
             </swrl:AtomList>
         </swrl:head>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:rest>
+                            <swrl:AtomList>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                <rdf:first>
+                                    <swrl:IndividualPropertyAtom>
+                                        <swrl:propertyPredicate rdf:resource="&PurposeNetFoodRecipeOntology;hasResult"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#t1"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#t2"/>
+                                    </swrl:IndividualPropertyAtom>
+                                </rdf:first>
+                            </swrl:AtomList>
+                        </rdf:rest>
+                        <rdf:first>
+                            <swrl:ClassAtom>
+                                <swrl:classPredicate rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#t2"/>
+                            </swrl:ClassAtom>
+                        </rdf:first>
+                    </swrl:AtomList>
+                </rdf:rest>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#t1"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:body>
+    </swrl:Imp>
+    <swrl:Imp>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:IndividualPropertyAtom>
+                        <swrl:propertyPredicate rdf:resource="&PurposeNetFoodRecipeOntology;precondition"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#a"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#th"/>
+                    </swrl:IndividualPropertyAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:rest rdf:resource="&rdf;nil"/>
+                        <rdf:first>
+                            <swrl:IndividualPropertyAtom>
+                                <swrl:propertyPredicate rdf:resource="&PurposeNetFoodRecipeOntology;hasInstrument"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#a"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#th"/>
+                            </swrl:IndividualPropertyAtom>
+                        </rdf:first>
+                    </swrl:AtomList>
+                </rdf:rest>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="&PurposeNetFoodRecipeOntology;Action"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#a"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:body>
     </swrl:Imp>
     <swrl:Imp>
         <swrl:body>
@@ -4879,6 +4895,64 @@
         </swrl:head>
     </swrl:Imp>
     <swrl:Imp>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#t1"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:first>
+                            <swrl:ClassAtom>
+                                <swrl:classPredicate rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#t2"/>
+                            </swrl:ClassAtom>
+                        </rdf:first>
+                        <rdf:rest>
+                            <swrl:AtomList>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                <rdf:first>
+                                    <swrl:IndividualPropertyAtom>
+                                        <swrl:propertyPredicate rdf:resource="&PurposeNetFoodRecipeOntology;hasBirth"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#t1"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#t2"/>
+                                    </swrl:IndividualPropertyAtom>
+                                </rdf:first>
+                            </swrl:AtomList>
+                        </rdf:rest>
+                    </swrl:AtomList>
+                </rdf:rest>
+            </swrl:AtomList>
+        </swrl:body>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:IndividualPropertyAtom>
+                        <swrl:propertyPredicate rdf:resource="&PurposeNetFoodRecipeOntology;hasResult"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#t1"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#t2"/>
+                    </swrl:IndividualPropertyAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+    </swrl:Imp>
+    <swrl:Imp>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:IndividualPropertyAtom>
+                        <swrl:propertyPredicate rdf:resource="&PurposeNetFoodRecipeOntology;requires"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#a"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#b"/>
+                    </swrl:IndividualPropertyAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
         <swrl:body>
             <swrl:AtomList>
                 <rdf:rest>
@@ -4932,38 +5006,181 @@
                 </rdf:first>
             </swrl:AtomList>
         </swrl:body>
+    </swrl:Imp>
+    <swrl:Imp>
         <swrl:head>
             <swrl:AtomList>
                 <rdf:rest rdf:resource="&rdf;nil"/>
                 <rdf:first>
                     <swrl:IndividualPropertyAtom>
-                        <swrl:propertyPredicate rdf:resource="&PurposeNetFoodRecipeOntology;requires"/>
+                        <swrl:propertyPredicate rdf:resource="&PurposeNetFoodRecipeOntology;hasComponent"/>
                         <swrl:argument1 rdf:resource="urn:swrl#a"/>
                         <swrl:argument2 rdf:resource="urn:swrl#b"/>
                     </swrl:IndividualPropertyAtom>
                 </rdf:first>
             </swrl:AtomList>
         </swrl:head>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:rest>
+                            <swrl:AtomList>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                <rdf:first>
+                                    <swrl:IndividualPropertyAtom>
+                                        <swrl:propertyPredicate rdf:resource="&PurposeNetFoodRecipeOntology;requires"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#a"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#b"/>
+                                    </swrl:IndividualPropertyAtom>
+                                </rdf:first>
+                            </swrl:AtomList>
+                        </rdf:rest>
+                        <rdf:first>
+                            <swrl:ClassAtom>
+                                <swrl:classPredicate rdf:resource="&PurposeNetFoodRecipeOntology;PhysicalThing"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#a"/>
+                            </swrl:ClassAtom>
+                        </rdf:first>
+                    </swrl:AtomList>
+                </rdf:rest>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="&PurposeNetFoodRecipeOntology;FoodArtifact"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#b"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:body>
+    </swrl:Imp>
+    <swrl:Imp>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:IndividualPropertyAtom>
+                        <swrl:propertyPredicate rdf:resource="&PurposeNetFoodRecipeOntology;hasSubaction"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#a"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#b"/>
+                    </swrl:IndividualPropertyAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:rest>
+                            <swrl:AtomList>
+                                <rdf:first>
+                                    <swrl:ClassAtom>
+                                        <swrl:classPredicate rdf:resource="&PurposeNetFoodRecipeOntology;PhysicalThing"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#p"/>
+                                    </swrl:ClassAtom>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <swrl:AtomList>
+                                        <rdf:first>
+                                            <swrl:IndividualPropertyAtom>
+                                                <swrl:propertyPredicate rdf:resource="&PurposeNetFoodRecipeOntology;hasBirth"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#b"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#p"/>
+                                            </swrl:IndividualPropertyAtom>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <swrl:AtomList>
+                                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                                <rdf:first>
+                                                    <swrl:IndividualPropertyAtom>
+                                                        <swrl:propertyPredicate rdf:resource="&PurposeNetFoodRecipeOntology;precondition"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#a"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#p"/>
+                                                    </swrl:IndividualPropertyAtom>
+                                                </rdf:first>
+                                            </swrl:AtomList>
+                                        </rdf:rest>
+                                    </swrl:AtomList>
+                                </rdf:rest>
+                            </swrl:AtomList>
+                        </rdf:rest>
+                        <rdf:first>
+                            <swrl:ClassAtom>
+                                <swrl:classPredicate rdf:resource="&PurposeNetFoodRecipeOntology;Action"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#b"/>
+                            </swrl:ClassAtom>
+                        </rdf:first>
+                    </swrl:AtomList>
+                </rdf:rest>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="&PurposeNetFoodRecipeOntology;Action"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#a"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:body>
     </swrl:Imp>
     <swrl:Imp>
         <swrl:body>
             <swrl:AtomList>
                 <rdf:rest>
                     <swrl:AtomList>
+                        <rdf:rest rdf:resource="&rdf;nil"/>
                         <rdf:first>
-                            <swrl:ClassAtom>
-                                <swrl:classPredicate rdf:resource="&PurposeNetFoodRecipeOntology;PhysicalThing"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#b"/>
-                            </swrl:ClassAtom>
+                            <swrl:IndividualPropertyAtom>
+                                <swrl:propertyPredicate rdf:resource="&PurposeNetFoodRecipeOntology;hasPatient"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#a"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#th"/>
+                            </swrl:IndividualPropertyAtom>
                         </rdf:first>
+                    </swrl:AtomList>
+                </rdf:rest>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="&PurposeNetFoodRecipeOntology;Action"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#a"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:body>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:IndividualPropertyAtom>
+                        <swrl:propertyPredicate rdf:resource="&PurposeNetFoodRecipeOntology;precondition"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#a"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#th"/>
+                    </swrl:IndividualPropertyAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+    </swrl:Imp>
+    <swrl:Imp>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:IndividualPropertyAtom>
+                        <swrl:propertyPredicate rdf:resource="&PurposeNetFoodRecipeOntology;requires"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#a"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#c"/>
+                    </swrl:IndividualPropertyAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="&PurposeNetFoodRecipeOntology;PhysicalThing"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#a"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+                <rdf:rest>
+                    <swrl:AtomList>
                         <rdf:rest>
                             <swrl:AtomList>
-                                <rdf:first>
-                                    <swrl:ClassAtom>
-                                        <swrl:classPredicate rdf:resource="&PurposeNetFoodRecipeOntology;PhysicalThing"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl#c"/>
-                                    </swrl:ClassAtom>
-                                </rdf:first>
                                 <rdf:rest>
                                     <swrl:AtomList>
                                         <rdf:first>
@@ -4987,234 +5204,18 @@
                                         </rdf:rest>
                                     </swrl:AtomList>
                                 </rdf:rest>
-                            </swrl:AtomList>
-                        </rdf:rest>
-                    </swrl:AtomList>
-                </rdf:rest>
-                <rdf:first>
-                    <swrl:ClassAtom>
-                        <swrl:classPredicate rdf:resource="&PurposeNetFoodRecipeOntology;PhysicalThing"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#a"/>
-                    </swrl:ClassAtom>
-                </rdf:first>
-            </swrl:AtomList>
-        </swrl:body>
-        <swrl:head>
-            <swrl:AtomList>
-                <rdf:rest rdf:resource="&rdf;nil"/>
-                <rdf:first>
-                    <swrl:IndividualPropertyAtom>
-                        <swrl:propertyPredicate rdf:resource="&PurposeNetFoodRecipeOntology;requires"/>
-                        <swrl:argument2 rdf:resource="urn:swrl#a"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#c"/>
-                    </swrl:IndividualPropertyAtom>
-                </rdf:first>
-            </swrl:AtomList>
-        </swrl:head>
-    </swrl:Imp>
-    <swrl:Imp>
-        <swrl:head>
-            <swrl:AtomList>
-                <rdf:rest rdf:resource="&rdf;nil"/>
-                <rdf:first>
-                    <swrl:IndividualPropertyAtom>
-                        <swrl:propertyPredicate rdf:resource="&PurposeNetFoodRecipeOntology;hasBirth"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#t1"/>
-                        <swrl:argument2 rdf:resource="urn:swrl#t2"/>
-                    </swrl:IndividualPropertyAtom>
-                </rdf:first>
-            </swrl:AtomList>
-        </swrl:head>
-        <swrl:body>
-            <swrl:AtomList>
-                <rdf:rest>
-                    <swrl:AtomList>
-                        <rdf:first>
-                            <swrl:ClassAtom>
-                                <swrl:classPredicate rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#t2"/>
-                            </swrl:ClassAtom>
-                        </rdf:first>
-                        <rdf:rest>
-                            <swrl:AtomList>
-                                <rdf:rest rdf:resource="&rdf;nil"/>
                                 <rdf:first>
-                                    <swrl:IndividualPropertyAtom>
-                                        <swrl:propertyPredicate rdf:resource="&PurposeNetFoodRecipeOntology;hasResult"/>
-                                        <swrl:argument2 rdf:resource="urn:swrl#t1"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl#t2"/>
-                                    </swrl:IndividualPropertyAtom>
+                                    <swrl:ClassAtom>
+                                        <swrl:classPredicate rdf:resource="&PurposeNetFoodRecipeOntology;PhysicalThing"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#c"/>
+                                    </swrl:ClassAtom>
                                 </rdf:first>
                             </swrl:AtomList>
                         </rdf:rest>
-                    </swrl:AtomList>
-                </rdf:rest>
-                <rdf:first>
-                    <swrl:ClassAtom>
-                        <swrl:classPredicate rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#t1"/>
-                    </swrl:ClassAtom>
-                </rdf:first>
-            </swrl:AtomList>
-        </swrl:body>
-    </swrl:Imp>
-    <swrl:Imp>
-        <swrl:head>
-            <swrl:AtomList>
-                <rdf:rest rdf:resource="&rdf;nil"/>
-                <rdf:first>
-                    <swrl:IndividualPropertyAtom>
-                        <swrl:propertyPredicate rdf:resource="&PurposeNetFoodRecipeOntology;precondition"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#a"/>
-                        <swrl:argument2 rdf:resource="urn:swrl#th"/>
-                    </swrl:IndividualPropertyAtom>
-                </rdf:first>
-            </swrl:AtomList>
-        </swrl:head>
-        <swrl:body>
-            <swrl:AtomList>
-                <rdf:first>
-                    <swrl:ClassAtom>
-                        <swrl:classPredicate rdf:resource="&PurposeNetFoodRecipeOntology;Action"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#a"/>
-                    </swrl:ClassAtom>
-                </rdf:first>
-                <rdf:rest>
-                    <swrl:AtomList>
-                        <rdf:rest rdf:resource="&rdf;nil"/>
-                        <rdf:first>
-                            <swrl:IndividualPropertyAtom>
-                                <swrl:propertyPredicate rdf:resource="&PurposeNetFoodRecipeOntology;hasPatient"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#a"/>
-                                <swrl:argument2 rdf:resource="urn:swrl#th"/>
-                            </swrl:IndividualPropertyAtom>
-                        </rdf:first>
-                    </swrl:AtomList>
-                </rdf:rest>
-            </swrl:AtomList>
-        </swrl:body>
-    </swrl:Imp>
-    <swrl:Imp>
-        <swrl:head>
-            <swrl:AtomList>
-                <rdf:rest rdf:resource="&rdf;nil"/>
-                <rdf:first>
-                    <swrl:IndividualPropertyAtom>
-                        <swrl:propertyPredicate rdf:resource="&PurposeNetFoodRecipeOntology;hasComponent"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#a"/>
-                        <swrl:argument2 rdf:resource="urn:swrl#b"/>
-                    </swrl:IndividualPropertyAtom>
-                </rdf:first>
-            </swrl:AtomList>
-        </swrl:head>
-        <swrl:body>
-            <swrl:AtomList>
-                <rdf:rest>
-                    <swrl:AtomList>
                         <rdf:first>
                             <swrl:ClassAtom>
                                 <swrl:classPredicate rdf:resource="&PurposeNetFoodRecipeOntology;PhysicalThing"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#a"/>
-                            </swrl:ClassAtom>
-                        </rdf:first>
-                        <rdf:rest>
-                            <swrl:AtomList>
-                                <rdf:rest rdf:resource="&rdf;nil"/>
-                                <rdf:first>
-                                    <swrl:IndividualPropertyAtom>
-                                        <swrl:propertyPredicate rdf:resource="&PurposeNetFoodRecipeOntology;requires"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl#a"/>
-                                        <swrl:argument2 rdf:resource="urn:swrl#b"/>
-                                    </swrl:IndividualPropertyAtom>
-                                </rdf:first>
-                            </swrl:AtomList>
-                        </rdf:rest>
-                    </swrl:AtomList>
-                </rdf:rest>
-                <rdf:first>
-                    <swrl:ClassAtom>
-                        <swrl:classPredicate rdf:resource="&PurposeNetFoodRecipeOntology;FoodArtifact"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#b"/>
-                    </swrl:ClassAtom>
-                </rdf:first>
-            </swrl:AtomList>
-        </swrl:body>
-    </swrl:Imp>
-    <swrl:Imp>
-        <swrl:head>
-            <swrl:AtomList>
-                <rdf:rest rdf:resource="&rdf;nil"/>
-                <rdf:first>
-                    <swrl:IndividualPropertyAtom>
-                        <swrl:propertyPredicate rdf:resource="&PurposeNetFoodRecipeOntology;precondition"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#a"/>
-                        <swrl:argument2 rdf:resource="urn:swrl#th"/>
-                    </swrl:IndividualPropertyAtom>
-                </rdf:first>
-            </swrl:AtomList>
-        </swrl:head>
-        <swrl:body>
-            <swrl:AtomList>
-                <rdf:rest>
-                    <swrl:AtomList>
-                        <rdf:rest rdf:resource="&rdf;nil"/>
-                        <rdf:first>
-                            <swrl:IndividualPropertyAtom>
-                                <swrl:propertyPredicate rdf:resource="&PurposeNetFoodRecipeOntology;hasInstrument"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#a"/>
-                                <swrl:argument2 rdf:resource="urn:swrl#th"/>
-                            </swrl:IndividualPropertyAtom>
-                        </rdf:first>
-                    </swrl:AtomList>
-                </rdf:rest>
-                <rdf:first>
-                    <swrl:ClassAtom>
-                        <swrl:classPredicate rdf:resource="&PurposeNetFoodRecipeOntology;Action"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#a"/>
-                    </swrl:ClassAtom>
-                </rdf:first>
-            </swrl:AtomList>
-        </swrl:body>
-    </swrl:Imp>
-    <swrl:Imp>
-        <swrl:head>
-            <swrl:AtomList>
-                <rdf:rest rdf:resource="&rdf;nil"/>
-                <rdf:first>
-                    <swrl:IndividualPropertyAtom>
-                        <swrl:propertyPredicate rdf:resource="&PurposeNetFoodRecipeOntology;hasResult"/>
-                        <swrl:argument2 rdf:resource="urn:swrl#t1"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#t2"/>
-                    </swrl:IndividualPropertyAtom>
-                </rdf:first>
-            </swrl:AtomList>
-        </swrl:head>
-        <swrl:body>
-            <swrl:AtomList>
-                <rdf:first>
-                    <swrl:ClassAtom>
-                        <swrl:classPredicate rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#t1"/>
-                    </swrl:ClassAtom>
-                </rdf:first>
-                <rdf:rest>
-                    <swrl:AtomList>
-                        <rdf:rest>
-                            <swrl:AtomList>
-                                <rdf:rest rdf:resource="&rdf;nil"/>
-                                <rdf:first>
-                                    <swrl:IndividualPropertyAtom>
-                                        <swrl:propertyPredicate rdf:resource="&PurposeNetFoodRecipeOntology;hasBirth"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl#t1"/>
-                                        <swrl:argument2 rdf:resource="urn:swrl#t2"/>
-                                    </swrl:IndividualPropertyAtom>
-                                </rdf:first>
-                            </swrl:AtomList>
-                        </rdf:rest>
-                        <rdf:first>
-                            <swrl:ClassAtom>
-                                <swrl:classPredicate rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#t2"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#b"/>
                             </swrl:ClassAtom>
                         </rdf:first>
                     </swrl:AtomList>

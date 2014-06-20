@@ -14,3 +14,10 @@ hs_err_pid*
 /bin/
 
 *~
+
+pellet-*/src/
+pellet-*/doc/
+pellet-*/examples/
+.tmp/
+domainqueries/
+

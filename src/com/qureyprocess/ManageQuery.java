@@ -220,12 +220,12 @@ public class ManageQuery {
 		}
 		else if(s.contains("क्या")) {
 			String in = dm.requestResponse(hmtrans, "Intention unclear (multiple senses): Boolean answer(1)/Other answer(2)");
+			dm.informUser(hmtrans, "trying to disambiguate and answer");
 			if(in.equals("1")) {
 				//फलकनुमा से लिंगमपल्ली की 6:00 बजे से 9:00 बजे के बीच पहली ट्रैन में महिला कोच है क्या?
 				if(s.contains("कोच") || s.contains("डब्बा") ||s.contains("बोगी") ){
 					String coachType = Coach.extractCoachType(s, directMap);
-					System.out.println(coachType);
-					if(ProcessAnswer.getAnswer(Coach.getCoach(folder, source, dest, atStation, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info, coachType), m).contains(coachType))
+					if(ProcessAnswer.getAnswer(Coach.getCoach(folder, source, dest, atStation, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info), m).contains(coachType))
 						dm.informUser(hmtrans, "yes");
 					else 
 						dm.informUser(hmtrans, "no");
