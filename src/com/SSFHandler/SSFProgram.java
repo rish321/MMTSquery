@@ -42,7 +42,7 @@ public class SSFProgram {
 		SSFProperties ssfp = new SSFProperties();
 		SSFProperties cmlp = new SSFProperties();
 		SSFStory story = new SSFStoryImpl();
-		
+
 		//Create of Object of SSFSentence interface
 		//SSFSentence sentence = new SSFSentenceImpl();
 		try {

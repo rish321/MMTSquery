@@ -10,8 +10,8 @@ WHERE {
 #    {SELECT (MIN(?time1) AS ?deptime)
 #    WHERE {
     ?s :departsOn ?deptime.
-    FILTER ( ?deptime > "06:00:00"^^xsd:time ).
-    FILTER ( ?deptime < "09:00:00"^^xsd:time ).
+    FILTER ( ?deptime > "02:49:00"^^xsd:time ).
+    FILTER ( ?deptime < "03:49:00"^^xsd:time ).
 #	    ?s :ofTrain ?t1.
 #    ?s :atStation ?st1.
 #    FILTER ( regex ( str(?st1), "Falaknuma") ).

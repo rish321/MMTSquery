@@ -10,15 +10,15 @@ WHERE {
 #{SELECT (MIN(?time1) AS ?deptime)
 #WHERE {
 	    ?s1 :departsOn ?time1.
-	    FILTER ( ?time1 > "06:00:00"^^xsd:time ).
-	    FILTER ( ?time1 < "09:00:00"^^xsd:time ).
+	    FILTER ( ?time1 > "02:46:00"^^xsd:time ).
+	    FILTER ( ?time1 < "03:46:00"^^xsd:time ).
 	    ?s1 :ofTrain ?t1.
 	    ?s1 :atStation ?st1.
 	    FILTER ( regex ( str(?st1), "Falaknuma") ).
 #	}
 #    GROUP BY ?st1 }
 #    .
-    ?s :ofTrain ?t.
+    ?s :सी ?t.
     ?s :departsOn ?deptime.
     ?s :source ?src.
     FILTER ( regex ( str(?src), "Falaknuma") ).

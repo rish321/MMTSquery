@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cat /home/rishabh/workspace/MmtsProcessing/ontologies/MMTS_test/domainqueries/kitne | sed -e "s/begtimedep/$1/g" | sed -e "s/endtimedep/$2/g" | sed -e "s/depstation/$3/g" | sed -e "s/arrstation/$4/g" | sed -e "s/atstation/$5/g" | sed -e "s/set/$6/g" | sed -e "s/property/$8/g"
+cat /home/pramesh/git/MMTSquery/ontologies/MMTS_test/domainqueries/kitne | sed -e "s/begtimedep/$1/g" | sed -e "s/endtimedep/$2/g" | sed -e "s/depstation/$3/g" | sed -e "s/arrstation/$4/g" | sed -e "s/atstation/$5/g" | sed -e "s/set/$6/g" | sed -e "s/property/$8/g"
 
 
 #> /home/rishabh/tools/pellet-2.3.1/kitnetmp

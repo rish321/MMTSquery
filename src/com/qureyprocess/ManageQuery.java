@@ -24,10 +24,12 @@ public class ManageQuery {
 			HashMap<String, String> hmtrans, String folder, String source, String dest, String atStation,
 			String srcTimeInit, String srcTimeFin, String destTimeInit, String destTimeFin,
 			String set, String info, String nlpPath, String setu) throws Exception {
+
 		if(s.contains("कितना कितना देर") || s.contains("कितनी कितनी देर") || s.contains("कितना कितना बज")
 				|| s.contains("कितना कितना समय") || s.contains("कितना कितना समय")) {
 			if(s.contains("कितना कितना देर") || s.contains("कितनी कितनी देर")
 					|| s.contains("कितना कितना समय") || s.contains("कितना कितना समय")) {
+
 				if(source == null)
 					source = hmind.get(dm.requestResponse(hmtrans, "Incomplete arguments: Please specify source station"));
 				if(dest == null)
