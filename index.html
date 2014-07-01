@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>MMTS Question Answering System by rish321</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>MMTS Question Answering System</h1>
+        <p>MMTS query processing and dialog system</p>
+
+        <p class="view"><a href="https://github.com/rish321/MMTSquery">View the Project on GitHub <small>rish321/MMTSquery</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/rish321/MMTSquery/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/rish321/MMTSquery/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/rish321/MMTSquery">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="mmtsquery" class="anchor" href="#mmtsquery"><span class="octicon octicon-link"></span></a>MMTSquery</h1>
+
+<p>MMTS query processing and dialog system.</p>
+
+<p>pre-requisite:
+1. ubuntu 32-bit system.
+2. shallow parser and full parser installed
+3. eclipse installed preferable</p>
+
+<p>To run the tool at its best:</p>
+
+<ol>
+<li>open the project in eclipse</li>
+<li>enter these arguments (all absolute paths preferred)
+a. ontological resource folder (/home/rishabh/workspace/MmtsProcessing/ontologies/MMTS_test/)
+b. linguistic resource folder (/home/rishabh/workspace/MmtsProcessing/ontologies/MMTS_test/)
+c. Nlp tools folder (/home/rishabh/workspace/MmtsProcessing/NLP/)
+d. rdf ontology (/home/rishabh/workspace/MmtsProcessing/ontologies/MMTS_test/MMTS_test.rdf)</li>
+</ol><p>To run the tool from command line:
+export MMTSQA=/path/to/MMTSQA/folder</p>
+
+<p>java -cp "$MMTSQA/pellet-2.3.1/lib/*:$MMTSQA/NLP/ILMT/Sanchay/dist/Sanchay.jar:$MMTSQA/MMTSProcessing" com.processquery.ProcessQuery </p>
+
+<p>eg.
+java -cp "$MMTSQA/pellet-2.3.1/lib/*:$MMTSQA/NLP/ILMT/Sanchay/dist/Sanchay.jar:$MMTSQA/MMTSProcessing" com.processquery.ProcessQuery /home/rishabh/workspace/MmtsProcessing/ontologies/MMTS_test/ /home/rishabh/workspace/MmtsProcessing/ontologies/MMTS_test/ /home/rishabh/workspace/MmtsProcessing/NLP/ /home/rishabh/workspace/MmtsProcessing/ontologies/MMTS_test/MMTS_test.rdf</p>
+
+<p>To can find the related documentation at <a href="http://rish321.github.io/MMTSquery/doc/">http://rish321.github.io/MMTSquery/doc/</a></p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/rish321">rish321</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
