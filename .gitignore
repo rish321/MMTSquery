@@ -23,3 +23,15 @@ domainqueries/
 recipe/
 pellet-*/unprocessed/
 OUTPUT.tmp
+
+#not anything on gh-pages
+src/
+NLP/
+ontologies/
+pellet-*/
+.gitignore
+README.md
+javadoc.xml
+.classpath
+.project
+.settings/
