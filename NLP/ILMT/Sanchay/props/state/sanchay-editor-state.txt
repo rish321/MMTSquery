@@ -1,2 +1,0 @@
-Column Names::Property	Value
-CurrentDir	/home/dashboard/Temp
