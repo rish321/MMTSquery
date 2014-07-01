@@ -1,0 +1,13 @@
+com.SSFHandler
+com.Template
+com.dag
+com.dag.algo
+com.dialogmanager
+com.filldata
+com.ontologicalMapping
+com.queryprocess
+com.queryprocess.components
+com.queryprocess.components.action.semanticroles
+com.recipe.test
+com.sparql
+com.system
