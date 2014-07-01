@@ -26,4 +26,4 @@ java -cp "$MMTSQA/pellet-2.3.1/lib/*:$MMTSQA/NLP/ILMT/Sanchay/dist/Sanchay.jar:$
 eg.
 java -cp "$MMTSQA/pellet-2.3.1/lib/*:$MMTSQA/NLP/ILMT/Sanchay/dist/Sanchay.jar:$MMTSQA/MMTSProcessing" com.processquery.ProcessQuery /home/rishabh/workspace/MmtsProcessing/ontologies/MMTS_test/ /home/rishabh/workspace/MmtsProcessing/ontologies/MMTS_test/ /home/rishabh/workspace/MmtsProcessing/NLP/ /home/rishabh/workspace/MmtsProcessing/ontologies/MMTS_test/MMTS_test.rdf
 
-To can find the related documentation at http://rish321.github.io/MMTSquery/doc/
+You can find the related documentation at http://rish321.github.io/MMTSquery/doc/
