@@ -1,3 +1,7 @@
+/*
+ * @author	Rishabh Srivastava
+ * @organization	IIIT Hyderabad
+ */
 package com.filldata;
 import java.io.BufferedReader;
 import java.io.File;
@@ -6,8 +10,19 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 
+/**
+ * The Class FillTravel.
+ */
 public class FillTravel {
 
+	/**
+	 * The main method.
+	 * 
+	 * @param args
+	 *            the arguments
+	 * @throws IOException
+	 *             Signals that an I/O exception has occurred.
+	 */
 	public static void main(String args[]) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader(new File(args[0])));
 		int init = Integer.parseInt(args[1]);

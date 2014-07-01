@@ -1,3 +1,7 @@
+/*
+ * @author	Rishabh Srivastava
+ * @organization	IIIT Hyderabad
+ */
 package com.queryprocess.components;
 
 import java.io.BufferedWriter;
@@ -13,8 +17,38 @@ import com.hp.hpl.jena.ontology.OntModel;
 import com.queryprocess.ProcessAnswer;
 import com.sparql.Sparql;
 
+/**
+ * The Class Instance.
+ */
 public class Instance {
 
+	/**
+	 * Extract instance action theme.
+	 * 
+	 * @param m
+	 *            the m
+	 * @param s
+	 *            the s
+	 * @param directMap
+	 *            the direct map
+	 * @param folder
+	 *            the folder
+	 * @param foldertmp
+	 *            the foldertmp
+	 * @param nlpPath
+	 *            the nlp path
+	 * @param setu
+	 *            the setu
+	 * @return the list
+	 * @throws IOException
+	 *             Signals that an I/O exception has occurred.
+	 * @throws InterruptedException
+	 *             the interrupted exception
+	 * @throws FileNotFoundException
+	 *             the file not found exception
+	 * @throws Exception
+	 *             the exception
+	 */
 	public static List<String> extractInstanceActionTheme(OntModel m, String s,
 			HashMap<String, String> directMap, String folder, String foldertmp, String nlpPath,
 			String setu) throws IOException, InterruptedException,

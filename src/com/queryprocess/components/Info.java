@@ -1,10 +1,24 @@
+/*
+ * @author	Rishabh Srivastava
+ * @organization	IIIT Hyderabad
+ */
 package com.queryprocess.components;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * The Class Info.
+ */
 public class Info {
 
+	/**
+	 * Gets the info.
+	 * 
+	 * @param s
+	 *            the s
+	 * @return the info
+	 */
 	public static String getInfo(String s) {
 		String info = "dep";
 		Pattern pattern1 = Pattern.compile("(जाएगी|जा|पहुँच|(जा|जानी|जा रही|जाने वाली) (है|थी)|जाना (है|था)|हो है)");

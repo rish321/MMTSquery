@@ -1,3 +1,7 @@
+/*
+ * @author	Rishabh Srivastava
+ * @organization	IIIT Hyderabad
+ */
 package com.queryprocess;
 
 import java.util.ArrayList;
@@ -17,7 +21,59 @@ import com.queryprocess.components.Instance;
 import com.queryprocess.components.Station;
 import com.queryprocess.components.Time;
 
+/**
+ * The Class ManageQuery.
+ */
 public class ManageQuery {
+	
+	/**
+	 * Post process.
+	 * 
+	 * @param m
+	 *            the m
+	 * @param dm
+	 *            the dm
+	 * @param s
+	 *            the s
+	 * @param directMap
+	 *            the direct map
+	 * @param hmpll
+	 *            the hmpll
+	 * @param hmind
+	 *            the hmind
+	 * @param hmnum
+	 *            the hmnum
+	 * @param hmtrans
+	 *            the hmtrans
+	 * @param folder
+	 *            the folder
+	 * @param foldertmp
+	 *            the foldertmp
+	 * @param source
+	 *            the source
+	 * @param dest
+	 *            the dest
+	 * @param atStation
+	 *            the at station
+	 * @param srcTimeInit
+	 *            the src time init
+	 * @param srcTimeFin
+	 *            the src time fin
+	 * @param destTimeInit
+	 *            the dest time init
+	 * @param destTimeFin
+	 *            the dest time fin
+	 * @param set
+	 *            the set
+	 * @param info
+	 *            the info
+	 * @param nlpPath
+	 *            the nlp path
+	 * @param setu
+	 *            the setu
+	 * @throws Exception
+	 *             the exception
+	 */
 	public static void postProcess(OntModel m, Dialog dm, String s,
 			HashMap<String, String> directMap, HashMap<String, String> hmpll, HashMap<String, String> hmind, HashMap<String, String> hmnum,
 			HashMap<String, String> hmtrans, String folder, String foldertmp, String source, String dest, String atStation,

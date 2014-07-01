@@ -1,3 +1,7 @@
+/*
+ * @author	Rishabh Srivastava
+ * @organization	IIIT Hyderabad
+ */
 package com.queryprocess.components;
 
 import java.io.IOException;
@@ -10,18 +14,44 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * The Class Time.
+ */
 public class Time {
 
+	/**
+	 * Gets the dest time fin.
+	 * 
+	 * @param s
+	 *            the s
+	 * @return the dest time fin
+	 */
 	public static String getDestTimeFin(String s) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
+	/**
+	 * Gets the dest time init.
+	 * 
+	 * @param s
+	 *            the s
+	 * @return the dest time init
+	 */
 	public static String getDestTimeInit(String s) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
+	/**
+	 * Gets the src time fin.
+	 * 
+	 * @param s
+	 *            the s
+	 * @param hmnum
+	 *            the hmnum
+	 * @return the src time fin
+	 */
 	@SuppressWarnings("rawtypes")
 	public static String getSrcTimeFin(String s, HashMap<String, String> hmnum) {
 		Iterator it = hmnum.entrySet().iterator();
@@ -58,6 +88,15 @@ public class Time {
 		return null;
 	}
 
+	/**
+	 * Gets the src time init.
+	 * 
+	 * @param s
+	 *            the s
+	 * @param hmnum
+	 *            the hmnum
+	 * @return the src time init
+	 */
 	@SuppressWarnings("rawtypes")
 	public static String getSrcTimeInit(String s, HashMap<String, String> hmnum) {
 		Iterator it = hmnum.entrySet().iterator();
@@ -106,6 +145,37 @@ public class Time {
 		return null;
 	}
 
+	/**
+	 * Gets the time.
+	 * 
+	 * @param folder
+	 *            the folder
+	 * @param foldertmp
+	 *            the foldertmp
+	 * @param source
+	 *            the source
+	 * @param dest
+	 *            the dest
+	 * @param atStation
+	 *            the at station
+	 * @param srcTimeInit
+	 *            the src time init
+	 * @param srcTimeFin
+	 *            the src time fin
+	 * @param destTimeInit
+	 *            the dest time init
+	 * @param destTimeFin
+	 *            the dest time fin
+	 * @param set
+	 *            the set
+	 * @param info
+	 *            the info
+	 * @return the time
+	 * @throws IOException
+	 *             Signals that an I/O exception has occurred.
+	 * @throws InterruptedException
+	 *             the interrupted exception
+	 */
 	public static String getTime(String folder, String foldertmp, String source, String dest, String atStation,
 			String srcTimeInit, String srcTimeFin, String destTimeInit,
 			String destTimeFin, String set, String info) throws IOException, InterruptedException {
@@ -122,6 +192,37 @@ public class Time {
 		return Query.makeQuery(foldertmp, file, params);
 	}
 
+	/**
+	 * Gets the time list.
+	 * 
+	 * @param folder
+	 *            the folder
+	 * @param foldertmp
+	 *            the foldertmp
+	 * @param source
+	 *            the source
+	 * @param dest
+	 *            the dest
+	 * @param atStation
+	 *            the at station
+	 * @param srcTimeInit
+	 *            the src time init
+	 * @param srcTimeFin
+	 *            the src time fin
+	 * @param destTimeInit
+	 *            the dest time init
+	 * @param destTimeFin
+	 *            the dest time fin
+	 * @param set
+	 *            the set
+	 * @param info
+	 *            the info
+	 * @return the time list
+	 * @throws InterruptedException
+	 *             the interrupted exception
+	 * @throws IOException
+	 *             Signals that an I/O exception has occurred.
+	 */
 	public static String getTimeList(String folder, String foldertmp, String source, String dest, 
 			String atStation, String srcTimeInit, String srcTimeFin,
 			String destTimeInit, String destTimeFin, String set, String info) throws InterruptedException, IOException {

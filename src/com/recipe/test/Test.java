@@ -1,3 +1,7 @@
+/*
+ * @author	Rishabh Srivastava
+ * @organization	IIIT Hyderabad
+ */
 package com.recipe.test;
 
 import java.io.IOException;
@@ -11,8 +15,21 @@ import com.dag.DAG;
 import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 
+/**
+ * The Class Test.
+ */
 public class Test {
 
+	/**
+	 * The main method.
+	 * 
+	 * @param args
+	 *            the arguments
+	 * @throws IOException
+	 *             Signals that an I/O exception has occurred.
+	 * @throws InterruptedException
+	 *             the interrupted exception
+	 */
 	public static void main(String args[]) throws IOException, InterruptedException
 	{
 		String rdfs = "http://www.w3.org/2000/01/rdf-schema#";
@@ -103,6 +120,17 @@ public class Test {
 		System.out.println("5 " + topo5);*/
 	}
 
+    /**
+	 * Intersection.
+	 * 
+	 * @param <T>
+	 *            the generic type
+	 * @param list1
+	 *            the list1
+	 * @param list2
+	 *            the list2
+	 * @return the list
+	 */
     public static <T> List<T> intersection(List<T> list1, List<T> list2) {
         List<T> list = new ArrayList<T>();
 
@@ -116,6 +144,23 @@ public class Test {
     }
 	
 	
+	/**
+	 * Topo.
+	 * 
+	 * @param folder
+	 *            the folder
+	 * @param foldertmp
+	 *            the foldertmp
+	 * @param m
+	 *            the m
+	 * @param action
+	 *            the action
+	 * @return the array list
+	 * @throws IOException
+	 *             Signals that an I/O exception has occurred.
+	 * @throws InterruptedException
+	 *             the interrupted exception
+	 */
 	public static ArrayList<String> topo(String folder, String foldertmp, OntModel m, String action)
 			throws IOException, InterruptedException {
 		DAG dag;
@@ -128,6 +173,25 @@ public class Test {
 		return topo;
 	}
 
+	/**
+	 * Creates the dag.
+	 * 
+	 * @param folder
+	 *            the folder
+	 * @param foldertmp
+	 *            the foldertmp
+	 * @param m
+	 *            the m
+	 * @param action
+	 *            the action
+	 * @param dag
+	 *            the dag
+	 * @return the array list
+	 * @throws IOException
+	 *             Signals that an I/O exception has occurred.
+	 * @throws InterruptedException
+	 *             the interrupted exception
+	 */
 	public static ArrayList<String> createDag(String folder, String foldertmp, OntModel m,
 			String action, DAG dag) throws IOException, InterruptedException {
 		dag.fillDAGAction(folder, foldertmp, action, m);
