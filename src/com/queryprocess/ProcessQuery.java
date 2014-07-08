@@ -5,11 +5,13 @@
 package com.queryprocess;
 
 import java.io.BufferedReader;
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.PrintStream;
 import java.util.HashMap;
 
 import org.mindswap.pellet.jena.PelletReasonerFactory;
@@ -63,12 +65,31 @@ public class ProcessQuery {
 			if(s.startsWith(Strings.getString("queryComment"))) //$NON-NLS-1$
 				continue;
 			System.out.println(Strings.getString("StartedAnswering") + i++ + Strings.getString("andSoOn")); //$NON-NLS-1$ //$NON-NLS-2$
-			s = rephraseQuery(folder, s, args[2], setu_path);
-			ManageArguments.preProcess(m, dm, s, directMap, hmpll, hmind, hmnum, hmtrans, folder, foldertmp, args[2], setu_path);
+			System.out.println(findAnswer(s, args, foldertmp, m, folder, dm, directMap, hmpll, hmind,	hmnum, hmtrans, setu_path));
 			System.out.println();
 			ProcessAnswer.translate(hmtrans, Strings.getString("pleaseaAskQuestion")); //$NON-NLS-1$
 		}
 		br.close();
+	}
+	
+	public static String findAnswer(String s, String[] args, String foldertmp, OntModel m,
+			String folder, Dialog dm, HashMap<String, String> directMap,
+			HashMap<String, String> hmpll, HashMap<String, String> hmind,
+			HashMap<String, String> hmnum, HashMap<String, String> hmtrans,
+			String setu_path) throws IOException,
+			InterruptedException, Exception {
+		ByteArrayOutputStream baos = new ByteArrayOutputStream();
+	    PrintStream ps = new PrintStream(baos);
+	    // IMPORTANT: Save the old System.out!
+	    PrintStream old = System.out;
+	    // Tell Java to use your special stream
+	    System.setOut(ps);
+	    s = rephraseQuery(folder, s, args[2], setu_path);
+		ManageArguments.preProcess(m, dm, s, directMap, hmpll, hmind, hmnum, hmtrans, folder, foldertmp, args[2], setu_path);
+		System.out.flush();
+	    System.setOut(old);
+	    // Show what happened
+	    return baos.toString();
 	}
 	
 	/**

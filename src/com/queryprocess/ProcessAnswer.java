@@ -95,7 +95,7 @@ public class ProcessAnswer {
 	 *            the string
 	 */
 	public static void translate(HashMap<String, String> hmtrans, String string) {
-		System.out.println(string);
+		System.err.println(string);
 		if(hmtrans.get(string) != null)
 			System.out.println(hmtrans.get(string));
 		else
@@ -119,6 +119,31 @@ public class ProcessAnswer {
 		System.out.println();
 	}
 
+	public static void translateerr(HashMap<String, String> hmtrans, String string) {
+		System.err.println(string);
+		if(hmtrans.get(string) != null)
+			System.err.println(hmtrans.get(string));
+		else
+		{
+			String split[] = string.replaceAll("(-)", " ").split(" "); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+			for(int i = 0; i < split.length; i++)
+			{
+				if(split[i].matches(Strings.getString("digitRegex"))) //$NON-NLS-1$
+				{
+					//System.err.println(split[i]);
+					String splits[] = split[i].trim().split(""); //$NON-NLS-1$
+					for(int j = 0; j < splits.length; j++)
+						if(splits[j].length() != 0)
+							System.err.print(hmtrans.get(splits[j]));//
+					System.err.print(" "); //$NON-NLS-1$
+				}
+				else
+					System.err.print(hmtrans.get(split[i]) + " "); //$NON-NLS-1$
+			}
+		}
+		System.err.println();
+	}
+	
 
 
 }

@@ -84,9 +84,9 @@ public class ManageQuery {
 			if(s.contains("कितना कितना देर") || s.contains("कितनी कितनी देर")
 					|| s.contains("कितना कितना समय") || s.contains("कितना कितना समय")) {
 				if(source == null)
-					source = hmind.get(dm.requestResponse(hmtrans, "Incomplete arguments: Please specify source station"));
+					source = hmind.get(dm.warnResponse(hmtrans, "Incomplete arguments: Please specify source station"));
 				if(dest == null)
-					dest = hmind.get(dm.requestResponse(hmtrans, "Incomplete arguments: Please specify destination station"));
+					dest = hmind.get(dm.warnResponse(hmtrans, "Incomplete arguments: Please specify destination station"));
 				if(atStation == null) {
 					ProcessAnswer.translate(hmtrans, source + " se " + dest + " tak " + srcTimeInit + " se " + srcTimeFin + " ke beech " + "jane wali gaadi itni-itni der mein pahunchti hain");
 					ProcessAnswer.printAnswer(hmtrans, Duration.getDurationList(folder, source, dest, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin), m);
@@ -98,18 +98,18 @@ public class ManageQuery {
 			}
 			else if(s.contains("कितना कितना बज")) {
 				if(source == null)
-					source = dm.requestResponse(hmtrans, "Incomplete arguments: Please specify source station");
+					source = dm.warnResponse(hmtrans, "Incomplete arguments: Please specify source station");
 				if(dest == null)
-					dest = dm.requestResponse(hmtrans, "Incomplete arguments: Please specify destination station");
+					dest = dm.warnResponse(hmtrans, "Incomplete arguments: Please specify destination station");
 				ProcessAnswer.printAnswer(hmtrans, Time.getTimeList(folder, foldertmp, source, dest, atStation, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set, info), m);
 			}
 		}
 		else if(s.contains("कितनी कितनी") || s.contains("कितना कितना")
 				|| s.contains("कहाँ कहाँ") || s.contains("कब कब") ||  s.contains("कौन कौन")) {
 			if(source == null)
-				source = dm.requestResponse(hmtrans, "Incomplete arguments: Please specify source station");
+				source = dm.warnResponse(hmtrans, "Incomplete arguments: Please specify source station");
 			if(dest == null)
-				dest = dm.requestResponse(hmtrans, "Incomplete arguments: Please specify destination station");
+				dest = dm.warnResponse(hmtrans, "Incomplete arguments: Please specify destination station");
 			if(s.contains("कितनी कितनी") || s.contains("कितना कितना")) {
 				Pattern pattern = Pattern.compile("(कितनी कितनी|कितना कितना) ");
 				Matcher matcher = pattern.matcher(s);
@@ -172,14 +172,10 @@ public class ManageQuery {
 		else if(s.contains("कितना देर") || s.contains("कितनी देर") || s.contains("कितना बज")
 				|| s.contains("कितना समय") || s.contains("कितना समय")) {
 			if(source == null)
-				source = dm.requestResponse(hmtrans, "Incomplete arguments: Please specify source station");
+				source = dm.warnResponse(hmtrans, "Incomplete arguments: Please specify source station");
 			if(dest == null)
-				dest = dm.requestResponse(hmtrans, "Incomplete arguments: Please specify destination station");
+				dest = dm.warnResponse(hmtrans, "Incomplete arguments: Please specify destination station");
 			if(s.contains("कितना देर") || s.contains("कितनी देर")) {
-				if(source == null)
-					ProcessAnswer.translate(hmtrans, "Incomplete arguments: Please specify source station");
-				if(dest == null)
-					ProcessAnswer.translate(hmtrans, "Incomplete arguments: Please specify destination station");
 				if(atStation == null) {
 					ProcessAnswer.translate(hmtrans, source + " se " + dest + " tak " + srcTimeInit + " se " + srcTimeFin + " ke beech " + set + " jane wali gaadi itni der mein pahunchti hai");
 					ProcessAnswer.printAnswer(hmtrans, Duration.getDuration(folder, source, dest, srcTimeInit, srcTimeFin, destTimeInit, destTimeFin, set), m);
@@ -197,9 +193,9 @@ public class ManageQuery {
 		else if(s.contains("कितनी") || s.contains("कितना")
 				|| s.contains("कब") || s.contains("कहाँ") || s.contains("कौन")) {
 			if(source == null)
-				source = dm.requestResponse(hmtrans, "Incomplete arguments: Please specify source station");
+				source = dm.warnResponse(hmtrans, "Incomplete arguments: Please specify source station");
 			if(dest == null)
-				dest = dm.requestResponse(hmtrans, "Incomplete arguments: Please specify destination station");
+				dest = dm.warnResponse(hmtrans, "Incomplete arguments: Please specify destination station");
 			if(s.contains("कितनी") || s.contains("कितना")) {
 				Pattern pattern = Pattern.compile("(कितनी|कितना) ");
 				Matcher matcher = pattern.matcher(s);
@@ -273,7 +269,7 @@ public class ManageQuery {
 			}
 		}
 		else if(s.contains("क्या")) {
-			String in = dm.requestResponse(hmtrans, "Intention unclear (multiple senses): Boolean answer(1)/Other answer(2)");
+			String in = dm.warnResponse(hmtrans, "Intention unclear (multiple senses): Boolean answer(1)/Other answer(2)");
 			dm.informUser(hmtrans, "trying to disambiguate and answer");
 			if(in.equals("1")) {
 				//फलकनुमा से लिंगमपल्ली की 6:00 बजे से 9:00 बजे के बीच पहली ट्रैन में महिला कोच है क्या?

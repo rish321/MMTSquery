@@ -13,7 +13,7 @@ import java.util.ResourceBundle;
 public class Strings {
 	
 	/** The Constant BUNDLE_NAME. */
-	private static final String BUNDLE_NAME = "com.Template.messages"; //$NON-NLS-1$
+	private static final String BUNDLE_NAME = "com.Template.strings"; //$NON-NLS-1$
 
 	/** The Constant RESOURCE_BUNDLE. */
 	private static final ResourceBundle RESOURCE_BUNDLE = ResourceBundle

@@ -29,10 +29,24 @@ public class Dialog {
 	 */
 	public String requestResponse(HashMap<String, String> hmtrans, String display) throws IOException
 	{
+		System.err.println(display);
 		informUser(hmtrans, display);
 		BufferedReader bufferRead = new BufferedReader(new InputStreamReader(System.in));
 	    String s = bufferRead.readLine();
 	    return s;
+	}
+	
+	public String warnResponse(HashMap<String, String> hmtrans, String display) throws IOException
+	{
+		warnUser(hmtrans, display);
+		BufferedReader bufferRead = new BufferedReader(new InputStreamReader(System.in));
+	    String s = bufferRead.readLine();
+	    return s;
+	}
+	
+	public void warnUser(HashMap<String, String> hmtrans, String display)
+	{
+		ProcessAnswer.translateerr(hmtrans, display);
 	}
 	
 	/**
